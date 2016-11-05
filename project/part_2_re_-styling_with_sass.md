@@ -18,7 +18,7 @@ Re-style your page using Sass. View the Sass documentation here if you want more
 
 ```@import “variables”;```
 
-    c.  Add variables to the _variables.scss file.  Remember these start with a $ followed by the variable name.  
+   c.  Add variables to the _variables.scss file.  Remember these start with a $ followed by the variable name.  
 
     Examples:
 
