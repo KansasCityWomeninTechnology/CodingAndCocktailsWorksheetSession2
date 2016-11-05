@@ -8,4 +8,5 @@
 * [Part 2:  Re-Styling with Sass](project/part_2_re_-styling_with_sass.md)
 * [Homework](homework.md)
 * [CSS Cheat Sheet](css_cheat_sheet.md)
+* Project
 
