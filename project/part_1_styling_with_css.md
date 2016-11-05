@@ -8,10 +8,13 @@
 
   Typically websites will include a serif font for the body and a sans-serif for the headers.
 
-    1.  Click the blue “Add to Collection button” on the right of each one you want to use
-    2.  At the bottom of the page click on the “Use” button.
-    3.  Leave just the “Normal” box checked and scroll down to step 3 “Add this code to your website:”
-    4.  Click on the import tab and copy that code and paste it in the top of your CSS file.
+   a. Click the blue “Add to Collection button” on the right of each one you want to use
+   
+   b. At the bottom of the page click on the “Use” button.
+   
+   c. Leave just the “Normal” box checked and scroll down to step 3 “Add this code to your website:”
+   
+   d. Click on the import tab and copy that code and paste it in the top of your CSS file.
 
 3.  Fork the **CSSCompilerPractice** repository ([bit.ly/CnCCmp](https://www.google.com/url?q=http://bit.ly/CnCCmp&sa=D&ust=1478381675854000&usg=AFQjCNErZXRWwUn85j0f3ZhjdLCZzoC6Cw)) to your own account
 
