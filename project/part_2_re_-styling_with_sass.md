@@ -2,17 +2,17 @@
 
 Re-style your page using Sass. View the Sass documentation here if you want more detailed information about how any pieces of Sass work: [bit.ly/CnCSassDoc](https://www.google.com/url?q=http://bit.ly/CnCSassDoc&sa=D&ust=1478381675862000&usg=AFQjCNGQQHzyokuUfQpu_lxgbfHEUcrGzA) 
 
-  1.  Create a sass folder in the assets folder
+  1.  Create a **sass** folder in the **assets** folder
 
-  2.  In the sass folder, create a styles.scss file.  This will be your main Sass styling file and will only contain import statements when we’re done.
+  2.  In the sass folder, create a **styles.scss** file.  This will be your main Sass styling file and will only contain import statements when we’re done.
 
-  3.  Copy everything from your styles.css file into styles.scss (Hint: use ctrl-a (windows) or cmd-a (macs) to select everything in your file)
+  3.  Copy everything from your **styles.css** file into **styles.scss** (Hint: use ctrl-a (windows) or cmd-a (macs) to select everything in your file)
 
-  4.  Rename your styles.css file to originalstyles.css as we’ll be overwriting this css file when we compile our Sass and it will be neat to compare the two later.
+  4.  Rename your **styles.css** file to **originalstyles.css** as we’ll be overwriting this css file when we compile our Sass and it will be neat to compare the two later.
 
   5.  Replace hex and rgba color codes with Sass variables
 
-      a.  Create a _variables.scss file in your assets/sass folder.  This will be where all of our variables that we will use will exist.
+      a.  Create a **_variables.scss** file in your assets/sass folder.  This will be where all of our variables that we will use will exist.
 
       b.  At the very top of your styles.scss file you’ll need to import the variables file so type in
 
@@ -20,25 +20,26 @@ Re-style your page using Sass. View the Sass documentation here if you want more
 
    c.  Add variables to the _variables.scss file.  Remember these start with a $ followed by the variable name.  
 
-    Examples:
+Examples:
 
     `$color-main: #F9A1BC;  $color-accent: #A9EEE6;`
+    
+   d.  In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name ($color-main)
 
-    d.  In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name ($color-main)
-
-        Now our styling might look similar to this:
+   Now our styling might look similar to this:
 
 ![](../images/image06.png)
 
 
-    e.  Save the Sass files.
-    f.  Now we need to compile our Sass into CSS.  In the command line type:
+   e.  Save the Sass files.
+   
+   f.  Now we need to compile our Sass into CSS.  In the command line type:
 
      ```sass assets/sass/styles.scss assets/css/styles.css```
 
-    g.  Go to Chrome and refresh your page.  If you’ve used the same colors it should look exactly the same but now you only have one place to change a color instead of spread throughout your CSS file!  If you want to see the “magic” switch one of the color variables maybe to white (#FFFFFF), re-run your sass command and then refresh your page.
+   g.  Go to Chrome and refresh your page.  If you’ve used the same colors it should look exactly the same but now you only have one place to change a color instead of spread throughout your CSS file!  If you want to see the “magic” switch one of the color variables maybe to white (#FFFFFF), re-run your sass command and then refresh your page.
 
-6.  Next, let’s change the font stacks to use variables such as $font-headers and $font-body
+6.  Next, let’s change the font stacks to use variables such as $font-headers and $font-body.
 
     a.  Follow the same process as above adding variables, setting the values and replacing the font stacks in your css to use the variables you created. Don’t forget to compile like we did in step 5f above and then refresh your page in the browser!
 
@@ -47,6 +48,7 @@ Re-style your page using Sass. View the Sass documentation here if you want more
     a.  In places where you have parent-child selectors, nest the child selectors inside the parent class or element.  
     b. For example instead of:<br>
     ![](../images/image05.png)
+    
     You might have this:<br>
     ![](../images/image01.png)
 
@@ -58,11 +60,13 @@ Re-style your page using Sass. View the Sass documentation here if you want more
     `sass assets/sass/styles.scss assets/css/styles.css`
 
     e.  Open up your **assets/css/styles.css** file in Sublime Text and notice how the nested sass compiles to the parent-child selectors.
+    
     f.  Go to Chrome and refresh your page.  It should still look the same.
 
 8.  Let’s try a mixin now!  We can use one for list styling, let’s call it list-types.
 
     a.  Create a _mixins.scss file in the assets/sass folder
+    
     b.  Add your mixin to the file - this is adding a “function” to set the three properties list-style, margin and padding anytime this mixin is used in your Sass file:<br>
 
     ![](../images/image00.png)
@@ -72,9 +76,10 @@ Re-style your page using Sass. View the Sass documentation here if you want more
   `@include list-reset();`
 
     d.  Save both _**mixins.scss** and **styles.scss**
+    
     e.  In the command line type:
 
-    `sass assets/sass/styles.scss assets/css/styles.css`
+   `sass assets/sass/styles.scss assets/css/styles.css`
 
     f.  Go to Chrome and refresh your page.  It should again look the same.  Replacing your CSS with Sass may not look very exciting but it reduces duplication in your code and makes it easier for you to change and maintain the code going forward!  
 
@@ -83,6 +88,7 @@ Re-style your page using Sass. View the Sass documentation here if you want more
 9.  We’ll want to make sure we have our code organized as well so create a separate file for each section of your css such as the reset, nav, main and the footer. You’ll end up with “partials” for each section (**_reset.scss**, **_nav.scss**, etc.)  
 
     a.  Remove the relevant CSS from **styles.scss** and place it in each partial - Nav styling goes in **_nav.scss**, the main content (product list and customer favorites) goes in **_main.scss**, etc.
+    
     b.  Import each partial file into your main **styles.scss**, for example:
 
     `@import “nav”;`
@@ -94,7 +100,9 @@ Re-style your page using Sass. View the Sass documentation here if you want more
 11.  Compare your initial css file with the generated css file.  They should be almost identical.  
 
     a.  In Sublime Text highlight the **originalstyles.css** file then use ctrl (windows) or cmd (macs) + click on **styles.css**
+    
     b.  Right click on one of the highlighted filenames and choose “Diff Files…”
+    
     c.  This will open a new tab showing the differences (if any) between the two files.  
 
     d.  Compare your styles.sass with our answer key here: [bit.ly/CnCSassKey](https://www.google.com/url?q=http://bit.ly/CnCSassKey&sa=D&ust=1478381675890000&usg=AFQjCNHy8sjHANATp6X20-ZMCmis6PP5pw). It may not be exact but will give you an idea on what your Sass may look like.
