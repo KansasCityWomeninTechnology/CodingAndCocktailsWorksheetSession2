@@ -17,8 +17,9 @@ Output should look similar to :<br>
 
 1.  Check that you’ve got everything installed by typing
 
-`sass -v`
+```sass -v```
 
-        Output should look like this:<br>
 
-        ![](images/image04.png)
+ Output should look like this:<br>
+
+![](images/image04.png)
