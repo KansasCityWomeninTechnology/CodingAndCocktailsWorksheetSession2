@@ -34,7 +34,7 @@ Re-style your page using Sass. View the Sass documentation here if you want more
     e.  Save the Sass files.
     f.  Now we need to compile our Sass into CSS.  In the command line type:
 
-     `sass assets/sass/styles.scss assets/css/styles.css`
+     ```sass assets/sass/styles.scss assets/css/styles.css```
 
     g.  Go to Chrome and refresh your page.  If you’ve used the same colors it should look exactly the same but now you only have one place to change a color instead of spread throughout your CSS file!  If you want to see the “magic” switch one of the color variables maybe to white (#FFFFFF), re-run your sass command and then refresh your page.
 
