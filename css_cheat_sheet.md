@@ -16,8 +16,8 @@ This cheat sheet shares some commonly used CSS properties. If you want to know h
 | font-weight | Set the weight of the text | normal |` h3 { font-weight: bold }` |
 | background-color | Sets the color of the selected elements background | Any hex color value or color name | `body { background-color: #ffffff; }` |
 | background-image | Set the background of the element to the image supplied | Image url | `.hero { background-image: url(‘images/image.png’); }` |
-| background-repeat | Specifies whether or not a background image should be repeated | repeat | body { |
-| background-position | Sets the starting position of a background image | center center | .hero { |
-| list-style-type | Determines the bullet style on the list | circle | ul { |
+| background-repeat | Specifies whether or not a background image should be repeated | repeat | `body { background-repeat: no-repeat; }`|
+| background-position | Sets the starting position of a background image | center center | `.hero { background-position: right center; }` |
+| list-style-type | Determines the bullet style on the list | circle | `ul { list-style-type: none; }` |
 | float | Specifies whether an element should float. | Right | img { |
 | clear | Does not allow floating to the specified side of an element | Right | .footer { |
