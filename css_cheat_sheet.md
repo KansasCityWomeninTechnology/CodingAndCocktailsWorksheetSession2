@@ -8,9 +8,9 @@ This cheat sheet shares some commonly used CSS properties. If you want to know h
 | padding | Add spacing between the element content and the element border (refer to the box model diagram above) | Any pixel number value | `p { padding: 10px 0 15px 20px }` |
 | border | Specifies the border styling | Width: any pixel number value | `p { border: 2px solid blue; }` |
 | color | Sets the font color | Hex color values or color names | `p { color: #ffffff; }` |
-| text-align | Aligns text according to value | left | p { |
-| text-decoration | Add decoration to text | none | a { |
-| font-family | Set the font family (or typeface) of the text | Any font name | p { |
+| text-align | Aligns text according to value | left | `p { text-align: center; }` |
+| text-decoration | Add decoration to text | none | `a { text-decoration: none; }` |
+| font-family | Set the font family (or typeface) of the text | Any font name | `p { font-family: Neuton, "Times New Roman", Times, serif; }` |
 | font-size | Set the size of the text | Numeric value in px, em or rem | h1 { |
 | font-style | Sets the text style | Normal | h4{ |
 | font-weight | Set the weight of the text | normal | h3 { |
