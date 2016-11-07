@@ -11,7 +11,7 @@ This cheat sheet shares some commonly used CSS properties. If you want to know h
 | text-align | Aligns text according to value | left | `p { text-align: center; }` |
 | text-decoration | Add decoration to text | none | `a { text-decoration: none; }` |
 | font-family | Set the font family (or typeface) of the text | Any font name | `p { font-family: Neuton, "Times New Roman", Times, serif; }` |
-| font-size | Set the size of the text | Numeric value in px, em or rem | h1 { |
+| font-size | Set the size of the text | Numeric value in px, em or rem | `h1 { font-size: 4em; }` |
 | font-style | Sets the text style | Normal | h4{ |
 | font-weight | Set the weight of the text | normal | h3 { |
 | background-color | Sets the color of the selected elements background | Any hex color value or color name | body { |
