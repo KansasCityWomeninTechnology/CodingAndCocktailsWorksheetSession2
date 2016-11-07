@@ -1,6 +1,5 @@
 # Summary
 
-* [CSS Compilers (SASS)](README.md)
 * [Overview](overview.md)
 * [Prep Work](prep_work.md)
 * [Project](project/README.md)
