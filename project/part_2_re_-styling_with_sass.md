@@ -29,7 +29,7 @@ Re-style your page using Sass. View the Sass documentation here if you want more
         ![](../images/image06.png)
 
     1.  Save the Sass files.
-    1.  Now we need to compile our Sass into CSS.  In the command line type:<br>
+    1.  Now we need to compile our Sass into CSS.  In the command line type:
 
        `sass assets/sass/styles.scss assets/css/styles.css`
 
