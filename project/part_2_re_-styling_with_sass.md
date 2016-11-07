@@ -101,6 +101,6 @@ Re-style your page using Sass. View the Sass documentation here if you want more
     
     1.  This will open a new tab showing the differences (if any) between the two files.  
 
-    1.  Compare your styles.sass with our answer key here: [bit.ly/CnCSassKey](https://www.google.com/url?q=http://bit.ly/CnCSassKey&sa=D&ust=1478381675890000&usg=AFQjCNHy8sjHANATp6X20-ZMCmis6PP5pw). It may not be exact but will give you an idea on what your Sass may look like.
+    1.  Compare your **styles.sass** with our answer key here: [bit.ly/CnCSassKey](https://www.google.com/url?q=http://bit.ly/CnCSassKey&sa=D&ust=1478381675890000&usg=AFQjCNHy8sjHANATp6X20-ZMCmis6PP5pw). It may not be exact but will give you an idea on what your Sass may look like.
 
 **Congratulations!  You’ve just styled a webpage using a CSS Compiler!**
