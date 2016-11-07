@@ -12,10 +12,10 @@ This cheat sheet shares some commonly used CSS properties. If you want to know h
 | text-decoration | Add decoration to text | none | `a { text-decoration: none; }` |
 | font-family | Set the font family (or typeface) of the text | Any font name | `p { font-family: Neuton, "Times New Roman", Times, serif; }` |
 | font-size | Set the size of the text | Numeric value in px, em or rem | `h1 { font-size: 4em; }` |
-| font-style | Sets the text style | Normal | h4{ |
-| font-weight | Set the weight of the text | normal | h3 { |
-| background-color | Sets the color of the selected elements background | Any hex color value or color name | body { |
-| background-image | Set the background of the element to the image supplied | Image url | .hero { |
+| font-style | Sets the text style | Normal | `h4{ font-style: italic; }` |
+| font-weight | Set the weight of the text | normal |` h3 { font-weight: bold }` |
+| background-color | Sets the color of the selected elements background | Any hex color value or color name | `body { background-color: #ffffff; }` |
+| background-image | Set the background of the element to the image supplied | Image url | `.hero { background-image: url(‘images/image.png’); }` |
 | background-repeat | Specifies whether or not a background image should be repeated | repeat | body { |
 | background-position | Sets the starting position of a background image | center center | .hero { |
 | list-style-type | Determines the bullet style on the list | circle | ul { |
