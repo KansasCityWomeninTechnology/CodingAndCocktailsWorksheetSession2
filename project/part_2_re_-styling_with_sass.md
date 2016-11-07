@@ -4,42 +4,38 @@ Re-style your page using Sass. View the Sass documentation here if you want more
 
   1.  Create a **sass** folder in the **assets** folder
 
-  2.  In the sass folder, create a **styles.scss** file.  This will be your main Sass styling file and will only contain import statements when we’re done.
+  1.  In the sass folder, create a **styles.scss** file.  This will be your main Sass styling file and will only contain import statements when we’re done.
 
-  3.  Copy everything from your **styles.css** file into **styles.scss** (Hint: use ctrl-a (windows) or cmd-a (macs) to select everything in your file)
+ 1.  Copy everything from your **styles.css** file into **styles.scss** (Hint: use ctrl-a (windows) or cmd-a (macs) to select everything in your file)
 
-  4.  Rename your **styles.css** file to **originalstyles.css** as we’ll be overwriting this css file when we compile our Sass and it will be neat to compare the two later.
+ 1.  Rename your **styles.css** file to **originalstyles.css** as we’ll be overwriting this css file when we compile our Sass and it will be neat to compare the two later.
 
-  5.  Replace hex and rgba color codes with Sass variables
+ 1.  Replace hex and rgba color codes with Sass variables
 
-      a.  Create a **_variables.scss** file in your assets/sass folder.  This will be where all of our variables that we will use will exist.
+    1.  Create a **_variables.scss** file in your assets/sass folder.  This will be where all of our variables that we will use will exist.
 
-      b.  At the very top of your styles.scss file you’ll need to import the variables file so type in
+    1.  At the very top of your styles.scss file you’ll need to import the variables file so type in
 
-```@import “variables”;```
+        ```@import “variables”;```
+      1.  Add variables to the _variables.scss file.  Remember these start with a $ followed by the variable name.  
 
-   c.  Add variables to the _variables.scss file.  Remember these start with a $ followed by the variable name.  
+        Examples:
 
-Examples:
+        `$color-main: #F9A1BC;  $color-accent: #A9EEE6;`
+     1.  In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name (**$color-main**)<br><br>
 
-    `$color-main: #F9A1BC;  $color-accent: #A9EEE6;`
-    
-   d.  In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name ($color-main)
+       Now our styling might look similar to this:
 
-   Now our styling might look similar to this:
+        ![](../images/image06.png)
 
-![](../images/image06.png)
+    1.  Save the Sass files.
+    1.  Now we need to compile our Sass into CSS.  In the command line type:<br>
 
+       `sass assets/sass/styles.scss assets/css/styles.css`
 
-   e.  Save the Sass files.
-   
-   f.  Now we need to compile our Sass into CSS.  In the command line type:
-
-     ```sass assets/sass/styles.scss assets/css/styles.css```
-
-   g.  Go to Chrome and refresh your page.  If you’ve used the same colors it should look exactly the same but now you only have one place to change a color instead of spread throughout your CSS file!  If you want to see the “magic” switch one of the color variables maybe to white (#FFFFFF), re-run your sass command and then refresh your page.
-
-6.  Next, let’s change the font stacks to use variables such as $font-headers and $font-body.
+    1.  Go to Chrome and refresh your page.  If you’ve used the same colors it should look exactly the same but now you only have one place to change a color instead of spread throughout your CSS file!  If you want to see the “magic” switch one of the color variables maybe to white (#FFFFFF), re-run your sass command and then refresh your page.
+ 
+1. Next, let’s change the font stacks to use variables such as $font-headers and $font-body.
 
     a.  Follow the same process as above adding variables, setting the values and replacing the font stacks in your css to use the variables you created. Don’t forget to compile like we did in step 5f above and then refresh your page in the browser!
 
