@@ -19,5 +19,5 @@ This cheat sheet shares some commonly used CSS properties. If you want to know h
 | background-repeat | Specifies whether or not a background image should be repeated | repeat | `body { background-repeat: no-repeat; }`|
 | background-position | Sets the starting position of a background image | center center | `.hero { background-position: right center; }` |
 | list-style-type | Determines the bullet style on the list | circle | `ul { list-style-type: none; }` |
-| float | Specifies whether an element should float. | Right | img { |
-| clear | Does not allow floating to the specified side of an element | Right | .footer { |
+| float | Specifies whether an element should float. | Right | `img { float: left; }` |
+| clear | Does not allow floating to the specified side of an element | Right | `.footer { clear: both; }` |
