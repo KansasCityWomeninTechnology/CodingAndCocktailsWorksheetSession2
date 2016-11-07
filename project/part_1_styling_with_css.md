@@ -4,17 +4,17 @@
 
 2.  Scroll through the list of fonts on google webfonts ([google.com/fonts](https://www.google.com/url?q=https://www.google.com/fonts&sa=D&ust=1478381675851000&usg=AFQjCNHzwozQ7Hn7o5A8kVzLbdZlrw_aEQ)) and choose two fonts that you like and look nice together for your website or use the fonts we selected: Montserrat &amp; Neuton. Fonts can be imported by inserting the following code in your CSS file:
 
-`@import url(https://fonts.googleapis.com/css?family=Montserrat|Neuton);`
+    `@import url(https://fonts.googleapis.com/css?family=Montserrat|Neuton);`
 
   Typically websites will include a serif font for the body and a sans-serif for the headers.
 
-   a. Click the blue “Add to Collection button” on the right of each one you want to use
+    1. Click the blue “Add to Collection button” on the right of each one you want to use
    
-   b. At the bottom of the page click on the “Use” button.
+    1. At the bottom of the page click on the “Use” button.
    
-   c. Leave just the “Normal” box checked and scroll down to step 3 “Add this code to your website:”
+    1. Leave just the “Normal” box checked and scroll down to step 3 “Add this code to your website:”
    
-   d. Click on the import tab and copy that code and paste it in the top of your CSS file.
+    1. Click on the import tab and copy that code and paste it in the top of your CSS file.
 
 3.  Fork the **CSSCompilerPractice** repository ([bit.ly/CnCCmp](https://www.google.com/url?q=http://bit.ly/CnCCmp&sa=D&ust=1478381675854000&usg=AFQjCNErZXRWwUn85j0f3ZhjdLCZzoC6Cw)) to your own account
 
@@ -30,8 +30,8 @@
     2.  Style the main “hero” image with the large page heading, a smaller “tagline” and some about text
     3.  Style a product list
     4.  Style the sidebar Customer Favorites content to display on the right side
-    5.  Style a footer with copyright and social media links
-
+    5.  Style a footer with copyright and social media links<br>
+<br>
 7.  Once your page has been styled with CSS compare with the answer key here: [bit.ly/CnCCSSKey](https://www.google.com/url?q=http://bit.ly/CnCCSSKey&sa=D&ust=1478381675860000&usg=AFQjCNE_ZxeCyyssLUoOCvTMf4zzMBqHcA). It may not be exact depending on how you’ve chosen to style your page and any creative liberties you’ve taken but will give you some idea on what your CSS might look like.
 
 **Take a break and grab another drink! You’ve earned it!**
