@@ -4,10 +4,10 @@ This cheat sheet shares some commonly used CSS properties. If you want to know h
 
 | Property | Description | Value | Example |
 | --- | --- | --- | --- |
-| margin![Screen Shot 2016-03-26 at 10.45.42 AM.png](images/image07.png) | Adds spacing around an element outside the border (refer to the box model diagram to the left) | Any pixel number value | p { |
-| padding | Add spacing between the element content and the element border (refer to the box model diagram above) | Any pixel number value | p { |
-| border | Specifies the border styling | Width: any pixel number value | p { |
-| color | Sets the font color | Hex color values or color names | p { |
+| margin![Screen Shot 2016-03-26 at 10.45.42 AM.png](images/image07.png) | Adds spacing around an element outside the border (refer to the box model diagram to the left) | Any pixel number value | `p { margin: 10px; } p { margin: 0 auto; }` |
+| padding | Add spacing between the element content and the element border (refer to the box model diagram above) | Any pixel number value | `p { padding: 10px 0 15px 20px }` |
+| border | Specifies the border styling | Width: any pixel number value | `p { border: 2px solid blue; }` |
+| color | Sets the font color | Hex color values or color names | `p { color: #ffffff; }` |
 | text-align | Aligns text according to value | left | p { |
 | text-decoration | Add decoration to text | none | a { |
 | font-family | Set the font family (or typeface) of the text | Any font name | p { |
