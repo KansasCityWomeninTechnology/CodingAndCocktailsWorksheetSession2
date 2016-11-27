@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Overview](README.md)
 * [Prep Work](prep_work.md)
 * [Project](project/README.md)
    * [Part 1:  Styling with CSS](project/part_1_styling_with_css.md)
