@@ -22,4 +22,4 @@
 
  Output should look like this:<br>
 
-![](images/image04.png)
+![](/images/image04.png)
