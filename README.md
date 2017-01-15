@@ -1,5 +1,5 @@
-# Coding & Cocktails Session 4:
-## CSS Compilers (SASS) {#css-compilers-sass}
+# Coding & Cocktails Session 2:
+## Introduction to CSS {#css}
 <hr>
 ![](images/image03.png)
 ### Overview {#overview}
