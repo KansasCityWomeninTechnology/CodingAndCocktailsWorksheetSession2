@@ -28,7 +28,7 @@
     
 6. Select the first section with the `.section-one` class
     
-    1. Add a solid 5 pixel width border that is another of the colors from your chosen palette.
+    1. Add a border that is 5 pixels wide and solid using another of the colors from your chosen palette.
     
     2. Margin & Padding
 
