@@ -21,4 +21,5 @@ We'll start with some sample HTML and get a chance to try out changing some styl
     4. Copy the text in the grey box under the `STANDARD` heading
     5. Back in CodePen, paste the copied `link` tag text just above the `</head>` tag.
 
+You now have the information you'll need when styling your page, continue on to change the styling.
 
