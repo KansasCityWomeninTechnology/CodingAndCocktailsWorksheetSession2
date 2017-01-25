@@ -2,21 +2,23 @@
 
 We'll start with some sample HTML and get a chance to try out changing some styles to start getting comfortable with how CSS works.
 
-
-
-1. Navigate to [http://codepen.io/CodingCocktailsKC/pen/PWjRzG](http://codepen.io/CodingCocktailsKC/pen/PWjRzG)
+##Preparation
+1. Navigate to the CSS Practice CodePen at  [http://codepen.io/CodingCocktailsKC/pen/PWjRzG](http://codepen.io/CodingCocktailsKC/pen/PWjRzG)
 
 2. Once you are logged in to your account, press the Fork button in the top right.
 
-3. In the middle box with the CSS heading change the `background-color` of the `body` element
+3. Pick out a color palette that you like to use from [http://colorhunt.co](http://colorhunt.co).
 
-4. Change the element with the id `#main-title` to have a new `font-family`, a larger `font-size` (rem) and `color`. Navigate to Google Fonts to select a font to add. 
+    1. Make note of the hex color values displayed when you hover over each color in your chosen palette.
+    
+5. Navigate to Google Fonts at https://fonts.google.com/
 
-4. Center the header text
-
-Change the width & height of the image using percentage values
-
-add a border, margin & /or padding
-text-decoration
+6. Scroll through the fonts and choose one font that you like.
+    
+    1. Click the red `+` in the upper right of that font's section
+    2. At the bottom of your page, a box with the text `1 Family Selected` will appear.  
+    3. Click on the `1 Family Selected` section
+    4. Copy the text in the grey box under the `STANDARD` heading
+    5. Back in CodePen, paste the copied `link` tag text just above the `</head>` tag.
 
 
