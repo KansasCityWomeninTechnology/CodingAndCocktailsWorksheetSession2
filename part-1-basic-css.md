@@ -14,3 +14,7 @@ We'll start with some sample HTML and get a chance to try out changing some styl
 
 Change the width & height of the image using percentage values
 
+add a border, margin & /or padding
+text-decoration
+
+
