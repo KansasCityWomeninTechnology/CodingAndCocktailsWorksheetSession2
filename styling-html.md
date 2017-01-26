@@ -4,7 +4,11 @@
 
 2. In the middle box with the CSS heading, select the `body` element and change the `background-color` to one from your selected color palette.
 
-3. Select the element with the id `#main-title`.
+3. Select the `ul` element and set the `list-style-type` to `none`. Notice how the bullets disappear from each of the list item elements.
+
+4. Since the list items (`li` elements) are being used for navigation purposes here change them to have `display: inline;` styling.  Notice how that makes them sit next to each other instead of on top of each other.
+
+5. Select the element with the id `#main-title`.
     
     1. Change the `font-family` to the font you selected from google fonts.
     
@@ -14,7 +18,7 @@
 
     4. Center the header text using the `text-align` property.
 
-4. Select the `img` element.
+6. Select the `img` element.
 
     1. Change the height of the image to `100px`.
     
@@ -22,15 +26,20 @@
        
        Notice how this distorts the image so when you are styling an image make sure to keep an eye to how your styling affects the image. 
 
-5. Select the `.section` class and change the `background-color` to another color within your chosen palette.
+7. Select the `.section` class and change the `background-color` to another color within your chosen palette.
 
     Notice how the div sections don't stretch to meet the edges of the page body or eachother
     
-6. Select the first section with the `.section-one` class
+8. Select the first section with the `.section-one` class
     
     1. Add a border that is 5 pixels wide and solid using another of the colors from your chosen palette.
     
     2. Margin & Padding
 
-list-style-type
-text-decoration
+9. In the view section scroll down until the link comes into view.  
+    
+    1. select the `a` (anchor) element and use the `text-decoration` property to remove the underline.
+
+    
+###Documentation
+[Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
