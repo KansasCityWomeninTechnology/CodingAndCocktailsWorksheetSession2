@@ -39,9 +39,7 @@
     
         {% hint style='danger' %}
         Notice how this distorts the image so when you are styling an image make sure to keep an eye to how your styling affects the image.
-        {% endhint %}
-
- 
+        {% endhint %} 
 
 7. Select the `.section` class and change the `background-color` to another color within your chosen palette.
 
@@ -49,10 +47,12 @@
     
 8. Select the first section with the `.section-one` class
     
-    1. Add a border that is 5 pixels wide and solid using another of the colors from your chosen palette.
+    1. Add a `border` that is 5 pixels wide and solid using another of the colors from your chosen palette.
     
-    2. Margin & Padding
-
+    2. Add a `margin` of `20px`. Notice how that made your border box move and added space around the _outside_ of your border.
+    
+    3. Add some `padding` of `40px`. Notice how that made the border box bigger around the text content and added space _inside_ your border.
+    
 9. In the view section scroll down until the link comes into view.  
     
     1. select the `a` (anchor) element and use the `text-decoration` property to remove the underline.
