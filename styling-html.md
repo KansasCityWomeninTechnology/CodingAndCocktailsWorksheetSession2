@@ -4,14 +4,7 @@
 
 2. In the middle box with the CSS heading, select the `body` element and change the `background-color` to one from your selected color palette.
 
-    {% hint style='tip' %}
-    Remember the syntax for a CSS rule looks like this:
-    ```CSS
-    selector {
-        property: value;
-    }
-    ```
-    {% endhint %}
+    
 
 3. Select the `ul` element and set the `list-style-type` to `none`. Notice how the bullets disappear from each of the list item elements.
 
