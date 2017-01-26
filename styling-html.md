@@ -4,8 +4,6 @@
 
 2. In the middle box with the CSS heading, select the `body` element and change the `background-color` to one from your selected color palette.
 
-    
-
 3. Select the `ul` element and set the `list-style-type` to `none`. Notice how the bullets disappear from each of the list item elements.
 
 4. Since the list items (`li` elements) are being used for navigation purposes here, change them to have `display: inline;` styling.  Notice how that makes them sit next to each other instead of on top of each other.
@@ -16,10 +14,6 @@
     
     2. Increase the size of the text to be four times the size of the HTML (root) font-size. 
     
-    {% hint style='tip' %}
-    1rem is equivalent to the HTML (root) font-size.
-    {% endhint %}
-    
     3. Change the `color` to another color hex value from your chosen color palette.
 
     4. Center the header text using the `text-align` property.
@@ -29,10 +23,6 @@
     1. Change the height of the image to `100px`.
     
     2. Change the width of the image to `200px`.
-    
-        {% hint style='danger' %}
-        Notice how this distorts the image so when you are styling an image make sure to keep an eye to how your styling affects the image.
-        {% endhint %} 
 
 7. Select the `.section` class and change the `background-color` to another color within your chosen palette.
 
