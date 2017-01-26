@@ -1,101 +1,120 @@
-### Part 2: Styling with Sass
+## Part 2: Styling with Sass
 
 Next you'll will work on styling a page using Sass. 
 
-1. Create a **sass** folder in the **assets** folder
+###Setup
 
-1. In the sass folder, create a **styles.scss** file. This will be your main Sass styling file and will only contain import statements when we’re done.
+1. In your `CodingAndCocktails` folder in your home directory create a `CSS` folder
 
-1. Copy everything from your **styles.css** file into **styles.scss** (Hint: use ctrl-a (windows) or cmd-a (macs) to select everything in your file)
+2. Open Atom.
 
-1. Rename your **styles.css** file to **originalstyles.css** as we’ll be overwriting this css file when we compile our Sass and it will be neat to compare the two later.
+    1. In the `File` menu choose `Add Project Folder...`
+    
+    2. Navigate to the `CSS` folder you just created in step 1 and chose `Open`
+    
+    3. In the left pane where you see the `CSS` folder text, right click on the folder and choose `New File`
+    
+    4. Type in _index.html_ and press enter.
+    
+    5. A new file should display on the left and should open in your main work area.  
+    
+3. Copy and paste the following HTML code into your _index.html_ file.
 
-1. Replace hex and rgba color codes with Sass variables
+    ```html
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LadyDev Bar &amp; Grill</title>
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul id="drinks">
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#drinks">Menu</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+		<div class="hero" id="about">
+			<div class="head">
+				<h1>LadyDev Bar &amp; Grill</h1>
+				<h2>Making development more delicious every day!</h2>
+				<p>Welcome to the LadyDev Bar &amp; Grill.  We're glad you're here!  Sit down, relax, and enjoy good drinks, good eats, and good friends.</p>
+			</div>
+		</div>
+		<div class="flexbox">
+			<div class="drinks col-1">
+				<h2>Menu</h2>
+				<ul class="drinks">
+				    <li class="item">
+				    	<a href="#"><img src="assets/images/martini.jpg" alt=""></a>
+				        <h3 class="head">Martinis</h3>
+				        <p>Made with our own homemade gin and dry vermouth.  Choose from The Classic, Lemondrop, or Chocolate.</p>
+				    </li>
+				    <li class="item">
+				    	<a href="#"><img src="assets/images/wine.jpg" alt=""></a>
+				        <h3 class="head">Wine</h3>
+				        <p>There are just too many to list.  Ask your server for a recommendation.</p>
+				    </li>
+				    <li class="item">
+				    	<a href="#"><img src="assets/images/whiskey-cocktails.jpg" alt=""></a>
+				        <h3 class="head">Whiskey cocktails</h3>
+				        <p>Whiskey.  Some might consider it their spirit animal.  Thank goodness it's not just for men anymore.</p>
+				    </li>
+				    <li class="item">
+				    	<a href="#"><img src="assets/images/margarita.jpg" alt=""></a>
+				        <h3 class="head">Margaritas</h3>
+				        <p>Slushy frozen delicousness, in Peach, Strawberry, or Mango.  Served with a rock-salted rim and lime.</p>
+				    </li>
+				    <li class="item">
+				    	<a href="#"><img src="assets/images/hot-cocktail.jpg" alt=""></a>
+				        <h3 class="head">Hot &amp; Creamy</h3>
+				        <p>Just what you need to kick off a night of coding.  We offer concoctions with coffee, Kahlua, Bailey's, and more.</p>
+				    </li>
+				    <li class="item">
+				    	<a href="#"><img src="assets/images/beer.jpg" alt=""></a>
+				        <h3 class="head">Beer</h3>
+				        <p>We serve the finest microbrews from around the world.  How about a Saison, IPA, or Stout?</p>
+				    </li>
+				    <li class="item">
+				    	<a href="#"><img src="assets/images/milk.jpg" alt=""></a>
+				    	<h3 class="head">Non alcoholic</h3>
+							<p>We have plenty of NA options available to quench your thirst, like lemonade, milk or soda.</p>
+				    </li>
+				</ul>
+			</div>
+			<div class="food sidebar col-2">
+				<h2>Small plates</h2>
+				<ul class="food">
+					<li>Grassfed beef sliders</li>
+					<li>Spicy calamari</li>
+					<li>Coconut shrimp</li>
+					<li>Veggie spring rolls</li>
+					<li>Deviled eggs</li>
+					<li>Tuscan bean dip</li>
+					<li>Chicken lettuce wraps</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer id="contact">
+		<p>&copy; 2017 LadyDev Bar &amp; Grill</p>
+		<ul>
+			<li><a href="http://facebook.com/ladydevbargrill"><img src="assets/images/fb.png" alt=""></a></li>
+			<li><a href="http://twitter.com/ladydevbargrill"><img src="assets/images/twitter.png" alt=""></a></li>
+			<li><a href="http://instagram.com/ladydevbargrill"><img src="assets/images/instagram.png" alt=""></a></li>
+			<li><a href="mailto:ladydevbargrill@example.com"><img src="assets/images/email.png" alt=""></a></li>
+		</ul>
+	</footer>
+</body>
+</html>
+    ```
+    
+    
 
-1. Create a **_variables.scss** file in your assets/sass folder. This will be where all of our variables that we will use will exist.
-
-1. At the very top of your styles.scss file you’ll need to import the variables file so type in
-
-```@import “variables”;```
-1. Add variables to the _variables.scss file. Remember these start with a $ followed by the variable name.
-
-Examples:
-
-`$color-main: #F9A1BC; $color-accent: #A9EEE6;`
-1. In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name (**$color-main**)<br><br>
-
-Now our styling might look similar to this:
-
-![](../images/image06.png)
-
-1. Save the Sass files.
-1. Now we need to compile our Sass into CSS. In the command line type:
-
-`sass assets/sass/styles.scss assets/css/styles.css`
-
-1. Go to Chrome and refresh your page. If you’ve used the same colors it should look exactly the same but now you only have one place to change a color instead of spread throughout your CSS file! If you want to see the “magic” switch one of the color variables maybe to white (#FFFFFF), re-run your sass command and then refresh your page.
-1. Next, let’s change the font stacks to use variables such as **$font-headers** and **$font-body**.
-
-1. Follow the same process as above adding variables, setting the values and replacing the font stacks in your css to use the variables you created. Don’t forget to compile like we did in step 5f above and then refresh your page in the browser!
-
-7. Use nesting to simplify your stylesheet - remember not to go more than 3-4 levels deep though!
-
-1. In places where you have parent-child selectors, nest the child selectors inside the parent class or element.
-1. For example instead of:<br>
-![](../images/image05.png)
-You might have this:<br>
-![](../images/image01.png)
-
-That way you don’t have to repeat nav in front of the child ul and li elements. Similar to the way you nest your html elements you can now organize your Sass file with nesting.
-
-1. Save the Sass files.
-1. In the command line type
-
-`sass assets/sass/styles.scss assets/css/styles.css`
-
-1. Open up your **assets/css/styles.css** file in Sublime Text and notice how the nested sass compiles to the parent-child selectors.
-1. Go to Chrome and refresh your page. It should still look the same.
-
-8. Let’s try a mixin now! We can use one for list styling, let’s call it list-types.
-
-1. Create a **_mixins.scss** file in the **assets/sass** folder
-1. Add your mixin to the file - this is adding a “function” to set the three properties list-style, margin and padding anytime this mixin is used in your Sass file:<br>
-
-![](../images/image00.png)
-
-1. In your styles.scss file replace any styling where you set those three items (likely in your navigation, product list and footer elements) with:
-
-`@include list-reset();`
-
-1. Save both _**mixins.scss** and **styles.scss**
-1. In the command line type:
-
-`sass assets/sass/styles.scss assets/css/styles.css`
-
-1. Go to Chrome and refresh your page. It should again look the same. Replacing your CSS with Sass may not look very exciting but it reduces duplication in your code and makes it easier for you to change and maintain the code going forward!
-
-You will typically just use Sass from the start instead of doing the translation from CSS but we wanted you to see the differences between the two types of styling.
-
-9. We’ll want to make sure we have our code organized as well so create a separate file for each section of your css such as the reset, nav, main and the footer. You’ll end up with “partials” for each section (**_reset.scss**, **_nav.scss**, etc.)
-
-1. Remove the relevant CSS from **styles.scss** and place it in each partial - Nav styling goes in **_nav.scss**, the main content (product list and customer favorites) goes in **_main.scss**, etc.
-1. Import each partial file into your main **styles.scss**, for example:
-
-`@import “nav”;`
-
-1. Save all of your files, compile with the `sass` command in the command line then refresh view your page in the browser.
-
-10. Feel free to try out any more of the Sass concepts we discussed tonight using the same process.
-
-11. Compare your initial css file with the generated css file. They should be almost identical.
-
-1. In Sublime Text highlight the **originalstyles.css** file then use ctrl (windows) or cmd (macs) + click on **styles.css**
-1. Right click on one of the highlighted filenames and choose “Diff Files…”
-1. This will open a new tab showing the differences (if any) between the two files.
-
-1. Compare your **styles.sass** with our answer key here: [bit.ly/CnCSassKey](https://www.google.com/url?q=http://bit.ly/CnCSassKey&sa=D&ust=1478381675890000&usg=AFQjCNHy8sjHANATp6X20-ZMCmis6PP5pw). It may not be exact but will give you an idea on what your Sass may look like.
-
-**Congratulations! You’ve just styled a webpage using a CSS Compiler!**
 
 ###Documentation
 View the Sass documentation here if you want more detailed information about how any pieces of Sass work: [bit.ly/CnCSassDoc](http://bit.ly/CnCSassDoc) 
