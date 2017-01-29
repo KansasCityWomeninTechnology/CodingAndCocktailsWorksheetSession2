@@ -1,14 +1,9 @@
 ##Sass
 
-1. In the sass folder, create a **styles.scss** file. This will be your main Sass styling file and will only contain import statements when we’re done.
-
-1. Copy everything from your **styles.css** file into **styles.scss** (Hint: use ctrl-a (windows) or cmd-a (macs) to select everything in your file)
-
-1. Rename your **styles.css** file to **originalstyles.css** as we’ll be overwriting this css file when we compile our Sass and it will be neat to compare the two later.
 
 1. Replace hex and rgba color codes with Sass variables
 
-1. Create a **_variables.scss** file in your assets/sass folder. This will be where all of our variables that we will use will exist.
+
 
 1. At the very top of your styles.scss file you’ll need to import the variables file so type in
 
