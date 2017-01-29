@@ -1,0 +1,1 @@
+5. Style a footer with copyright and social media links

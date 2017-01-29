@@ -10,7 +10,7 @@
   * [Normalizing](normalizing.md)
   * [Fonts](fonts.md)
   * [Nav Styling](nav-styling.md)
-  * Footer Styling
+  * [Footer Styling](footer-styling.md)
   * [Body Styling](body-styling.md)
   * [Mixins](mixins.md)
 * [Homework](homework.md)
