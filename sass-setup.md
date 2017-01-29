@@ -127,7 +127,7 @@
 
 	4. Type `_variables.scss` and press enter. This will be the file where all of our variables that we use in our project will be located.
 	
-	5. Repeat the process to create additional files to hold our partials for the different areas of our website.  Create files in the `sass` folder called _ _nav.scss_, _ _main.scss_, _ _footer.scss_, _ _reset.scss_, and _ _mixins.scss_.
+	5. Repeat the process to create additional files to hold our partials for the different areas of our website.  Create files in the `sass` folder called _ _nav.scss_, _ _main.scss_, _ _footer.scss_, _ _normalize.scss_, and _ _mixins.scss_.
 
 	5. Open the _styles.scss_ file by double clicking on it in the left pane if it is not already open.  You’ll need to import the partial files so type in ```@import “variables”;``` to import the _ _variables.scss_ file.  Add import statements for the rest of the files as well.  Your _styles.scss_ file should look like this when you're done: 
 	
