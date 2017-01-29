@@ -23,6 +23,10 @@
     
     2. Increase the size of the text to be four times the size of the HTML (root) font-size. 
     
+    {% hint style='tip' %}
+    1rem is equivalent to the HTML (root) font-size.
+    {% endhint %}
+    
     3. Change the `color` to another color hex value from your chosen color palette.
 
     4. Center the header text using the `text-align` property.
