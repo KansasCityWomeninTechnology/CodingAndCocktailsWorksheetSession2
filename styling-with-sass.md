@@ -5,15 +5,19 @@
 
     1. If needed, open the _variables.scss file by double clicking on it in the left pane. 
     
-    2. Create your first variable for the main color of your site. Remember these start with a $ followed by the variable name.  It might look something like the following:
+    2. Create your first variable for the main color of your site. Variables start with a `$` followed by the variable name.  It might look something like the following:
     
     ```
-    $color-primary: #F9A1BC;
+    $pink: #F9A1BC;
     ```
     
-    3. Create variables for the remaining colors in your site.  It is common to name your color variables according to how they will be used in your site.  Things like color-secondary, color-accent, color-background, etc.
+    3. Create variables for the remaining colors in your site.  It is common to name your color variables according the color name.  Things like `$turquoise`, `$white`, `$dark-purple`, etc.
     
-2. 
+2. We'll start with normalizing the styling.  This is necessary to help things look consistent across browsers (ie. Microsoft Edge, Google Chrome, Internet Explorer, Safari, etc.) as each browser implements features at different times or somtimes slightly different than how the others do.  
+
+    1. If necessary, open the _ _normalize.scss_ file. 
+    
+    2. 
     
 1. In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name (**$color-main**)<br><br>
 

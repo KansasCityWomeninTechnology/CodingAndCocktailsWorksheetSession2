@@ -133,7 +133,7 @@
 	
 	```scss
 	@import "variables";
-	@import "reset";
+	@import "normalize";
 	@import "mixins";
 	@import "nav";
 	@import "main";
