@@ -8,15 +8,17 @@ Next you'll will work on styling a page using Sass.
 
 2. Open Atom.
 
-    1. In the `File` menu choose `Add Project Folder...`
+    1. Close any open tabs by hovering over them with your mouse at the top of the screen and clicking on the small x that appears.
     
-    2. Navigate to the `CSS` folder you just created in step 1 and chose `Open`
+    2. In the `File` menu choose `Add Project Folder...`
     
-    3. In the left pane where you see the `CSS` folder text, right click on the folder and choose `New File`
+    3. Navigate to the `CSS` folder you just created in step 1 and choose `Open`.
     
-    4. Type in _index.html_ and press enter.
+    4. You should now have a pane on the left displaying the `CSS` folder. Right click on the folder and choose `New File`.
     
-    5. A new file should display on the left and should open in your main work area.  
+    5. Type _index.html_ and press enter.
+    
+    6. A new file should display on the left and should open in your main work area.  
     
 3. Copy and paste the following HTML code into your _index.html_ file.
 
@@ -113,6 +115,13 @@ Next you'll will work on styling a page using Sass.
 </html>
     ```
     
+4. Save the file.
+
+5. Right click again on that `CSS` folder in the right pane and select `New Folder`.  
+
+6. Type 'sass' and press enter.
+
+7. 
     
 
 
