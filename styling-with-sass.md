@@ -31,7 +31,7 @@
     }
     ```
     
-    3. In addition set the base styling for fonts. Add the following to your _ _normalize.scss_ file underneath the closing `}` for the reset styles.  Be sure to leave a blank line between the `}` and the following styles. Make sure you replace the variables with the colors that you've chosen and set up as variables.
+    3. In addition set the base styling for fonts. Add the following to your _ _normalize.scss_ file underneath the closing `}` for the reset styles.  Leave a blank line between the `}` and the following styles to improve readability. Make sure you replace the variables in the example below with the colors that you've chosen and set up as variables within your project.
     
     ```css
     body {
