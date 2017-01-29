@@ -9,7 +9,7 @@
   * [Variables](styling-with-sass.md)
   * [Normalizing](normalizing.md)
   * [Fonts](fonts.md)
-  * Nav Styling
+  * [Nav Styling](nav-styling.md)
   * Footer Styling
   * [Body Styling](body-styling.md)
   * [Mixins](mixins.md)
