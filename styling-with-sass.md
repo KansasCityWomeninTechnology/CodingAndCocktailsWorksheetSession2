@@ -8,7 +8,7 @@
     2. Create your first variable using the name of your first color. Remember these start with a $ followed by the variable name.  It might look something like the following:
     
     ```
-    $color-main: #F9A1BC; 
+    $color-primary: #F9A1BC; 
     $color-secondary: #A9EEE6;
     $color-accent: #625772;
     $color-background: #FEFAEC;
