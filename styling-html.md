@@ -6,11 +6,10 @@
 
     {% hint style='tip' %}
     Remember the syntax for a CSS rule looks like this:
-    ```CSS
+
     selector {
         property: value;
     }
-    ```
     {% endhint %}
 
 3. Select the `ul` element and set the `list-style-type` to `none`. Notice how the bullets disappear from each of the list item elements.
