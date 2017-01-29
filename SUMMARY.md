@@ -15,6 +15,5 @@
   * [Mixins](mixins.md)
 * [Homework](homework.md)
 * [CSS Cheat Sheet](css_cheat_sheet.md)
-* [Old Sass CSS](project/part_1_styling_with_css.md)
 * [Answer Key](answer-key.md)
 
