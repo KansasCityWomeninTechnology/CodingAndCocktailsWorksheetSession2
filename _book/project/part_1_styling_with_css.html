@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Project · GitBook</title>
+        <title>Old Sass CSS · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="../gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
@@ -57,10 +65,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../part-1-basic-css.html" />
     
-    
-    <link rel="prev" href="../" />
+    <link rel="prev" href="../css_cheat_sheet.html" />
     
 
     </head>
@@ -102,7 +108,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="./">
             
                 <a href="./">
             
@@ -205,7 +211,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="part_1_styling_with_css.html">
+        <li class="chapter active" data-level="1.7" data-path="part_1_styling_with_css.html">
             
                 <a href="part_1_styling_with_css.html">
             
@@ -248,7 +254,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Project</a>
+        <a href=".." >Old Sass CSS</a>
     </h1>
 </div>
 
@@ -263,19 +269,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="project">Project</h1>
-<p>We&apos;ll start out trying some basic CSS styling in Part 1 to get some practice and learn how to make the page look better.  From there we&apos;ll start trying out Sass - a CSS Compiler - to work through styling a sample page more efficiently.  We&#x2019;ll utilize Sass variables, mixins and nesting to make our development easier!</p>
-<h1 id="prep-work">Prep Work </h1>
+                                <h3 id="part-1-styling-with-css">Part 1:  Styling with CSS </h3>
 <ol>
-<li><p>Open your command line terminal (Git Bash on Windows, iTerm2 on Macs) and type the command:  <code>gem install sass</code></p>
-<p>Output should look similar to :</p>
-<p><img src="../images/image02.png" alt=""></p>
+<li><p>Choose a color palette from <a href="https://www.google.com/url?q=http://colorhunt.co/&amp;sa=D&amp;ust=1478381675849000&amp;usg=AFQjCNEXcVJYXfFWdPSAFyEoq4PM_tnBMQ" target="_blank">colorhunt.co</a> and make note of the color hex values (the #XXXXXX that displays when you hover over the color) to use as the colors in your project.  You can also just use the one we selected: <a href="https://www.google.com/url?q=http://colorhunt.co/c/3986&amp;sa=D&amp;ust=1478381675850000&amp;usg=AFQjCNHw0H2Makp2pEbucw5vRFceZ5uDFQ" target="_blank">colorhunt.co/c/3986</a> </p>
 </li>
-<li><p>Check that you&#x2019;ve got everything installed by typing:  <code>sass -v</code></p>
-<p>Output should look like this:</p>
-<p><img src="../images/image04.png" alt=""></p>
+<li><p>Scroll through the list of fonts on google webfonts (<a href="https://www.google.com/url?q=https://www.google.com/fonts&amp;sa=D&amp;ust=1478381675851000&amp;usg=AFQjCNHzwozQ7Hn7o5A8kVzLbdZlrw_aEQ" target="_blank">google.com/fonts</a>) and choose two fonts that you like and look nice together for your website or use the fonts we selected: Montserrat &amp; Neuton. Fonts can be imported by inserting the following code in your CSS file:</p>
+<p><code>@import url(https://fonts.googleapis.com/css?family=Montserrat|Neuton);</code></p>
+<p>Typically websites will include a serif font for the body and a sans-serif for the headers.</p>
+<ol>
+<li><p>Click the blue &#x201C;Add to Collection button&#x201D; on the right of each one you want to use</p>
+</li>
+<li><p>At the bottom of the page click on the &#x201C;Use&#x201D; button.</p>
+</li>
+<li><p>Leave just the &#x201C;Normal&#x201D; box checked and scroll down to step 3 &#x201C;Add this code to your website:&#x201D;</p>
+</li>
+<li><p>Click on the import tab and copy that code and paste it in the top of your CSS file.</p>
 </li>
 </ol>
+</li>
+<li><p>Fork the <strong>CSSCompilerPractice</strong> repository (<a href="https://www.google.com/url?q=http://bit.ly/CnCCmp&amp;sa=D&amp;ust=1478381675854000&amp;usg=AFQjCNErZXRWwUn85j0f3ZhjdLCZzoC6Cw" target="_blank">bit.ly/CnCCmp</a>) to your own account</p>
+</li>
+<li><p>Clone the repository to your computer using Git Bash or iTerm2</p>
+</li>
+<li><p>Open the <strong>index.html</strong> file in Google Chrome.  It doesn&#x2019;t look very nice, does it?  Let&#x2019;s add some styling!</p>
+</li>
+<li><p>Open the CSSCompilerPractice folder in Sublime Text.  Add CSS to the <strong>styles.css</strong> file to style your page.  Reference the CSS cheat sheet below for some of the commonly used CSS properties if you need a refresher or try googling things!</p>
+<p>If you need some inspiration try to make your page look similar to the image here: <a href="https://www.google.com/url?q=http://bit.ly/CnCLDFS&amp;sa=D&amp;ust=1478381675857000&amp;usg=AFQjCNF5FzF7ahjrlu3p4kOdX35x83YyfQ" target="_blank">bit.ly/CnCLDFS</a> </p>
+<ol>
+<li>Style a horizontal navigation bar (If you need some help see w3schools: <a href="https://www.google.com/url?q=http://bit.ly/NavCSS&amp;sa=D&amp;ust=1478381675858000&amp;usg=AFQjCNFptIJ7tVUm1LfIj11snCv-a3I42w" target="_blank">bit.ly/NavCSS</a> )</li>
+<li>Style the main &#x201C;hero&#x201D; image with the large page heading, a smaller &#x201C;tagline&#x201D; and some about text</li>
+<li>Style a product list</li>
+<li>Style the sidebar Customer Favorites content to display on the right side</li>
+<li>Style a footer with copyright and social media links<br>
+<br></li>
+</ol>
+</li>
+<li>Once your page has been styled with CSS compare with the answer key here: <a href="https://www.google.com/url?q=http://bit.ly/CnCCSSKey&amp;sa=D&amp;ust=1478381675860000&amp;usg=AFQjCNE_ZxeCyyssLUoOCvTMf4zzMBqHcA" target="_blank">bit.ly/CnCCSSKey</a>. It may not be exact depending on how you&#x2019;ve chosen to style your page and any creative liberties you&#x2019;ve taken but will give you some idea on what your CSS might look like.</li>
+</ol>
+<p><img src="../images/drink.png" alt=""></p>
 
                                 
                                 </section>
@@ -303,14 +334,10 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Overview">
+                <a href="../css_cheat_sheet.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: CSS Cheat Sheet">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="../part-1-basic-css.html" class="navigation navigation-next " aria-label="Next page: Part 1: Basic CSS">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -319,7 +346,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Project","level":"1.2","depth":1,"next":{"title":"Part 1: Basic CSS","level":"1.3","depth":1,"path":"part-1-basic-css.md","ref":"part-1-basic-css.md","articles":[{"title":"Styling HTML","level":"1.3.1","depth":2,"path":"styling-html.md","ref":"styling-html.md","articles":[]}]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project/README.md","mtime":"2017-01-25T02:50:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-29T17:56:50.618Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Old Sass CSS","level":"1.7","depth":1,"previous":{"title":"CSS Cheat Sheet","level":"1.6","depth":1,"path":"css_cheat_sheet.md","ref":"css_cheat_sheet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project/part_1_styling_with_css.md","mtime":"2017-01-25T02:50:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-29T18:00:12.284Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -327,6 +354,18 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

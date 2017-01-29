@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Overview · GitBook</title>
+        <title>Styling HTML · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -65,8 +65,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="project/" />
+    <link rel="next" href="project/part_2_re_-styling_with_sass.html" />
     
+    
+    <link rel="prev" href="part-1-basic-css.html" />
     
 
     </head>
@@ -95,7 +97,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -135,7 +137,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="styling-html.html">
+        <li class="chapter active" data-level="1.3.1" data-path="styling-html.html">
             
                 <a href="styling-html.html">
             
@@ -254,7 +256,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Overview</a>
+        <a href="." >Styling HTML</a>
     </h1>
 </div>
 
@@ -269,13 +271,65 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="coding--cocktails-session-2">Coding &amp; Cocktails Session 2:</h1>
-<h2 id="css">Introduction to CSS </h2>
-<p><hr>
-<img src="images/image03.png" alt=""></p>
-<h3 id="overview">Overview </h3>
-<p>During the session we&#x2019;ll introduce CSS Compilers and how they can make your styling easier. We&#x2019;ll start our project with normal CSS styling and transform that into a clean and organized stylesheet using Sass! </p>
-<p><a href="http://bit.ly/CnCgloss" target="_blank"><img src="images/glossary.png" alt=""></a> <a href="https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/" target="_blank"><img src="images/tools.png" alt=""></a></p>
+                                <h1 id="styling-html">Styling HTML</h1>
+<ol>
+<li><p>In CodePen, notice we&apos;ve set up some HTML for you to practice styling.  There is already page structure content in the first box with the HTML heading.</p>
+</li>
+<li><p>In the middle box with the CSS heading, select the <code>body</code> element and change the <code>background-color</code> to the hexadecimal color  from your selected color palette.</p>
+<p> <div class="alert alert-success"><i class="octicon octicon-mortar-board" style=""></i>
+    Remember the syntax for a CSS rule looks like this:
+    ```CSS
+    selector {
+        property: value;
+    }
+    ```
+    </div></p>
+</li>
+<li><p>Select the <code>ul</code> element and set the <code>list-style-type</code> to <code>none</code>. Notice how the bullets disappear from each of the list item elements.</p>
+</li>
+<li><p>Since the list items (<code>li</code> elements) are being used for navigation purposes here, change them to have <code>display: inline;</code> styling.  Notice how that makes them sit next to each other instead of on top of each other.</p>
+</li>
+<li><p>Select the element with the id <code>#main-title</code>.</p>
+<ol>
+<li><p>Change the <code>font-family</code> to the font name that you selected from google fonts.</p>
+</li>
+<li><p>Increase the size of the text to be four times the size of the HTML (root) font-size. </p>
+</li>
+<li><p>Change the <code>color</code> to another color hex value from your chosen color palette.</p>
+</li>
+<li><p>Center the header text using the <code>text-align</code> property.</p>
+</li>
+</ol>
+</li>
+<li><p>Select the <code>img</code> element.</p>
+<ol>
+<li><p>Change the height of the image to <code>100px</code>.</p>
+</li>
+<li><p>Change the width of the image to <code>200px</code>.</p>
+</li>
+</ol>
+</li>
+<li><p>Select the <code>.section</code> class and change the <code>background-color</code> to another color within your chosen palette.</p>
+<p> Notice how the div sections don&apos;t stretch to meet the edges of the page body or eachother</p>
+</li>
+<li><p>Select the first section with the <code>.section-one</code> class</p>
+<ol>
+<li><p>Add a <code>border</code> that is 5 pixels wide and solid using another of the colors from your chosen palette.</p>
+</li>
+<li><p>Add a <code>margin</code> of <code>20px</code>. Notice how that made your border box move and added space around the <em>outside</em> of your border.</p>
+</li>
+<li><p>Add some <code>padding</code> of <code>40px</code>. Notice how that made the border box bigger around the text content and added space <em>inside</em> your border.</p>
+</li>
+</ol>
+</li>
+<li><p>In the view section scroll down until the link comes into view.  </p>
+<ol>
+<li>select the <code>a</code> (anchor) element and use the <code>text-decoration</code> property to remove the underline.</li>
+</ol>
+</li>
+</ol>
+<h3 id="documentation">Documentation</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
 
                                 
                                 </section>
@@ -303,8 +357,12 @@
 
             
                 
+                <a href="part-1-basic-css.html" class="navigation navigation-prev " aria-label="Previous page: Part 1: Basic CSS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="project/" class="navigation navigation-next navigation-unique" aria-label="Next page: Project">
+                
+                <a href="project/part_2_re_-styling_with_sass.html" class="navigation navigation-next " aria-label="Next page: Part 2:  Getting Sassy">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -315,7 +373,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Overview","level":"1.1","depth":1,"next":{"title":"Project","level":"1.2","depth":1,"path":"project/README.md","ref":"project/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-01-25T02:50:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-29T18:00:12.284Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Styling HTML","level":"1.3.1","depth":2,"next":{"title":"Part 2:  Getting Sassy","level":"1.4","depth":1,"path":"project/part_2_re_-styling_with_sass.md","ref":"project/part_2_re_-styling_with_sass.md","articles":[{"title":"Styling with Sass","level":"1.4.1","depth":2,"path":"styling-with-sass.md","ref":"styling-with-sass.md","articles":[]}]},"previous":{"title":"Part 1: Basic CSS","level":"1.3","depth":1,"path":"part-1-basic-css.md","ref":"part-1-basic-css.md","articles":[{"title":"Styling HTML","level":"1.3.1","depth":2,"path":"styling-html.md","ref":"styling-html.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"styling-html.md","mtime":"2017-01-29T17:56:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-29T18:00:12.284Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
