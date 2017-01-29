@@ -17,4 +17,3 @@
 `sass assets/sass/styles.scss assets/css/styles.css`
 
 1. Go to Chrome and refresh your page. It should again look the same. Replacing your CSS with Sass may not look very exciting but it reduces duplication in your code and makes it easier for you to change and maintain the code going forward!
-
