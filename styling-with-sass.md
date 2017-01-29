@@ -17,7 +17,34 @@
 
     1. If necessary, open the _ _normalize.scss_ file. 
     
-    2. 
+    2. Add the following to reset some default styles across browsers and allow a clean starting point for your styling.
+    
+    ```css
+    /* Reset */
+    html, body, div, h1, h2, h3, h4, h5, h6, p, a,
+    img, ul, li, aside, footer, nav, section {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+    }
+    ```
+    
+    3. In addition set the base styling for fonts. Add the following to your _ _normalize.scss_ file underneath the closing `}` for the reset styles.  Be sure to leave a blank line between the `}` and the following styles.
+    
+    ```css
+    body {
+            background-color: $color-backgrounds;
+            font-family: $font-body;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+            color: $color-headlines;
+            font-family: $font-headers;
+    }
+    ```
+    
     
 1. In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name (**$color-main**)<br><br>
 

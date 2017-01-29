@@ -139,6 +139,20 @@
 	@import "main";
 	@import "footer";
 	```
+	
+4. Open your _index.html_ file in Google Chrome.  You can do this two ways.
+	
+	1. Open Google Chrome. 
+		
+		1. From the `File` menu choose `Open File...`.
+		
+		2. Navigate to find your _index.html_ file and choose `Open`.
+		
+	2. In your File Explorer (windows) or Finder (macs) navigate to your folder containing the _index.html_ file.
+	
+		1. Right click on the file and choose `Open with`.
+		
+		2. Choose Google Chrome from the list.
 
 We've got our initial setup for our project done, now let's get to the fun part - styling!
 
