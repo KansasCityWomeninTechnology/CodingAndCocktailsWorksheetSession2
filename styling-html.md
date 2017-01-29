@@ -36,6 +36,10 @@
     1. Change the height of the image to `100px`.
     
     2. Change the width of the image to `200px`.
+    
+    {% hint style='danger' %}
+    Notice how this distorts the image so when you are styling an     image make sure to keep an eye to how your styling affects the     image.
+    {% endhint %}
 
 7. Select the `.section` class and change the `background-color` to another color within your chosen palette.
 
