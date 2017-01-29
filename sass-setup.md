@@ -115,7 +115,7 @@
 
 5. Set up project structure.
 
-	1. Right click again on that `CSS` folder in the right pane and select `New Folder`.  
+	1. Right click again on that `CSS` folder in the left pane and select `New Folder`.  
 	
 	2. Type 'sass' and press enter.
 	
