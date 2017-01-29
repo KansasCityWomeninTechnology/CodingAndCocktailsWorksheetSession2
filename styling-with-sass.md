@@ -5,9 +5,7 @@
 
 
 
-1. At the very top of your styles.scss file you’ll need to import the variables file so type in
-
-```@import “variables”;```
+1. 
 1. Add variables to the _variables.scss file. Remember these start with a $ followed by the variable name.
 
 Examples:

@@ -127,6 +127,8 @@
 
 	4. Type `_variables.scss` and press enter. This will be the file where all of our variables that we use in our project will be located.
 
+	5. Open the _styles.scss_ file.  You’ll need to import the variables file so type in ```@import “variables”;``` and save your file.
+
 
 
 
