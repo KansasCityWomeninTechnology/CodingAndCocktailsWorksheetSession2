@@ -3,11 +3,17 @@
 
 1. Start by creating some Sass variables that will represent the colors in the color palette that you selected earlier.
 
-    1. Open the _variables.scss file by double clicking on it in the left pane. Remember these start with a $ followed by the variable name.
-
-Examples:
-
-`$color-main: #F9A1BC; $color-accent: #A9EEE6;`
+    1. If needed, open the _variables.scss file by double clicking on it in the left pane. 
+    
+    2. Create your first variable using the name of your first color. Remember these start with a $ followed by the variable name.  It might look something like the following:
+    
+    ```
+    $color-main: #F9A1BC; 
+    $color-secondary: #A9EEE6;
+    $color-accent: #625772;
+    $color-background: #FEFAEC;
+    ```
+    
 1. In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name (**$color-main**)<br><br>
 
 Now our styling might look similar to this:
