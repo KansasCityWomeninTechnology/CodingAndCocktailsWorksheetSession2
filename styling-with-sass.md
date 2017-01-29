@@ -92,24 +92,9 @@ That way you don’t have to repeat nav in front of the child ul and li elements
 
 
 
-You will typically just use Sass from the start instead of doing the translation from CSS but we wanted you to see the differences between the two types of styling.
-
-9. We’ll want to make sure we have our code organized as well so create a separate file for each section of your css such as the reset, nav, main and the footer. You’ll end up with “partials” for each section (**_reset.scss**, **_nav.scss**, etc.)
-
-1. Remove the relevant CSS from **styles.scss** and place it in each partial - Nav styling goes in **_nav.scss**, the main content (product list and customer favorites) goes in **_main.scss**, etc.
-1. Import each partial file into your main **styles.scss**, for example:
-
-`@import “nav”;`
-
-1. Save all of your files, compile with the `sass` command in the command line then refresh view your page in the browser.
 
 10. Feel free to try out any more of the Sass concepts we discussed tonight using the same process.
 
-11. Compare your initial css file with the generated css file. They should be almost identical.
-
-1. In Sublime Text highlight the **originalstyles.css** file then use ctrl (windows) or cmd (macs) + click on **styles.css**
-1. Right click on one of the highlighted filenames and choose “Diff Files…”
-1. This will open a new tab showing the differences (if any) between the two files.
 
 1. Compare your **styles.sass** with our answer key here: [bit.ly/CnCSassKey](https://www.google.com/url?q=http://bit.ly/CnCSassKey&sa=D&ust=1478381675890000&usg=AFQjCNHy8sjHANATp6X20-ZMCmis6PP5pw). It may not be exact but will give you an idea on what your Sass may look like.
 
