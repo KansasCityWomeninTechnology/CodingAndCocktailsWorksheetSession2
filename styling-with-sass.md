@@ -5,14 +5,13 @@
 
     1. If needed, open the _variables.scss file by double clicking on it in the left pane. 
     
-    2. Create your first variable using the name of your first color. Remember these start with a $ followed by the variable name.  It might look something like the following:
+    2. Create your first variable for the main color of your site. Remember these start with a $ followed by the variable name.  It might look something like the following:
     
     ```
-    $color-primary: #F9A1BC; 
-    $color-secondary: #A9EEE6;
-    $color-accent: #625772;
-    $color-background: #FEFAEC;
+    $color-primary: #F9A1BC;
     ```
+    
+    3. Create variables for the remaining colors in your site.  It is common to name your color variables according to how they will be used in your site.  Things like color-secondary, color-accent, color-background, etc.
     
 1. In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name (**$color-main**)<br><br>
 

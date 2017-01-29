@@ -24,7 +24,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>LadyDev Bar &amp; Grill</title>
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<nav class="navbar">
