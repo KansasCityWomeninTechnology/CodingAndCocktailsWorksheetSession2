@@ -1,12 +1,9 @@
 ##Sass
 
 
-1. Replace hex and rgba color codes with Sass variables
+1. Start by creating some Sass variables that will represent the colors in the color palette that you selected earlier.
 
-
-
-1. 
-1. Add variables to the _variables.scss file. Remember these start with a $ followed by the variable name.
+    1. Open the _variables.scss file by double clicking on it in the left pane. Remember these start with a $ followed by the variable name.
 
 Examples:
 
