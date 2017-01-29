@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>CSS Cheat Sheet · GitBook</title>
+        <title>Styling HTML · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="project/part_1_styling_with_css.html" />
+    <link rel="next" href="project/part_2_re_-styling_with_sass.html" />
     
     
-    <link rel="prev" href="homework.html" />
+    <link rel="prev" href="part-1-basic-css.html" />
     
 
     </head>
@@ -137,7 +137,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="styling-html.html">
+        <li class="chapter active" data-level="1.3.1" data-path="styling-html.html">
             
                 <a href="styling-html.html">
             
@@ -200,7 +200,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="css_cheat_sheet.html">
+        <li class="chapter " data-level="1.6" data-path="css_cheat_sheet.html">
             
                 <a href="css_cheat_sheet.html">
             
@@ -256,7 +256,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >CSS Cheat Sheet</a>
+        <a href="." >Styling HTML</a>
     </h1>
 </div>
 
@@ -271,122 +271,64 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="css-cheat-sheet">CSS Cheat Sheet </h1>
-<p>This cheat sheet shares some commonly used CSS properties. If you want to know how to do something googling it is usually very helpful often taking you to stack overflow or w3schools.  Try searching google for css margin to get a better understanding of the margin property.  Another place to look is the documentation on the mozilla developer network pages here: <a href="https://www.google.com/url?q=http://bit.ly/MDNDOC&amp;sa=D&amp;ust=1478381675896000&amp;usg=AFQjCNESi-TmaUMe3gxizIbEZhB_sh5TwQ" target="_blank">bit.ly/MDNDOC</a> </p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-<th>Value</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>margin<img src="images/image07.png" alt="Screen Shot 2016-03-26 at 10.45.42 AM.png"></td>
-<td>Adds spacing around an element outside the border (refer to the box model diagram to the left)</td>
-<td>Any pixel number value</td>
-<td><code>p { margin: 10px; } p { margin: 0 auto; }</code></td>
-</tr>
-<tr>
-<td>padding</td>
-<td>Add spacing between the element content and the element border (refer to the box model diagram above)</td>
-<td>Any pixel number value</td>
-<td><code>p { padding: 10px 0 15px 20px }</code></td>
-</tr>
-<tr>
-<td>border</td>
-<td>Specifies the border styling</td>
-<td>Width: any pixel number value</td>
-<td><code>p { border: 2px solid blue; }</code></td>
-</tr>
-<tr>
-<td>color</td>
-<td>Sets the font color</td>
-<td>Hex color values or color names</td>
-<td><code>p { color: #ffffff; }</code></td>
-</tr>
-<tr>
-<td>text-align</td>
-<td>Aligns text according to value</td>
-<td>left</td>
-<td><code>p { text-align: center; }</code></td>
-</tr>
-<tr>
-<td>text-decoration</td>
-<td>Add decoration to text</td>
-<td>none</td>
-<td><code>a { text-decoration: none; }</code></td>
-</tr>
-<tr>
-<td>font-family</td>
-<td>Set the font family (or typeface) of the text</td>
-<td>Any font name</td>
-<td><code>p { font-family: Neuton, &quot;Times New Roman&quot;, Times, serif; }</code></td>
-</tr>
-<tr>
-<td>font-size</td>
-<td>Set the size of the text</td>
-<td>Numeric value in px, em or rem</td>
-<td><code>h1 { font-size: 4em; }</code></td>
-</tr>
-<tr>
-<td>font-style</td>
-<td>Sets the text style</td>
-<td>Normal</td>
-<td><code>h4{ font-style: italic; }</code></td>
-</tr>
-<tr>
-<td>font-weight</td>
-<td>Set the weight of the text</td>
-<td>normal</td>
-<td><code>h3 { font-weight: bold }</code></td>
-</tr>
-<tr>
-<td>background-color</td>
-<td>Sets the color of the selected elements background</td>
-<td>Any hex color value or color name</td>
-<td><code>body { background-color: #ffffff; }</code></td>
-</tr>
-<tr>
-<td>background-image</td>
-<td>Set the background of the element to the image supplied</td>
-<td>Image url</td>
-<td><code>.hero { background-image: url(&#x2018;images/image.png&#x2019;); }</code></td>
-</tr>
-<tr>
-<td>background-repeat</td>
-<td>Specifies whether or not a background image should be repeated</td>
-<td>repeat</td>
-<td><code>body { background-repeat: no-repeat; }</code></td>
-</tr>
-<tr>
-<td>background-position</td>
-<td>Sets the starting position of a background image</td>
-<td>center center</td>
-<td><code>.hero { background-position: right center; }</code></td>
-</tr>
-<tr>
-<td>list-style-type</td>
-<td>Determines the bullet style on the list</td>
-<td>circle</td>
-<td><code>ul { list-style-type: none; }</code></td>
-</tr>
-<tr>
-<td>float</td>
-<td>Specifies whether an element should float.</td>
-<td>Right</td>
-<td><code>img { float: left; }</code></td>
-</tr>
-<tr>
-<td>clear</td>
-<td>Does not allow floating to the specified side of an element</td>
-<td>Right</td>
-<td><code>.footer { clear: both; }</code></td>
-</tr>
-</tbody>
-</table>
+                                <h1 id="styling-html">Styling HTML</h1>
+<ol>
+<li><p>In CodePen, notice we&apos;ve set up some HTML for you to practice styling.  There is already page structure content in the first box with the HTML heading.</p>
+</li>
+<li><p>In the middle box with the CSS heading, select the <code>body</code> element and change the <code>background-color</code> to the hexadecimal color  from your selected color palette.</p>
+<p> <div class="alert alert-success"><i class="octicon octicon-mortar-board" style=""></i>
+    Remember the syntax for a CSS rule looks like this:
+    </div></p>
+<pre><code class="lang-css"> <span class="hljs-selector-tag">selector</span> {
+     <span class="hljs-attribute">property</span>: value;
+ }
+</code></pre>
+</li>
+<li><p>Select the <code>ul</code> element and set the <code>list-style-type</code> to <code>none</code>. Notice how the bullets disappear from each of the list item elements.</p>
+</li>
+<li><p>Since the list items (<code>li</code> elements) are being used for navigation purposes here, change them to have <code>display: inline;</code> styling.  Notice how that makes them sit next to each other instead of on top of each other.</p>
+</li>
+<li><p>Select the element with the id <code>#main-title</code>.</p>
+<ol>
+<li><p>Change the <code>font-family</code> to the font name that you selected from google fonts.</p>
+</li>
+<li><p>Increase the size of the text to be four times the size of the HTML (root) font-size. </p>
+</li>
+<li><p>Change the <code>color</code> to another color hex value from your chosen color palette.</p>
+</li>
+<li><p>Center the header text using the <code>text-align</code> property.</p>
+</li>
+</ol>
+</li>
+<li><p>Select the <code>img</code> element.</p>
+<ol>
+<li><p>Change the height of the image to <code>100px</code>.</p>
+</li>
+<li><p>Change the width of the image to <code>200px</code>.</p>
+</li>
+</ol>
+</li>
+<li><p>Select the <code>.section</code> class and change the <code>background-color</code> to another color within your chosen palette.</p>
+<p> Notice how the div sections don&apos;t stretch to meet the edges of the page body or eachother</p>
+</li>
+<li><p>Select the first section with the <code>.section-one</code> class</p>
+<ol>
+<li><p>Add a <code>border</code> that is 5 pixels wide and solid using another of the colors from your chosen palette.</p>
+</li>
+<li><p>Add a <code>margin</code> of <code>20px</code>. Notice how that made your border box move and added space around the <em>outside</em> of your border.</p>
+</li>
+<li><p>Add some <code>padding</code> of <code>40px</code>. Notice how that made the border box bigger around the text content and added space <em>inside</em> your border.</p>
+</li>
+</ol>
+</li>
+<li><p>In the view section scroll down until the link comes into view.  </p>
+<ol>
+<li>select the <code>a</code> (anchor) element and use the <code>text-decoration</code> property to remove the underline.</li>
+</ol>
+</li>
+</ol>
+<h3 id="documentation">Documentation</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
 
                                 
                                 </section>
@@ -414,12 +356,12 @@
 
             
                 
-                <a href="homework.html" class="navigation navigation-prev " aria-label="Previous page: Homework">
+                <a href="part-1-basic-css.html" class="navigation navigation-prev " aria-label="Previous page: Part 1: Basic CSS">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="project/part_1_styling_with_css.html" class="navigation navigation-next " aria-label="Next page: Old Sass CSS">
+                <a href="project/part_2_re_-styling_with_sass.html" class="navigation navigation-next " aria-label="Next page: Part 2:  Getting Sassy">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -430,7 +372,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS Cheat Sheet","level":"1.6","depth":1,"next":{"title":"Old Sass CSS","level":"1.7","depth":1,"path":"project/part_1_styling_with_css.md","ref":"project/part_1_styling_with_css.md","articles":[]},"previous":{"title":"Homework","level":"1.5","depth":1,"path":"homework.md","ref":"homework.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"css_cheat_sheet.md","mtime":"2017-01-25T02:50:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-29T18:03:50.759Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Styling HTML","level":"1.3.1","depth":2,"next":{"title":"Part 2:  Getting Sassy","level":"1.4","depth":1,"path":"project/part_2_re_-styling_with_sass.md","ref":"project/part_2_re_-styling_with_sass.md","articles":[{"title":"Styling with Sass","level":"1.4.1","depth":2,"path":"styling-with-sass.md","ref":"styling-with-sass.md","articles":[]}]},"previous":{"title":"Part 1: Basic CSS","level":"1.3","depth":1,"path":"part-1-basic-css.md","ref":"part-1-basic-css.md","articles":[{"title":"Styling HTML","level":"1.3.1","depth":2,"path":"styling-html.md","ref":"styling-html.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"styling-html.md","mtime":"2017-01-29T18:06:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-29T18:07:15.312Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
