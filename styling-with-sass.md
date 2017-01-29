@@ -1,6 +1,6 @@
 ##Sass
 
-
+###Variables
 1. Start by creating some Sass variables that will represent the colors in the color palette that you selected earlier.
 
     1. If needed, open the _variables.scss file by double clicking on it in the left pane. 
@@ -13,7 +13,9 @@
     
     3. Create variables for the remaining colors in your site.  It is common to name your color variables according the color name.  Things like `$turquoise`, `$white`, `$dark-purple`, etc.
     
-2. We'll start with normalizing the styling.  This is necessary to help things look consistent across browsers (ie. Microsoft Edge, Google Chrome, Internet Explorer, Safari, etc.) as each browser implements features at different times or somtimes slightly different than how the others do.  
+    
+###Normalizing
+1. We'll start with normalizing the styling.  This is necessary to help things look consistent across browsers (ie. Microsoft Edge, Google Chrome, Internet Explorer, Safari, etc.) as each browser implements features at different times or somtimes slightly different than how the others do.  
 
     1. If necessary, open the _ _normalize.scss_ file. 
     
@@ -44,8 +46,9 @@
             font-family: $header-font;
     }
     ```
-    
-3. Add fonts for your page.
+
+###Fonts
+1. Add fonts for your page.
         
         1. Back in Google Fonts ([fonts.google.com](https://fonts.google.com/)), make sure you have at least two fonts selected, one to use for headers and one to use for body text. 
 
@@ -61,15 +64,13 @@
         Often you'll want to provide backup fonts for the page to fall back on in case it can't load the chosen font.  A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif.  For serif fonts it might include "Times New Roman", Times, serif as backups.
         {% endhint %}
 
-1. Save the Sass files.
-1. Now we need to compile our Sass into CSS. In the command line type:
+2. Save the _ _variables.scss_, _ _styles.scss_, and _ _normalize.scss_ files.
 
-`sass assets/sass/styles.scss assets/css/styles.css`
+3. Now compile the Sass into CSS. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.  Type: `sass sass/styles.scss css/styles.css`
 
-1. Go to Chrome and refresh your page. If you’ve used the same colors it should look exactly the same but now you only have one place to change a color instead of spread throughout your CSS file! If you want to see the “magic” switch one of the color variables maybe to white (#FFFFFF), re-run your sass command and then refresh your page.
-1. Next, let’s change the font stacks to use variables such as **$font-headers** and **$font-body**.
+4. Go to Google Chrome and refresh your page. You should notice the font styling has changed and maybe some of the page spacing.
 
-1. Follow the same process as above adding variables, setting the values and replacing the font stacks in your css to use the variables you created. Don’t forget to compile like we did in step 5f above and then refresh your page in the browser!
+
 
 7. Use nesting to simplify your stylesheet - remember not to go more than 3-4 levels deep though!
 
@@ -89,23 +90,7 @@ That way you don’t have to repeat nav in front of the child ul and li elements
 1. Open up your **assets/css/styles.css** file in Sublime Text and notice how the nested sass compiles to the parent-child selectors.
 1. Go to Chrome and refresh your page. It should still look the same.
 
-8. Let’s try a mixin now! We can use one for list styling, let’s call it list-types.
 
-1. Create a **_mixins.scss** file in the **assets/sass** folder
-1. Add your mixin to the file - this is adding a “function” to set the three properties list-style, margin and padding anytime this mixin is used in your Sass file:<br>
-
-![](../images/image00.png)
-
-1. In your styles.scss file replace any styling where you set those three items (likely in your navigation, product list and footer elements) with:
-
-`@include list-reset();`
-
-1. Save both _**mixins.scss** and **styles.scss**
-1. In the command line type:
-
-`sass assets/sass/styles.scss assets/css/styles.css`
-
-1. Go to Chrome and refresh your page. It should again look the same. Replacing your CSS with Sass may not look very exciting but it reduces duplication in your code and makes it easier for you to change and maintain the code going forward!
 
 You will typically just use Sass from the start instead of doing the translation from CSS but we wanted you to see the differences between the two types of styling.
 
