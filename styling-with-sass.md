@@ -31,17 +31,17 @@
     }
     ```
     
-    3. In addition set the base styling for fonts. Add the following to your _ _normalize.scss_ file underneath the closing `}` for the reset styles.  Be sure to leave a blank line between the `}` and the following styles.
+    3. In addition set the base styling for fonts. Add the following to your _ _normalize.scss_ file underneath the closing `}` for the reset styles.  Be sure to leave a blank line between the `}` and the following styles. Make sure you 
     
     ```css
     body {
-            background-color: $color-backgrounds;
-            font-family: $font-body;
+            background-color: $cream;
+            font-family: $body-font;
     }
 
     h1,h2,h3,h4,h5,h6 {
-            color: $color-headlines;
-            font-family: $font-headers;
+            color: $dark-purple;
+            font-family: $header-font;
     }
     ```
     
