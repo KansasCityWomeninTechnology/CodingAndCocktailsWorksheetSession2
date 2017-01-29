@@ -123,11 +123,11 @@
 
 	4. Type `styles.scss` and press enter. This will be your main Sass styling file and will only contain import statements when we’re done.
 	
-	5. In the project pane on the right, right click on the sass folder and select `New File`. 
+	5. In the project pane on the left, right click on the sass folder and select `New File`. 
 
 	4. Type `_variables.scss` and press enter. This will be the file where all of our variables that we use in our project will be located.
 
-	5. Open the _styles.scss_ file.  You’ll need to import the variables file so type in ```@import “variables”;``` and save your file.
+	5. Open the _styles.scss_ file by double clicking on it in the left pane if it is not already open.  You’ll need to import the variables file so type in ```@import “variables”;``` and save your file.
 
 We've got our initial setup for our project done, now let's get to the fun part - styling!
 
