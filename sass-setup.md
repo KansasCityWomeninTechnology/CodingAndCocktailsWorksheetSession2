@@ -129,6 +129,6 @@
 
 	5. Open the _styles.scss_ file.  You’ll need to import the variables file so type in ```@import “variables”;``` and save your file.
 
-
+We've got our initial setup for our project done, now let's get to the fun part - styling!
 
 
