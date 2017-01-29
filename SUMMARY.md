@@ -7,6 +7,7 @@
 * [Part 2:  Getting Sassy](project/part_2_re_-styling_with_sass.md)
   * [Sass Setup](sass-setup.md)
   * [Variables, Normalizing and Fonts](styling-with-sass.md)
+  * [Normalizing](normalizing.md)
   * [Mixins](mixins.md)
 * [Homework](homework.md)
 * [CSS Cheat Sheet](css_cheat_sheet.md)
