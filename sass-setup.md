@@ -142,7 +142,7 @@
 	
 4. Open your _index.html_ file in Google Chrome.  You can do this two ways.
 	
-	1. Open Google Chrome. 
+	1. Open Google Chrome and notice the current styling. 
 		
 		1. From the `File` menu choose `Open File...`.
 		

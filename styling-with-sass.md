@@ -31,7 +31,7 @@
     }
     ```
     
-    3. In addition set the base styling for fonts. Add the following to your _ _normalize.scss_ file underneath the closing `}` for the reset styles.  Be sure to leave a blank line between the `}` and the following styles. Make sure you 
+    3. In addition set the base styling for fonts. Add the following to your _ _normalize.scss_ file underneath the closing `}` for the reset styles.  Be sure to leave a blank line between the `}` and the following styles. Make sure you replace the variables with the colors that you've chosen and set up as variables.
     
     ```css
     body {
@@ -45,12 +45,21 @@
     }
     ```
     
-    
-1. In the places in your styles.scss file where you reference these colors change out the hex value (#F9A1BC) with your variable name (**$color-main**)<br><br>
+3. Add fonts for your page.
+        
+        1. Back in Google Fonts ([fonts.google.com](https://fonts.google.com/)), make sure you have at least two fonts selected, one to use for headers and one to use for body text. 
 
-Now our styling might look similar to this:
-
-![](../images/image06.png)
+        2. This time we'll find the `import` way of embedding the fonts.
+        
+        3. Copy the import statement for your fonts and paste it as the first line in your _styles.scss_ file.
+        
+        4. In the _ _variables.scss_ file, set up the variables for `$body-font` and `$header-font` referencing the Google Fonts font-families.  For example one variable might look like: `$body-font: "Work Sans", Arial, Helvetica, sans-serif;
+        
+        {% hint style='tip' %}
+        If you select a font that is two words you'll need to wrap that in quotation marks.
+        
+        Often you'll want to provide backup fonts for the page to fall back on in case it can't load the chosen font.  A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif.  For serif fonts it might include "Times New Roman", Times, serif as backups.
+        {% endhint %}
 
 1. Save the Sass files.
 1. Now we need to compile our Sass into CSS. In the command line type:
