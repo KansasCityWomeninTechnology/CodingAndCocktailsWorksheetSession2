@@ -6,7 +6,7 @@
   * [Styling HTML](styling-html.md)
 * [Part 2:  Getting Sassy](project/part_2_re_-styling_with_sass.md)
   * [Sass Setup](sass-setup.md)
-  * [Variables, Normalizing and Fonts](styling-with-sass.md)
+  * [Variables](styling-with-sass.md)
   * [Normalizing](normalizing.md)
   * [Mixins](mixins.md)
 * [Homework](homework.md)
