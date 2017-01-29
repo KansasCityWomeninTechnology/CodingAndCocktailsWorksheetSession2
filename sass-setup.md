@@ -2,7 +2,7 @@
 
 1. In your `CodingAndCocktails` folder in your home directory create a `CSS` folder
 
-2. Open Atom.
+2. Open Atom and set up your HTML file.
 
     1. Close any open tabs by hovering over them with your mouse at the top of the screen and clicking on the small x that appears.
     
@@ -16,7 +16,7 @@
     
     6. A new file should display on the left and should open in your main work area.  
     
-3. Copy and paste the following HTML code into your _index.html_ file.
+    7. Copy and paste the following HTML code into your _index.html_ file.
 
     ```html
     <!DOCTYPE html>
@@ -111,10 +111,12 @@
 </html>
     ```
     
-4. Save the file.
+	8. Save the file.
 
-5. Right click again on that `CSS` folder in the right pane and select `New Folder`.  
+5. Set up project structure.
 
-6. Type 'sass' and press enter.
+	1. Right click again on that `CSS` folder in the right pane and select `New Folder`.  
+	
+	2. Type 'sass' and press enter.
 
 7. 
