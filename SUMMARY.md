@@ -8,6 +8,10 @@
   * [Sass Setup](sass-setup.md)
   * [Variables](styling-with-sass.md)
   * [Normalizing](normalizing.md)
+  * [Fonts](fonts.md)
+  * Nav Styling
+  * Footer Styling
+  * [Body Styling](body-styling.md)
   * [Mixins](mixins.md)
 * [Homework](homework.md)
 * [CSS Cheat Sheet](css_cheat_sheet.md)
