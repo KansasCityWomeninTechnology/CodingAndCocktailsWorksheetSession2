@@ -1,7 +1,5 @@
 ##Sass
 
-2. Create a **sass** folder in the **assets** folder
-
 1. In the sass folder, create a **styles.scss** file. This will be your main Sass styling file and will only contain import statements when we’re done.
 
 1. Copy everything from your **styles.css** file into **styles.scss** (Hint: use ctrl-a (windows) or cmd-a (macs) to select everything in your file)

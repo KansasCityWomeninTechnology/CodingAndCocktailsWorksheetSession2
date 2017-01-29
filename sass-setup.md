@@ -118,5 +118,9 @@
 	1. Right click again on that `CSS` folder in the right pane and select `New Folder`.  
 	
 	2. Type 'sass' and press enter.
+	
+	3. In the project pane on the right, right click on the sass folder and select `New File`. 
 
-7. 
+	4. Type `styles.scss` and press enter. This will be your main Sass styling file and will only contain import statements when we’re done.
+
+
