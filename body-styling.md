@@ -116,7 +116,6 @@
     {% hint style='tip' %}
     Use the key combination ctrl + c to get back to your command prompt.
     {% endhint %}
-
     
     18. Use a `border-radius:` to make the image circular.  Try different values to see what they look like.  Save the file and refresh in Google Chrome to view changes.  
     
