@@ -13,13 +13,14 @@ Check out w3schools navigation styling if you'd like some additional examples or
 
 4. Set up some basic styling for the `nav` by setting the following properties:
 
-    * `background-color`
+    * `background-color:`
     
-    * `text-align` If you'd like to align your items to the right like in our sample image set this to `right`.
+    * `text-align:` 
+    If you'd like to align your items to the right like in our sample image set this to `right;`.
     
-    * `font-family`
+    * `font-family:`
     
-    * `border-bottom` 
+    * `border-bottom:` 
     You might choose to lighten or darken your background-color here by using `lighten($my-color, 20%)` to lighten it by 20% or `darken($my-color, 20%)` to darken it by 20%. A solid border would be most appropriate here.
 
 3. The bullets on the list don't make for a visually appealing.  Since the `ul` (unordered list) element is a child of the `nav` element, nest the `ul` selector inside the `nav` element selector.  It should look something like this where the `...` ellipsis indicate code not shown in the example:
@@ -32,14 +33,14 @@ Check out w3schools navigation styling if you'd like some additional examples or
     }
     ```
 
-4. Remove the bullets from the `ul` by using the `list-style-type` property and setting it to the value `none`.  Your styling should now look something like this:
+4. Remove the bullets from the `ul` by using the `list-style-type:` property and setting it to the value `none;`.  Your styling should now look something like this:
 
     ```sass
     nav {
         background-color: $orange;
         text-align: right;
         font-family: $body-font;
-        border-bottom: 5px solid lighten($orange, 10%);
+        border-bottom: 5px solid lighten($orange, 20%);
         
         ul {
             list-style-type: none;
@@ -47,15 +48,15 @@ Check out w3schools navigation styling if you'd like some additional examples or
     }
     ```
     
-4. Also nested inside the `nav` selector, select the `li` (list item) elements.  Make sure these have styling of `display: inline` to make sure they are shown in a horizontal row and `padding: 2px;` to space the items out a bit.
+4. Also nested inside the `nav` selector, select the `li` (list item) elements.  Make sure these have styling of `display: inline;` to make sure they are shown in a horizontal row and `padding: 2px;` to space the items out a bit.
 
 5. Finally, style the `a` (anchor) elements. Set the following properties on these:
 
-    * Set `display` to `inline-block;` to make sure everything stays on the same horizontal line.
+    * Set `display:` to `inline-block;` to make sure everything stays on the same horizontal line.
     
-    * Set `padding` to `6px 20px;` to give some space around the text.  This will put a 6 pixel padding on the left and the right and a 20 pixel padding on the top and bottom.  
+    * Set `padding:` to `6px 20px;` to give some space around the text.  This will put a 6 pixel padding on the left and the right and a 20 pixel padding on the top and bottom.  
     
-    * Set `text-decoration` to `none;` to remove the underline on the link text.
+    * Set `text-decoration:` to `none;` to remove the underline on the link text.
     
     * Set `font-weight:` to `bold;` to make the text a bit heavier.
     
@@ -69,18 +70,7 @@ Check out w3schools navigation styling if you'd like some additional examples or
     
     1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.
     
-    {% hint style='tip' %}
-    The command cd will let you change directory (or folder)
-    The command ls will list the files in your current directory
-    The command pwd will print working directory, or, show you what directory (or folder) you're currently in
-    Join us in March for more information on these commands and more as we learn about the Command Line!
-    {% endhint %}
-    
     2.  Type: `sass sass/styles.scss css/styles.css`
-
-7. Go to Google Chrome and refresh your page. You should notice the font styling has changed.
-
-
 
 8. Go to Google Chrome and refresh your page. You should have a more visually appealing navigation bar now.
 
