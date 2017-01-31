@@ -3,9 +3,15 @@ Style a horizontal navigation bar.
 
 Check out w3schools navigation styling if you'd like some additional examples or an alternate explanation: [bit.ly/NavCSS](http://bit.ly/NavCSS)
 
-1. The navigation menu is a list of links. Start by selecting the `nav` element in the _ _nav.scss_ file.
+1. In the project pane on the left, right click on the sass folder and select `New File`. 
 
-2. Set up some basic styling for the `nav` by setting the following properties:
+2. Type `_nav.scss` and press enter. This will be the partial file where the styling for the navigation bar in our project will be located.
+
+3. Don't forget to import it into your _styles.scss_ file.
+
+3. The navigation menu is a list of links. Start by selecting the `nav` element in the _ _nav.scss_ file.
+
+4. Set up some basic styling for the `nav` by setting the following properties:
 
     * `background-color`
     
@@ -57,11 +63,24 @@ Check out w3schools navigation styling if you'd like some additional examples or
     
     * Set the `font-size:` to `1.5em;` to make it a bit larger and easier to read the page navigation.
     
-7. Now compile the Sass into CSS. 
+5. Save the _styles.scss_, and _ _nav.scss_ files.
+
+6. Now compile the Sass into CSS. 
     
     1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.
     
+    {% hint style='tip' %}
+    The command cd will let you change directory (or folder)
+    The command ls will list the files in your current directory
+    The command pwd will print working directory, or, show you what directory (or folder) you're currently in
+    Join us in March for more information on these commands and more as we learn about the Command Line!
+    {% endhint %}
+    
     2.  Type: `sass sass/styles.scss css/styles.css`
+
+7. Go to Google Chrome and refresh your page. You should notice the font styling has changed.
+
+
 
 8. Go to Google Chrome and refresh your page. You should have a more visually appealing navigation bar now.
 
