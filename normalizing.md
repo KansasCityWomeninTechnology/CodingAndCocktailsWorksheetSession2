@@ -8,7 +8,7 @@ We'll start with normalizing the styling.  This is necessary to help things look
     ```css
     /* Reset */
     html, body, div, h1, h2, h3, h4, h5, h6, p, a,
-    img, ul, li, aside, footer, nav, section {
+    img, li, aside, footer, nav, section {
             margin: 0;
             padding: 0;
             border: 0;
