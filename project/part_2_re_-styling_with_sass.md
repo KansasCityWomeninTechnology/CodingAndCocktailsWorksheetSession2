@@ -4,7 +4,7 @@ You've had some practice with basic CSS, now let's move on to practicing styling
 
 If you follow our instructions your page will end up looking like the example below but feel free to add in some of your own creativity if you feel comfortable!
 
-
+![](/images/ladyDevBarAndGrill.png)
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
