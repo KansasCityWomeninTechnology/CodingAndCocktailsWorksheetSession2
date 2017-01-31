@@ -131,7 +131,7 @@
     
     2. See if you can style the `h2` and `ul` elements inside the sidebar class to look similar to the example image that you can view here: https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/ladyDevBarAndGrill.png 
     
-8. Save 
+8. Save the _ _main.scss_ file and reload the page in Google Chrome.  Your page should be looking a _lot_ more stylish than when we started! Keep up the hard work!
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
