@@ -46,10 +46,15 @@ Check out w3schools navigation styling if you'd like some additional examples or
 5. Finally, style the `a` (anchor) elements. Set the following properties on these:
 
     * Set `display` to `inline-block;` to make sure everything stays on the same horizontal line.
+    
     * Set `padding` to `6px 20px;` to give some space around the text.  This will put a 6 pixel padding on the left and the right and a 20 pixel padding on the top and bottom.  
+    
     * Set `text-decoration` to `none;` to remove the underline on the link text.
+    
     * Set `font-weight:` to `bold;` to make the text a bit heavier.
+    
     * Set the font `color:` to one of your chosen color palette's color variables `$white;`
+    
     * Set the `font-size:` to `1.5em;` to make it a bit larger and easier to read the page navigation.
     
 ###Documentation
