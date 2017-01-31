@@ -32,37 +32,7 @@ Add fonts for your page.
     
     2.  Type: `sass sass/styles.scss css/styles.css`
 
-7. Go to Google Chrome and refresh your page. You should notice the font styling has changed and maybe some of the page spacing.
-
-
-
-7. Use nesting to simplify your stylesheet - remember not to go more than 3-4 levels deep though!
-
-1. In places where you have parent-child selectors, nest the child selectors inside the parent class or element.
-1. For example instead of:<br>
-![](../images/image05.png)
-You might have this:<br>
-![](../images/image01.png)
-
-That way you don’t have to repeat nav in front of the child ul and li elements. Similar to the way you nest your html elements you can now organize your Sass file with nesting.
-
-1. Save the Sass files.
-1. In the command line type
-
-`sass assets/sass/styles.scss assets/css/styles.css`
-
-1. Open up your **assets/css/styles.css** file in Sublime Text and notice how the nested sass compiles to the parent-child selectors.
-1. Go to Chrome and refresh your page. It should still look the same.
-
-
-
-
-10. Feel free to try out any more of the Sass concepts we discussed tonight using the same process.
-
-
-1. Compare your **styles.sass** with our answer key here: [bit.ly/CnCSassKey](https://www.google.com/url?q=http://bit.ly/CnCSassKey&sa=D&ust=1478381675890000&usg=AFQjCNHy8sjHANATp6X20-ZMCmis6PP5pw). It may not be exact but will give you an idea on what your Sass may look like.
-
-**Congratulations! You’ve just styled a webpage using a CSS Compiler!**
+7. Go to Google Chrome and refresh your page. You should notice the font styling has changed.
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
