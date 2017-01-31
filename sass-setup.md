@@ -122,11 +122,11 @@
 
 	1. Right click again on that `CSS` folder in the left pane and select `New Folder`.  
 	
-	2. Type 'sass' and press enter.
+	2. Type `sass` and press enter.
 	
 	3. Right click again on that main `CSS` folder in the left pane and select `New Folder`.  
 	
-	4. Type 'css' and press enter.
+	4. Type `css` and press enter.
 	
 	5. In the project pane on the left, right click on the `sass` folder and select `New File`. 
 
@@ -163,7 +163,7 @@
 		
 		2. Choose Google Chrome from the list.
 
-We've got our initial setup for our project done, now let's get to the fun part - styling!
+The page doesn't look very good yet but we've got our initial setup for our project done, now let's get to the fun part - styling!
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
