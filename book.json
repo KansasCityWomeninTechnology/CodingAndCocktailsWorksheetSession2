@@ -5,6 +5,6 @@
         "sectionx"
     ],
     "pluginsConfig": {
-        "favicon": "assets/favicon.ico"
+        "favicon": "images/favicon.ico"
     }
 }
