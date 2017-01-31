@@ -16,9 +16,19 @@ We'll start with some sample HTML and get a chance to try out changing some styl
 6. Scroll through the fonts and choose one font that you like.
     
     1. Click the red `+` in the upper right of that font's section
+    
+    ![](/images/select-font.png)
+    
     2. At the bottom of your page, a box with the text `1 Family Selected` will appear.  
+    
+    ![](/images/font-selected.png)
+    
     3. Click on the `1 Family Selected` section
+    
     4. Copy the text in the grey box under the `STANDARD` heading
+    
+    ![](/images/font-normal.png)
+    
     5. Back in CodePen, paste the copied `link` tag text just above the `</head>` tag.
 
 You now have the information you'll need when styling your page, continue on to change the styling.
