@@ -57,6 +57,15 @@ Check out w3schools navigation styling if you'd like some additional examples or
     
     * Set the `font-size:` to `1.5em;` to make it a bit larger and easier to read the page navigation.
     
+7. Now compile the Sass into CSS. 
+    
+    1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.
+    
+    2.  Type: `sass sass/styles.scss css/styles.css`
+
+8. Go to Google Chrome and refresh your page. You should have a more visually appealing navigation bar now.
+
+    
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
