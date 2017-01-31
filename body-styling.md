@@ -36,9 +36,22 @@
     
     7. You'll also want to add some extra margin on the bottom of the `h2` element to separate it from the `p` text.
 
-3.  Style a product list
+3. Below the "hero" set up two columns for your main page content and a sidebar.  We'll use the flexbox model here to help us out.
 
-4.  Style the sidebar Customer Favorites content to display on the right side
+  {% hint style='info' %}
+  Developers will often use a grid framework to help with page layout but in order for us to get more CSS practice we'll set up the columns on our own this time.
+  {% endhint %}
+  
+  1. Select the `.flexbox` class.
+  
+  2. Add the `display:` property with the `flex;` value to set up our layout.
+  
+  3. Also add 
+
+
+4. Style a product list
+
+5.  Style the sidebar Customer Favorites content to display on the right side
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
