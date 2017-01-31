@@ -129,7 +129,7 @@
 
     1. Below the closing `}` for the drinks class selector, select the sidebar class.
     
-    2. See if you can style the h2 and ul elements inside the sidebar class to look similar to the example image that you can view here: https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/ladyDevBarAndGrill.png 
+    2. See if you can style the `h2` and `ul` elements inside the sidebar class to look similar to the example image that you can view here: https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/ladyDevBarAndGrill.png 
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
