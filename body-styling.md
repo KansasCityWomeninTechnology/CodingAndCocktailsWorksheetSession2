@@ -1,6 +1,18 @@
 ###Body Styling
 
-2.  Style the main “hero” image with the large page heading, a smaller “tagline” and some about text
+1. In the project pane on the left, right click on the sass folder and select `New File`. 
+
+2. Type `_main.scss` and press enter. This will be the partial file where the styling for the main body portion of our page will be located.
+
+3. Don't forget to import main into your _styles.scss_ file.
+
+2.  Start with styling the main “hero” image and text with the large page heading, a smaller “tagline” and some about text.
+
+    1. Select the `.hero` class.
+    
+    2. Give it a `height:` and a `width:`.  A `600px;` height should work well. It should cover `100%;` of the width of the page.
+    
+    3. Instead of having an `<img>` HTML element here to display the image, we'll be using a background image on our div.  
 
 3.  Style a product list
 

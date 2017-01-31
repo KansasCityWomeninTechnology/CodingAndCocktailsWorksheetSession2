@@ -1,51 +1,21 @@
 ##Footer Styling
 Style a footer with copyright information and social media links.
 
-1. Select the `footer` element and set some basic styling by giving values to the following properties:
+1. In the project pane on the left, right click on the sass folder and select `New File`. 
 
-    * `background-color:` using one of the color variables from your selected color palette.
-    
-    * `border-top` (Use lighten or darken here again!)
-    
-    * `height` to give it enough room for the content.  `75px;` would be a good value here.
-    
-2. Style the copyright text inside the footer.  Select the `p` (paragraph) element nested inside the `footer` element selector.  That means it looks like this (missing the properties you set in step 1):
-    
-     ```sass
-     footer {
-         p {
-         }
-     }
-     ``` 
-     
-     1. Set the following properties for the `p` element:
-         
-         * `margin-bottom: 15px;` to space out the paragraph text from the social media below.
-         * `text-align:` if you want to center the text set it to `center;`
-         * `color:` to specify the text color.
-         
-3. Make sure the social media font-awesome icons are styled as well.  They're set up in a list and again, we don't want bullets on our list.
-    
-    1. Select the `ul` (unordered list) element and set the `list-style-type`, `text-align` properties appropriately.
-    
-    2. Set the `display:` property to `block;`.
-    
-4. To align the icons in a row, select the `li` (list item) elements and set their `display` property to `inline-block;`.
+2. Type `_footer.scss` and press enter. This will be the partial file where the styling for the main body portion of our page will be located.
 
-5. A few last adjustments include adding some spacing around the icons and changing their color.  
+3. Don't forget to import footer into your _styles.scss_ file.
 
-    1. Select the `i` (icon) element and set the `padding:` property to `2px 10px;`.
+4. See if you can set some styles for the footer on your own.  You might be able to look at the _ _nav.scss_ file for some of the ideas. If you get stuck call a mentor over to talk it through!
     
-    2. Change the color to one from your palette.
-    
-6. Now compile the Sass into CSS. 
+6. Save your _styles.scss_ and _ _footer.scss_ files and compile the Sass into CSS. 
     
     1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.
     
     2.  Type: `sass sass/styles.scss css/styles.css`
 
-7. Go to Google Chrome and refresh your page. You should have a more visually appealing footer now.
-
+7. Go to Google Chrome and refresh your page. You should have a more visually appealing footer now.  If it doesn't look quite like the sample image try setting some more styles and see if you can get it closer.  Don't forget to save, compile and refresh your page in Google Chrome to see your changes!
 
 
 ###Documentation
