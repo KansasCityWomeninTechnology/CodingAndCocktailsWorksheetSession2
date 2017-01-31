@@ -132,21 +132,6 @@
 
 	6. Type `styles.scss` and press enter. This will be your main Sass styling file and will only contain import statements when we’re done.
 	
-	
-	
-	9. Repeat the process to create additional files to hold our partials for the different areas of our website.  Create files in the `sass` folder called _ _nav.scss_, _ _main.scss_, _ _footer.scss_, and _ _mixins.scss_.
-
-	10.   Add import statements for the rest of the files as well.  Your _styles.scss_ file should look like this when you're done: 
-	
-	```scss
-	@import "variables";
-	@import "normalize";
-	@import "mixins";
-	@import "nav";
-	@import "main";
-	@import "footer";
-	```
-	
 4. Open your _index.html_ file in Google Chrome and notice the current styling.  You can do this two ways.
 	
 	1. Open Google Chrome. 
