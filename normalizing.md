@@ -30,6 +30,14 @@ We'll start with normalizing the styling.  This is necessary to help things look
             font-family: $header-font;
     }
     ```
+    
+6. Now compile the Sass into CSS. 
+    
+    1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.
+    
+    2.  Type: `sass sass/styles.scss css/styles.css`
+
+7. Go to Google Chrome and refresh your page. You may not notice a lot of changes this time but we are making progress!
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
