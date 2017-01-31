@@ -1,22 +1,26 @@
 ##Mixins
 
-8. Let’s try a mixin now! We can use one for list styling, let’s call it list-types.
+Let’s try a mixin now! We can use one for list styling, let’s call it `list-reset`.
 
-1. Create a **_mixins.scss** file in the **assets/sass** folder
-1. Add your mixin to the file - this is adding a “function” to set the three properties list-style, margin and padding anytime this mixin is used in your Sass file:<br>
+1. Open the _ _mixins.scss_ file in the _sass_ folder.
 
-![](../images/image00.png)
+2. Add your mixin to the file - this is adding a “function” to set the three properties `list-style`, `margin` and `padding` anytime this mixin is used in your Sass file:
 
-1. In your styles.scss file replace any styling where you set those three items (likely in your navigation, product list and footer elements) with:
+    ```sass
+    @mixin list-reset() {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    ```
 
-`@include list-reset();`
+3. In your _ _nav.scss_ and _ _footer.scss_ files, replace the `list-style-type: none;` code with `@include list-reset();`
 
-1. Save both _**mixins.scss** and **styles.scss**
-1. In the command line type:
+4. Save your files.
 
-`sass assets/sass/styles.scss assets/css/styles.css`
+5. In the command line type `sass sass/styles.scss css/styles.css`
 
-1. Go to Chrome and refresh your page. It should again look the same. Replacing your CSS with Sass may not look very exciting but it reduces duplication in your code and makes it easier for you to change and maintain the code going forward!
+6. Go to Chrome and refresh your page. It should look the same but now you're consistently setting list styles across the project and have a single place to go change them should you need to in the future.
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
