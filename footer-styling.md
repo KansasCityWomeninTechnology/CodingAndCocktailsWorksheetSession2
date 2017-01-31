@@ -10,10 +10,10 @@ Style a footer with copyright information and social media links.
 4. See if you can set some styles for the footer on your own.  You might be able to look at the _ _nav.scss_ file for some of the ideas. Also be sure to look at the Mozilla Developer Network (MDN) documentation linked at the bottom of the page to read about the CSS properties you want to use. If you get stuck call a mentor over to talk it through!
 
     {% hint style='tip' %}
-    Notice in the MDN documentation that you can open the examples and play with them in CodePen
+    Notice in the MDN documentation that you can open the examples and play with them in CodePen.  JSFiddle is another similar tool but since we used CodePen earlier you should already have an account there.
     {% endhint %}
     
-    
+    ![](/images/mdn-doc-codepen.png)
     
 6. Save your _styles.scss_ and _ _footer.scss_ files and compile the Sass into CSS. 
     
