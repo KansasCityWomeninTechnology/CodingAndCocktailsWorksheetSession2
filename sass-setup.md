@@ -4,7 +4,7 @@
 
 2. Open Atom and set up your HTML file.
 
-    1. Close any open tabs by hovering over them with your mouse at the top of the screen and clicking on the small x that appears.
+    1. Close any open tabs in Atom by hovering over them with your mouse at the top of the screen and clicking on the small x that appears.
     
     2. In the `File` menu choose `Add Project Folder...`
     
