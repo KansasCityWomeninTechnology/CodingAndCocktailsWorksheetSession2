@@ -1,6 +1,6 @@
 # CSS Cheat Sheet {#css-cheat-sheet}
 
-This cheat sheet shares some commonly used CSS properties. If you want to know how to do something googling it is usually very helpful often taking you to stack overflow or w3schools.  Try searching google for css margin to get a better understanding of the margin property.  Another place to look is the documentation on the mozilla developer network pages here: [bit.ly/MDNDOC](https://www.google.com/url?q=http://bit.ly/MDNDOC&sa=D&ust=1478381675896000&usg=AFQjCNESi-TmaUMe3gxizIbEZhB_sh5TwQ) 
+This cheat sheet shares some commonly used CSS properties. If you want to know how to do something googling it is usually very helpful often taking you to stack overflow or w3schools.  Try searching google for css margin to get a better understanding of the margin property.  Another place to look is the documentation on the mozilla developer network pages here: [bit.ly/MDNDOC](http://bit.ly/MDNDOC) 
 
 | Property | Description | Value | Example |
 | --- | --- | --- | --- |
