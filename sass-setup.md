@@ -134,7 +134,7 @@
 	
 	
 	
-	9. Repeat the process to create additional files to hold our partials for the different areas of our website.  Create files in the `sass` folder called _ _nav.scss_, _ _main.scss_, _ _footer.scss_, _ _normalize.scss_, and _ _mixins.scss_.
+	9. Repeat the process to create additional files to hold our partials for the different areas of our website.  Create files in the `sass` folder called _ _nav.scss_, _ _main.scss_, _ _footer.scss_, and _ _mixins.scss_.
 
 	10.   Add import statements for the rest of the files as well.  Your _styles.scss_ file should look like this when you're done: 
 	
