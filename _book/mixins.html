@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Overview · GitBook</title>
+        <title>Mixins · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -65,8 +65,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="project/" />
+    <link rel="next" href="homework.html" />
     
+    
+    <link rel="prev" href="footer-styling.html" />
     
 
     </head>
@@ -95,7 +97,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -167,12 +169,103 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="styling-with-sass.html">
+        <li class="chapter " data-level="1.4.1" data-path="sass-setup.html">
+            
+                <a href="sass-setup.html">
+            
+                    
+                    Sass Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="styling-with-sass.html">
             
                 <a href="styling-with-sass.html">
             
                     
-                    Styling with Sass
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="normalizing.html">
+            
+                <a href="normalizing.html">
+            
+                    
+                    Normalizing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="fonts.html">
+            
+                <a href="fonts.html">
+            
+                    
+                    Fonts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="nav-styling.html">
+            
+                <a href="nav-styling.html">
+            
+                    
+                    Nav Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="body-styling.html">
+            
+                <a href="body-styling.html">
+            
+                    
+                    Body Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="footer-styling.html">
+            
+                <a href="footer-styling.html">
+            
+                    
+                    Footer Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.8" data-path="mixins.html">
+            
+                <a href="mixins.html">
+            
+                    
+                    Mixins
             
                 </a>
             
@@ -211,12 +304,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="project/part_1_styling_with_css.html">
+        <li class="chapter " data-level="1.7" data-path="answer-key.html">
             
-                <a href="project/part_1_styling_with_css.html">
+                <a href="answer-key.html">
             
                     
-                    Old Sass CSS
+                    Answer Key
             
                 </a>
             
@@ -254,7 +347,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Overview</a>
+        <a href="." >Mixins</a>
     </h1>
 </div>
 
@@ -269,13 +362,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="coding--cocktails-session-2">Coding &amp; Cocktails Session 2:</h1>
-<h2 id="css">Introduction to CSS </h2>
-<p><hr>
-<img src="images/image03.png" alt=""></p>
-<h3 id="overview">Overview </h3>
-<p>During the session we&#x2019;ll introduce CSS Compilers and how they can make your styling easier. We&#x2019;ll start our project with normal CSS styling and transform that into a clean and organized stylesheet using Sass! </p>
-<p><a href="http://bit.ly/CnCgloss" target="_blank"><img src="images/glossary.png" alt=""></a> <a href="https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/" target="_blank"><img src="images/tools.png" alt=""></a></p>
+                                <h2 id="mixins">Mixins</h2>
+<p>Let&#x2019;s try a mixin now! We can use one for list styling, let&#x2019;s call it <code>list-reset</code>.</p>
+<ol>
+<li><p>In the project pane on the left, right click on the sass folder and select <code>New File</code>. </p>
+</li>
+<li><p>Type <code>_mixins.scss</code> and press enter. This will be the partial file where any mixins we us in our project will be located.</p>
+</li>
+<li><p>Don&apos;t forget to import mixins into your <em>styles.scss</em> file.  Since we&apos;ll be using some of these mixins in the <em> _nav.scss</em> and <em> _footer.scss</em> files it will need to be imported before those files are imported.</p>
+</li>
+<li><p>Add your mixin to the <em> _mixins.scss</em> file. This is adding a &#x201C;function&#x201D; to set the three properties <code>list-style</code>, <code>margin</code> and <code>padding</code> anytime this mixin is used in your Sass file:</p>
+<pre><code class="lang-sass"> @mixin list-reset() {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+</code></pre>
+</li>
+<li><p>In your <em> _nav.scss</em> and <em> _footer.scss</em> files, replace the <code>list-style-type: none;</code> code with <code>@include list-reset();</code></p>
+</li>
+<li><p>Save your <em> _nav.scss</em>, <em> _footer.scss</em>, <em>styles.scss</em> and _ _mixins.scss. files.</p>
+</li>
+<li><p>In the command line type <code>sass sass/styles.scss css/styles.css</code>.</p>
+</li>
+<li><p>Go to Google Chrome and refresh your page. It should look the same but now you&apos;re consistently setting list styles across the project and have a single place to go change them should you need to in the future.</p>
+</li>
+</ol>
+<h3 id="documentation">Documentation</h3>
+<p>To understand the different CSS properties and available values visit the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
+<p>View the Sass documentation here if you want more detailed information about how any pieces of Sass work: <a href="http://bit.ly/CnCSassDoc" target="_blank">bit.ly/CnCSassDoc</a> </p>
 
                                 
                                 </section>
@@ -303,8 +418,12 @@
 
             
                 
+                <a href="footer-styling.html" class="navigation navigation-prev " aria-label="Previous page: Footer Styling">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="project/" class="navigation navigation-next navigation-unique" aria-label="Next page: Project">
+                
+                <a href="homework.html" class="navigation navigation-next " aria-label="Next page: Homework">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -315,7 +434,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Overview","level":"1.1","depth":1,"next":{"title":"Project","level":"1.2","depth":1,"path":"project/README.md","ref":"project/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-01-25T02:50:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-29T18:07:15.312Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mixins","level":"1.4.8","depth":2,"next":{"title":"Homework","level":"1.5","depth":1,"path":"homework.md","ref":"homework.md","articles":[]},"previous":{"title":"Footer Styling","level":"1.4.7","depth":2,"path":"footer-styling.md","ref":"footer-styling.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mixins.md","mtime":"2017-01-31T15:46:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T18:48:55.672Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

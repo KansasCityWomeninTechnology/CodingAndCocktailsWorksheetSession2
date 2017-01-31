@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Styling HTML · GitBook</title>
+        <title>Fonts · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="project/part_2_re_-styling_with_sass.html" />
+    <link rel="next" href="nav-styling.html" />
     
     
-    <link rel="prev" href="part-1-basic-css.html" />
+    <link rel="prev" href="normalizing.html" />
     
 
     </head>
@@ -137,7 +137,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.1" data-path="styling-html.html">
+        <li class="chapter " data-level="1.3.1" data-path="styling-html.html">
             
                 <a href="styling-html.html">
             
@@ -169,12 +169,103 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="styling-with-sass.html">
+        <li class="chapter " data-level="1.4.1" data-path="sass-setup.html">
+            
+                <a href="sass-setup.html">
+            
+                    
+                    Sass Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="styling-with-sass.html">
             
                 <a href="styling-with-sass.html">
             
                     
-                    Styling with Sass
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="normalizing.html">
+            
+                <a href="normalizing.html">
+            
+                    
+                    Normalizing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="fonts.html">
+            
+                <a href="fonts.html">
+            
+                    
+                    Fonts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="nav-styling.html">
+            
+                <a href="nav-styling.html">
+            
+                    
+                    Nav Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="body-styling.html">
+            
+                <a href="body-styling.html">
+            
+                    
+                    Body Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="footer-styling.html">
+            
+                <a href="footer-styling.html">
+            
+                    
+                    Footer Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="mixins.html">
+            
+                <a href="mixins.html">
+            
+                    
+                    Mixins
             
                 </a>
             
@@ -213,12 +304,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="project/part_1_styling_with_css.html">
+        <li class="chapter " data-level="1.7" data-path="answer-key.html">
             
-                <a href="project/part_1_styling_with_css.html">
+                <a href="answer-key.html">
             
                     
-                    Old Sass CSS
+                    Answer Key
             
                 </a>
             
@@ -256,7 +347,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Styling HTML</a>
+        <a href="." >Fonts</a>
     </h1>
 </div>
 
@@ -271,70 +362,47 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="styling-html">Styling HTML</h1>
+                                <h3 id="fonts">Fonts</h3>
+<p>Add fonts for your page.</p>
 <ol>
-<li><p>In CodePen, notice we&apos;ve set up some HTML for you to practice styling.  There is already page structure content in the first box with the HTML heading.</p>
+<li><p>Back in Google Fonts (<a href="https://fonts.google.com/" target="_blank">fonts.google.com</a>), make sure you have at least two fonts selected, one to use for headers and one to use for body text.</p>
 </li>
-<li><p>In the middle box with the CSS heading, select the <code>body</code> element and change the <code>background-color</code> to the hexadecimal color  from your selected color palette.</p>
+<li><p>This time we&apos;ll find the <code>import</code> way of embedding the fonts by clicking on the red @IMPORT header next to the STANDARD header.</p>
+<p> <img src="images/font-import.png" alt=""></p>
+</li>
+<li><p>Copy the just the import statement for your fonts, not the surrounding <code>&lt;style&gt;&lt;/style&gt;</code> tags and paste it as the first line in your <em>styles.scss</em> file.</p>
+</li>
+<li><p>In the <em> _variables.scss</em> file, set up the variables for <code>$body-font</code> and <code>$header-font</code> referencing the Google Fonts font-families. Depending on what fonts you&apos;ve chosen, one variable might look like: <code>$body-font: &quot;Work Sans&quot;, Arial, Helvetica, sans-serif;</code></p>
 <p> <div class="alert alert-success"><i class="octicon octicon-mortar-board" style=""></i>
-    Remember the syntax for a CSS rule looks like this:
+    If you select a font that has a name that is two words you&apos;ll need to wrap the font name in quotation marks.
+    
+    Often you&apos;ll want to provide backup fonts for the page to fall back on in case it can&apos;t load the chosen font. A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif. For serif fonts it might include &quot;Times New Roman&quot;, Times, serif as backups.
     </div></p>
-<pre><code class="lang-css"> <span class="hljs-selector-tag">selector</span> {
-     <span class="hljs-attribute">property</span>: value;
- }
-</code></pre>
 </li>
-<li><p>Select the <code>ul</code> element and set the <code>list-style-type</code> to <code>none</code>. Notice how the bullets disappear from each of the list item elements.</p>
+<li><p>In the <em> _normailze.scss</em> file, add the <code>font-family:</code> property to both the <code>body</code> selector and the <code>h1, h2, h3, h4, h5, h6</code> selector.  Set the values to the <code>$body-font;</code> and <code>$header-font;</code> respectively.</p>
 </li>
-<li><p>Since the list items (<code>li</code> elements) are being used for navigation purposes here, change them to have <code>display: inline;</code> styling.  Notice how that makes them sit next to each other instead of on top of each other.</p>
+<li><p>Save the <em> _variables.scss</em>, <em> _styles.scss</em>, and <em> _normalize.scss</em> files.</p>
 </li>
-<li><p>Select the element with the id <code>#main-title</code>.</p>
+<li><p>Now compile the Sass into CSS. </p>
 <ol>
-<li><p>Change the <code>font-family</code> to the font name that you selected from google fonts.</p>
-</li>
-<li><p>Increase the size of the text to be four times the size of the HTML (root) font-size. </p>
+<li><p>In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your <em>index.html</em> file.</p>
 <p><div class="alert alert-success"><i class="octicon octicon-mortar-board" style=""></i>
-    1rem is equivalent to the HTML (root) font-size.
+    The command cd will let you change directory (or folder)
+    The command ls will list the files in your current directory
+    The command pwd will print working directory, or, show you what directory (or folder) you&apos;re currently in
+    Join us in March for more information on these commands and more as we learn about the Command Line!
     </div></p>
 </li>
-<li><p>Change the <code>color</code> to another color hex value from your chosen color palette.</p>
-</li>
-<li><p>Center the header text using the <code>text-align</code> property.</p>
+<li><p>Type: <code>sass sass/styles.scss css/styles.css</code></p>
 </li>
 </ol>
 </li>
-<li><p>Select the <code>img</code> element.</p>
-<ol>
-<li><p>Change the height of the image to <code>100px</code>.</p>
-</li>
-<li><p>Change the width of the image to <code>200px</code>.</p>
-<p><div class="alert alert-danger"><i class="octicon octicon-issue-opened" style=""></i>
-    Notice how this distorts the image so when you are styling an     image make sure to keep an eye to how your styling affects the     image.
-    </div></p>
-</li>
-</ol>
-</li>
-<li><p>Select the <code>.section</code> class and change the <code>background-color</code> to another color within your chosen palette.</p>
-<p> Notice how the div sections don&apos;t stretch to meet the edges of the page body or eachother</p>
-</li>
-<li><p>Select the first section with the <code>.section-one</code> class</p>
-<ol>
-<li><p>Add a <code>border</code> that is 5 pixels wide and solid using another of the colors from your chosen palette.</p>
-</li>
-<li><p>Add a <code>margin</code> of <code>20px</code>. Notice how that made your border box move and added space around the <em>outside</em> of your border.</p>
-</li>
-<li><p>Add some <code>padding</code> of <code>40px</code>. Notice how that made the border box bigger around the text content and added space <em>inside</em> your border.</p>
-</li>
-</ol>
-</li>
-<li><p>In the view section scroll down until the link comes into view.  </p>
-<ol>
-<li>select the <code>a</code> (anchor) element and use the <code>text-decoration</code> property to remove the underline.</li>
-</ol>
+<li><p>Go to Google Chrome and refresh your page. You should notice the font styling has changed.</p>
 </li>
 </ol>
 <h3 id="documentation">Documentation</h3>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
+<p>To understand the different CSS properties and available values visit the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
+<p>View the Sass documentation here if you want more detailed information about how any pieces of Sass work: <a href="http://bit.ly/CnCSassDoc" target="_blank">bit.ly/CnCSassDoc</a> </p>
 
                                 
                                 </section>
@@ -362,12 +430,12 @@
 
             
                 
-                <a href="part-1-basic-css.html" class="navigation navigation-prev " aria-label="Previous page: Part 1: Basic CSS">
+                <a href="normalizing.html" class="navigation navigation-prev " aria-label="Previous page: Normalizing">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="project/part_2_re_-styling_with_sass.html" class="navigation navigation-next " aria-label="Next page: Part 2:  Getting Sassy">
+                <a href="nav-styling.html" class="navigation navigation-next " aria-label="Next page: Nav Styling">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -378,7 +446,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Styling HTML","level":"1.3.1","depth":2,"next":{"title":"Part 2:  Getting Sassy","level":"1.4","depth":1,"path":"project/part_2_re_-styling_with_sass.md","ref":"project/part_2_re_-styling_with_sass.md","articles":[{"title":"Styling with Sass","level":"1.4.1","depth":2,"path":"styling-with-sass.md","ref":"styling-with-sass.md","articles":[]}]},"previous":{"title":"Part 1: Basic CSS","level":"1.3","depth":1,"path":"part-1-basic-css.md","ref":"part-1-basic-css.md","articles":[{"title":"Styling HTML","level":"1.3.1","depth":2,"path":"styling-html.md","ref":"styling-html.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"styling-html.md","mtime":"2017-01-29T18:09:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-29T18:07:15.312Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Fonts","level":"1.4.4","depth":2,"next":{"title":"Nav Styling","level":"1.4.5","depth":2,"path":"nav-styling.md","ref":"nav-styling.md","articles":[]},"previous":{"title":"Normalizing","level":"1.4.3","depth":2,"path":"normalizing.md","ref":"normalizing.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fonts.md","mtime":"2017-01-31T15:23:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T18:48:55.672Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
