@@ -9,13 +9,15 @@ Add fonts for your page.
 
 3. Copy the just the import statement for your fonts, not the surrounding `<style></style>` tags and paste it as the first line in your _styles.scss_ file.
 
-4. In the _ _variables.scss_ file, set up the variables for `$body-font` and `$header-font` referencing the Google Fonts font-families. For example one variable might look like: `$body-font: "Work Sans", Arial, Helvetica, sans-serif;`
+4. In the _ _variables.scss_ file, set up the variables for `$body-font` and `$header-font` referencing the Google Fonts font-families. Depending on what fonts you've chosen, one variable might look like: `$body-font: "Work Sans", Arial, Helvetica, sans-serif;`
 
     {% hint style='tip' %}
     If you select a font that has a name that is two words you'll need to wrap the font name in quotation marks.
     
     Often you'll want to provide backup fonts for the page to fall back on in case it can't load the chosen font. A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif. For serif fonts it might include "Times New Roman", Times, serif as backups.
     {% endhint %}
+
+5. In the _ _normailze.scss_ file, add the `font-family:` property to both the `body` selector and the `h1, h2, h3, h4, h5, h6` selector.  Set the values to the `$body-font;` and `$header-font;` respectively.
 
 5. Save the _ _variables.scss_, _ _styles.scss_, and _ _normalize.scss_ files.
 
