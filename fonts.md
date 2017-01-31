@@ -5,8 +5,10 @@ Add fonts for your page.
 
 2. This time we'll find the `import` way of embedding the fonts by clicking on the red @IMPORT header next to the STANDARD header.
 
+    ![](/images/font-import.png)
 
-3. Copy the just the import statement for your fonts, not the surrounding `<style></style>` tags and paste it as the first line in your _styles.scss_ file
+3. Copy the just the import statement for your fonts, not the surrounding `<style></style>` tags and paste it as the first line in your _styles.scss_ file.
+
 4. In the _ _variables.scss_ file, set up the variables for `$body-font` and `$header-font` referencing the Google Fonts font-families. For example one variable might look like: `$body-font: "Work Sans", Arial, Helvetica, sans-serif;
 
     {% hint style='tip' %}
