@@ -26,9 +26,9 @@ Add fonts for your page.
     1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.
     
     {% hint style='tip' %}
-    The command cd will let you change directory (or folder)
-    The command ls will list the files in your current directory
-    The command pwd will print working directory, or, show you what directory (or folder) you're currently in
+    The command cd will let you change directory (or folder).
+    The command ls will list the files in your current directory.
+    The command pwd will print working directory, or, show you what directory (or folder) you're currently in.
     Join us in March for more information on these commands and more as we learn about the Command Line!
     {% endhint %}
     
