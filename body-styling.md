@@ -19,7 +19,7 @@
         2. Set the `background:` property to `url("../images/hero.jpg") no-repeat center top;`.  
         
         {% hint style='info' %}
-        This is telling the background property that we are using a link to find our image (url = **u**niform **r**esource **l**ocator).  Go up one directory/folder from where we are (`../`), look in the images folder (`images/`) and use the `hero.jpg` file as the background image.
+        This is telling the background property that we are using a link to find our image (url = uniform resource locator).  Go up one directory/folder from where we are (`../`), look in the images folder (`images/`) and use the `hero.jpg` file as the background image.
         
         Also we don't want to repeat the image, we just want a single image displayed (`no-repeat`).
         
