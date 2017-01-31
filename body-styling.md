@@ -4,7 +4,7 @@
 
 2. Type `_main.scss` and press enter. This will be the partial file where the styling for the main body portion of our page will be located.
 
-3. Don't forget to import main into your _styles.scss_ file.
+3. Don't forget to import main into your _styles.scss_ file and save the file.
 
 2.  Start with styling the main “hero” image and text with the large page heading, a smaller “tagline” and some about text.
 
@@ -125,11 +125,13 @@
     
     21. Check out your page content in Google Chrome.  Things should be looking like they're coming together now!
     
-5.  Style the sidebar "Small Plates" content on the right side.
+7.  Style the sidebar "Small Plates" content on the right side.
 
     1. Below the closing `}` for the drinks class selector, select the sidebar class.
     
     2. See if you can style the `h2` and `ul` elements inside the sidebar class to look similar to the example image that you can view here: https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/ladyDevBarAndGrill.png 
+    
+8. Save 
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
