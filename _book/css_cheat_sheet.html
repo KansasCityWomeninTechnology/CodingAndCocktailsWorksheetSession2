@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Fonts · GitBook</title>
+        <title>CSS Cheat Sheet · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="nav-styling.html" />
+    <link rel="next" href="answer-key.html" />
     
     
-    <link rel="prev" href="normalizing.html" />
+    <link rel="prev" href="homework.html" />
     
 
     </head>
@@ -208,7 +208,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.4" data-path="fonts.html">
+        <li class="chapter " data-level="1.4.4" data-path="fonts.html">
             
                 <a href="fonts.html">
             
@@ -291,7 +291,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="css_cheat_sheet.html">
+        <li class="chapter active" data-level="1.6" data-path="css_cheat_sheet.html">
             
                 <a href="css_cheat_sheet.html">
             
@@ -347,7 +347,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Fonts</a>
+        <a href="." >CSS Cheat Sheet</a>
     </h1>
 </div>
 
@@ -362,47 +362,122 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="fonts">Fonts</h3>
-<p>Add fonts for your page.</p>
-<ol>
-<li><p>Back in Google Fonts (<a href="https://fonts.google.com/" target="_blank">fonts.google.com</a>), make sure you have at least two fonts selected, one to use for headers and one to use for body text.</p>
-</li>
-<li><p>This time we&apos;ll find the <code>import</code> way of embedding the fonts by clicking on the red @IMPORT header next to the STANDARD header.</p>
-<p> <img src="images/font-import.png" alt=""></p>
-</li>
-<li><p>Copy the just the import statement for your fonts, not the surrounding <code>&lt;style&gt;&lt;/style&gt;</code> tags and paste it as the first line in your <em>styles.scss</em> file.</p>
-</li>
-<li><p>In the <em> _variables.scss</em> file, set up the variables for <code>$body-font</code> and <code>$header-font</code> referencing the Google Fonts font-families. Depending on what fonts you&apos;ve chosen, one variable might look like: <code>$body-font: &quot;Work Sans&quot;, Arial, Helvetica, sans-serif;</code></p>
-<p> <div class="alert alert-success"><i class="octicon octicon-mortar-board" style=""></i>
-    If you select a font that has a name that is two words you&apos;ll need to wrap the font name in quotation marks.
-    
-    Often you&apos;ll want to provide backup fonts for the page to fall back on in case it can&apos;t load the chosen font. A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif. For serif fonts it might include &quot;Times New Roman&quot;, Times, serif as backups.
-    </div></p>
-</li>
-<li><p>In the <em> _normailze.scss</em> file, add the <code>font-family:</code> property to both the <code>body</code> selector and the <code>h1, h2, h3, h4, h5, h6</code> selector.  Set the values to the <code>$body-font;</code> and <code>$header-font;</code> respectively.</p>
-</li>
-<li><p>Save the <em> _variables.scss</em>, <em> _styles.scss</em>, and <em> _normalize.scss</em> files.</p>
-</li>
-<li><p>Now compile the Sass into CSS. </p>
-<ol>
-<li><p>In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your <em>index.html</em> file.</p>
-<p><div class="alert alert-success"><i class="octicon octicon-mortar-board" style=""></i>
-    The command cd will let you change directory (or folder)
-    The command ls will list the files in your current directory
-    The command pwd will print working directory, or, show you what directory (or folder) you&apos;re currently in
-    Join us in March for more information on these commands and more as we learn about the Command Line!
-    </div></p>
-</li>
-<li><p>Type: <code>sass sass/styles.scss css/styles.css</code></p>
-</li>
-</ol>
-</li>
-<li><p>Go to Google Chrome and refresh your page. You should notice the font styling has changed.</p>
-</li>
-</ol>
-<h3 id="documentation">Documentation</h3>
-<p>To understand the different CSS properties and available values visit the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
-<p>View the Sass documentation here if you want more detailed information about how any pieces of Sass work: <a href="http://bit.ly/CnCSassDoc" target="_blank">bit.ly/CnCSassDoc</a> </p>
+                                <h1 id="css-cheat-sheet">CSS Cheat Sheet </h1>
+<p>This cheat sheet shares some commonly used CSS properties. If you want to know how to do something googling it is usually very helpful often taking you to stack overflow or w3schools.  Try searching google for CSS margin to get a better understanding of the margin property.  Another place to look is the documentation on the mozilla developer network pages here: <a href="http://bit.ly/MDNDOC" target="_blank">bit.ly/MDNDOC</a> </p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>margin<img src="images/image07.png" alt="Screen Shot 2016-03-26 at 10.45.42 AM.png"></td>
+<td>Adds spacing around an element outside the border (refer to the box model diagram to the left)</td>
+<td>Any pixel number value</td>
+<td><code>p { margin: 10px; } p { margin: 0 auto; }</code></td>
+</tr>
+<tr>
+<td>padding</td>
+<td>Add spacing between the element content and the element border (refer to the box model diagram above)</td>
+<td>Any pixel number value</td>
+<td><code>p { padding: 10px 0 15px 20px }</code></td>
+</tr>
+<tr>
+<td>border</td>
+<td>Specifies the border styling</td>
+<td>Width: any pixel number value</td>
+<td><code>p { border: 2px solid blue; }</code></td>
+</tr>
+<tr>
+<td>color</td>
+<td>Sets the font color</td>
+<td>Hex color values or color names</td>
+<td><code>p { color: #ffffff; }</code></td>
+</tr>
+<tr>
+<td>text-align</td>
+<td>Aligns text according to value</td>
+<td>left</td>
+<td><code>p { text-align: center; }</code></td>
+</tr>
+<tr>
+<td>text-decoration</td>
+<td>Add decoration to text</td>
+<td>none</td>
+<td><code>a { text-decoration: none; }</code></td>
+</tr>
+<tr>
+<td>font-family</td>
+<td>Set the font family (or typeface) of the text</td>
+<td>Any font name</td>
+<td><code>p { font-family: Neuton, &quot;Times New Roman&quot;, Times, serif; }</code></td>
+</tr>
+<tr>
+<td>font-size</td>
+<td>Set the size of the text</td>
+<td>Numeric value in px, em or rem</td>
+<td><code>h1 { font-size: 4em; }</code></td>
+</tr>
+<tr>
+<td>font-style</td>
+<td>Sets the text style</td>
+<td>Normal</td>
+<td><code>h4{ font-style: italic; }</code></td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td>Set the weight of the text</td>
+<td>normal</td>
+<td><code>h3 { font-weight: bold }</code></td>
+</tr>
+<tr>
+<td>background-color</td>
+<td>Sets the color of the selected elements background</td>
+<td>Any hex color value or color name</td>
+<td><code>body { background-color: #ffffff; }</code></td>
+</tr>
+<tr>
+<td>background-image</td>
+<td>Set the background of the element to the image supplied</td>
+<td>Image url</td>
+<td><code>.hero { background-image: url(&#x2018;images/image.png&#x2019;); }</code></td>
+</tr>
+<tr>
+<td>background-repeat</td>
+<td>Specifies whether or not a background image should be repeated</td>
+<td>repeat</td>
+<td><code>body { background-repeat: no-repeat; }</code></td>
+</tr>
+<tr>
+<td>background-position</td>
+<td>Sets the starting position of a background image</td>
+<td>center center</td>
+<td><code>.hero { background-position: right center; }</code></td>
+</tr>
+<tr>
+<td>list-style-type</td>
+<td>Determines the bullet style on the list</td>
+<td>circle</td>
+<td><code>ul { list-style-type: none; }</code></td>
+</tr>
+<tr>
+<td>float</td>
+<td>Specifies whether an element should float.</td>
+<td>Right</td>
+<td><code>img { float: left; }</code></td>
+</tr>
+<tr>
+<td>clear</td>
+<td>Does not allow floating to the specified side of an element</td>
+<td>Right</td>
+<td><code>.footer { clear: both; }</code></td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -430,12 +505,12 @@
 
             
                 
-                <a href="normalizing.html" class="navigation navigation-prev " aria-label="Previous page: Normalizing">
+                <a href="homework.html" class="navigation navigation-prev " aria-label="Previous page: Homework">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="nav-styling.html" class="navigation navigation-next " aria-label="Next page: Nav Styling">
+                <a href="answer-key.html" class="navigation navigation-next " aria-label="Next page: Answer Key">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -446,7 +521,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Fonts","level":"1.4.4","depth":2,"next":{"title":"Nav Styling","level":"1.4.5","depth":2,"path":"nav-styling.md","ref":"nav-styling.md","articles":[]},"previous":{"title":"Normalizing","level":"1.4.3","depth":2,"path":"normalizing.md","ref":"normalizing.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fonts.md","mtime":"2017-01-31T15:23:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T18:48:55.672Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CSS Cheat Sheet","level":"1.6","depth":1,"next":{"title":"Answer Key","level":"1.7","depth":1,"path":"answer-key.md","ref":"answer-key.md","articles":[]},"previous":{"title":"Homework","level":"1.5","depth":1,"path":"homework.md","ref":"homework.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"css_cheat_sheet.md","mtime":"2017-01-31T02:05:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T18:48:55.672Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
