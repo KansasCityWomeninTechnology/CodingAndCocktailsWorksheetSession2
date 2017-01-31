@@ -118,23 +118,27 @@
     
 	8. Save the file.
 
-5. Set up project structure.
+3. Set up project structure.
 
 	1. Right click again on that `CSS` folder in the left pane and select `New Folder`.  
 	
-	2. Type 'sass' and press enter.
+	2. Type 'css' and press enter.
 	
-	3. In the project pane on the left, right click on the sass folder and select `New File`. 
-
-	4. Type `styles.scss` and press enter. This will be your main Sass styling file and will only contain import statements when we’re done.
+	3. Right click again on that `CSS` folder in the left pane and select `New Folder`.  
+	
+	4. Type 'sass' and press enter.
 	
 	5. In the project pane on the left, right click on the sass folder and select `New File`. 
 
-	4. Type `_variables.scss` and press enter. This will be the file where all of our variables that we use in our project will be located.
+	6. Type `styles.scss` and press enter. This will be your main Sass styling file and will only contain import statements when we’re done.
 	
-	5. Repeat the process to create additional files to hold our partials for the different areas of our website.  Create files in the `sass` folder called _ _nav.scss_, _ _main.scss_, _ _footer.scss_, _ _normalize.scss_, and _ _mixins.scss_.
+	7. In the project pane on the left, right click on the sass folder and select `New File`. 
 
-	5. Open the _styles.scss_ file by double clicking on it in the left pane if it is not already open.  You’ll need to import the partial files so type in ```@import “variables”;``` to import the _ _variables.scss_ file.  Add import statements for the rest of the files as well.  Your _styles.scss_ file should look like this when you're done: 
+	8. Type `_variables.scss` and press enter. This will be the file where all of our variables that we use in our project will be located.
+	
+	9. Repeat the process to create additional files to hold our partials for the different areas of our website.  Create files in the `sass` folder called _ _nav.scss_, _ _main.scss_, _ _footer.scss_, _ _normalize.scss_, and _ _mixins.scss_.
+
+	10. Open the _styles.scss_ file by double clicking on it in the left pane if it is not already open.  You’ll need to import the partial files so type in ```@import “variables”;``` to import the _ _variables.scss_ file.  Add import statements for the rest of the files as well.  Your _styles.scss_ file should look like this when you're done: 
 	
 	```scss
 	@import "variables";
