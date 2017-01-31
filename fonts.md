@@ -9,17 +9,28 @@ Add fonts for your page.
 
 3. Copy the just the import statement for your fonts, not the surrounding `<style></style>` tags and paste it as the first line in your _styles.scss_ file.
 
-4. In the _ _variables.scss_ file, set up the variables for `$body-font` and `$header-font` referencing the Google Fonts font-families. For example one variable might look like: `$body-font: "Work Sans", Arial, Helvetica, sans-serif;
+4. In the _ _variables.scss_ file, set up the variables for `$body-font` and `$header-font` referencing the Google Fonts font-families. For example one variable might look like: `$body-font: "Work Sans", Arial, Helvetica, sans-serif;`
 
     {% hint style='tip' %}
-    If you select a font that is two words you'll need to wrap that in quotation marks.
+    If you select a font that has a name that is two words you'll need to wrap the font name in quotation marks.
     
     Often you'll want to provide backup fonts for the page to fall back on in case it can't load the chosen font. A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif. For serif fonts it might include "Times New Roman", Times, serif as backups.
     {% endhint %}
 
 5. Save the _ _variables.scss_, _ _styles.scss_, and _ _normalize.scss_ files.
 
-6. Now compile the Sass into CSS. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file. Type: `sass sass/styles.scss css/styles.css`
+6. Now compile the Sass into CSS. 
+    
+    1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.
+    
+    {% hint style='tip' %}
+    The command cd will let you change directory (or folder)
+    The command ls will list the files in your current directory
+    The command pwd will print working directory, or, show you what directory (or folder) you're currently in
+    Join us in March for more information on these commands and more as we learn about the Command Line!
+    {% endhint %}
+    
+    2.  Type: `sass sass/styles.scss css/styles.css`
 
 7. Go to Google Chrome and refresh your page. You should notice the font styling has changed and maybe some of the page spacing.
 
