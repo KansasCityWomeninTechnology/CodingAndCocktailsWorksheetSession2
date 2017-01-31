@@ -7,7 +7,7 @@ Style a footer with copyright information and social media links.
 
 3. Don't forget to import footer into your _styles.scss_ file.
 
-4. See if you can set some styles for the footer on your own.  You might be able to look at the _ _nav.scss_ file for some of the ideas. Also be sure to look at the Mozilla Developer Network documentation to read about the CSS properties you want to use. If you get stuck call a mentor over to talk it through!
+4. See if you can set some styles for the footer on your own.  You might be able to look at the _ _nav.scss_ file for some of the ideas. Also be sure to look at the Mozilla Developer Network documentation linked at the bottom of the page to read about the CSS properties you want to use. If you get stuck call a mentor over to talk it through!
     
 6. Save your _styles.scss_ and _ _footer.scss_ files and compile the Sass into CSS. 
     
