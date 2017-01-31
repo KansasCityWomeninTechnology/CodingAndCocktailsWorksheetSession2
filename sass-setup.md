@@ -21,93 +21,98 @@
     ```html
     <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>LadyDev Bar &amp; Grill</title>
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-	<nav class="navbar">
-		<ul id="drinks">
-			<li><a href="#">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#drinks">Menu</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
-	<div class="main">
-		<div class="hero" id="about">
-			<div class="head">
-				<h1>LadyDev Bar &amp; Grill</h1>
-				<h2>Making development more delicious every day!</h2>
-				<p>Welcome to the LadyDev Bar &amp; Grill.  We're glad you're here!  Sit down, relax, and enjoy good drinks, good eats, and good friends.</p>
-			</div>
-		</div>
-		<div class="flexbox">
-			<div class="drinks col-1">
-				<h2>Menu</h2>
-				<ul class="drinks">
-				    <li class="item">
-				    	<a href="#"><img src="assets/images/martini.jpg" alt=""></a>
-				        <h3 class="head">Martinis</h3>
-				        <p>Made with our own homemade gin and dry vermouth.  Choose from The Classic, Lemondrop, or Chocolate.</p>
-				    </li>
-				    <li class="item">
-				    	<a href="#"><img src="assets/images/wine.jpg" alt=""></a>
-				        <h3 class="head">Wine</h3>
-				        <p>There are just too many to list.  Ask your server for a recommendation.</p>
-				    </li>
-				    <li class="item">
-				    	<a href="#"><img src="assets/images/whiskey-cocktails.jpg" alt=""></a>
-				        <h3 class="head">Whiskey cocktails</h3>
-				        <p>Whiskey.  Some might consider it their spirit animal.  Thank goodness it's not just for men anymore.</p>
-				    </li>
-				    <li class="item">
-				    	<a href="#"><img src="assets/images/margarita.jpg" alt=""></a>
-				        <h3 class="head">Margaritas</h3>
-				        <p>Slushy frozen delicousness, in Peach, Strawberry, or Mango.  Served with a rock-salted rim and lime.</p>
-				    </li>
-				    <li class="item">
-				    	<a href="#"><img src="assets/images/hot-cocktail.jpg" alt=""></a>
-				        <h3 class="head">Hot &amp; Creamy</h3>
-				        <p>Just what you need to kick off a night of coding.  We offer concoctions with coffee, Kahlua, Bailey's, and more.</p>
-				    </li>
-				    <li class="item">
-				    	<a href="#"><img src="assets/images/beer.jpg" alt=""></a>
-				        <h3 class="head">Beer</h3>
-				        <p>We serve the finest microbrews from around the world.  How about a Saison, IPA, or Stout?</p>
-				    </li>
-				    <li class="item">
-				    	<a href="#"><img src="assets/images/milk.jpg" alt=""></a>
-				    	<h3 class="head">Non alcoholic</h3>
-							<p>We have plenty of NA options available to quench your thirst, like lemonade, milk or soda.</p>
-				    </li>
+		<head>
+			<meta charset="UTF-8">
+			<title>LadyDev Bar &amp; Grill</title>
+			<link rel="stylesheet" href="css/styles.css">
+			<script src="https://use.fontawesome.com/81b69a015b.js"></script>
+		</head>
+		<body>
+			<nav class="navbar">
+				<ul id="drinks">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#drinks">Menu</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
+			</nav>
+			<div class="main">
+				<div class="hero" id="about">
+					<div class="head">
+						<div class="hero-text">
+							<h1>LadyDev</h1>
+							<h1>Bar &amp; Grill</h1>
+						</div>
+						<h2>Making development more delicious every day!</h2>
+						<p>Welcome to the LadyDev Bar &amp; Grill.  We're glad you're here!</p>
+						<p>Sit down, relax, and enjoy good drinks, good eats, and good friends.</p>
+					</div>
+				</div>
+				<div class="flexbox">
+					<div class="drinks col-1">
+						<h2>Menu</h2>
+						<ul class="drinks">
+						    <li class="item">
+						    	<a href="#"><img src="images/martini.jpg" alt=""></a>
+						        <h3 class="head">Martinis</h3>
+						        <p>Made with our own homemade gin and dry vermouth.  Choose from The Classic, Lemondrop, or Chocolate.</p>
+						    </li>
+						    <li class="item">
+						    	<a href="#"><img src="images/wine.jpg" alt=""></a>
+						        <h3 class="head">Wine</h3>
+						        <p>There are just too many to list.  Ask your server for a recommendation.</p>
+						    </li>
+						    <li class="item">
+						    	<a href="#"><img src="images/whiskey-cocktails.jpg" alt=""></a>
+						        <h3 class="head">Whiskey cocktails</h3>
+						        <p>Whiskey.  Some might consider it their spirit animal.  Thank goodness it's not just for men anymore.</p>
+						    </li>
+						    <li class="item">
+						    	<a href="#"><img src="images/margarita.jpg" alt=""></a>
+						        <h3 class="head">Margaritas</h3>
+						        <p>Slushy frozen delicousness, in Peach, Strawberry, or Mango.  Served with a rock-salted rim and lime.</p>
+						    </li>
+						    <li class="item">
+						    	<a href="#"><img src="images/hot-cocktail.jpg" alt=""></a>
+						        <h3 class="head">Hot &amp; Creamy</h3>
+						        <p>Just what you need to kick off a night of coding.  We offer concoctions with coffee, Kahlua, Bailey's, and more.</p>
+						    </li>
+						    <li class="item">
+						    	<a href="#"><img src="images/beer.jpg" alt=""></a>
+						        <h3 class="head">Beer</h3>
+						        <p>We serve the finest microbrews from around the world.  How about a Saison, IPA, or Stout?</p>
+						    </li>
+						    <li class="item">
+						    	<a href="#"><img src="images/milk.jpg" alt=""></a>
+						    	<h3 class="head">Non alcoholic</h3>
+									<p>We have plenty of NA options available to quench your thirst, like lemonade, milk or soda.</p>
+						    </li>
+						</ul>
+					</div>
+					<div class="food sidebar col-2">
+						<h2>Small plates</h2>
+						<ul class="food">
+							<li>Grassfed beef sliders</li>
+							<li>Spicy calamari</li>
+							<li>Coconut shrimp</li>
+							<li>Veggie spring rolls</li>
+							<li>Deviled eggs</li>
+							<li>Tuscan bean dip</li>
+							<li>Chicken lettuce wraps</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="food sidebar col-2">
-				<h2>Small plates</h2>
-				<ul class="food">
-					<li>Grassfed beef sliders</li>
-					<li>Spicy calamari</li>
-					<li>Coconut shrimp</li>
-					<li>Veggie spring rolls</li>
-					<li>Deviled eggs</li>
-					<li>Tuscan bean dip</li>
-					<li>Chicken lettuce wraps</li>
+			<footer id="contact">
+				<p>&copy; 2017 LadyDev Bar &amp; Grill</p>
+				<ul>
+					<li><a href="http://facebook.com/ladydevbargrill"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+					<li><a href="http://twitter.com/ladydevbargrill"><i class="fa fa-twitter fa-lg"></i></a></li>
+					<li><a href="http://instagram.com/ladydevbargrill"><i class="fa fa-instagram fa-lg"></i></a></li>
+					<li><a href="mailto:ladydevbargrill@example.com"><i class="fa fa-envelope-open-o fa-lg"></i></a></li>
 				</ul>
-			</div>
-		</div>
-	</div>
-	<footer id="contact">
-		<p>&copy; 2017 LadyDev Bar &amp; Grill</p>
-		<ul>
-			<li><a href="http://facebook.com/ladydevbargrill"><img src="assets/images/fb.png" alt=""></a></li>
-			<li><a href="http://twitter.com/ladydevbargrill"><img src="assets/images/twitter.png" alt=""></a></li>
-			<li><a href="http://instagram.com/ladydevbargrill"><img src="assets/images/instagram.png" alt=""></a></li>
-			<li><a href="mailto:ladydevbargrill@example.com"><img src="assets/images/email.png" alt=""></a></li>
-		</ul>
-	</footer>
-</body>
+			</footer>
+		</body>
 </html>
     ```
     
