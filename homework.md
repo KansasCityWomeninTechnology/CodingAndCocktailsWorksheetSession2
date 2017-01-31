@@ -4,6 +4,8 @@ The more you practice, the more comfortable you’ll feel!  Take a look at the f
 
 1. Play a game to understand CSS Selectors better: [http://flukeout.github.io/](http://flukeout.github.io/)
 
+2. Practice more CSS styling on Codecademy: https://www.codecademy.com/courses/css-coding-with-style
+
 2.  Walk through this tutorial by 1stWebDesigner.com to get more Sass practice: [bit.ly/SassTut](http://bit.ly/SassTut)   
 
     {% hint style='tip' %}
