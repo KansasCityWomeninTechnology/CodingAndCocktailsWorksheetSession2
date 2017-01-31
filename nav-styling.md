@@ -6,10 +6,15 @@ Check out w3schools navigation styling if you'd like some additional examples or
 1. The navigation menu is a list of links. Start by selecting the `nav` element in the _ _nav.scss_ file.
 
 2. Set up some basic styling for the `nav` by setting the following properties:
+
     * `background-color`
+    
     * `text-align` If you'd like to align your items to the right like in our sample image set this to `right`.
+    
     * `font-family`
-    * `border-bottom` You might choose to lighten or darken your background-color here by using `lighten($my-color, 10%)` to lighten it by 10% or `darken($my-color, 10%)` to darken it by 10%. A solid border would be most appropriate here.
+    
+    * `border-bottom` 
+    You might choose to lighten or darken your background-color here by using `lighten($my-color, 20%)` to lighten it by 20% or `darken($my-color, 20%)` to darken it by 20%. A solid border would be most appropriate here.
 
 3. The bullets on the list don't make for a visually appealing.  Since the `ul` (unordered list) element is a child of the `nav` element, nest the `ul` selector inside the `nav` element selector.  It should look something like this where the `...` ellipsis indicate code not shown in the example:
 
