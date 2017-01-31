@@ -13,6 +13,16 @@
     2. Give it a `height:` and a `width:`.  A `600px;` height should work well. It should cover `100%;` of the width of the page.
     
     3. Instead of having an `<img>` HTML element here to display the image, we'll be using a background image on our div.  
+    
+        1. Take a look at the [background property documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background).  It is a pretty powerful property with the ability to set values for multiple background properties in one.  
+        
+        2. Set the `background:` property to `url("../images/hero.jpg") no-repeat center top;`.  
+        
+        This is telling the background property that we are using a link to find our image (url = **u**niform **r**esource **l**ocator).  Go up one directory/folder from where we are (`../`), look in the images folder (`images/`) and use the `hero.jpg` file as the background image.
+        
+        Also we don't want to repeat the image, we just want a single image displayed (`no-repeat`).
+        
+        The image should be `center`ed and displayed from the `top`.
 
 3.  Style a product list
 
