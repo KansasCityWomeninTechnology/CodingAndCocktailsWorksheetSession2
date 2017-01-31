@@ -156,4 +156,8 @@
 
 We've got our initial setup for our project done, now let's get to the fun part - styling!
 
+###Documentation
+To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+View the Sass documentation here if you want more detailed information about how any pieces of Sass work: [bit.ly/CnCSassDoc](http://bit.ly/CnCSassDoc) 
 
