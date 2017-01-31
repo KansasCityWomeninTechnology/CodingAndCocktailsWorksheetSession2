@@ -18,11 +18,23 @@
         
         2. Set the `background:` property to `url("../images/hero.jpg") no-repeat center top;`.  
         
+        {% hint style='info' %}
         This is telling the background property that we are using a link to find our image (url = **u**niform **r**esource **l**ocator).  Go up one directory/folder from where we are (`../`), look in the images folder (`images/`) and use the `hero.jpg` file as the background image.
         
         Also we don't want to repeat the image, we just want a single image displayed (`no-repeat`).
         
-        The image should be `center`ed and displayed from the `top`.
+        The image should be `center`ed horizontally and align the `top` of the image with the top of the background layer.
+        {% endhint %}
+        
+        3. Finally, make sure the `background-size:` is set to `cover;` to make the image cover the width and height of the container.
+        
+    4. Select the `.hero-text` class and give it a `width:` of `50%;` and add a `padding-top`.  See if you can find a good value for the top padding so it doesn't sit right at the top of the page and looks nice.
+    
+    5. Also make sure your text is centered.  Hint: https://developer.mozilla.org/en-US/docs/Web/CSS/text-align.
+    
+    6. Set the `color:` and `font-size:` to appropriate values for the `h1`, `h2` and `p` elements.
+    
+    7. You'll also want to add some extra margin on the bottom of the `h2` element to separate it from the `p` text.
 
 3.  Style a product list
 
