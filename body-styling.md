@@ -38,20 +38,98 @@
 
 3. Below the "hero" set up two columns for your main page content and a sidebar.  We'll use the flexbox model here to help us out.
 
-  {% hint style='info' %}
-  Developers will often use a grid framework to help with page layout but in order for us to get more CSS practice we'll set up the columns on our own this time.
-  {% endhint %}
+    For more information on using flexible boxes see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes.
   
   1. Select the `.flexbox` class.
   
   2. Add the `display:` property with the `flex;` value to set up our layout.
   
-  3. Also add 
+  3. We're setting up just a single row with this so set the `flex-flow:` property to `row;`.
+  
+  3. Nested inside the flexbox selector, add a selector for the `.col-1` class.
+  
+  4. To set the size of `.col-1` set the `flex:` property to `3 1 75%;`.  This will tell the first column how much space to take up inside the `.flexbox` flex container.
+  
+  5. After the `}` for the `.col-1` rules, add a selector for `.col-2`.  Set the `flex:` property to `1 3 25%;` 
+  
+  6. In the `.col-2` styles you'll also want to change the `background-color:` and `font-size:`.
 
+4. Style the menu item list.
 
-4. Style a product list
+    1. Select the drinks class.
+    
+    2. Remove the bullets from the list. (Remember how you did this in the nav styling?)
+    
+    3. Nested in the drinks selector, select the `h2` element and set a `font-size` and `margin` of `3em` and `5px` respectively.
+    
+    4. Nested in the drinks selector but after the closing `}` of the h2 selector, select the `item` class.  The ellipses `...` indicate code not written out in the example, they should not be a part of your code.
+    
+    ```sass
+    .drinks {
+            ...
+        
+            h2 {
+                ...
+            }
+        
+            .item {
+            }
+    }
+    ```
+    
+    5. Add a `margin-bottom:` of `60px;`
+    
+    6. Add a top 1 pixel dotted border that is one of the colors from your color palette
+    
+    7. Set the top padding to `10px;`
+    
+    8. Set the `display:` property to `block;`
+    
+    9. Nested in the drinks selector but after the closing `}` of the item class selector, select the `head` class.
+    
+    10. Enlarge the head font size to twice that of the current font size.
+    
+    {% hint style='tip' %}
+    1em is equal to the current font-size of the element in question
+    {% endhint %}
+    
+    11. Nested in the drinks selector but after the closing `}` of the head class selector, select the `p` (paragraph) element.
+    
+    12. Enlarge the paragraph font size to 1.3 times the current font size.
+    
+    13. Nested in the drinks selector but after the closing `}` of the `p` element selector, select the `img` (image) element.
+    
+    14. `float:` the image `left;`.
+    
+    15. Add a margin, height and width for your image.  Suggested values are:
+    
+    ```css
+    margin: 0 20px;
+    height: 120px;
+    width: 120px;
+    ```
+    
+    16. Save your file.
+    
+    17. In the command line, type `sass --watch sass/styles.scss:css/styles.css` so sass will watch for changes to your scss file and automatically compile them.  
+    
+    18. Use a `border-radius:` to make the image circular.  Try different values to see what they look like.  Save the file and refresh in Google Chrome to view changes.  
+    
+    {% hint style='tip' %}
+    Since sass is set to watch for changes we are taking out the manual step to compile the Sass into CSS.
+    {% endhint %}
+    
+    19. Nested in the drinks selector but after the closing `}` of the `img` element selector, select the `a` (anchor) element. 
+    
+    20. Remove the text decoration and set the text color. Hint: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+    
+    21. Check out your page content in Google Chrome.  Things should be looking like they're coming together now!
+    
+5.  Style the sidebar "Small Plates" content on the right side.
 
-5.  Style the sidebar Customer Favorites content to display on the right side
+    1. Below the closing `}` for the drinks class selector, select the sidebar class.
+    
+    2. See if you can style the h2 and ul elements inside the sidebar class to look similar to the example image that you can view here: https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/ladyDevBarAndGrill.png 
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
