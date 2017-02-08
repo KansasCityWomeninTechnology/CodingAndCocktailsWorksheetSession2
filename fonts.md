@@ -12,9 +12,9 @@ Add fonts for your page.
 4. In the _ _variables.scss_ file, set up the variables for `$body-font` and `$header-font` referencing the Google Fonts font-families. Depending on what fonts you've chosen, one variable might look like: `$body-font: "Work Sans", Arial, Helvetica, sans-serif;`
 
     {% hint style='tip' %}
-    If you select a font that has a name that is two words you'll need to wrap the font name in quotation marks.
+If you select a font that has a name that is two words you'll need to wrap the font name in quotation marks.
     
-    Often you'll want to provide backup fonts for the page to fall back on in case it can't load the chosen font. A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif. For serif fonts it might include "Times New Roman", Times, serif as backups.
+Often you'll want to provide backup fonts for the page to fall back on in case it can't load the chosen font. A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif. For serif fonts it might include "Times New Roman", Times, serif as backups.
     {% endhint %}
 
 5. In the _ _normailze.scss_ file, add the `font-family:` property to both the `body` selector and the `h1, h2, h3, h4, h5, h6` selector.  Set the values to the `$body-font;` and `$header-font;` respectively.
@@ -26,10 +26,11 @@ Add fonts for your page.
     1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.
     
     {% hint style='tip' %}
-    The command cd will let you change directory (or folder).
-    The command ls will list the files in your current directory.
-    The command pwd will print working directory, or, show you what directory (or folder) you're currently in.
-    Join us in March for more information on these commands and more as we learn about the Command Line!
+The command `cd` will let you change directory (or folder).
+The command `ls` will list the files in your current directory.
+The command `pwd` will print working directory, or, show you what directory (or folder) you're currently in.
+    
+Join us in March for more information on these commands and more as we learn about the Command Line!
     {% endhint %}
     
     2.  Type: `sass sass/styles.scss css/styles.css`
