@@ -5,13 +5,13 @@
 2. In the middle box with the CSS heading, select the `body` element and change the `background-color` property to the hexadecimal color from your selected color palette.
 
     {% hint style='tip' %}
-    Remember the syntax for a CSS rule looks like this:
+Remember the syntax for a CSS rule looks like this:
+```css
+selector {
+      property: value;
+}
+```
     {% endhint %}
-    ```css
-    selector {
-        property: value;
-    }
-    ```
 
 3. Select the `ul` element and set the `list-style-type` to `none`. Notice how the bullets disappear from each of the list item elements.
 
@@ -24,7 +24,7 @@
     2. Increase the size of the text to be four times the size of the HTML (root) font-size. 
     
     {% hint style='tip' %}
-    1rem is equivalent to the HTML (root) font-size.
+1rem is equivalent to the HTML (root) font-size.
     {% endhint %}
     
     3. Change the `color` to another color hex value from your chosen color palette.
@@ -38,7 +38,7 @@
     2. Change the width of the image to `200px`.
     
     {% hint style='danger' %}
-    Notice how this distorts the image so when you are styling an     image make sure to keep an eye to how your styling affects the     image.
+Notice how this distorts the image so when you are styling an     image make sure to keep an eye to how your styling affects the     image.
     {% endhint %}
 
 7. Select the `.section` class and change the `background-color` to another color within your chosen palette.
