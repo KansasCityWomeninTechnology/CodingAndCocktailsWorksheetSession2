@@ -19,11 +19,11 @@
         2. Set the `background:` property to `url("../images/hero.jpg") no-repeat center top;`.  
         
         {% hint style='info' %}
-        This is telling the background property that we are using a link to find our image (url = uniform resource locator).  Go up one directory/folder from where we are (`../`), look in the images folder (`images/`) and use the `hero.jpg` file as the background image.
+This is telling the background property that we are using a link to find our image (url = uniform resource locator).  Go up one directory/folder from where we are (`../`), look in the images folder (`images/`) and use the `hero.jpg` file as the background image.
         
-        Also we don't want to repeat the image, we just want a single image displayed (`no-repeat`).
+Also we don't want to repeat the image, we just want a single image displayed (`no-repeat`).
         
-        The image should be `center`ed horizontally and align the `top` of the image with the top of the background layer.
+The image should be `center`ed horizontally and align the `top` of the image with the top of the background layer.
         {% endhint %}
         
         3. Finally, make sure the `background-size:` is set to `cover;` to make the image cover the width and height of the container.
