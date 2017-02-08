@@ -90,7 +90,7 @@ The image should be `center`ed horizontally and align the `top` of the image wit
     10. Enlarge the head font size to twice that of the current font size.
     
     {% hint style='tip' %}
-    1em is equal to the current font-size of the element in question
+1em is equal to the current font-size of the element in question
     {% endhint %}
     
     11. Nested in the drinks selector but after the closing `}` of the head class selector, select the `p` (paragraph) element.
@@ -114,13 +114,13 @@ The image should be `center`ed horizontally and align the `top` of the image wit
     17. In the command line, type `sass --watch sass/styles.scss:css/styles.css` so sass will watch for changes to your scss file and automatically compile them.  
     
     {% hint style='tip' %}
-    Use the key combination ctrl + c to get back to your command prompt.
+Use the key combination `ctrl` + `c` to get back to your command prompt.
     {% endhint %}
     
     18. Use a `border-radius:` to make the image circular.  Try different values to see what they look like.  Save the file and refresh in Google Chrome to view changes.  
     
     {% hint style='tip' %}
-    Since sass is set to watch for changes we are taking out the manual step to compile the Sass into CSS.
+Since sass is set to watch for changes we are taking out the manual step to compile the Sass into CSS.
     {% endhint %}
     
     19. Nested in the drinks selector but after the closing `}` of the `img` element selector, select the `a` (anchor) element. 
