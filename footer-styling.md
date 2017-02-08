@@ -12,7 +12,7 @@ Style a footer with copyright information and social media links.
     You might be able to look at the _ _nav.scss_ file for some styling ideas. Also be sure to look at the Mozilla Developer Network (MDN) documentation linked at the bottom of the page to read about the CSS properties you want to use. If you get stuck call a mentor over to talk it through!
 
     {% hint style='tip' %}
-    Notice in the MDN documentation that you can open the examples and play with them in CodePen.  JSFiddle is another similar tool but since we used CodePen earlier you should already have an account there.
+Notice in the MDN documentation that you can open the examples and play with them in CodePen.  JSFiddle is another similar tool but since we used CodePen earlier you should already have an account there.
     {% endhint %}
     
     ![](/images/mdn-doc-codepen.png)
