@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Variables · GitBook</title>
+        <title>CSS Cheat Sheet · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
             
                 
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -65,10 +69,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="normalizing.html" />
+    <link rel="next" href="answer-key.html" />
     
     
-    <link rel="prev" href="sass-setup.html" />
+    <link rel="prev" href="homework.html" />
     
 
     </head>
@@ -182,7 +186,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="styling-with-sass.html">
+        <li class="chapter " data-level="1.4.2" data-path="styling-with-sass.html">
             
                 <a href="styling-with-sass.html">
             
@@ -291,7 +295,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="css_cheat_sheet.html">
+        <li class="chapter active" data-level="1.6" data-path="css_cheat_sheet.html">
             
                 <a href="css_cheat_sheet.html">
             
@@ -347,7 +351,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Variables</a>
+        <a href="." >CSS Cheat Sheet</a>
     </h1>
 </div>
 
@@ -362,26 +366,122 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="variables">Variables</h3>
-<p>Start by creating some Sass variables that will represent the colors in the color palette that you selected earlier.</p>
-<ol>
-<li><p>In the project pane on the left, right click on the sass folder and select <code>New File</code>. </p>
-</li>
-<li><p>Type <code>_variables.scss</code> and press enter. This will be the file where all of our variables that we use in our project will be located.</p>
-</li>
-<li><p>Create your first variable for the main color of your site. Variables start with a <code>$</code> followed by the variable name.  It might look something like the following:</p>
-<pre><code> $orange: #cb6f10;
-</code></pre></li>
-<li><p>Create variables for the remaining colors in your site.  It is common to name your color variables according the color name.  Things like <code>$turquoise</code>, <code>$white</code>, <code>$dark-purple</code>, etc.</p>
-</li>
-<li><p>The variables file needs to be tied in to the project so in your <em>styles.scss</em> file type in <code>@import &#x201C;variables&#x201D;;</code> to import the <em> _variables.scss</em> file.</p>
-</li>
-<li><p>Save both the <em>styles.scss</em> and <em> _variables.scss</em> files.</p>
-</li>
-</ol>
-<h3 id="documentation">Documentation</h3>
-<p>To understand the different CSS properties and available values visit the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
-<p>View the Sass documentation here if you want more detailed information about how any pieces of Sass work: <a href="http://bit.ly/CnCSassDoc" target="_blank">bit.ly/CnCSassDoc</a> </p>
+                                <h1 id="css-cheat-sheet">CSS Cheat Sheet </h1>
+<p>This cheat sheet shares some commonly used CSS properties. If you want to know how to do something googling it is usually very helpful often taking you to stack overflow or w3schools.  Try searching google for CSS margin to get a better understanding of the margin property.  Another place to look is the documentation on the mozilla developer network pages here: <a href="http://bit.ly/MDNDOC" target="_blank">bit.ly/MDNDOC</a> </p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>margin<img src="images/image07.png" alt="Screen Shot 2016-03-26 at 10.45.42 AM.png"></td>
+<td>Adds spacing around an element outside the border (refer to the box model diagram to the left)</td>
+<td>Any pixel number value</td>
+<td><code>p { margin: 10px; } p { margin: 0 auto; }</code></td>
+</tr>
+<tr>
+<td>padding</td>
+<td>Add spacing between the element content and the element border (refer to the box model diagram above)</td>
+<td>Any pixel number value</td>
+<td><code>p { padding: 10px 0 15px 20px }</code></td>
+</tr>
+<tr>
+<td>border</td>
+<td>Specifies the border styling</td>
+<td>Width: any pixel number value</td>
+<td><code>p { border: 2px solid blue; }</code></td>
+</tr>
+<tr>
+<td>color</td>
+<td>Sets the font color</td>
+<td>Hex color values or color names</td>
+<td><code>p { color: #ffffff; }</code></td>
+</tr>
+<tr>
+<td>text-align</td>
+<td>Aligns text according to value</td>
+<td>left</td>
+<td><code>p { text-align: center; }</code></td>
+</tr>
+<tr>
+<td>text-decoration</td>
+<td>Add decoration to text</td>
+<td>none</td>
+<td><code>a { text-decoration: none; }</code></td>
+</tr>
+<tr>
+<td>font-family</td>
+<td>Set the font family (or typeface) of the text</td>
+<td>Any font name</td>
+<td><code>p { font-family: Neuton, &quot;Times New Roman&quot;, Times, serif; }</code></td>
+</tr>
+<tr>
+<td>font-size</td>
+<td>Set the size of the text</td>
+<td>Numeric value in px, em or rem</td>
+<td><code>h1 { font-size: 4em; }</code></td>
+</tr>
+<tr>
+<td>font-style</td>
+<td>Sets the text style</td>
+<td>Normal</td>
+<td><code>h4{ font-style: italic; }</code></td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td>Set the weight of the text</td>
+<td>normal</td>
+<td><code>h3 { font-weight: bold }</code></td>
+</tr>
+<tr>
+<td>background-color</td>
+<td>Sets the color of the selected elements background</td>
+<td>Any hex color value or color name</td>
+<td><code>body { background-color: #ffffff; }</code></td>
+</tr>
+<tr>
+<td>background-image</td>
+<td>Set the background of the element to the image supplied</td>
+<td>Image url</td>
+<td><code>.hero { background-image: url(&#x2018;images/image.png&#x2019;); }</code></td>
+</tr>
+<tr>
+<td>background-repeat</td>
+<td>Specifies whether or not a background image should be repeated</td>
+<td>repeat</td>
+<td><code>body { background-repeat: no-repeat; }</code></td>
+</tr>
+<tr>
+<td>background-position</td>
+<td>Sets the starting position of a background image</td>
+<td>center center</td>
+<td><code>.hero { background-position: right center; }</code></td>
+</tr>
+<tr>
+<td>list-style-type</td>
+<td>Determines the bullet style on the list</td>
+<td>circle</td>
+<td><code>ul { list-style-type: none; }</code></td>
+</tr>
+<tr>
+<td>float</td>
+<td>Specifies whether an element should float.</td>
+<td>Right</td>
+<td><code>img { float: left; }</code></td>
+</tr>
+<tr>
+<td>clear</td>
+<td>Does not allow floating to the specified side of an element</td>
+<td>Right</td>
+<td><code>.footer { clear: both; }</code></td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -409,12 +509,12 @@
 
             
                 
-                <a href="sass-setup.html" class="navigation navigation-prev " aria-label="Previous page: Sass Setup">
+                <a href="homework.html" class="navigation navigation-prev " aria-label="Previous page: Homework">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="normalizing.html" class="navigation navigation-next " aria-label="Next page: Normalizing">
+                <a href="answer-key.html" class="navigation navigation-next " aria-label="Next page: Answer Key">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -425,7 +525,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Variables","level":"1.4.2","depth":2,"next":{"title":"Normalizing","level":"1.4.3","depth":2,"path":"normalizing.md","ref":"normalizing.md","articles":[]},"previous":{"title":"Sass Setup","level":"1.4.1","depth":2,"path":"sass-setup.md","ref":"sass-setup.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"styling-with-sass.md","mtime":"2017-01-31T15:13:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-08T02:48:55.483Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CSS Cheat Sheet","level":"1.6","depth":1,"next":{"title":"Answer Key","level":"1.7","depth":1,"path":"answer-key.md","ref":"answer-key.md","articles":[]},"previous":{"title":"Homework","level":"1.5","depth":1,"path":"homework.md","ref":"homework.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"css_cheat_sheet.md","mtime":"2017-01-31T02:05:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-08T02:52:26.621Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
