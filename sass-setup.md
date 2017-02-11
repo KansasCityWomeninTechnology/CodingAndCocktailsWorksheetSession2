@@ -167,6 +167,10 @@ The page doesn't look very good yet but we've got our initial setup for our proj
     {% hint style='danger' %}
     IMPORTANT! Any time the worksheet references viewing in Google     Chrome or refreshing the page in Google Chrome you will use this Preview area instead.
     {% endhint %}
+    
+    {% hint style='danger' %}
+    References to the CSS folder above will be the folder named the same as what you named your workspace.
+    {% endhint %}
 
 5. Continue with step 7 above. 
 <!--endsec-->
