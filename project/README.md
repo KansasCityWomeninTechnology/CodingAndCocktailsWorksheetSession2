@@ -48,7 +48,7 @@ If you are using a Chromebook, please skip to the Chromebook Only section below!
 
 10. In the terminal section of your workspace you will enter the commands in steps 1 and 2 above.
 
-![](/images/c9_terminal.png)
+   ![](/images/c9_terminal.png)
 <!--endsec-->
 
 
