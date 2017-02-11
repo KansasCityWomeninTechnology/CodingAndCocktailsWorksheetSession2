@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Nav Styling · GitBook</title>
+        <title>Footer Styling · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="body-styling.html" />
+    <link rel="next" href="mixins.html" />
     
     
-    <link rel="prev" href="fonts.html" />
+    <link rel="prev" href="body-styling.html" />
     
 
     </head>
@@ -225,7 +225,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.5" data-path="nav-styling.html">
+        <li class="chapter " data-level="1.4.5" data-path="nav-styling.html">
             
                 <a href="nav-styling.html">
             
@@ -251,7 +251,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.7" data-path="footer-styling.html">
+        <li class="chapter active" data-level="1.4.7" data-path="footer-styling.html">
             
                 <a href="footer-styling.html">
             
@@ -351,7 +351,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Nav Styling</a>
+        <a href="." >Footer Styling</a>
     </h1>
 </div>
 
@@ -366,74 +366,22 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="nav-styling">Nav Styling</h3>
-<p>Style a horizontal navigation bar.</p>
-<p>Check out w3schools navigation styling if you&apos;d like some additional examples or an alternate explanation: <a href="http://bit.ly/NavCSS" target="_blank">bit.ly/NavCSS</a></p>
+                                <h2 id="footer-styling">Footer Styling</h2>
+<p>Style a footer with copyright information and social media links.</p>
 <ol>
 <li><p>In the project pane on the left, right click on the sass folder and select <code>New File</code>. </p>
 </li>
-<li><p>Type <code>_nav.scss</code> and press enter. This will be the partial file where the styling for the navigation bar in our project will be located.</p>
+<li><p>Type <code>_footer.scss</code> and press enter. This will be the partial file where the styling for the main body portion of our page will be located.</p>
 </li>
-<li><p>Don&apos;t forget to import it into your <em>styles.scss</em> file.</p>
+<li><p>Don&apos;t forget to import footer into your <em>styles.scss</em> file.</p>
 </li>
-<li><p>The navigation menu is a list of links. Start by selecting the <code>nav</code> element in the <em> _nav.scss</em> file.</p>
+<li><p>See if you can set some styles for the footer on your own.  The example image can be found here: <a href="https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/ladyDevBarAndGrill.png" target="_blank">https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/ladyDevBarAndGrill.png</a></p>
+<p> You might be able to look at the <em> _nav.scss</em> file for some styling ideas. Also be sure to look at the Mozilla Developer Network (MDN) documentation linked at the bottom of the page to read about the CSS properties you want to use. If you get stuck call a mentor over to talk it through!</p>
+<p> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Notice in the MDN documentation that you can open the examples and play with them in CodePen.  JSFiddle is another similar tool but since we used CodePen earlier you should already have an account there.</p>
+</div></div></p>
+<p> <img src="images/mdn-doc-codepen.png" alt=""></p>
 </li>
-<li><p>Set up some basic styling for the <code>nav</code> by setting the following properties:</p>
-<ul>
-<li><p><code>background-color:</code></p>
-</li>
-<li><p><code>text-align:</code> 
-If you&apos;d like to align your items to the right like in our sample image set this to <code>right;</code>.</p>
-</li>
-<li><p><code>font-family:</code></p>
-</li>
-<li><p><code>border-bottom:</code> 
-You might choose to lighten or darken your background-color here by using <code>lighten($my-color, 20%)</code> to lighten it by 20% or <code>darken($my-color, 20%)</code> to darken it by 20%. A solid border would be most appropriate here.</p>
-</li>
-</ul>
-</li>
-<li><p>The bullets on the list don&apos;t make for a visually appealing.  Since the <code>ul</code> (unordered list) element is a child of the <code>nav</code> element, nest the <code>ul</code> selector inside the <code>nav</code> element selector.  It should look something like this where the <code>...</code> ellipsis indicate code not shown in the example:</p>
-<pre><code class="lang-sass"> nav {
-     ...
-     ul {
-     }
- }
-</code></pre>
-</li>
-<li><p>Remove the bullets from the <code>ul</code> by using the <code>list-style-type:</code> property and setting it to the value <code>none;</code>.  Your styling should now look something like this:</p>
-<pre><code class="lang-sass"> nav {
-     background-color: $orange;
-     text-align: right;
-     font-family: $body-font;
-     border-bottom: 5px solid lighten($orange, 20%);
-
-     ul {
-         list-style-type: none;
-     }
- }
-</code></pre>
-</li>
-<li><p>Also nested inside the <code>nav</code> selector, select the <code>li</code> (list item) elements.  Make sure these have styling of <code>display: inline;</code> to make sure they are shown in a horizontal row and <code>padding: 2px;</code> to space the items out a bit.</p>
-</li>
-<li><p>Finally, style the <code>a</code> (anchor) elements. Set the following properties on these:</p>
-<ul>
-<li><p>Set <code>display:</code> to <code>inline-block;</code> to make sure everything stays on the same horizontal line.</p>
-</li>
-<li><p>Set <code>padding:</code> to <code>6px 20px;</code> to give some space around the text.  This will put a 6 pixel padding on the left and the right and a 20 pixel padding on the top and bottom.  </p>
-</li>
-<li><p>Set <code>text-decoration:</code> to <code>none;</code> to remove the underline on the link text.</p>
-</li>
-<li><p>Set <code>font-weight:</code> to <code>bold;</code> to make the text a bit heavier.</p>
-</li>
-<li><p>Set the font <code>color:</code> to one of your chosen color palette&apos;s color variables <code>$white;</code></p>
-</li>
-<li><p>Set the <code>font-size:</code> to <code>1.5em;</code> to make it a bit larger and easier to read the page navigation.</p>
-</li>
-</ul>
-</li>
-<li><p>Save the <em>styles.scss</em>, and <em> _nav.scss</em> files.</p>
-</li>
-<li><p>Now compile the Sass into CSS. </p>
+<li><p>Save your <em>styles.scss</em> and <em> _footer.scss</em> files and compile the Sass into CSS. </p>
 <ol>
 <li><p>In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your <em>index.html</em> file.</p>
 </li>
@@ -441,7 +389,7 @@ You might choose to lighten or darken your background-color here by using <code>
 </li>
 </ol>
 </li>
-<li><p>Go to Google Chrome and refresh your page. You should have a more visually appealing navigation bar now.</p>
+<li><p>Go to Google Chrome and refresh your page. You should have a more visually appealing footer now.  If it doesn&apos;t look quite like the sample image try setting some more styles and see if you can get it closer.  Don&apos;t forget to save, compile and refresh your page in Google Chrome to see your changes!</p>
 </li>
 </ol>
 <h3 id="documentation">Documentation</h3>
@@ -474,12 +422,12 @@ You might choose to lighten or darken your background-color here by using <code>
 
             
                 
-                <a href="fonts.html" class="navigation navigation-prev " aria-label="Previous page: Fonts">
+                <a href="body-styling.html" class="navigation navigation-prev " aria-label="Previous page: Body Styling">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="body-styling.html" class="navigation navigation-next " aria-label="Next page: Body Styling">
+                <a href="mixins.html" class="navigation navigation-next " aria-label="Next page: Mixins">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -490,7 +438,7 @@ You might choose to lighten or darken your background-color here by using <code>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Nav Styling","level":"1.4.5","depth":2,"next":{"title":"Body Styling","level":"1.4.6","depth":2,"path":"body-styling.md","ref":"body-styling.md","articles":[]},"previous":{"title":"Fonts","level":"1.4.4","depth":2,"path":"fonts.md","ref":"fonts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"nav-styling.md","mtime":"2017-01-31T15:29:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-08T02:52:26.621Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Footer Styling","level":"1.4.7","depth":2,"next":{"title":"Mixins","level":"1.4.8","depth":2,"path":"mixins.md","ref":"mixins.md","articles":[]},"previous":{"title":"Body Styling","level":"1.4.6","depth":2,"path":"body-styling.md","ref":"body-styling.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx"],"pluginsConfig":{"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"footer-styling.md","mtime":"2017-02-08T02:57:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-11T01:21:15.584Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -505,10 +453,6 @@ You might choose to lighten or darken your background-color here by using <code>
     
         
         <script src="gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
