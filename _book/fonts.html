@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Footer Styling · GitBook</title>
+        <title>Fonts · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="mixins.html" />
+    <link rel="next" href="nav-styling.html" />
     
     
-    <link rel="prev" href="body-styling.html" />
+    <link rel="prev" href="normalizing.html" />
     
 
     </head>
@@ -212,7 +212,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="fonts.html">
+        <li class="chapter active" data-level="1.4.4" data-path="fonts.html">
             
                 <a href="fonts.html">
             
@@ -251,7 +251,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.7" data-path="footer-styling.html">
+        <li class="chapter " data-level="1.4.7" data-path="footer-styling.html">
             
                 <a href="footer-styling.html">
             
@@ -351,7 +351,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Footer Styling</a>
+        <a href="." >Fonts</a>
     </h1>
 </div>
 
@@ -366,30 +366,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="footer-styling">Footer Styling</h2>
-<p>Style a footer with copyright information and social media links.</p>
+                                <h3 id="fonts">Fonts</h3>
+<p>Add fonts for your page.</p>
 <ol>
-<li><p>In the project pane on the left, right click on the sass folder and select <code>New File</code>. </p>
+<li><p>Back in Google Fonts (<a href="https://fonts.google.com/" target="_blank">fonts.google.com</a>), make sure you have at least two fonts selected, one to use for headers and one to use for body text.</p>
 </li>
-<li><p>Type <code>_footer.scss</code> and press enter. This will be the partial file where the styling for the main body portion of our page will be located.</p>
+<li><p>This time we&apos;ll find the <code>import</code> way of embedding the fonts by clicking on the red @IMPORT header next to the STANDARD header.</p>
+<p> <img src="images/font-import.png" alt=""></p>
 </li>
-<li><p>Don&apos;t forget to import footer into your <em>styles.scss</em> file.</p>
+<li><p>Copy the just the import statement for your fonts, not the surrounding <code>&lt;style&gt;&lt;/style&gt;</code> tags and paste it as the first line in your <em>styles.scss</em> file.</p>
 </li>
-<li><p>See if you can set some styles for the footer on your own.  The example image can be found here: <a href="https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/ladyDevBarAndGrill.png" target="_blank">https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/ladyDevBarAndGrill.png</a></p>
-<p> You might be able to look at the <em> _nav.scss</em> file for some styling ideas. Also be sure to look at the Mozilla Developer Network (MDN) documentation linked at the bottom of the page to read about the CSS properties you want to use. If you get stuck call a mentor over to talk it through!</p>
-<p> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Notice in the MDN documentation that you can open the examples and play with them in CodePen.  JSFiddle is another similar tool but since we used CodePen earlier you should already have an account there.</p>
+<li><p>In the <em> _variables.scss</em> file, set up the variables for <code>$body-font</code> and <code>$header-font</code> referencing the Google Fonts font-families. Depending on what fonts you&apos;ve chosen, one variable might look like: <code>$body-font: &quot;Work Sans&quot;, Arial, Helvetica, sans-serif;</code></p>
+<p> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>If you select a font that has a name that is two words you&apos;ll need to wrap the font name in quotation marks.</p>
+<p>Often you&apos;ll want to provide backup fonts for the page to fall back on in case it can&apos;t load the chosen font. A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif. For serif fonts it might include &quot;Times New Roman&quot;, Times, serif as backups.</p>
 </div></div></p>
-<p> <img src="images/mdn-doc-codepen.png" alt=""></p>
 </li>
-<li><p>Save your <em>styles.scss</em> and <em> _footer.scss</em> files and compile the Sass into CSS. </p>
+<li><p>In the <em> _normailze.scss</em> file, add the <code>font-family:</code> property to both the <code>body</code> selector and the <code>h1, h2, h3, h4, h5, h6</code> selector.  Set the values to the <code>$body-font;</code> and <code>$header-font;</code> respectively.</p>
+</li>
+<li><p>Save the <em> _variables.scss</em>, <em> _styles.scss</em>, and <em> _normalize.scss</em> files.</p>
+</li>
+<li><p>Now compile the Sass into CSS. </p>
 <ol>
-<li><p>In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your <em>index.html</em> file.</p>
+<li><p>In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your <em>index.html</em> file.  Cloud9 users will already be in the right folder.</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>The command <code>cd</code> will let you change directory (or folder).
+The command <code>ls</code> will list the files in your current directory.
+The command <code>pwd</code> will print working directory, or, show you what directory (or folder) you&apos;re currently in.</p>
+<p>Join us in March for more information on these commands and more as we learn about the Command Line!</p>
+</div></div></p>
 </li>
 <li><p>Type: <code>sass sass/styles.scss css/styles.css</code></p>
 </li>
 </ol>
 </li>
-<li><p>Go to Google Chrome and refresh your page. You should have a more visually appealing footer now.  If it doesn&apos;t look quite like the sample image try setting some more styles and see if you can get it closer.  Don&apos;t forget to save, compile and refresh your page in Google Chrome to see your changes!</p>
+<li><p>Go to Google Chrome and refresh your page. You should notice the font styling has changed.</p>
 </li>
 </ol>
 <h3 id="documentation">Documentation</h3>
@@ -422,12 +431,12 @@
 
             
                 
-                <a href="body-styling.html" class="navigation navigation-prev " aria-label="Previous page: Body Styling">
+                <a href="normalizing.html" class="navigation navigation-prev " aria-label="Previous page: Normalizing">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="mixins.html" class="navigation navigation-next " aria-label="Next page: Mixins">
+                <a href="nav-styling.html" class="navigation navigation-next " aria-label="Next page: Nav Styling">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -438,7 +447,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Footer Styling","level":"1.4.7","depth":2,"next":{"title":"Mixins","level":"1.4.8","depth":2,"path":"mixins.md","ref":"mixins.md","articles":[]},"previous":{"title":"Body Styling","level":"1.4.6","depth":2,"path":"body-styling.md","ref":"body-styling.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"footer-styling.md","mtime":"2017-02-08T02:57:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-11T01:21:44.595Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Fonts","level":"1.4.4","depth":2,"next":{"title":"Nav Styling","level":"1.4.5","depth":2,"path":"nav-styling.md","ref":"nav-styling.md","articles":[]},"previous":{"title":"Normalizing","level":"1.4.3","depth":2,"path":"normalizing.md","ref":"normalizing.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fonts.md","mtime":"2017-02-11T01:20:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-11T01:21:44.595Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
