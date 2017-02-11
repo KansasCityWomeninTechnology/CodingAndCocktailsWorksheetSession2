@@ -5,7 +5,7 @@ Start by creating some Sass variables that will represent the colors in the colo
 
 2. Type `_variables.scss` and press enter. This will be the file where all of our variables that we use in our project will be located.
     
-3. Create your first variable for the main color of your site. Variables start with a `$` followed by the variable name.  It might look something like the following:
+3. Open that file if necessary and in that file create your first variable for the main color of your site. Variables start with a `$` followed by the variable name.  It might look something like the following:
     
     ```
     $orange: #cb6f10;
