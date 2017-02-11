@@ -1,5 +1,9 @@
 ###Setup
 
+{% hint style='danger' %}
+If you are using a Chromebook, please skip to the Chromebook Only section below!
+{% endhint %}
+
 1. In your `CodingAndCocktails` folder in your home directory create a `CSS` folder
 
 2. Open Atom and set up your HTML file.
@@ -147,6 +151,27 @@
 		2. Choose Google Chrome from the list.
 
 The page doesn't look very good yet but we've got our initial setup for our project done, now let's get to the fun part - styling!
+
+<!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="section0" data-show=true data-collapse=true ces-->
+
+1. From the `File` menu choose `New File`
+
+2. From the `File` menu choose `Save As...` and use the file name _index.html_.  It should default to the workspace folder and display `/` in the `Folder` text box at the bottom, leave that as-is.
+
+3.  Click the green `Save` button
+
+4. In the top menu bar choose `Preview` and then select `Live Preview File (index.html)`
+
+    This opens up a "browser" window that will show changes you make to your web page as you add content.  
+    
+    {% hint style='danger' %}
+    IMPORTANT! Any time the worksheet references viewing in Google     Chrome or refreshing the page in Google Chrome you will use this Preview area instead.
+    {% endhint %}
+
+5. Continue with step 7 above. 
+<!--endsec-->
+
+
 
 ###Documentation
 To understand the different CSS properties and available values visit the [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
