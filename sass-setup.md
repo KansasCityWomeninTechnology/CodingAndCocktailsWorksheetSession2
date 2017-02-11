@@ -170,7 +170,7 @@ IMPORTANT! Any time the worksheet references viewing in Google     Chrome or ref
 References to the CSS folder above will be the folder named the same as what you named your workspace.
     {% endhint %}
 
-5. Continue with step 7 above. 
+5. Continue with step 2. vii. above: "Copy and paste the following HTML code into your _index.html_ file." 
 <!--endsec-->
 
 
