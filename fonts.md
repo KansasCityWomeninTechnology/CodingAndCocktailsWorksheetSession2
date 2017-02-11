@@ -23,7 +23,7 @@ Often you'll want to provide backup fonts for the page to fall back on in case i
 
 6. Now compile the Sass into CSS. 
     
-    1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.
+    1. In the command line (Git Bash for windows, iTerm2 for macs) make sure you are in the folder containing your _index.html_ file.  Cloud9 users will already be in the right folder.
     
     {% hint style='tip' %}
 The command `cd` will let you change directory (or folder).
