@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Part 2:  Getting Sassy · GitBook</title>
+        <title>Project · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../sass-setup.html" />
+    <link rel="next" href="../part-1-basic-css.html" />
     
     
-    <link rel="prev" href="../styling-html.html" />
+    <link rel="prev" href="../" />
     
 
     </head>
@@ -114,7 +114,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="./">
+        <li class="chapter active" data-level="1.2" data-path="./">
             
                 <a href="./">
             
@@ -159,7 +159,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="part_2_re_-styling_with_sass.html">
+        <li class="chapter " data-level="1.4" data-path="part_2_re_-styling_with_sass.html">
             
                 <a href="part_2_re_-styling_with_sass.html">
             
@@ -351,7 +351,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Part 2:  Getting Sassy</a>
+        <a href=".." >Project</a>
     </h1>
 </div>
 
@@ -366,16 +366,48 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="part-2-getting-sassy">Part 2: Getting Sassy</h2>
-<p>You&apos;ve had some practice with basic CSS, now let&apos;s move on to practicing styling a page using Sass to make life a bit easier. </p>
-<h4 id="why-are-we-using-sass">Why are we using Sass?</h4>
-<p>There are some things that can be cumbersome in plain CSS, and you can feel like you&#x2019;re repeating yourself a lot. Using a pre-processor to write your styles can ease these pain points. A compiler will take these pre-processed styles &amp; compile them into plain CSS. The syntax of pre-processors is similar to CSS and pre-processors are going to be used by most employers today. We chose Sass over some of the other pre-processors options because it is the most popular choice so you will run into Sass more often than the others.</p>
-<h3 id="the-project">The Project</h3>
-<p>If you follow our instructions your page will end up looking like the example below but feel free to add in some of your own creativity if you feel comfortable!</p>
-<p><img src="../images/ladyDevBarAndGrill.png" alt=""></p>
-<h3 id="documentation">Documentation</h3>
-<p>To understand the different CSS properties and available values visit the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
-<p>View the Sass documentation here if you want more detailed information about how any pieces of Sass work: <a href="http://bit.ly/CnCSassDoc" target="_blank">bit.ly/CnCSassDoc</a> </p>
+                                <h1 id="project">Project</h1>
+<p>We&apos;ll start out trying some basic CSS styling in Part 1 to get some practice and learn how to make the page look better.  From there we&apos;ll start trying out Sass - a CSS Compiler - to work through styling a sample page more efficiently.  We&#x2019;ll utilize Sass variables, mixins and nesting to make our development easier!</p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>If you are using a Chromebook, please skip to the Chromebook Only section below!</p>
+</div></div></p>
+<h1 id="prep-work">Prep Work </h1>
+<ol>
+<li><p>Open your command line terminal (Git Bash on Windows, iTerm2 on Macs) and type the command:  <code>gem install sass</code></p>
+<p>Output should look similar to :</p>
+<p><img src="../images/image02.png" alt=""></p>
+</li>
+<li><p>Check that you&#x2019;ve got everything installed by typing:  <code>sass -v</code></p>
+<p>Output should look like this (though you may have a newer version installed):</p>
+<p><img src="../images/image04.png" alt=""></p>
+</li>
+</ol>
+<sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="section0" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="chromebooks-only-cloud9-instructions">Chromebooks Only: Cloud9 Instructions<a class="pull-right section atTitle btn btn-default" target="section0"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section0"><div class="panel-body">
+<ol>
+<li><p>Sign up for an account at <a href="https://c9.io" target="_blank">c9.io</a></p>
+<p>Note: It will ask you for credit card information but you will not get charged for anything since we do not use features of Cloud9 that cost money. Ask a mentor for the Coding &amp; Cocktails card for Cloud9.</p>
+</li>
+<li><p>Confirm your account from your email and log in to Cloud9.</p>
+</li>
+<li><p>Select <code>Workspaces</code> from the left side panel if you are not already there.</p>
+</li>
+<li><p>Choose <code>Create a new workspace</code>.</p>
+</li>
+<li><p>Pick a name for your workspace and enter it - it can be anything you&apos;d like.  You do not need a description but feel free to add one if you&apos;d like.</p>
+</li>
+<li><p>Leave your workspace as a &quot;Public workspace&quot;.</p>
+</li>
+<li><p>In the template section choose <code>HTML5</code></p>
+</li>
+<li><p>Click on the <code>Create Workspace</code> button</p>
+<p>Cloud9 will take a minute and create your workspace here</p>
+</li>
+<li><p>Close the README.md file that is open when you get to your workspace.</p>
+</li>
+<li><p>In the terminal section of your workspace you will enter the commands in steps 1 and 2 above.</p>
+<p><img src="../images/c9_terminal.png" alt=""></p>
+</li></ol></div></div></div></sec>
+
+
 
                                 
                                 </section>
@@ -403,12 +435,12 @@
 
             
                 
-                <a href="../styling-html.html" class="navigation navigation-prev " aria-label="Previous page: Styling HTML">
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Overview">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../sass-setup.html" class="navigation navigation-next " aria-label="Next page: Sass Setup">
+                <a href="../part-1-basic-css.html" class="navigation navigation-next " aria-label="Next page: Part 1: Basic CSS">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -419,7 +451,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Part 2:  Getting Sassy","level":"1.4","depth":1,"next":{"title":"Sass Setup","level":"1.4.1","depth":2,"path":"sass-setup.md","ref":"sass-setup.md","articles":[]},"previous":{"title":"Styling HTML","level":"1.3.1","depth":2,"path":"styling-html.md","ref":"styling-html.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project/part_2_re_-styling_with_sass.md","mtime":"2017-02-04T15:58:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-11T01:25:22.719Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Project","level":"1.2","depth":1,"next":{"title":"Part 1: Basic CSS","level":"1.3","depth":1,"path":"part-1-basic-css.md","ref":"part-1-basic-css.md","articles":[{"title":"Styling HTML","level":"1.3.1","depth":2,"path":"styling-html.md","ref":"styling-html.md","articles":[]}]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project/README.md","mtime":"2017-02-11T01:24:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-11T01:25:22.719Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
