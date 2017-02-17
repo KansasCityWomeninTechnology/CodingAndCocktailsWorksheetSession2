@@ -130,7 +130,13 @@ If you are using a Chromebook, please skip to the Chromebook Only section below!
 	
 	3. Navigate to our GitHub repository at [https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/master/images](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/master/images). 
 	
-	4. Click on each image filename to view the file. Then, click the download button just to the upper right of the displayed image.  Save the file into your `images` folder. When you're done, your images folder should contain:
+	4. Click on each image filename to view the file. Then, click the download button just to the upper right of the displayed image.
+	
+	![](/images/download.png)
+	
+	5. Save the files into your `images` folder. 
+	
+	When you're done, your images folder should contain:
 	```
 	beer.jpg
 	hero.jpg
@@ -142,17 +148,17 @@ If you are using a Chromebook, please skip to the Chromebook Only section below!
 	wine.jpg
 	```
 	
-	5. Right click again on that main `CSS` folder in the left pane and select `New Folder`.
+	6. Right click again on that main `CSS` folder in the left pane and select `New Folder`.
 	
-	6. Type `sass` and press enter.
+	7. Type `sass` and press enter.
 	
-	7. Right click again on that main `CSS` folder in the left pane and select `New Folder`.  
+	8. Right click again on that main `CSS` folder in the left pane and select `New Folder`.  
 	
-	8. Type `css` and press enter.
+	9. Type `css` and press enter.
 	
-	9. In the project pane on the left, right click on the `sass` folder and select `New File`. 
+	10. In the project pane on the left, right click on the `sass` folder and select `New File`. 
 
-	10. Type `styles.scss` and press enter. This will be your main Sass styling file and will only contain import statements when we’re done.
+	101. Type `styles.scss` and press enter. This will be your main Sass styling file and will only contain import statements when we’re done.
 	
 4. Open your _index.html_ file in Google Chrome and notice the current styling.  You can do this two ways.
 	
