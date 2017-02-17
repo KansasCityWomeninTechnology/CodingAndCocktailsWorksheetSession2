@@ -130,7 +130,7 @@ If you are using a Chromebook, please skip to the Chromebook Only section below!
 	
 	3. Navigate to our GitHub repository at [https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/master/images](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/master/images). 
 	
-	4. Download each of the image files into your `images` folder. The image list includes:
+	4. Click on each image filename to view the file. Then, click the download button just to the upper right of the displayed image.  Save the file into your `images` folder. When you're done, your images folder should contain:
 	```
 	beer.jpg
 	hero.jpg
@@ -142,15 +142,17 @@ If you are using a Chromebook, please skip to the Chromebook Only section below!
 	wine.jpg
 	```
 	
-	5. Type `sass` and press enter.
+	5. Right click again on that main `CSS` folder in the left pane and select `New Folder`.
 	
-	6. Right click again on that main `CSS` folder in the left pane and select `New Folder`.  
+	6. Type `sass` and press enter.
 	
-	7. Type `css` and press enter.
+	7. Right click again on that main `CSS` folder in the left pane and select `New Folder`.  
 	
-	8. In the project pane on the left, right click on the `sass` folder and select `New File`. 
+	8. Type `css` and press enter.
+	
+	9. In the project pane on the left, right click on the `sass` folder and select `New File`. 
 
-	9. Type `styles.scss` and press enter. This will be your main Sass styling file and will only contain import statements when we’re done.
+	10. Type `styles.scss` and press enter. This will be your main Sass styling file and will only contain import statements when we’re done.
 	
 4. Open your _index.html_ file in Google Chrome and notice the current styling.  You can do this two ways.
 	
