@@ -1,6 +1,6 @@
 ###Body Styling
 
-{% hint style='warning' %}
+{% hint style='danger' %}
 If you're missing image files, navigate back to the [Sass Setup](/sass-setup.md) portion and run through steps 3.i through 3.iv.
 {% endhint %}
 
