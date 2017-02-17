@@ -1,5 +1,10 @@
 ###Body Styling
 
+{% hint style='warning' %}
+If you're missing image files, navigate back to the [Sass Setup](/sass-setup.md) portion and run through steps 3.i through 3.iv.
+{% endhint %}
+
+
 1. In the project pane on the left, right click on the sass folder and select `New File`. 
 
 2. Type `_main.scss` and press enter. This will be the partial file where the styling for the main body portion of our page will be located.
