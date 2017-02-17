@@ -1,0 +1,661 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Sass Setup · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="styling-with-sass.html" />
+    
+    
+    <link rel="prev" href="project/part_2_re_-styling_with_sass.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="project/">
+            
+                <a href="project/">
+            
+                    
+                    Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="part-1-basic-css.html">
+            
+                <a href="part-1-basic-css.html">
+            
+                    
+                    Part 1: Basic CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="styling-html.html">
+            
+                <a href="styling-html.html">
+            
+                    
+                    Styling HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="project/part_2_re_-styling_with_sass.html">
+            
+                <a href="project/part_2_re_-styling_with_sass.html">
+            
+                    
+                    Part 2:  Getting Sassy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="sass-setup.html">
+            
+                <a href="sass-setup.html">
+            
+                    
+                    Sass Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="styling-with-sass.html">
+            
+                <a href="styling-with-sass.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="normalizing.html">
+            
+                <a href="normalizing.html">
+            
+                    
+                    Normalizing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="fonts.html">
+            
+                <a href="fonts.html">
+            
+                    
+                    Fonts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="nav-styling.html">
+            
+                <a href="nav-styling.html">
+            
+                    
+                    Nav Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="body-styling.html">
+            
+                <a href="body-styling.html">
+            
+                    
+                    Body Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="footer-styling.html">
+            
+                <a href="footer-styling.html">
+            
+                    
+                    Footer Styling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="mixins.html">
+            
+                <a href="mixins.html">
+            
+                    
+                    Mixins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="homework.html">
+            
+                <a href="homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="css_cheat_sheet.html">
+            
+                <a href="css_cheat_sheet.html">
+            
+                    
+                    CSS Cheat Sheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="answer-key.html">
+            
+                <a href="answer-key.html">
+            
+                    
+                    Answer Key
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Sass Setup</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="setup">Setup</h3>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>If you are using a Chromebook, please skip to the Chromebook Only section below!</p>
+</div></div></p>
+<ol>
+<li><p>In your <code>CodingAndCocktails</code> folder in your home directory create a <code>CSS</code> folder</p>
+</li>
+<li><p>Open Atom and set up your HTML file.</p>
+<ol>
+<li><p>Close any open tabs in Atom by hovering over them with your mouse at the top of the screen and clicking on the small x that appears.</p>
+</li>
+<li><p>In the <code>File</code> menu choose <code>Add Project Folder...</code></p>
+</li>
+<li><p>Navigate to the <code>CSS</code> folder you just created in step 1 and choose <code>Open</code>.</p>
+</li>
+<li><p>You should now have a pane on the left displaying the <code>CSS</code> folder. Right click on the folder and choose <code>New File</code>.</p>
+</li>
+<li><p>Type <em>index.html</em> and press enter.</p>
+</li>
+<li><p>A new file should display on the left and should open in your main work area.  </p>
+</li>
+<li><p>Copy and paste the following HTML code into your <em>index.html</em> file.</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>LadyDev Bar &amp;amp; Grill<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;css/styles.css&quot;</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://use.fontawesome.com/81b69a015b.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;drinks&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#about&quot;</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#drinks&quot;</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#contact&quot;</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;about&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero-text&quot;</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>LadyDev<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Bar &amp;amp; Grill<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Making development more delicious every day!<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Welcome to the LadyDev Bar &amp;amp; Grill.  We&apos;re glad you&apos;re here!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Sit down, relax, and enjoy good drinks, good eats, and good friends.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flexbox&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;drinks col-1&quot;</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;drinks&quot;</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/martini.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Martinis<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Made with our own homemade gin and dry vermouth.  Choose from The Classic, Lemondrop, or Chocolate.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/wine.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Wine<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>There are just too many to list.  Ask your server for a recommendation.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/whiskey-cocktails.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Whiskey cocktails<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Whiskey.  Some might consider it their spirit animal.  Thank goodness it&apos;s not just for men anymore.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/margarita.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Margaritas<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Slushy frozen delicousness, in Peach, Strawberry, or Mango.  Served with a rock-salted rim and lime.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hot-cocktail.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Hot &amp;amp; Creamy<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Just what you need to kick off a night of coding.  We offer concoctions with coffee, Kahlua, Bailey&apos;s, and more.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/beer.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Beer<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We serve the finest microbrews from around the world.  How about a Saison, IPA, or Stout?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/milk.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Non alcoholic<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We have plenty of NA options available to quench your thirst, like lemonade, milk or soda.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;food sidebar col-2&quot;</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Small plates<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;food&quot;</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Grassfed beef sliders<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Spicy calamari<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Coconut shrimp<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Veggie spring rolls<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Deviled eggs<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Tuscan bean dip<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Chicken lettuce wraps<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;contact&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&amp;copy; 2017 LadyDev Bar &amp;amp; Grill<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://facebook.com/ladydevbargrill&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-facebook-official fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://twitter.com/ladydevbargrill&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-twitter fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://instagram.com/ladydevbargrill&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-instagram fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:ladydevbargrill@example.com&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-envelope-open-o fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>Save the file.</p>
+</li>
+</ol>
+</li>
+<li><p>Set up project structure.</p>
+<ol>
+<li><p>Right click again on that <code>CSS</code> folder in the left pane and select <code>New Folder</code>.  </p>
+</li>
+<li><p>Type <code>images</code> and press enter.</p>
+</li>
+<li><p>Navigate to our GitHub repository at <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/master/images" target="_blank">https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/master/images</a>. </p>
+</li>
+<li><p>Click on each image filename to view the file. Then, click the download button just to the upper right of the displayed image.</p>
+<p><img src="images/download.png" alt=""></p>
+</li>
+<li><p>Save the files into your <code>images</code> folder. </p>
+<p>When you&apos;re done, your images folder should contain:</p>
+<pre><code>beer.jpg
+hero.jpg
+hot-cocktail.jpg
+margarita.jpg
+martini.jpg
+milk.jpg
+whiskey-cocktails.jpg
+wine.jpg
+</code></pre></li>
+<li><p>Right click again on that main <code>CSS</code> folder in the left pane and select <code>New Folder</code>.</p>
+</li>
+<li><p>Type <code>sass</code> and press enter.</p>
+</li>
+<li><p>Right click again on that main <code>CSS</code> folder in the left pane and select <code>New Folder</code>.  </p>
+</li>
+<li><p>Type <code>css</code> and press enter.</p>
+</li>
+<li><p>In the project pane on the left, right click on the <code>sass</code> folder and select <code>New File</code>. </p>
+</li>
+<li><p>Type <code>styles.scss</code> and press enter. This will be your main Sass styling file and will only contain import statements when we&#x2019;re done.</p>
+</li>
+</ol>
+</li>
+<li><p>Open your <em>index.html</em> file in Google Chrome and notice the current styling.  You can do this two ways.</p>
+<ol>
+<li><p>Open Google Chrome. </p>
+<ol>
+<li><p>From the <code>File</code> menu choose <code>Open File...</code>.</p>
+</li>
+<li><p>Navigate to find your <em>index.html</em> file and choose <code>Open</code>.</p>
+</li>
+</ol>
+</li>
+<li><p>In your File Explorer (windows) or Finder (macs) navigate to your folder containing the <em>index.html</em> file.</p>
+<ol>
+<li><p>Right click on the file and choose <code>Open with</code>.</p>
+</li>
+<li><p>Choose Google Chrome from the list.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>The page doesn&apos;t look very good yet but we&apos;ve got our initial setup for our project done, now let&apos;s get to the fun part - styling!</p>
+<sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="section0" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="chromebooks-only-cloud9-instructions">Chromebooks Only: Cloud9 Instructions<a class="pull-right section atTitle btn btn-default" target="section0"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section0"><div class="panel-body">
+<ol>
+<li><p>From the <code>File</code> menu choose <code>New File</code></p>
+</li>
+<li><p>From the <code>File</code> menu choose <code>Save As...</code> and use the file name <em>index.html</em>.  It should default to the workspace folder and display <code>/</code> in the <code>Folder</code> text box at the bottom, leave that as-is.</p>
+</li>
+<li><p>Click the green <code>Save</code> button</p>
+</li>
+<li><p>In the top menu bar choose <code>Preview</code> and then select <code>Live Preview File (index.html)</code></p>
+<p> This opens up a &quot;browser&quot; window that will show changes you make to your web page as you add content.  </p>
+<p> <div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>IMPORTANT! Any time the worksheet references viewing in Google     Chrome or refreshing the page in Google Chrome you will use this Preview area instead. Above where it mentions to open the file in Google Chrome you will just need to refresh the preview area.</p>
+<p>References to the CSS folder above will be the folder named the same as what you named your workspace.</p>
+</div></div></p>
+</li>
+<li><p>Continue with step 2. vii. above: &quot;Copy and paste the following HTML code into your <em>index.html</em> file.&quot; </p>
+</li></ol></div></div></div></sec>
+
+
+<h3 id="documentation">Documentation</h3>
+<p>To understand the different CSS properties and available values visit the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
+<p>View the Sass documentation here if you want more detailed information about how any pieces of Sass work: <a href="http://bit.ly/CnCSassDoc" target="_blank">bit.ly/CnCSassDoc</a> </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="project/part_2_re_-styling_with_sass.html" class="navigation navigation-prev " aria-label="Previous page: Part 2:  Getting Sassy">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="styling-with-sass.html" class="navigation navigation-next " aria-label="Next page: Variables">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Sass Setup","level":"1.4.1","depth":2,"next":{"title":"Variables","level":"1.4.2","depth":2,"path":"styling-with-sass.md","ref":"styling-with-sass.md","articles":[]},"previous":{"title":"Part 2:  Getting Sassy","level":"1.4","depth":1,"path":"project/part_2_re_-styling_with_sass.md","ref":"project/part_2_re_-styling_with_sass.md","articles":[{"title":"Sass Setup","level":"1.4.1","depth":2,"path":"sass-setup.md","ref":"sass-setup.md","articles":[]},{"title":"Variables","level":"1.4.2","depth":2,"path":"styling-with-sass.md","ref":"styling-with-sass.md","articles":[]},{"title":"Normalizing","level":"1.4.3","depth":2,"path":"normalizing.md","ref":"normalizing.md","articles":[]},{"title":"Fonts","level":"1.4.4","depth":2,"path":"fonts.md","ref":"fonts.md","articles":[]},{"title":"Nav Styling","level":"1.4.5","depth":2,"path":"nav-styling.md","ref":"nav-styling.md","articles":[]},{"title":"Body Styling","level":"1.4.6","depth":2,"path":"body-styling.md","ref":"body-styling.md","articles":[]},{"title":"Footer Styling","level":"1.4.7","depth":2,"path":"footer-styling.md","ref":"footer-styling.md","articles":[]},{"title":"Mixins","level":"1.4.8","depth":2,"path":"mixins.md","ref":"mixins.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx","livereload"],"pluginsConfig":{"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sass-setup.md","mtime":"2017-02-17T03:50:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-17T03:43:49.650Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
