@@ -1,19 +1,20 @@
 # Summary
-
 * [Overview](README.md)
-* [Project](project/README.md)
-* [Part 1: Basic CSS](part-1-basic-css.md)
-  * [Styling HTML](styling-html.md)
-* [Part 2:  Getting Sassy](project/part_2_re_-styling_with_sass.md)
-  * [Sass Setup](sass-setup.md)
-  * [Variables](styling-with-sass.md)
-  * [Normalizing](normalizing.md)
-  * [Fonts](fonts.md)
-  * [Nav Styling](nav-styling.md)
-  * [Body Styling](body-styling.md)
-  * [Footer Styling](footer-styling.md)
-  * [Mixins](mixins.md)
-* [Homework](homework.md)
-* [CSS Cheat Sheet](css_cheat_sheet.md)
-* [Answer Key](answer-key.md)
+* [Setup Instructions](setup/README.md)
 
+### Worksheet
+
+* [CSS Basics](ws1-css-basics/README.md)
+* [Grouping & Special Selectors](ws2-grouping-selectors/README.md)
+* [Box Model & Layout](ws3-box-model-layout/README.md)
+* [Text](ws4-text/README.md)
+* [Quiz](quiz.md)
+
+### Bonus
+* [Media Queries](homework/media-query.md)
+* [Homework](homework/homework.md)
+
+----
+* [CSS Cheat Sheet](references/css_cheat_sheet.md)
+* [Helpful Keyboard Shortcuts](references/README.md)
+* [Answer Key](answer-key.md)

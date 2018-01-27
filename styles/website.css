@@ -1,0 +1,7 @@
+@import 'font-awesome.min.css';
+@import 'checklist.css';
+
+
+.markdown-section h2 {
+  margin-top: 60px;
+}

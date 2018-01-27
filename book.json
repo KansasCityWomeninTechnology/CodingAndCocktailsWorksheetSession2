@@ -2,9 +2,17 @@
     "plugins": [
         "custom-favicon",
         "hints",
-        "sectionx"
+        "sectionx",
+        "codeblock-label",
+        "anchors"
     ],
     "pluginsConfig": {
-        "favicon": "images/favicon.ico"
+        "favicon": "images/favicon.ico",
+        "hints": {
+            "info": "fa fa-info-circle fa-lg",
+            "tip": "fa fa-lightbulb-o fa-lg",
+            "danger": "fa fa-exclamation-circle fa-lg",
+            "working": "fa fa-question-circle fa-lg"
+        }
     }
 }
