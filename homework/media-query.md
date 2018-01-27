@@ -1,4 +1,4 @@
-# BONUS
+# Bonus - Media Queries
 Users expect to interact with webpages using their mobile devices. Building a fully responsive webpage is not an easy undertaking, but media queries and layout systems like CSS Grid help make this faster.
 
 Before starting this assignment, view the completed LadyDev Bar & Grill in Chrome. Resize the browser to decrease the width. Notice regardless of the width the drinks menu and small plates menu display side to side. Let's use a media query to have the small plates menu display after the drinks menu when the width is 700px or less.
