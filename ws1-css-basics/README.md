@@ -4,13 +4,7 @@ CSS decorates your website with visual appeal and invites the user to connect wi
 
 This section will help guide you through the following steps:
 
-----
- * Link the stylesheet
- * Resize images
- * Change title color
- * Cascade styles
- 
-----
+{% include "./checklist.html" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
@@ -20,11 +14,11 @@ This section will help guide you through the following steps:
 ## Create and link the stylesheet to the HTML {#link-stylesheet} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 {% include "./1create-css.md" %}
 
-## Resize images using relative and absolute sizes {#resize} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+## Resize images using relative and absolute sizes {#sizes} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Images are a big part of any website and what most people see first because your eyes are drawn to visuals. Let’s learn about absolute and relative sizing and apply it to the images in the menu.
 {% include "./2resize-images.md" %}
 
-## Change the color of the title {#resize} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+## Change the color of the title {#text-color} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Color helps differentiate sections within a website and helps convey importance. In this section we'll change the color of the "LadyDev Bar & Grill" title.
 {% include "./3title-color.md" %}
 
