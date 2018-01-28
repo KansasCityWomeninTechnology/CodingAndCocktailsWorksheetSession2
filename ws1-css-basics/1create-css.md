@@ -1,9 +1,9 @@
-1. In Atom, right click on the "CSS" project folder and create a new folder named "css" to house your stylesheet.
+1. In Atom, right click on the "CSS" project folder. Select **New Folder**. Name your folder "css". This folder will house your stylesheet.
    {% hint style='danger' %}
 Notice the case difference in "CSS" folder that contains all your code this session and "css" folder that contains your styles. 
 	{% endhint %}
 
-1. Right click on the "css" folder and create a file for your stylesheet. Name the file _styles.css_.
+1. Right click on the "css" folder. Select **New File** to create your stylesheet file. Name the file _styles.css_.
 1. In Atom, open _index.html_. In the `head` section, between the `title` and `script` tags, link your stylesheet by adding 
 
    `<link rel="stylesheet" href="css/styles.css">`
@@ -18,5 +18,5 @@ In Chrome, you can select **File** <i class="fa fa-long-arrow-right"></i> **Open
 Or you can navigate to "CodingAndCocktails\CSS" folder, right click on the _index.html_ file and choose **Open with**. Select Google Chrome from the list.
 	{% endhint %}
 
-The page doesn't look good yet but we've got our initial setup for our project done, now let's get to the fun part - styling!
+The page doesn't look good yet but we've got our initial setup for our project done. Now let's get to the fun part - styling!
 

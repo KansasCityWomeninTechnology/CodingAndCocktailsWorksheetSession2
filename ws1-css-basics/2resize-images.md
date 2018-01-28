@@ -1,4 +1,4 @@
-1. In Atom, open _index.html_. Find the element containing the menu items unordered list. Notice the menu list has `class="drinks"` and has an image using `img` tag. We will need to apply a style to the `img` selector within `class="drinks"`.
+1. In Atom, open _index.html_. Find the `div` for drinks with title "Menu". It contains an unordered list with `class="drinks"` and has an image using `img` tag. We will need to apply a style to the `img` selector within `class="drinks"`.
    {% hint style='tip' %}
 The syntax for a CSS rule looks like this:
 ```css
@@ -25,6 +25,6 @@ You can inspect elements in Chrome using Dev Tools. Right click on an image and 
     {% endhint %}
 1. Specify the height of your images by adding `height: 120px;`. The height of the images resized to 120 pixels as well. 
     {% hint style='info' %}
-The images look distorted. This is because when you set height or width of an image, the image automatically scales and maintains [aspect ratio](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp) but when you specify both height and width, the image resizes to the specified height and width. 
+The images look distorted. This is because when you set height or width of an image, the image automatically scales and maintains [aspect ratio](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp) but when you specify both height and width, the image resizes to the specified height and width and stretches to accommodate. 
     {% endhint %}
 

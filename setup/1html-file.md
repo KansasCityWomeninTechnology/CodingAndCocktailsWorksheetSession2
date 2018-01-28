@@ -1,12 +1,12 @@
 
-1. In the "CodingAndCocktails" folder you created during the tools setup create a new folder named "CSS".
+1. In the "CodingAndCocktails" folder you created during the tools setup, create a new folder named "CSS".
 1. Open Atom.
 1. Select **File** <i class="fa fa-long-arrow-right"></i> **Add project folder**.
 1. Navigate to and select the "CodingAndCocktails\CSS" folder.
 1. On the left side of your screen, right click on the "CSS" project folder and select **New file**.
 1. Name the file _index.html_ and press `Enter` to save it in your "CodingAndCocktails\CSS" folder.
 1. Copy and paste the following HTML code into your _index.html_ file.
-
+  
    {% filename %}index.html{% endfilename %}
     ```html
 <!DOCTYPE html>

@@ -7,7 +7,7 @@
 
 ### Overview
 
-During this session we’ll introduce CSS and how it can make your website go from ho-hum to wow. We’ll start with the basics of CSS styling and learn about CSS compilers and frameworks that make adding style to your website easier! 
+During this session we’ll introduce CSS and how it can make your website go from ho-hum to wow. We’ll start with the basics of CSS styling and learn about CSS layout systems that make adding style to your website easier! 
 
 {% hint style='tip' %}
 First time at Coding & Cocktails?   [Click here to Install the Tools!](http://bit.ly/CnCTheTools)
