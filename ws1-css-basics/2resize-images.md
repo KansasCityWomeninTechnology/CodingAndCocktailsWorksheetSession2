@@ -19,6 +19,9 @@ To target selectors within a `class` you have to specify both the `class` and se
     }
     ```
     Save your file and reload your page in Chrome. The width of all the images within `class="drinks"` resized to 25% of the view. 
+    {% hint style='tip' %}
+Atom can help you out! IDEs can help auto-complete code for you, including CSS properties. When you start typing a property, Atom will suggest properties matching the name.
+    {% endhint %}
 1. Now let's try absolute sizes. Change your style to use `width: 120px;`. The width of all the images resized to 120 pixels.
     {% hint style='tip' %}
 You can inspect elements in Chrome using Dev Tools. Right click on an image and select **Inspect**. 

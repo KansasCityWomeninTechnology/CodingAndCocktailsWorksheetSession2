@@ -26,4 +26,4 @@ Group styles for the same parent element together to make it easier for yourself
     {% hint sty="info" %}
 Learn more about styling lists using [MDN list styling reference](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists). 
     {% endhint %}
-1. Repeat adding the hover color and removing the bullets from the `footer` tag. Be sure to put these styles towards the bottom of the page with your footer background color.
+1. Repeat the steps in the section by adding the hover color and removing the bullets in the `footer`. Be sure to put these styles towards the bottom of the page with your footer background color.

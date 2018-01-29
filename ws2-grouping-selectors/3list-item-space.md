@@ -1,5 +1,5 @@
-1. Open _index.html_ and find "Small plates" so that you know how to target styles for this list. Notice this section uses 3 classes, one of which is `class="sidebar"`. We will target this class for styling. 
-1. Remove the bullet points in the `ul`.  
+1. Open _index.html_ and find "Small plates" so that you know how to target styles for this list. Notice this section uses 2 classes, one of which is `class="sidebar"`. We will target this class for styling. 
+1. Remove the bullet points in the `ul` in `class="sidebar"`.  
     {% hint style='tip' %}
 Remember, styles for `class` has `.` prepended. Take a look at your fine work resizing the drink menu images. 
     {% endhint %}
@@ -22,7 +22,7 @@ Remember, styles for `class` has `.` prepended. Take a look at your fine work re
     ```
     Save your file and refresh the page. The spacing looks better now. 
   {% hint style='info' %}
-You can also use combinators to declare a property on all `li` except the first one using combinators. You could have written 
+You can also use combinators to declare a property on all `li` except the first one using combinators in one fell swoop. Instead of having a style for all list items and overriding the first child, you could have written 
 ```css
 .sidebar ul li + li {
     margin-top: 50px;
