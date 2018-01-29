@@ -1,23 +1,21 @@
 # Grouping & Selectors {#top}
 CSS allows you to be as generic or as specific as you want. In this section we will learn how to apply styles to multiple selectors and work with special selectors. 
 
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+
 This section will help guide you through the following steps:
----- 
- * Set default color for headers
- * Change hover color using pseudo classes
- * Add space between list items
- 
-----
+{% include "./checklist.html" %}
 
 ## Set default color for all header text {#header-colors} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Setting a style on multiple selectors at once makes CSS succinct. In this section you'll set a default color for all header text.
 {% include "./1header-colors.md" %}
 
-## Change hover color of hyperlinks {#link-stylesheet} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+## Change hover color of hyperlinks using pseudo classes {#hover} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Providing user feedback on clickable elements such as hyperlinks is thoughtful user interaction. You'll set a hover color, style lists, and practice CSS organization.
 {% include "./2hover-color.md" %}
 
-## Resize images using relative and absolute sizes {#resize} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+## Using list pseudo classes and combinators to style lists {#lists} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 We'll work some more with list styling and add spacing between list elements.
 {% include "./3list-item-space.md" %}
 

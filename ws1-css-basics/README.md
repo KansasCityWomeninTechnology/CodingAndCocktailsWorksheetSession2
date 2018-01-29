@@ -1,6 +1,8 @@
 # CSS Basics {#top}
 CSS decorates your website with visual appeal and invites the user to connect with your website's personality. We'll use basic CSS to bring a website to life.
 
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 
 This section will help guide you through the following steps:
 

@@ -1,18 +1,12 @@
 # Box Model & Layout {#top}
 Cluttered web pages overload the brain. Spacing and layout helps draw attention to different parts of the website by making it easier for users to "see". We will continue our work on LadyDev Bar & Grill by applying spacing and layout concepts.
 
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+
 This section will help guide you through the following steps:
----- 
- * Define sections with borders
- * Add padding and margins 
- * Define background images
- * Use CSS grid for layout
- 
-----
+{% include "./checklist.html" %}
 
-** CHROMEBOOKS!! **
-
-----
 ## Define section boundaries with borders {#borders} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Borders help define sections and helps the user by grouping like items together. You will explore different border properties to bring definition to your webpage.
 {% include "./1borders.md" %}
@@ -22,7 +16,7 @@ The Box Model is use to declare spacing. You will apply Box Model concepts to ad
 Refer to the [CSS Cheat Sheet](../references/css_cheat_sheet.md) to help.
 {% include "./2padding-margin.md" %}
 
-## Define background images for the hero image {#hero} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+## Define a background image to use for the hero image {#hero} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Most eye-catching websites have a hero image. Let’s learn about background properties and use what we learned about absolute and relative sizing and apply it to the hero image.
 {% include "./3hero.md" %}
 
