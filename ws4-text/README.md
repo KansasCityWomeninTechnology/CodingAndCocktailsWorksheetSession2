@@ -212,5 +212,8 @@ footer a:hover {
 
 
 ## References and helpful links
+[Mozilla Developer Network Font properties documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+
 [Mozilla Developer Network Text properties documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Text)
+
 
