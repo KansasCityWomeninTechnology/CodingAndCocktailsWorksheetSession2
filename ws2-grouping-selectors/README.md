@@ -19,8 +19,6 @@ Providing user feedback on clickable elements such as hyperlinks is thoughtful u
 We'll work some more with list styling and add spacing between list elements.
 {% include "./3list-item-space.md" %}
 
-<!-- Trick markdown to give a little extra space -->
-##
 
 ## References and helpful links
 [Mozilla Developer Network CSS selector documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)

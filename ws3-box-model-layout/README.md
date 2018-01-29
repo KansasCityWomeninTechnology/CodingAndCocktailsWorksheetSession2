@@ -24,8 +24,6 @@ Most eye-catching websites have a hero image. Let’s learn about background pro
 We want the drink menu and small plates menu as two columns next to each other. We will use CSS Grid to make this easy.
 {% include "./4grid-layout.md" %}
 
-<!-- Trick markdown to give a little extra space -->
-##
 
 ## References and helpful links
 [Mozilla Developer Network Box Model documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)

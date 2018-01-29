@@ -2,9 +2,9 @@
 1. The navigation text should be right aligned. In the `nav` style, add `text-align: right;`.
 1. The navigation text in the hyperlink doesn't stand out enough. Let's make the following changes to the existing style for navigation hyperlinks using the existing style created for `nav a`:
    1. Change the color using an a11y friendly contrasting color by setting `color` property.
-   1. Make the text bold using `font-weight: bold;`
-   1. Remove the hyperlink underline using `text-decoration: none;`
-   1. Increase text size using `font-size: 1.5em;`
+   1. Make the text bold using `font-weight: bold;`.
+   1. Remove the hyperlink underline using `text-decoration: none;`.
+   1. Increase text size using `font-size: 1.5em;`.
    {% hint style='info' %}
 Why use `em` instead of `px` for font size? `em` is a calculated font size based off of the parent's font value. Read more about the different ways to set font size in "Possible approaches" section of [MDN documentation on font size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size).
     {% endhint %}
@@ -15,7 +15,7 @@ Why use `em` instead of `px` for font size? `em` is a calculated font size based
     1. Set `font-size` to 1.5em for `h2`.
     1. Set `font-size` to 1.25em for `p`.
 1. We need to apply a style to all the hero text. In _index.html_, notice a `div` with `class="hero-text"` wraps all tags for the hero text. We will target this class. 
-   1. Create a style for this class and add top padding of 125px;
+   1. Create a style for this class and add top padding of 125px.
    1. Allocate 50% of the width of the background image by adding `width: 50%;`. 
    1. Align text to center of the `div` by adding `text-align: center;`.
 

@@ -16,7 +16,7 @@ Different fonts help define areas. But you have to have a backup plan. Let's sel
 {% include "./2select-fonts.md" %}
 
 ## Define font styles {#fonts} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Beautiful text adds final polish to websites. You will resize and decorate text to polish LadyDev Bar & Grill website.
+Beautiful text adds final polish to websites. Let's resize and decorate text to polish LadyDev Bar & Grill website.
 {% include "./3fonts.md" %}
 
 ## Style icon fonts {#icon-fonts} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>

@@ -1,5 +1,5 @@
-1. Select a color that displays when your mouse hovers over the hyperlink tags in your navigation and footer.
-1. Create a style targeting the hover state on the `a` tag within `nav` and define the `background-color` property. Your code should look similar to this.
+1. Select a color that displays when your mouse hovers over the hyperlink tags in your navigation bar and footer.
+1. Create a style targeting the hover Pseudo Class on the `a` tag within `nav` and define the `background-color` property. Your code should look similar to this.
     
     {% filename %}styles.css{% endfilename %}
     ```css

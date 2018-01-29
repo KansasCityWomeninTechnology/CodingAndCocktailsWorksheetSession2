@@ -6,7 +6,7 @@ Tonight we'll add styles to "LadyDev Bar & Grill" web page. If you follow our in
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
-If this is your first time at Coding & Cocktails [click here to install the tools](http://bit.ly/CnCTheTools)
+If this is your first time at Coding & Cocktails [click here to install the tools](http://bit.ly/CnCTheTools).
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 

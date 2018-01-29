@@ -1,4 +1,4 @@
-1. Select a background color for the entire page and add it to _styles.css_ by using the `body` selector and `background-color` property at the top of the file. 
+1. Select a background color for the entire page and add it to the top of _styles.css_ by using the `body` selector and `background-color` property. 
    {% filename %}styles.css{% endfilename %}
     ```css
     body {
