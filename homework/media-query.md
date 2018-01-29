@@ -13,8 +13,8 @@ Before starting this assignment, view the completed LadyDev Bar & Grill in Chrom
 
 ## Define grid template areas
 
-1. Declare a grid template area for the drinks menu by adding `grid-area: drinks;` to the styles for the `div` with `class="drinks"`. 
-1. Declare a grid template area for the Small plates menu sidebar. Name it "sidebar".  
+1. Declare a grid area for the drinks menu by adding `grid-area: drinks;` to the styles for the `div` with `class="drinks"`. 
+1. Declare a grid area for the Small plates menu sidebar. Name it "sidebar".  
 1. Save the file and reload the page in Chrome. 😕
   {% hint style='working' %}
 Where did the drinks menu go?  
