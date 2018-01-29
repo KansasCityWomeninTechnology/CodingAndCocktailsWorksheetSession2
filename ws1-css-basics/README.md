@@ -28,51 +28,12 @@ Color helps differentiate sections within a website and helps convey importance.
 The ability to cascade styles makes CSS powerful. In this section we will apply background colors to demonstrate how to cascade styles.
 {% include "./4background-color.md" %}
 
-
-## Checkpoint
-Your _styles.css_ file should look like this
-
-PICTURE HERE OF PAGE AND REPLACE CODE WITH IMAGE
-
-```css
-body {
-  background-color: #fefaec;
-}
-
-nav {
-  background-color: #cb6f10;
-}
-
-.hero h1 {
-  color: #cb6f10;
-}
-
-.hero h2 {
-  color: #cb6f10;
-}
-
-.hero p {
-  color: #cb6f10;
-}
-
-.drinks img {
-  width: 120px;
-  height: 120px;
-}
-
-.sidebar {
-  background-color: #d9e9ce;
-}
-
-footer {
-  background-color: #cb6f10;
-}
-
-```
-
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 
 ## References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 

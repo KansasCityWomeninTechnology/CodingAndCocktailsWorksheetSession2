@@ -19,79 +19,8 @@ Providing user feedback on clickable elements such as hyperlinks is thoughtful u
 We'll work some more with list styling and add spacing between list elements.
 {% include "./3list-item-space.md" %}
 
-
-## Checkpoint
-Your _styles.css_ file should look like this
-
-PICTURE HERE OF PAGE AND REPLACE CODE WITH IMAGE
-
-```css
-body {
-  background-color: #fefaec;
-}
-
-h1, h2, h3, h4, h5, h6 {
-        color: #637056;
-}
-
-nav {
-  background-color: #cb6f10;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav a:hover {
-  background-color: #d88731;
-}
-
-.hero h1 {
-  color: #cb6f10;
-}
-
-.hero h2 {
-  color: #cb6f10;
-}
-
-.hero p {
-  color: #cb6f10;
-}
-
-.drinks img {
-  width: 120px;
-  height: 120px;
-}
-
-.sidebar {
-  background-color: #d9e9ce;
-}
-
-.sidebar ul {
-  list-style-type: none;
-}
-
-.sidebar ul li {
-  margin-top: 50px;
-}
-
-.sidebar ul li:first-child {
-  margin-top: 0;
-}
-
-footer {
-  background-color: #cb6f10;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-footer a:hover {
-  background-color: #d88731;
-}
-```
-
+<!-- Trick markdown to give a little extra space -->
+##
 
 ## References and helpful links
 [Mozilla Developer Network CSS selector documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
