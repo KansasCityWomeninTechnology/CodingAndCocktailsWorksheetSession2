@@ -20,9 +20,9 @@ Why use `em` instead of `px` for font size? `em` is a calculated font size based
    1. Align text to center of the `div` by adding `text-align: center;`.
 
 ### Drink menu
-1. The "Menu" text in the header tag needs to be larger. Create a style targeting this header and set font size to 3em. Add a 5px margin to give it a little space.
+1. The "Menu" text in the header tag needs to be larger. Create a style targeting the `h3` header in `class="drinks"` and set font size to 3em. Add a 5px margin to give it a little space.
 1. Each menu item needs to be a little larger. The header for each menu item has `class="head"`. Create a style targeting this class within drinks menu and set font size to 2em.
-   {% hint style='tip' %}
+   {% hint style='working' %}
 Create a style for `.drinks .head` to set the font size.
    {% endhint %}
 1. Increase the size of each menu item description. Create a style for `.drinks p` and set font size to 1.3em.   
