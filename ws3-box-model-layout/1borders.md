@@ -5,7 +5,7 @@
 The top border property is `border-top`.
    {% endhint %}
 
-1. Turn your attention towards the drink menu. Remove the bullets from the `ul` with `class="drinks"`. 
+1. Turn your attention towards the drink menu. Remove the bullets from the style you already have for `class="drinks"`. 
 1. Define borders between each drink in the drink menu by adding a top border to each item in the list. Target both the `.drinks` and `.item` classes in your style and set a thin dotted line. The style will look like
     
     {% filename %}styles.css{% endfilename %}
