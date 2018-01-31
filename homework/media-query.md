@@ -8,7 +8,11 @@ Remember, we're here to help.
 Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit.slack.com)
 {% endhint %}
 
-Before starting this assignment, view the completed LadyDev Bar & Grill in Chrome. Resize the browser to decrease the width. Notice regardless of the width the drinks menu and small plates menu display side to side. Let's use a media query to have the small plates menu display after the drinks menu when the width is 700px or less.
+Before starting this assignment, view the completed LadyDev Bar & Grill in Chrome. Resize the browser to decrease the width. Notice regardless of the width the drinks menu and small plates menu display side to side. Let's use a media query to have the small plates menu display after the drinks menu when the width is 600px or less.
+
+{% hint style='info' %}
+Google provides breakpoints for different form factors-- dimension and resolution of the screen across different devices. 600px is a breakpoint for small devices such as small tablet or a cell phone. Learn more about [Google's responsive ui layout](https://material.io/guidelines/layout/responsive-ui.html).  
+{% endhint %}
 
 
 ## Define grid template areas
@@ -32,9 +36,9 @@ Try changing the order of "drinks" and "sidebar" in the `grid-template-areas` an
 
 
 ## Add media query
-1. Create a new style under the styles defined for `.grid-container` targeting a screen media type and a maximum width of 700px. Your style should looks like
+1. Create a new style under the styles defined for `.grid-container` targeting a screen media type and a maximum width of 600px. Your style should looks like
   ```css
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 600px) {
 
   }
   ```
