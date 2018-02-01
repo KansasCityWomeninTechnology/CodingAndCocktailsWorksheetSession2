@@ -23,8 +23,6 @@ Beautiful text adds final polish to websites. Let's resize and decorate text to 
 Social icons are a must for any website. Let's style them so they match our website's theme.
 {% include "./4icon-fonts.md" %}
 
-<!-- Trick markdown to give a little extra space -->
-##
 
 ## References and helpful links
 [Mozilla Developer Network Font properties documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/font)

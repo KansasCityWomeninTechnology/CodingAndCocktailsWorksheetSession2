@@ -11,6 +11,11 @@ The more you practice, the more comfortable you’ll feel!  Take a look at the f
 
 1. For a deeper dive into CSS Grid try: [https://cssgrid.io/](https://cssgrid.io/)
 
+### Check out these tools designed to help web developers
+1. Try hosting your webpage as a GitHub page. This is tricky so feel free to reach out on Slack!
+1. Using Chrome DevTools, run [Lighthouse](https://developers.google.com/web/tools/lighthouse/#devtools) audit for ""Accessibility" to generate a report. 
+1. View your page in [Google Resizer](https://material.io/resizer/) to visualize what it looks like in different form factors.
+
 
 {% hint style='tip' %}
 ##### Hey Slacker!
