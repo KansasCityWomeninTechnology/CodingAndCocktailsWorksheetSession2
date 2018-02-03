@@ -91,7 +91,7 @@
            </div>
         </div>
         <footer id="contact">
-           <p>&copy; 2017 LadyDev Bar &amp; Grill</p>
+           <p>&copy; 2018 LadyDev Bar &amp; Grill</p>
            <ul>
               <li><a href="http://facebook.com/ladydevbargrill"><i class="fa fa-facebook-official fa-lg"></i></a></li>
               <li><a href="http://twitter.com/ladydevbargrill"><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -104,4 +104,4 @@
    ```
 1. Save the file.
 
-    {% hint style='tip' %}Unsaved files have a small dot on the right side of the file's tab in Atom.{% endhint %}
+    {% hint style='tip' %}Unsaved files have a small blue dot on the right side of the file's tab in Atom.{% endhint %}

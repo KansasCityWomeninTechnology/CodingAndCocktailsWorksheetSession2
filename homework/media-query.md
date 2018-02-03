@@ -22,7 +22,7 @@ Google provides breakpoints for different form factors-- dimension and resolutio
 1. Save the file and reload the page in Chrome. 😕
   {% hint style='working' %}
 Where did the drinks menu go?  
-CSS Grid doesn't know how to lay out the two template areas you defined, so it placed both in the same column. Add `display:none;` to the Small plates sidebar `div` in Chrome Dev Tools to see the drinks menu.
+CSS Grid doesn't know how to lay out the two template areas you defined, so it placed both in the same column. Add `display:none;` to the Small plates sidebar `div` in Chrome DevTools to see the drinks menu.
    {% endhint %}
 1. Define the layout order of the two grid template areas you declared in the `.grid-container` style by adding 
     ```css
@@ -43,9 +43,9 @@ Try changing the order of "drinks" and "sidebar" in the `grid-template-areas` an
   }
   ```
   {% hint style='tip' %}
-You can see the width of your app when using Chrome Dev Tools and looking at the Box Model diagram in the **Styles** tab.
+You can see the width of your app when using Chrome DevTools and looking at the Box Model diagram in the **Styles** tab.
   {% endhint %}
-1. Copy the `.grid-container` style and paste it inside the media query. Save your file and reload the page in Chrome. Resize the browser to decrease width. You won't see any changes yet because you have the same styles applied both screen widths.
+1. Copy the entire `.grid-container` style (including classname and curly braces) and paste it inside the media query. Save your file and reload the page in Chrome. Resize the browser to decrease width. You won't see any changes yet because you have the same styles applied both screen widths.
 1. To define 2 rows, split the `grid-areas` to separate entries. Edit the `grid-template-areas` in the media query to
   ```css
     grid-template-areas:

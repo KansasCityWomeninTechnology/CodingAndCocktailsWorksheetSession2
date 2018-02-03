@@ -6,7 +6,7 @@ CSS decorates your website with visual appeal and invites the user to connect wi
 
 This section will help guide you through the following steps:
 
-{% include "./checklist.html" %}
+{% include "./instruction-steps.html" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
@@ -30,6 +30,14 @@ The ability to cascade styles makes CSS powerful. In this section we will apply 
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
+
+## Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+Compare your _styles.css_ against the answer key for your work so far. It might look a little different depending on the color palette you chose.  
+{% include "./checkpoint.html" %}
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+
 
 ## References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)

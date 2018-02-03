@@ -5,7 +5,7 @@ Cluttered web pages overload the brain. Spacing and layout helps draw attention 
 ## 
 
 This section will help guide you through the following steps:
-{% include "./checklist.html" %}
+{% include "./instruction-steps.html" %}
 
 ## Define section boundaries with borders {#borders} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 Borders help define sections and helps the user by grouping like items together. You will explore different border properties to bring definition to your webpage.
@@ -24,8 +24,19 @@ Most eye-catching websites have a hero image. Let’s learn about background pro
 We want the drink menu and small plates menu as two columns next to each other. We will use CSS Grid to make this easy.
 {% include "./4grid-layout.md" %}
 
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 
-## References and helpful links
+## Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+Compare your _styles.css_ against the answer key for your work so far. It might look a little different depending on the color palette you chose.  
+{% include "./checkpoint.html" %}
+
+
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+
+## References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 [Mozilla Developer Network Box Model documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
 
 [Mozilla Developer Network Display documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/display)

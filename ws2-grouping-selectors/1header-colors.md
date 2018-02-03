@@ -1,7 +1,9 @@
 1. Select a default color for the headers. Create a style for all headers (`h1` - `h6`) and define the `color` property in _styles.css_. Since this is a default style, define it near the top of the page, after the style for `body` like this
+
+   {% filename %}styles.css{% endfilename %}
    ```css
    h1, h2, h3, h4, h5, h6 {
-   color: #637056;
+      color: #637056;
    }
 ```
     {% hint style='info' %}

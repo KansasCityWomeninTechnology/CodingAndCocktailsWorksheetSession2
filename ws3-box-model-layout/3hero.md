@@ -1,4 +1,5 @@
 1. Open _index.html_ and find the `div` containing the text for title of the web page. Because we want our hero image to fill the entire title area, declare a style for `class="hero"` and set `height: 600px;` in _styles.css_ like this
+
    {% filename %}styles.css{% endfilename %}
    ```css
    .hero {
@@ -30,7 +31,7 @@ Refer to [MDN documentation for background-size property](https://developer.mozi
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-Add "margin-bottom:20px;" to the existing style ".hero h2". 
+Add "margin-bottom: 20px;" to the existing style ".hero h2". 
 </details>
    {% endhint %}
 

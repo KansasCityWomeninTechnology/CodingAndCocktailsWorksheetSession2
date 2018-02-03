@@ -24,5 +24,6 @@ Add "margin-bottom: 15px;" to space.
     ```
 1. Give the icons space by setting top and bottom padding to 2px and left and right padding to 10px.
 1. Center the list of icons by setting the `text-align` property in the `ul` styles.
+1. Save your file and reload your page.
 
 ![](https://media.giphy.com/media/3ohhwo4PzDFaz2sADu/giphy.gif)
