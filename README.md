@@ -1,24 +1,25 @@
-<div>
-    <img src="images/logo.png" style="float: left; margin: 0px 15px 15px 0px; height:125px;">
-    <h2 style="display:inline-block;margin-top:1em;">Coding &amp; Cocktails Session 2:</h2>
-    <h3 style="margin-top:0;margin-bottom:2em;">Introduction to CSS</h3>
-</div>
-<hr>
+# Coding & Cocktails Session 2: CSS
 
-### Overview
+The `docs` directory contains worksheets for Coding & Cocktails session 2 published on Gitbooks: [Coding & Cocktails - Session 2: Intro to CSS](https://www.gitbook.com/book/codingandcocktailskc/session-2-css/details).
 
-During this session we’ll introduce CSS and how it can make your website go from ho-hum to wow. We’ll start with the basics of CSS styling and learn about CSS layout systems that make adding style to your website easier! 
+## Getting Going
+Install [Gitbook](https://www.npmjs.com/package/gitbook) CLI from npm.
 
-{% hint style='tip' %}
-First time at Coding & Cocktails?   [Click here to Install the Tools!](http://bit.ly/CnCTheTools)
-{% endhint %}
+```bash
+gitbook install
+gitbook serve
+```
+To build without serving, `gitbook build`.
 
-{% hint style='tip' %}
-Don't know a term?   [Click here to check out our glossary!](http://bit.ly/CnCgloss)
-{% endhint %}
+## Associated Repos
+Session and homework repo - [CSSCompilerPractice](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice)
 
-{% hint style='tip' %}
-Want to be more efficient at working with your computer?
+## TODO
+- [ ] Ideally consolidate session work into this repo
+- [ ] Incorporate feedback from curriculum retro in Google Drive
 
-[Click here to see our list of Helpful Keyboard Shortcuts!](/references/README.md)
-{% endhint %}
+
+## License
+![](https://lh6.googleusercontent.com/osprAumZLusoNUcKnPtOWMijWYLZ8ydrUS0gMTvMCoyhSVBd69InqiXqQjc7fH8iQiVbZLXvyyvPZXwKjeyHuPnrd2zJT1mYLa1WoziryvxOo0q7nvMnpfeeVPBgfqW0bnp1--wa)![](https://lh5.googleusercontent.com/AZZipN4uXuU6FkxA0zLbrq9EwMhky22oNI8UtjQ2-Kgzy64Jmbij_IKUwXDcqGjnHWSMg9h3ii2Dx_SLI871nVn56NyF1VnmDbkEL2m9sJ_9YYGpNC8kdiYepai1jAZLEWWt8iTW)![](https://lh6.googleusercontent.com/GSxH81qYzBJkBR39GbviwKcwxem0RbN8XTx_6BOHgziQ6OomnG-au25ZSdiNQ4rX2p2HanRGa8_SzTPhJ3SKW-Vrs6fJ8N9s0FLq1EVSwUZXrLZuUVONachwFWwqTr6PMpn1csnu)
+
+This work is licensed by [http://kcwomenintech.org/](http://kcwomenintech.org/) under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
