@@ -15,6 +15,7 @@ To build without serving, `gitbook build`.
 Session and homework repo - [CSSCompilerPractice](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice)
 
 ## TODO
+- [ ] Fix the import of font to the be at the top of the _styles.css_ (before the reset styles)
 - [ ] Ideally consolidate session work into this repo
 - [ ] Incorporate feedback from curriculum retro in Google Drive
 
