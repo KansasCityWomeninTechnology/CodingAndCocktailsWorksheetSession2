@@ -12,7 +12,7 @@
         "anchors"
     ],
     "pluginsConfig": {
-        "favicon": "images/favicon.ico",
+        "favicon": "docs/images/favicon.ico",
         "hints": {
             "info": "fa fa-info-circle fa-lg",
             "tip": "fa fa-lightbulb-o fa-lg",

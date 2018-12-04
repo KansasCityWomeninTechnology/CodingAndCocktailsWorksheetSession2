@@ -1,5 +1,7 @@
 # CSS Basics {#top}
-CSS decorates your website with visual appeal and invites the user to connect with your website's personality. We'll use basic CSS to bring a website to life.
+CSS decorates your website with visual appeal and invites the user to connect with your website's personality. Tonight we'll apply CSS to the "LadyDev Bar & Grill" web page. If you follow our instructions your page will end up looking like the example below but feel free to add in some of your own creativity if you feel comfortable! 
+
+![](images/ladyDevBarAndGrill.png)
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 

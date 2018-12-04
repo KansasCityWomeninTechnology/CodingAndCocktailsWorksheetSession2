@@ -1,22 +1,28 @@
 # Setup {#top}
-
-Tonight we'll add styles to "LadyDev Bar & Grill" web page. If you follow our instructions your page will end up looking like the example below but feel free to add in some of your own creativity if you feel comfortable!
-
-![](images/ladyDevBarAndGrill.png)
-
-<!-- trick markdown to give me a little space between these two sections of text -->
-## 
-If this is your first time at Coding & Cocktails [click here to install the tools](http://bit.ly/CnCTheTools).
+Tonight we will learn the basics of applying styles to a website using **C**ascading **S**tyle **S**heets (**CSS**). Styles add visual appeal help bring a website to life. Or if you're creating a cocktail, it's the garnish that makes your cocktail extra special.
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
 {% hint style='danger' %}
-If you are using a Chromebook, please skip to the <a href="#chromebook-instructions">Chromebook instructions</a> below!
+If you are borrowing a laptop, please ask your mentor to explain the tools.
 {% endhint %}
 
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+Follow the instructions on this page to prepare your workspace.
 
-## Prepare the HTML file {#html-file} 
-{% include "./1html-file.md" %}
+
+## Required tools for this session
+
+You don't need all the tools for tonight's session, but we list them all so that attendees can prepare for all the sessions at once. If you haven't installed your tools already, use the following list to install the required tools for the worksheet:
+1. [Chrome browser](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-browser/)
+
+1. [Atom IDE](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/)
+
+1. [Install atom-live-server package](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/#required-packages)
+
+1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
+
 
 ## Helpful tips as you work through the worksheet
 {% hint style='tip' %}
