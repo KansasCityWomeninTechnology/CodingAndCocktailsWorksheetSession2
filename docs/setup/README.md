@@ -23,6 +23,18 @@ You don't need all the tools for tonight's session, but we list them all so that
 
 1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
 
+## Create a folder for tonight's work
+
+Create a folder named "session2" in your "CodingAndCocktails" folder by following the steps below
+
+1. Open a file explorer and navigate to your home directory.
+   {% hint style="tip" %}
+Your home directory is typically `/users/yourname` on a Mac or `C:/Users/yourname` on a Windows machine.
+
+**Windows users**- You can navigate to your home directory by typing `%USERPROFILE%` in the file location bar and press `Enter`. 
+   {% endhint %}
+
+1. Create a folder named "session2".
 
 ## Helpful tips as you work through the worksheet
 {% hint style='tip' %}
@@ -41,9 +53,9 @@ Did you know you can collapse the table of contents for worksheets?
 Click on the hamburger menu (<i class="fa fa-bars" aria-hidden="true"></i>) at the top of the page to toggle the table of contents.
 {% endhint %}
 
+{% hint style='working' %}
+Did you know you can customize font size and color of the worksheets to make it easier for you to see?
 
-<!-- trick markdown to give me a little space between these two sections of text -->
-## 
-<!--sec data-title="Chromebook instructions" data-id="section0" data-show=true data-collapse=true ces-->
-{% include "./chromebook-instructions.md" %}
-<!--endsec-->
+Click on the font menu (<i class="fa fa-font" aria-hidden="true"></i>) at the top of the page to open a menu where you can make your font larger or smaller or change background color.
+{% endhint %}
+

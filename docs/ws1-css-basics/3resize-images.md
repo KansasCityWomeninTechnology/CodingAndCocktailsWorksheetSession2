@@ -10,6 +10,7 @@ selector {
 
 To target selectors within a `class` you have to specify both the `class` and selector in your style.
     {% endhint %}
+
 1. Open _styles.css_ and add the following code
     
     {% filename %}styles.css{% endfilename %}
@@ -18,16 +19,18 @@ To target selectors within a `class` you have to specify both the `class` and se
         width: 25%;
     }
     ```
-    Save your file and reload your page in Chrome. The width of all the images within `class="drinks"` resized to 25% of the view. 
+    Save your file and view your app in Chrome. The width of all the images within `class="drinks"` resized to 25% of the view. 
     {% hint style='tip' %}
 Atom can help you out! IDEs can help auto-complete code for you, including CSS properties. When you start typing a property, Atom will suggest properties matching the name.
     {% endhint %}
-1. Now let's try absolute sizes. Change your style to use `width: 120px;`. Save your file and reload your page in Chrome. The width of all the images resized to 120 pixels.
+
+1. Now let's try absolute sizes. Change your style to use `width: 120px;`. Save your file and view your app in Chrome. The width of all the images resized to 120 pixels.
     {% hint style='tip' %}
-You can inspect elements in Chrome DevTools. Right click on an image and select **Inspect**. 
+You can inspect elements in Chrome DevTools. Right click on an image and select **Inspect**. If you aren't familiar with Chrome DevTools or want a refresher, feel free to grab a mentor. Mentors love talking about **debugging**.
     {% endhint %}
-1. Specify the height of your images by adding `height: 120px;`. Save your file and reload your page in Chrome. The height of the images resized to 120 pixels as well. 
+
+1. Specify the height of your images by adding `height: 120px;`. Save your file and view your app in Chrome. The height of the images resized to 120 pixels as well. 
     {% hint style='info' %}
-The images look distorted. This is because when you set height or width of an image, the image automatically scales and maintains [aspect ratio](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp) but when you specify both height and width, the image resizes to the specified height and width and stretches to accommodate. 
+The images look distorted. This is because when you set height **or** width of an image, the image automatically scales and maintains [aspect ratio](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp) but when you specify both height **and** width, the image resizes to the specified height and width and stretches to accommodate. 
     {% endhint %}
 
