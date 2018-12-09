@@ -23,7 +23,7 @@ What happens if you don't specify class when styling the `p` element?
 The color changes applies to all `p` elements on the page, not just the title. Try it yourself to see CSS specificity.
     {% endhint %}
 
-1. Save your file and reload your page in Chrome.
+1. Save your file and view your page in Chrome.
     {% hint style='tip' %}
 Save your _styles.css_ file and view your app often so you can see the changes as we go along. The worksheet will call out specific places to save and view the web page to illustrate a concept, but feel free to save and view your page as often as you want. It helps to see the changes as your write your CSS.   
     {% endhint %}

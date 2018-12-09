@@ -1,4 +1,4 @@
-# Grouping & Selectors {#top}
+# Grouping and Selectors {#top}
 CSS allows you to be as generic or as specific as you want. In this section we will learn how to apply styles to multiple selectors and work with special selectors. 
 
 <!-- trick markdown to give me a little space between these two sections of text -->

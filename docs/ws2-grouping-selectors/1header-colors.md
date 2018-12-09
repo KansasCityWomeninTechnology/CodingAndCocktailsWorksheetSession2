@@ -2,10 +2,10 @@
 
    {% filename %}styles.css{% endfilename %}
    ```css
-   h1, h2, h3, h4, h5, h6 {
-      color: #637056;
-   }
-```
+    h1, h2, h3, h4, h5, h6 {
+        color: #637056;
+    }
+   ```
     {% hint style='info' %}
 Define a style for more than 1 selector by comma separating the selector list. 
     {% endhint %}

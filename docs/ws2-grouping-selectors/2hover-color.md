@@ -10,7 +10,7 @@
     {% hint style='tip' %}
 Group styles for the same parent element together to make it easier for yourself. Group all the `nav` style together, but order by specificity.
     {% endhint %}
-    Save your file and reload in Chrome. What happens when you hover over the links in the navigation bar?
+    Save your file and view in Chrome. What happens when you hover over the links in the navigation bar?
 
     ![](https://media.giphy.com/media/B0vFTrb0ZGDf2/giphy.gif)
 
@@ -22,7 +22,7 @@ Group styles for the same parent element together to make it easier for yourself
         list-style-type: none;
     }
     ```
-    Save your file and reload in Chrome. The navigation bar is starting to look better.
+    Save your file and view in Chrome. The navigation bar is starting to look better.
     {% hint sty="info" %}
 Learn more about styling lists using [MDN list styling reference](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists). 
     {% endhint %}

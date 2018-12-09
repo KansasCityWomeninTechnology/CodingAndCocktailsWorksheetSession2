@@ -1,4 +1,5 @@
 1. Open _index.html_ and find "Small plates" so that you know how to target styles for this list. Notice this section has `class="sidebar"`. We will target this class for styling. 
+
 1. Remove the bullet points in the `ul` in `class="sidebar"`.  
     {% hint style='tip' %}
 Remember, styles for `class` has `.` prepended. Take a look at your fine work resizing the drink menu images. 
@@ -18,7 +19,7 @@ You are using the "Descendant combinator". A combinator is a special selector. T
 _For all HTML elements with the class `.sidebar` that has a descendant `ul` that has a descendant `li`, add a top margin._
     {% endhint %}
 
-1. Save your file and reload in Chrome. You now have plenty of spacing between each food menu item but the `margin-top` property also added space between the "Small plates" header and list. Let's take care of that extra space next.
+1. Save your file and view in Chrome. You now have plenty of spacing between each food menu item but the `margin-top` property also added space between the "Small plates" header and list. Let's take care of that extra space next.
 
 1. Create another style targeting the `li` elements in the "Small plates" menu after the one you created in the previous step. Add the Pseudo Class `first-child` and define the `margin-top` property using the value "0". We are overriding the previous style selectively for the first child. Your code should look like this
 
@@ -39,7 +40,7 @@ You can also use combinators to declare a property on all `li` except the first 
 
 The `+` is the "Adjacent Sibiling" combinator and selects `li` elements directly after the first one. So in this case, you are saying
 
-_For all HTML elements with the class `.sidebar` with a descendant `ul`-- apply a top margin to `li` tags declared directly after a `li` tag._
+_For all HTML elements with the class `.sidebar` with a descendant `ul`-- apply a top margin to `li` tags that have a preceding `li` tag._
 
 Read more about the [Adjacent sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors). 
     {% endhint %}

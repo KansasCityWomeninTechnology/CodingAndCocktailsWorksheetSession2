@@ -18,6 +18,7 @@ If you don't have a "CodingAndCocktails/session2" directory, take a moment to [s
 <html lang="en">
    <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>LadyDev Bar &amp; Grill</title>
       <script src="https://use.fontawesome.com/81b69a015b.js"></script>
    </head>

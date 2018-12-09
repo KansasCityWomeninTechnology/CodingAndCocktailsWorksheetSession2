@@ -23,6 +23,8 @@ You don't need all the tools for tonight's session, but we list them all so that
 
 1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
 
+1. [Now](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-now/)
+
 ## Create a folder for tonight's work
 
 Create a folder named "session2" in your "CodingAndCocktails" folder by following the steps below

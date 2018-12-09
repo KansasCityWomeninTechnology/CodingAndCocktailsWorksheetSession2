@@ -8,9 +8,9 @@
    ```
 1. Add a background image to the style you created in the previous step by adding 
    ```css   
-      background: url("https://raw.githubusercontent.com/KansasCityWomeninTechnology/CSSCompilerPractice/master/images/hero.jpg") no-repeat center top;
+      background: url("images/hero.jpg") no-repeat center top;
    ```
-   Save your file and refresh your page. 
+   Save your file and view your page in Chrome. 
 
    ![](https://media.giphy.com/media/l44QiZECjPEjLAwzm/giphy.gif)
 
@@ -20,6 +20,7 @@ Why did we have to add `no-repeat center top` to the image? We used shorthand pr
 
 Refer to [MDN documentation for background property](https://developer.mozilla.org/en-US/docs/Web/CSS/background).
     {% endhint %}
+
 1. In the same style for `class="hero"`, add `background-size: cover;` after the `background` property.
 {% hint style='info' %}
 Refer to [MDN documentation for background-size property](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size).
@@ -31,7 +32,7 @@ Refer to [MDN documentation for background-size property](https://developer.mozi
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-Add "margin-bottom: 20px;" to the existing style ".hero h2". 
+Add <code>margin-bottom: 20px;</code> to the existing style <code>.hero h2</code>. 
 </details>
    {% endhint %}
 
