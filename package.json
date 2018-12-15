@@ -9,9 +9,8 @@
   "dependencies": {
     "gitbook-plugin-anchors": "^0.7.1",
     "gitbook-plugin-codeblock-label": "^1.0.1",
-    "gitbook-plugin-hints": "^1.0.2",
-    "gitbook-plugin-sectionx": "^3.1.0",
-    "gitbook-plugin-custom-favicon": "^0.0.4"
+    "gitbook-plugin-custom-favicon": "^0.0.4",
+    "gitbook-plugin-hints": "^1.0.2"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.2"

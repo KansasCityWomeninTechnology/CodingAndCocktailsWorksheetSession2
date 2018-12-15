@@ -7,7 +7,6 @@
     "plugins": [
         "custom-favicon",
         "hints",
-        "sectionx",
         "codeblock-label",
         "anchors"
     ],
