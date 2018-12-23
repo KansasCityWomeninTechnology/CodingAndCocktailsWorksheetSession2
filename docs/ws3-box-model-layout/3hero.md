@@ -10,11 +10,12 @@
    ```css   
       background: url("images/hero.jpg") no-repeat center top;
    ```
-   Save your file and view your page in Chrome. 
+   
+1. Save your file and view your page in Chrome. Nice job, smarty pants!
 
-   ![](https://media.giphy.com/media/l44QiZECjPEjLAwzm/giphy.gif)
+   ![](https://media.giphy.com/media/3o7TKBbkeuhqszIhuE/giphy.gif)
 
-   Yay! A hero image! But we want it to expand across the entire width of the page. Let's resize it.
+   But we want it to expand across the entire width of the page. Let's resize it.
     {% hint style='info' %}
 Why did we have to add `no-repeat center top` to the image? We used shorthand properties to specify the image shouldn't repeat, center the image, and display image from top.
 

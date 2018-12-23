@@ -1,5 +1,5 @@
 # Setup {#top}
-Tonight we will learn the basics of applying styles to a website using **C**ascading **S**tyle **S**heets (**CSS**). Styles add visual appeal help bring a website to life. Or if you're creating a cocktail, it's the garnish that makes your cocktail extra special.
+Tonight we will learn the basics of applying styles to a website using **C**ascading **S**tyle **S**heets (**CSS**). 
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 

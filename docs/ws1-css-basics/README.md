@@ -1,5 +1,5 @@
 # CSS Basics {#top}
-CSS decorates your website with visual appeal and invites the user to connect with your website's personality. Tonight we'll apply CSS to the "LadyDev Bar & Grill" web page. If you follow our instructions your page will end up looking like the example below but feel free to add in some of your own creativity if you feel comfortable! 
+**C**ascading **S**tyle **S**heets (**CSS**) decorates your website with visual appeal and invites the user to connect with your website's personality. Tonight we'll apply CSS to the "LadyDev Bar & Grill" web page. If you follow our instructions your page will end up looking like the example below but feel free to add in some of your own creativity if you feel comfortable! 
 
 ![](images/ladyDevBarAndGrill.png)
 
@@ -34,6 +34,10 @@ Color helps differentiate sections within a website and helps convey importance.
 ## Cascade background color changes {#cascade} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 The ability to cascade styles makes CSS powerful. In this section we will apply background colors to demonstrate how to cascade styles.
 {% include "./5background-color.md" %}
+
+## Nice work!
+Celebrate with a toast with your neighbors.
+![](https://media.giphy.com/media/8QPSW7nGDN7wY/giphy.gif)
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 

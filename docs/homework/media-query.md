@@ -21,7 +21,7 @@ Google provides breakpoints for different form factors-- dimension and resolutio
 
 1. In _style.css_, declare a grid area for the drinks menu by adding `grid-area: drinks;` to the styles for the `div` with `class="drinks"`. 
 1. Declare a grid area for the Small plates menu sidebar. Name it "sidebar".  
-1. Save the file and view the page in Chrome. 😕
+1. Save the file and view the page in Chrome. ![](../images/emojis/confused-face.png)
   {% hint style='working' %}
 Where did the drinks menu go?  
 CSS Grid doesn't know how to lay out the two template areas you defined, so it placed both in the same column. Add `display:none;` to the Small plates sidebar `div` in Chrome DevTools to see the drinks menu.

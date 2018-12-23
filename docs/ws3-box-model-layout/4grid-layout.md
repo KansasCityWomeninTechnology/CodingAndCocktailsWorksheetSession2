@@ -13,5 +13,5 @@
         grid-template-columns: 75% auto;
     }
     ```
-1. Save your file and view in Chrome. Tada! 🎉 You have two columns!!
+1. Save your file and view in Chrome. You have two columns! ![](../images/emojis/party-popper.png)
 

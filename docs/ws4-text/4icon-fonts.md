@@ -26,7 +26,7 @@ Add <code>margin-bottom: 15px;</code> to space.
 
 1. Center the list of icons by setting the `text-align` property in the `ul` styles.
 
-1. Save your file and view your page in Chrome. 🎉
+1. Save your file and view your page in Chrome. ![](../images/emojis/party-popper.png)
 
 1. Share your success by posting a screenshot to Slack or deploy your webpage using Now. To deploy the webpage, open Now from your installed applications. 
 
