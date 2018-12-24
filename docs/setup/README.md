@@ -31,10 +31,12 @@ Create a folder named "session2" in your "CodingAndCocktails" folder by followin
 
 1. Open a file explorer and navigate to your home directory.
    {% hint style="tip" %}
-Your home directory is typically `/users/yourname` on a Mac or `C:/Users/yourname` on a Windows machine.
+Your home directory is typically `/users/<your user name>` on a Mac or `C:/Users/<your user name>` on a Windows machine.
 
-**Windows users**- You can navigate to your home directory by typing `%USERPROFILE%` in the file location bar and press `Enter`. 
+**Windows users**- You can navigate to your home directory by typing `%USERPROFILE%` in the file location bar and pressing `Enter`. 
    {% endhint %}
+
+1. Find and navigate into the "CodingAndCocktails" folder you created as part of your tools setup.
 
 1. Create a folder named "session2".
 

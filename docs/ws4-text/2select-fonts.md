@@ -12,7 +12,7 @@
 
    ![](images/import-font.png)
 
-1. Paste the `@import` statement after the normalizing styles in your _styles.css_ file.
+1. Paste the `@import` statement at the top of your _styles.css_ fille, before the normalizing styles.
 
 1. In the style declared for the `body`, add font for body text using the CSS rules specified by Google. In the example above, Google specified `font-family: 'Neuton', serif;`.
     {% hint style='tip' %}

@@ -1,4 +1,4 @@
-1. Pick out a color palette to use from [http://colorhunt.co](http://colorhunt.co). Make note of the hex color values displayed when you hover over each color in your chosen palette. 
+1. Pick out a color palette to use from [http://colorhunt.co](http://colorhunt.co). Click on the color palette you like to get a bigger view of the colors. Make note of the hex color values displayed when you hover over each color in your chosen palette. 
     {% hint style='tip' %}
 Ensure your colors are a11y friendly by using the WebAIM [Color Contrast Checker](https://webaim.org/resources/contrastchecker/). You can input your selected foreground and background colors to find contrasting colors that improve legibility.
 

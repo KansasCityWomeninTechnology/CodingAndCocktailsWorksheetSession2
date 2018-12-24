@@ -8,7 +8,7 @@
    ```
 1. Add a background image to the style you created in the previous step by adding 
    ```css   
-      background: url("images/hero.jpg") no-repeat center top;
+      background: url("../images/hero.jpg") no-repeat center top;
    ```
    
 1. Save your file and view your page in Chrome. Nice job, smarty pants!

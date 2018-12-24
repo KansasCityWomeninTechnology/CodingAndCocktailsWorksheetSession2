@@ -7,6 +7,12 @@ If you don't have a "CodingAndCocktails/session2" directory, take a moment to [s
    {% endhint %}  
 
 1. In the **Project** pane in Atom, right click on the "session2" project folder and select **New file**.
+   {% hint style="tip" %}
+If you see project folders from last session, remove the project folders by closing all the tabs for your code. Then right click on the folder to remove and select **Remove Project Folder**.
+
+   ![](images/atom-remove-project-folder.png)
+   {% endhint %}
+
 
 1. Name the file _index.html_ and press `Enter` to save it in your "CodingAndCocktails/session2" folder.
 
@@ -109,19 +115,18 @@ If you don't have a "CodingAndCocktails/session2" directory, take a moment to [s
    </html>
    ```
 
-1. Save the file by selecting **File** <i class="fa fa-long-arrow-right"></i> **Save**. ou can also use the keyboard shortcut `ctrl + s` on Windows or `cmd + s` on Mac. Unsaved files in Atom have a little blue dot on tab.
+1. Save the file by selecting **File** <i class="fa fa-long-arrow-right"></i> **Save**. You can also use the keyboard shortcut `ctrl + s` on Windows or `cmd + s` on Mac. Unsaved files in Atom have a little blue dot on the tab.
 
    ![](images/atom.png)
 
 1. Now we'll prepare the images. First we need a folder for the images. In Atom, right click on the "session2" folder in the **Project** pane and select **New Folder**. Name the folder "images".
 
-1. In Chrome, open a new tab to our GitHub repository at [https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/master/images](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/master/images). 
+1. In Chrome, open a [new tab to download the contents of our GitHub repository containing the images](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/archive/master.zip).
+   {% hint style="info" %}
+Clicking on the link automatically downloads a zip file.
+   {% endhint %} 
 
-1. Click on each image filename to view the file. Then, click the "Download" button in the upper right corner above the displayed image.
-   
-   ![](images/download.png)
-
-1. Save the files into your "images" folder. 
+1. Unzip the file and move all the images inside the "images" folder to your new "images" folder in "CodingAndCocktails/session2/images".
 	
 	When you're done, your "images" folder should contain:
 	```
@@ -134,5 +139,9 @@ If you don't have a "CodingAndCocktails/session2" directory, take a moment to [s
 	whiskey-cocktails.jpg
 	wine.jpg
 	```
+
+   {% hint style="tip" %}
+That's all we need from _master.zip_. You can delete all the other files from the download.
+   {% endhint %}
 
 Congratulate your neighbors for getting all the HTML setup done. Break the ice by asking your neighbor "What's the most embarrassing fashion trend you used to rock"?

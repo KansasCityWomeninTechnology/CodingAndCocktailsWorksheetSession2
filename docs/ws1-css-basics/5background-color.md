@@ -20,7 +20,7 @@ You can search for and find "Small plates" in the _index.html_ in Atom. In the t
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-Declare a style for <code>nav<code> after the style for <code>body</code> and add <code>background-color: #cb6f10;</code>. Declare a style for <code>footer</code> at the end of the file and add <code>background-color: #cb6f10;</code>.
+Declare a style for <code>nav</code> after the style for <code>body</code> and add <code>background-color: #cb6f10;</code>. Declare a style for <code>footer</code> at the end of the file and add <code>background-color: #cb6f10;</code>.
 </details>
    {% endhint %}
 
