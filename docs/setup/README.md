@@ -1,22 +1,44 @@
 # Setup {#top}
-
-Tonight we'll add styles to "LadyDev Bar & Grill" web page. If you follow our instructions your page will end up looking like the example below but feel free to add in some of your own creativity if you feel comfortable!
-
-![](images/ladyDevBarAndGrill.png)
-
-<!-- trick markdown to give me a little space between these two sections of text -->
-## 
-If this is your first time at Coding & Cocktails [click here to install the tools](http://bit.ly/CnCTheTools).
+Tonight we will learn the basics of applying styles to a website using **C**ascading **S**tyle **S**heets (**CSS**). 
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
 {% hint style='danger' %}
-If you are using a Chromebook, please skip to the <a href="#chromebook-instructions">Chromebook instructions</a> below!
+If you are borrowing a laptop, please ask your mentor to explain the tools.
 {% endhint %}
 
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+Follow the instructions on this page to prepare your workspace.
 
-## Prepare the HTML file {#html-file} 
-{% include "./1html-file.md" %}
+
+## Required tools for this session
+
+You don't need all the tools for tonight's session. If you haven't installed all the tools listed in [The Tools](https://bit.ly/CnCTheTools) guide already, use the following list to install the required tools for the worksheet:
+1. [Chrome browser](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-browser/)
+
+1. [Atom IDE](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/)
+
+1. [Install atom-live-server package](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/#required-packages)
+
+1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
+
+1. [Now](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-now/)
+
+## Create a folder for tonight's work
+
+Create a folder named "session2" in your "CodingAndCocktails" folder by following the steps below
+
+1. Open a file explorer and navigate to your home directory.
+   {% hint style="tip" %}
+Your home directory is typically `/users/<your user name>` on a Mac or `C:/Users/<your user name>` on a Windows machine.
+
+**Windows users**- You can navigate to your home directory by typing `%USERPROFILE%` in the file location bar and pressing `Enter`. 
+   {% endhint %}
+
+1. Find and navigate into the "CodingAndCocktails" folder you created as part of your tools setup.
+
+1. Create a folder named "session2".
 
 ## Helpful tips as you work through the worksheet
 {% hint style='tip' %}
@@ -35,9 +57,9 @@ Did you know you can collapse the table of contents for worksheets?
 Click on the hamburger menu (<i class="fa fa-bars" aria-hidden="true"></i>) at the top of the page to toggle the table of contents.
 {% endhint %}
 
+{% hint style='working' %}
+Did you know you can customize font size and color of the worksheets to make it easier for you to see?
 
-<!-- trick markdown to give me a little space between these two sections of text -->
-## 
-<!--sec data-title="Chromebook instructions" data-id="section0" data-show=true data-collapse=true ces-->
-{% include "./chromebook-instructions.md" %}
-<!--endsec-->
+Click on the font menu (<i class="fa fa-font" aria-hidden="true"></i>) at the top of the page to open a menu where you can make your font larger or smaller or change background color.
+{% endhint %}
+

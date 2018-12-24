@@ -1,0 +1,33 @@
+{
+  "name": "session2",
+  "version": "0.0.0",
+  "description": "Instructions for Coding & Cocktails program session 1: The Garnish- CSS",
+  "main": "docs/README.md",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-codeblock-label": "^1.0.1",
+    "gitbook-plugin-custom-favicon": "^0.0.4",
+    "gitbook-plugin-hints": "^1.0.2"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "scripts": {
+    "docs:install": "gitbook install",
+    "docs:build": "gitbook build",
+    "start": "gitbook serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KansasCityWomeninTechnology/CodingAndCocktailsWorksheetSession2.git"
+  },
+  "author": "Kansas City Women In Technology - Coding & Cocktails",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/KansasCityWomeninTechnology/CodingAndCocktailsWorksheetSession2/issues"
+  },
+  "homepage": "https://github.com/KansasCityWomeninTechnology/CodingAndCocktailsWorksheetSession2#readme"
+}
