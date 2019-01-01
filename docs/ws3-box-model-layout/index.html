@@ -1,0 +1,636 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Box Model & Layout · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ws4-text/" />
+    
+    
+    <link rel="prev" href="../ws2-grouping-selectors/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../setup/">
+            
+                <a href="../setup/">
+            
+                    
+                    Setup Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Worksheet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ws1-css-basics/">
+            
+                <a href="../ws1-css-basics/">
+            
+                    
+                    CSS Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ws2-grouping-selectors/">
+            
+                <a href="../ws2-grouping-selectors/">
+            
+                    
+                    Grouping & Special Selectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Box Model & Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ws4-text/">
+            
+                <a href="../ws4-text/">
+            
+                    
+                    Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../quiz.html">
+            
+                <a href="../quiz.html">
+            
+                    
+                    Quiz
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bonus</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../homework/media-query.html">
+            
+                <a href="../homework/media-query.html">
+            
+                    
+                    Media Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../homework/homework.html">
+            
+                <a href="../homework/homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../references/css_cheat_sheet.html">
+            
+                <a href="../references/css_cheat_sheet.html">
+            
+                    
+                    CSS Cheat Sheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../references/">
+            
+                <a href="../references/">
+            
+                    
+                    Helpful Keyboard Shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../answer-key.html">
+            
+                <a href="../answer-key.html">
+            
+                    
+                    Answer Key
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Box Model & Layout</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="top"><a name="top" class="plugin-anchor" href="#top"><i class="fa fa-link" aria-hidden="true"></i></a>Box Model &amp; Layout </h1>
+<p>Cluttered web pages overload the brain. Spacing and layout helps draw attention to different parts of the website by making it easier for users to &quot;see&quot;. We will continue our work on LadyDev Bar &amp; Grill by applying spacing and layout concepts.</p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p>This section will help guide you through the following steps:</p>
+<div class="instructions">
+    <ul class="fa-ul">
+        <li>
+            <a href="#borders">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Define sections with borders</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#padding-margin">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Add padding and margins</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#hero">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Define background images</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#grid-layout">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Use CSS grid for layout</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>                
+</div>
+
+
+<h2 id="borders"><a name="borders" class="plugin-anchor" href="#borders"><i class="fa fa-link" aria-hidden="true"></i></a>Define section boundaries with borders  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Borders help define sections and helps the user by grouping like items together. You will explore different border properties to bring definition to your webpage.</p>
+<ol>
+<li><p>Select a border color to use between the navigation bar and menu. We&apos;ll use the same border color between the menu and the footer.</p>
+</li>
+<li><p>In the style definition for <code>nav</code>, add a property for the bottom border and set your selected color as the background. The property will look like <code>border-bottom: 5px solid #f1a250;</code>.</p>
+</li>
+<li><p>Repeat for the <code>footer</code> except use a top border.
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>The top border property is <code>border-top</code>.</p>
+</div></div></p>
+</li>
+<li><p>Turn your attention towards the drink menu. Create a style for <code>class=&quot;drinks&quot;</code> and remove the bullets.</p>
+</li>
+<li><p>Define borders between each drink in the drink menu by adding a top border to each item in the list. Target both the <code>.drinks</code> and <code>.item</code> classes in your style and set a thin dotted line. The style will look like</p>
+<p> </p><p class="code-label">styles.css</p><p></p>
+<pre><code class="lang-css"> <span class="hljs-selector-class">.drinks</span> <span class="hljs-selector-class">.item</span> {
+     <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> dotted <span class="hljs-number">#637056</span>;
+ }
+</code></pre>
+</li>
+<li><p>Add a border radius to the images in the drink menu. Add this new property to the existing style you already created to resize the images. By setting the value &quot;50%&quot;, you make a circular border around the image. 
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We already have a style declared for <code>.drinks img</code>. Add <code>border-radius: 50%;</code> to it. 
+</details>
+</div></div></p>
+</li>
+<li><p>Save your file and view in Chrome. Looking good!</p>
+</li>
+</ol>
+<h2 id="padding-margin"><a name="padding-margin" class="plugin-anchor" href="#padding-margin"><i class="fa fa-link" aria-hidden="true"></i></a>Use the Box Model to add padding and margins   <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>The Box Model is use to define spacing. You will apply Box Model concepts to add whitespace to LadyDev Bar &amp; Grill.
+Refer to the <a href="../references/css_cheat_sheet.html">CSS Cheat Sheet</a> to help.</p>
+<h3 id="navigation-bar"><a name="navigation-bar" class="plugin-anchor" href="#navigation-bar"><i class="fa fa-link" aria-hidden="true"></i></a>Navigation bar</h3>
+<ol>
+<li><p>Add padding between the list items in the navigation bar by declaring a new style and adding the <code>padding</code> property to look something like</p>
+<p> </p><p class="code-label">styles.css</p><p></p>
+<pre><code class="lang-css"> <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">li</span> {
+     <span class="hljs-attribute">padding</span>: <span class="hljs-number">2px</span>;
+ }
+</code></pre>
+<p> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p><code>padding: 2px;</code> means add 2px of padding on all 4 sides of the element. It&apos;s the same as </p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">padding-top</span>: 2<span class="hljs-selector-tag">px</span>;
+<span class="hljs-selector-tag">padding-right</span>: 2<span class="hljs-selector-tag">px</span>;
+<span class="hljs-selector-tag">padding-bottom</span>: 2<span class="hljs-selector-tag">px</span>;
+<span class="hljs-selector-tag">padding-left</span>: 2<span class="hljs-selector-tag">px</span>;
+</code></pre>
+</div></div></p>
+</li>
+<li><p>To make the navigation list items display horizontally, add <code>display: inline;</code> to <code>nav li</code> style.</p>
+</li>
+<li><p>Add padding between the hyperlinks in the navigation bar. Declare a style for <code>nav a</code> and add the padding property there. We want 6px on the top and bottom, but 20px on the right and left. </p>
+<p> <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We can use shorthand properties to help by defining all 4 sides on the same property like this <code>padding: 6px 20px;</code>.</p>
+<p>A commonly used mnemonic to remember the order of the values is &quot;TROUBLE&quot;. Learn about it at <a href="https://css-tricks.com/remember-the-order-of-marginpadding-shorthand-with-trouble/" target="_blank">CSS-Tricks</a>. </p>
+<p>Refer to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties" target="_blank">MDN documentation for shorthand properties</a>.</p>
+</div></div></p>
+</li>
+<li><p>Add <code>display: inline-block;</code> to <code>nav a</code> to align the hyperlinks on the same horizontal line. </p>
+</li>
+<li><p>Remove all space around the navigation bar unordered list group by setting <code>margin</code> and <code>padding</code> properties to &quot;0&quot;.
+ <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>This is the <code>nav ul</code> style.</p>
+</div></div></p>
+</li>
+<li><p>Save your file and view your page in Chrome.</p>
+</li>
+</ol>
+<h3 id="drink-menu"><a name="drink-menu" class="plugin-anchor" href="#drink-menu"><i class="fa fa-link" aria-hidden="true"></i></a>Drink menu</h3>
+<ol>
+<li><p>Remove the margin and padding by setting <code>margin</code> and <code>padding</code> properties to &quot;0&quot; in the existing style for <code>class=&quot;drinks&quot;</code>.</p>
+</li>
+<li><p>We want each menu item to display like a block element. To the existing style <code>.drinks .item</code> add <code>display: block;</code>.</p>
+</li>
+<li><p>The dotted top border line between the drinks menu list items is too close to the image. Add a 10px top padding to the style for <code>.drinks .item</code>.</p>
+</li>
+<li><p>The drink list items need a little breathing room. Add a 60px bottom margin between each drink list item.
+ <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Why use margin instead of padding? Refer to the box model image in the CSS Cheat Sheet. Notice the difference where space gets added. You can see for yourself by opening Chrome DevTools, adding a bottom border and bottom padding in the <strong>Styles</strong> tab, and watching where space gets added. The styles you add in DevTools won&apos;t save. Mentors are here to help.<br><img src="images/padding-vs-margin.png"></p>
+</div></div></p>
+</li>
+<li><p>The images in the drinks menu needs horizontal spacing by setting <code>margin: 0 20px;</code> to the existing style <code>.drinks img</code>.</p>
+</li>
+</ol>
+<h3 id="footer"><a name="footer" class="plugin-anchor" href="#footer"><i class="fa fa-link" aria-hidden="true"></i></a>Footer</h3>
+<ol>
+<li><p>Remove all space around the footer unordered list group by setting margin and padding to 0. </p>
+</li>
+<li><p>The social icons in the footer should display horizontally like it does in the navigation. Add <code>display: block;</code> to the style for the unordered list in footer. </p>
+</li>
+<li><p>Add a style to each list item in the footer to ensure everything stays on the same horizontal line.
+ <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+Declare a style for the <code>li</code> tag within <code>footer</code> and add <code>display: inline-block;</code>. 
+</details>
+</div></div></p>
+</li>
+<li><p>The social icons now extend pass the background color. Give the social icons a little extra space by setting the <code>footer</code> height to 75px by adding <code>height: 75px;</code> to the existing style for <code>footer</code>.</p>
+</li>
+</ol>
+<h2 id="hero"><a name="hero" class="plugin-anchor" href="#hero"><i class="fa fa-link" aria-hidden="true"></i></a>Define a background image to use for the hero image  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Most eye-catching websites have a hero image. Let&#x2019;s learn about background properties and use what we learned about absolute and relative sizing and apply it to the hero image.</p>
+<ol>
+<li><p>Open <em>index.html</em> and find the <code>div</code> containing the text for title of the web page. Because we want our hero image to fill the entire title area, declare a style for <code>class=&quot;hero&quot;</code> and set <code>height: 600px;</code> in <em>styles.css</em> like this</p>
+<p></p><p class="code-label">styles.css</p><p></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.hero</span> {
+   <span class="hljs-attribute">height</span>: <span class="hljs-number">600px</span>;
+}
+</code></pre>
+</li>
+<li><p>Add a background image to the style you created in the previous step by adding </p>
+<pre><code class="lang-css">   background: url(&quot;../images/hero.jpg&quot;) no-repeat center top;
+</code></pre>
+</li>
+<li><p>Save your file and view your page in Chrome. Nice job, smarty pants!</p>
+<p><img src="https://media.giphy.com/media/3o7TKBbkeuhqszIhuE/giphy.gif" alt=""></p>
+<p>But we want it to expand across the entire width of the page. Let&apos;s resize it.
+ <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Why did we have to add <code>no-repeat center top</code> to the image? We used shorthand properties to specify the image shouldn&apos;t repeat, center the image, and display image from top.</p>
+<p>Refer to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background" target="_blank">MDN documentation for background property</a>.</p>
+</div></div></p>
+</li>
+<li><p>In the same style for <code>class=&quot;hero&quot;</code>, add <code>background-size: cover;</code> after the <code>background</code> property.
+<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Refer to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" target="_blank">MDN documentation for background-size property</a>.</p>
+</div></div></p>
+</li>
+<li><p>Add some space after the <code>h2</code> element in <code>class=&quot;hero&quot;</code> by setting bottom margin to 20px to the existing style.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+Add <code>margin-bottom: 20px;</code> to the existing style <code>.hero h2</code>. 
+</details>
+</div></div></p>
+</li>
+</ol>
+<h2 id="grid-layout"><a name="grid-layout" class="plugin-anchor" href="#grid-layout"><i class="fa fa-link" aria-hidden="true"></i></a>Use CSS grid for layout  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>We want the drink menu and small plates menu as two columns next to each other. We will use CSS Grid to make this easy.</p>
+<ol>
+<li><p>In <em>index.html</em>, notice the drinks menu and small plates menu are both children of a parent <code>div</code> with <code>class=&quot;grid-container&quot;</code>. We will target this class for grid layout. </p>
+<p>Declare a style for <code>class=&quot;grid-container&quot;</code> in <em>styles.css</em> below your styles for <code>class=&quot;hero&quot;</code>. Add style <code>display: grid;</code>.</p>
+</li>
+<li><p>We want the drinks menu on the left with 75% width allocated to it. Drinks are, of course, most important. We want the small plates menu on the right with the remaining width allocation to it. </p>
+<p>Create a grid with 2 columns with specified width by adding <code>grid-template-columns: 75% auto;</code>. Your style should look like</p>
+<p></p><p class="code-label">styles.css</p><p></p>
+<pre><code class="lang-css"> <span class="hljs-selector-class">.grid-container</span> {
+     <span class="hljs-attribute">display</span>: grid;
+     <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">75%</span> auto;
+ }
+</code></pre>
+</li>
+<li>Save your file and view in Chrome. You have two columns! <img src="../images/emojis/party-popper.png" alt=""></li>
+</ol>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="checkpoint-"><a name="checkpoint-" class="plugin-anchor" href="#checkpoint-"><i class="fa fa-link" aria-hidden="true"></i></a>Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Compare your <em>styles.css</em> against the answer key for your work so far. It might look a little different depending on the color palette you chose.  </p>
+<div class="checkpoint">
+    <div class="badge">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-certificate fa-stack-2x certificate"></i>
+            <i class="fa fa-check fa-stack-1x checkmark"></i>
+        </span>
+    </div>
+    <div class="content">
+        <details>
+            <summary>
+                Expand this section to compare your work.
+            </summary>
+            <img src="images/checkpoint3.png">
+            <p>
+             You can also compare your <i>styles.css</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/blob/2018-checkpoint-3-box-model-layout/css/styles.css" target="_blank">answer key</a> if the image is too difficult to read.
+            </p>
+        </details>
+    </div>
+</div>
+
+
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="references-and-helpful-links-"><a name="references-and-helpful-links-" class="plugin-anchor" href="#references-and-helpful-links-"><i class="fa fa-link" aria-hidden="true"></i></a>References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model" target="_blank">Mozilla Developer Network Box Model documentation</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">Mozilla Developer Network Display documentation</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background" target="_blank">Mozilla Developer Network Background documentation</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout" target="_blank">Mozilla Developer Network Grid Layout documentation</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../ws2-grouping-selectors/" class="navigation navigation-prev " aria-label="Previous page: Grouping & Special Selectors">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ws4-text/" class="navigation navigation-next " aria-label="Next page: Text">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Box Model & Layout","level":"2.3","depth":1,"next":{"title":"Text","level":"2.4","depth":1,"path":"ws4-text/README.md","ref":"ws4-text/README.md","articles":[]},"previous":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"path":"ws2-grouping-selectors/README.md","ref":"ws2-grouping-selectors/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","livereload"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws3-box-model-layout/README.md","mtime":"2018-02-04T22:55:20.056Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-01T18:04:08.661Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

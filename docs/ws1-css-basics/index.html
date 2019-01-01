@@ -1,0 +1,754 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CSS Basics · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ws2-grouping-selectors/" />
+    
+    
+    <link rel="prev" href="../setup/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../setup/">
+            
+                <a href="../setup/">
+            
+                    
+                    Setup Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Worksheet</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CSS Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ws2-grouping-selectors/">
+            
+                <a href="../ws2-grouping-selectors/">
+            
+                    
+                    Grouping & Special Selectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ws3-box-model-layout/">
+            
+                <a href="../ws3-box-model-layout/">
+            
+                    
+                    Box Model & Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ws4-text/">
+            
+                <a href="../ws4-text/">
+            
+                    
+                    Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../quiz.html">
+            
+                <a href="../quiz.html">
+            
+                    
+                    Quiz
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bonus</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../homework/media-query.html">
+            
+                <a href="../homework/media-query.html">
+            
+                    
+                    Media Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../homework/homework.html">
+            
+                <a href="../homework/homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../references/css_cheat_sheet.html">
+            
+                <a href="../references/css_cheat_sheet.html">
+            
+                    
+                    CSS Cheat Sheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../references/">
+            
+                <a href="../references/">
+            
+                    
+                    Helpful Keyboard Shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../answer-key.html">
+            
+                <a href="../answer-key.html">
+            
+                    
+                    Answer Key
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CSS Basics</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="top"><a name="top" class="plugin-anchor" href="#top"><i class="fa fa-link" aria-hidden="true"></i></a>CSS Basics </h1>
+<p><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets (<strong>CSS</strong>) decorates your website with visual appeal and invites the user to connect with your website&apos;s personality. Tonight we&apos;ll apply CSS to the &quot;LadyDev Bar &amp; Grill&quot; web page. If you follow our instructions your page will end up looking like the example below but feel free to add in some of your own creativity if you feel comfortable! </p>
+<p><img src="images/ladyDevBarAndGrill.png" alt=""></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>Before starting the worksheet, please take a moment to review the <a href="../setup">Setup instructions</a> to ensure you have all the tools and workspace setup you need for tonight&apos;s work.</p>
+</div></div></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p>This section will help guide you through the following steps:</p>
+<div class="instructions">
+    <ul class="fa-ul">
+        <li>
+            <a href="#html-file">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Prepare the HTML file</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#link-stylesheet">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Link the stylesheet</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#sizes">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Resize images</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#text-color">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Change title color</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#cascade">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Cascade styles</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>                
+</div>
+
+
+<h2 id="html-file"><a name="html-file" class="plugin-anchor" href="#html-file"><i class="fa fa-link" aria-hidden="true"></i></a>Prepare the HTML file </h2>
+<p>First we need the HTML file. We&apos;ll create the file, download the images, and set up Atom.</p>
+<ol>
+<li><p>Open Atom from your installed applications. In Atom, select <strong>File</strong> <i class="fa fa-long-arrow-right"></i> <strong>Add project folder</strong>.</p>
+</li>
+<li><p>Navigate to and select the &quot;CodingAndCocktails/session2&quot; folder.
+<div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t have a &quot;CodingAndCocktails/session2&quot; directory, take a moment to <a href="../setup">set up your workspace</a>.</p>
+</div></div>  </p>
+</li>
+<li><p>In the <strong>Project</strong> pane in Atom, right click on the &quot;session2&quot; project folder and select <strong>New file</strong>.
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>If you see project folders from last session, remove the project folders by closing all the tabs for your code. Then right click on the folder to remove and select <strong>Remove Project Folder</strong>.</p>
+<p>   <img src="images/atom-remove-project-folder.png" alt=""></p>
+</div></div></p>
+</li>
+</ol>
+<ol>
+<li><p>Name the file <em>index.html</em> and press <code>Enter</code> to save it in your &quot;CodingAndCocktails/session2&quot; folder.</p>
+</li>
+<li><p>Copy and paste the following HTML code into your <em>index.html</em> file.</p>
+<p></p><p class="code-label">index.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>LadyDev Bar &amp;amp; Grill<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://use.fontawesome.com/81b69a015b.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navbar&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#about&quot;</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#menu&quot;</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#contact&quot;</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;about&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero-text&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>LadyDev<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Bar &amp;amp; Grill<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Making development more delicious every day!<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Welcome to the LadyDev Bar &amp;amp; Grill.  We&apos;re glad you&apos;re here!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Sit down, relax, and enjoy good drinks, good eats, and good friends.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grid-container&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;menu&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;drinks&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Menu<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;drinks&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/martini.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Martinis<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Made with our own homemade gin and dry vermouth.  Choose from The Classic, Lemondrop, or Chocolate.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/wine.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Wine<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>There are just too many to list.  Ask your server for a recommendation.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/whiskey-cocktails.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Whiskey cocktails<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Whiskey.  Some might consider it their spirit animal.  Thank goodness it&apos;s not just for men anymore.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/margarita.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Margaritas<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Slushy frozen delicousness, in Peach, Strawberry, or Mango.  Served with a rock-salted rim and lime.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hot-cocktail.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Hot &amp;amp; Creamy<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Just what you need to kick off a night of coding.  We offer concoctions with coffee, Kahlua, Bailey&apos;s, and more.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/beer.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Beer<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We serve the finest microbrews from around the world.  How about a Saison, IPA, or Stout?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/milk.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Non alcoholic<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We have plenty of NA options available to quench your thirst, like lemonade, milk or soda.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sidebar&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Small plates<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;food&quot;</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Grassfed beef sliders<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Spicy calamari<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Coconut shrimp<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Veggie spring rolls<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Deviled eggs<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Tuscan bean dip<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Chicken lettuce wraps<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;contact&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&amp;copy; 2019 LadyDev Bar &amp;amp; Grill<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://facebook.com/ladydevbargrill&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-facebook-official fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://twitter.com/ladydevbargrill&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-twitter fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://instagram.com/ladydevbargrill&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-instagram fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:ladydevbargrill@example.com&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-envelope-open-o fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>Save the file by selecting <strong>File</strong> <i class="fa fa-long-arrow-right"></i> <strong>Save</strong>. You can also use the keyboard shortcut <code>ctrl + s</code> on Windows or <code>cmd + s</code> on Mac. Unsaved files in Atom have a little blue dot on the tab.</p>
+<p><img src="images/atom.png" alt=""></p>
+</li>
+<li><p>Now we&apos;ll prepare the images. First we need a folder for the images. In Atom, right click on the &quot;session2&quot; folder in the <strong>Project</strong> pane and select <strong>New Folder</strong>. Name the folder &quot;images&quot;.</p>
+</li>
+<li><p>In Chrome, open a <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/archive/master.zip" target="_blank">new tab to download the contents of our GitHub repository containing the images</a>.
+<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Clicking on the link automatically downloads a zip file.</p>
+</div></div> </p>
+</li>
+<li><p>Unzip the file and move all the images inside the &quot;images&quot; folder to your new &quot;images&quot; folder in &quot;CodingAndCocktails/session2/images&quot;.</p>
+<p> When you&apos;re done, your &quot;images&quot; folder should contain:</p>
+<pre><code> beer.jpg
+ hero.jpg
+ hot-cocktail.jpg
+ margarita.jpg
+ martini.jpg
+ milk.jpg
+ whiskey-cocktails.jpg
+ wine.jpg
+</code></pre><p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>That&apos;s all we need from <em>master.zip</em>. You can delete all the other files from the download.</p>
+</div></div></p>
+</li>
+</ol>
+<p>Congratulate your neighbors for getting all the HTML setup done. Break the ice by asking your neighbor &quot;What&apos;s the most embarrassing fashion trend you used to rock&quot;?</p>
+<h2 id="link-stylesheet"><a name="link-stylesheet" class="plugin-anchor" href="#link-stylesheet"><i class="fa fa-link" aria-hidden="true"></i></a>Create and link the stylesheet to the HTML  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<ol>
+<li><p>We need a folder for the stylesheet we&apos;ll be creating tonight. In Atom, create the &quot;css&quot; folder for the project and create the <em>styles.css</em> file inside the &quot;css&quot; folder.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+In Atom, right click on the &quot;session2&quot; project folder. Select <b>New Folder</b>. Name your folder &quot;css&quot;. Right click on the &quot;css&quot; folder. Select <b>New File</b> to create your stylesheet file. Name the file <i>styles.css</i>.
+</details>
+</div></div></p>
+</li>
+<li><p>In Atom, open <em>index.html</em>. In the HTML <code>&lt;head&gt;</code> section (between the opening <code>&lt;head&gt;</code> and closing <code>&lt;/head&gt;</code>), find the HTML tags for <code>title</code> and <code>script</code>. Place your cursor after the <code>title</code> tag, press <code>Enter</code>, and link your stylesheet by adding </p>
+<p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;</code>.</p>
+<p>The <code>&lt;head&gt;</code> section of your HTML should look like this:</p>
+<p>   </p><p class="code-label">index.html</p><p></p>
+<pre><code class="lang-html"> <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>LadyDev Bar &amp;amp; Grill<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;css/styles.css&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://use.fontawesome.com/81b69a015b.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Didn&apos;t have a chance to attend the HTML session or do you need a refresher? Grab a mentor and ask for an HTML overview.</p>
+</div></div></p>
+</li>
+<li><p>Save your file.</p>
+</li>
+<li><p>Now we want to preview the <em>index.html</em> file in Chrome. Instead of saving and reloading the page manually, we&apos;ll use the atom plugin <strong>atom-live-server</strong>. This package opens up the web page in your default web browser and reloads the page whenever you save files. In Atom, start the live server by selecting <strong>Packages</strong> <i class="fa fa-long-arrow-right"></i> <strong>atom-live-server</strong>. Select <strong>Start server</strong>. A browser tab will open.
+<div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t have the <strong>atom-live-server</strong> package, take a moment to <a href="../setup">set up your workspace</a>.</p>
+</div></div>   </p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If the tab opens in another browser, copy the URL and paste it into a new tab in Chrome. The reload will automatically happen in Chrome.</p>
+<p>If you get an access warning, click &quot;Allow&quot; to let <strong>atom-live-server</strong> serve the application.</p>
+<p>If you are borrowing a laptop and get an access warning, please contact a member of the Coding &amp; Cockails leadership team for access.</p>
+</div></div>   </p>
+</li>
+<li><p>Take a look at your app in Google Chrome and notice the current styling. The page doesn&apos;t look good yet but we&apos;ve got our initial setup for our project done. Now let&apos;s get to the fun part - styling!</p>
+</li>
+</ol>
+<h2 id="sizes"><a name="sizes" class="plugin-anchor" href="#sizes"><i class="fa fa-link" aria-hidden="true"></i></a>Resize images using relative and absolute sizes  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Images are a big part of any website and what most people see first because your eyes are drawn to visuals. Let&#x2019;s learn about absolute and relative sizing and apply it to the images in the menu.</p>
+<ol>
+<li><p>In Atom, open <em>index.html</em>. Find the HTML tag <code>div</code> for drinks with the title text &quot;Menu&quot;. It contains an unordered list with <code>class=&quot;drinks&quot;</code> and has an image using the HTML <code>img</code> tag. We will need to apply a style to the HTML <code>img</code> selector within <code>class=&quot;drinks&quot;</code>.
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>The syntax for a CSS rule looks like this:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">selector</span> {
+    <span class="hljs-attribute">property</span>: value;
+}
+</code></pre>
+<p><code>class</code> attributes have <code>.</code> prepended to the selectors while <code>id</code> attributes have <code>#</code> prepended to the selectors.</p>
+<p>To target selectors within a <code>class</code> you have to specify both the <code>class</code> and selector in your style.</p>
+</div></div></p>
+</li>
+<li><p>Open <em>styles.css</em> and add the following code</p>
+<p> </p><p class="code-label">styles.css</p><p></p>
+<pre><code class="lang-css"> <span class="hljs-selector-class">.drinks</span> <span class="hljs-selector-tag">img</span> {
+     <span class="hljs-attribute">width</span>: <span class="hljs-number">25%</span>;
+ }
+</code></pre>
+<p> Save your file and view your app in Chrome. The width of all the images within <code>class=&quot;drinks&quot;</code> resized to 25% of the view. 
+ <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Atom can help you out! IDEs can help auto-complete code for you, including CSS properties. When you start typing a property, Atom will suggest properties matching the name.</p>
+</div></div></p>
+</li>
+<li><p>Now let&apos;s try absolute sizes. Change your style to use <code>width: 120px;</code>. Save your file and view your app in Chrome. The width of all the images resized to 120 pixels.
+ <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>You can inspect elements in Chrome DevTools. Right click on an image and select <strong>Inspect</strong>. If you aren&apos;t familiar with Chrome DevTools or want a refresher, feel free to grab a mentor. Mentors love talking about <strong>debugging</strong>.</p>
+</div></div></p>
+</li>
+<li><p>Specify the height of your images by adding <code>height: 120px;</code>. Save your file and view your app in Chrome. The height of the images resized to 120 pixels as well. 
+ <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>The images look distorted. This is because when you set height <strong>or</strong> width of an image, the image automatically scales and maintains <a href="https://www.w3schools.com/howto/howto_css_aspect_ratio.asp" target="_blank">aspect ratio</a> but when you specify both height <strong>and</strong> width, the image resizes to the specified height and width and stretches to accommodate. </p>
+</div></div></p>
+</li>
+</ol>
+<h2 id="text-color"><a name="text-color" class="plugin-anchor" href="#text-color"><i class="fa fa-link" aria-hidden="true"></i></a>Change the color of the title  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Color helps differentiate sections within a website and helps convey importance. In this section we&apos;ll change the color of the &quot;LadyDev Bar &amp; Grill&quot; title.</p>
+<ol>
+<li><p>Pick out a color palette to use from <a href="http://colorhunt.co" target="_blank">http://colorhunt.co</a>. Click on the color palette you like to get a bigger view of the colors. Make note of the hex color values displayed when you hover over each color in your chosen palette. 
+ <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Ensure your colors are a11y friendly by using the WebAIM <a href="https://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a>. You can input your selected foreground and background colors to find contrasting colors that improve legibility.</p>
+<p>Google&apos;s <a href="https://material.io/color/" target="_blank">Color Tool</a> makes this a little easier by pre-defining color palettes with accessible contrast.</p>
+</div></div></p>
+</li>
+<li><p>In Atom, find the <code>div</code> containing the HTML header tag with the text &quot;LadyDev&quot; in <em>index.html</em>. Note the <code>div</code> has <code>class=&quot;hero-text&quot;</code> and you have <code>h1</code>, <code>h2</code>, and <code>p</code> tags to style.</p>
+</li>
+<li><p>In <em>styles.css</em>, declare a style for the <code>h1</code> tag above the existing style for <code>.drinks img</code> and add the color you selected for the title using the <code>color</code> property like this</p>
+<p> </p><p class="code-label">styles.css</p><p></p>
+<pre><code class="lang-css"> <span class="hljs-selector-class">.hero</span> <span class="hljs-selector-tag">h1</span> {
+     <span class="hljs-attribute">color</span>: <span class="hljs-number">#cb6f10</span>;
+ }
+</code></pre>
+</li>
+<li><p>Repeat to create styles targeting <code>h2</code> and <code>p</code> right after your <code>.hero h1</code> style and apply the same color.
+ <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>What happens if you don&apos;t specify class when styling the <code>p</code> element? </p>
+<p>The color changes applies to all <code>p</code> elements on the page, not just the title. Try it yourself to see CSS specificity.</p>
+</div></div></p>
+</li>
+<li><p>Save your file and view your page in Chrome.
+ <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Save your <em>styles.css</em> file and view your app often so you can see the changes as we go along. The worksheet will call out specific places to save and view the web page to illustrate a concept, but feel free to save and view your page as often as you want. It helps to see the changes as your write your CSS.   </p>
+</div></div></p>
+</li>
+</ol>
+<h2 id="cascade"><a name="cascade" class="plugin-anchor" href="#cascade"><i class="fa fa-link" aria-hidden="true"></i></a>Cascade background color changes  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>The ability to cascade styles makes CSS powerful. In this section we will apply background colors to demonstrate how to cascade styles.</p>
+<ol>
+<li><p>Select a background color for the entire page and add it to the top of <em>styles.css</em> by using the HTML <code>body</code> selector and <code>background-color</code> property. </p>
+<p></p><p class="code-label">styles.css</p><p></p>
+<pre><code class="lang-css"> <span class="hljs-selector-tag">body</span> {
+     <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fefaec</span>;
+ }
+</code></pre>
+<p> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>The <code>body</code> is the parent element for the website so setting a style here applies to every element within <strong>unless</strong> it&apos;s overridden. Organize your CSS by setting global styles at the top of the file and target styles for specific elements after global styles. Declare styles for specific elements in vertical order as it appears in the HTML to make it easy to find later.</p>
+</div></div></p>
+</li>
+<li><p>Select a background color for the Small plates menu. Notice in <em>index.html</em> the Small plates menu <code>div</code> has a <code>class=&quot;sidebar&quot;</code>. Create a style for this class after the style you already created for drinks and set the background color. 
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>You can search for and find &quot;Small plates&quot; in the <em>index.html</em> in Atom. In the toolbar, select <strong>Find</strong> <i class="fa fa-long-arrow-right"></i> <strong>Find in Buffer</strong>. You can also use a <a href="../references">keyboard shortcut</a>.</p>
+</div></div></p>
+</li>
+<li>To help make the navigation and footer area pop, select a background color to use. Look at the <em>index.html</em> file to identify the selectors for the navigation and footer sections. Be sure to declare the style for the navigation bar near the top of <em>styles.css</em> file and footer style at the bottom of the file.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+Declare a style for <code>nav</code> after the style for <code>body</code> and add <code>background-color: #cb6f10;</code>. Declare a style for <code>footer</code> at the end of the file and add <code>background-color: #cb6f10;</code>.
+</details>
+</div></div></li>
+</ol>
+<h2 id="nice-work"><a name="nice-work" class="plugin-anchor" href="#nice-work"><i class="fa fa-link" aria-hidden="true"></i></a>Nice work!</h2>
+<p>Celebrate with a toast with your neighbors.
+<img src="https://media.giphy.com/media/8QPSW7nGDN7wY/giphy.gif" alt=""></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="checkpoint-"><a name="checkpoint-" class="plugin-anchor" href="#checkpoint-"><i class="fa fa-link" aria-hidden="true"></i></a>Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Compare your <em>styles.css</em> against the answer key for your work so far. It might look a little different depending on the color palette you chose.  </p>
+<div class="checkpoint">
+    <div class="badge">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-certificate fa-stack-2x certificate"></i>
+            <i class="fa fa-check fa-stack-1x checkmark"></i>
+        </span>
+    </div>
+    <div class="content">
+        <details>
+            <summary>
+                Expand this section to compare your work.
+            </summary>
+            <img src="images/checkpoint1.png">
+            <p>
+             You can also compare your <i>styles.css</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/blob/2018-checkpoint-1-css-basics/css/styles.css" target="_blank">answer key</a> if the image is too difficult to read.
+            </p>
+        </details>
+    </div>
+</div>
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="references-and-helpful-links-"><a name="references-and-helpful-links-" class="plugin-anchor" href="#references-and-helpful-links-"><i class="fa fa-link" aria-hidden="true"></i></a>References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Mozilla Developer Network CSS reference documentation</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../setup/" class="navigation navigation-prev " aria-label="Previous page: Setup Instructions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ws2-grouping-selectors/" class="navigation navigation-next " aria-label="Next page: Grouping & Special Selectors">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CSS Basics","level":"2.1","depth":1,"next":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"path":"ws2-grouping-selectors/README.md","ref":"ws2-grouping-selectors/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","livereload"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-css-basics/README.md","mtime":"2018-12-24T20:16:15.507Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-01T18:04:08.661Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
