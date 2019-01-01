@@ -1,21 +1,30 @@
 # Coding & Cocktails Session 2: CSS
 
-The `docs` directory contains worksheets for Coding & Cocktails session 2 published on Gitbooks: [Coding & Cocktails - Session 2: Intro to CSS](https://www.gitbook.com/book/codingandcocktailskc/session-2-css/details).
+The `book` directory contains worksheets for Coding & Cocktails session 2 published on Gitbooks: [Coding & Cocktails - Session 2: Intro to CSS](https://www.gitbook.com/book/codingandcocktailskc/session-2/details).
+
+It is also hosted as a Github page at [https://kansascitywomenintechnology.github.io/CodingAndCocktailsWorksheetSession2/](https://kansascitywomenintechnology.github.io/CodingAndCocktailsWorksheetSession2/)
 
 ## Getting Going
-Install [Gitbook](https://www.npmjs.com/package/gitbook) CLI from npm.
 
 ```bash
-gitbook install
-gitbook serve
+npm install
+npm run book:install
 ```
-To build without serving, `gitbook build`.
+
+To serve Gitbook, `npm start`.
+To build without serving, `npm run book:build`.
+
+## To build and deploy to Github pages
+Run command prior to pushing to master.
+```bash
+npm run book:deploy
+```
 
 ## Associated Repos
 Session and homework repo - [CSSCompilerPractice](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice)
 
 ## TODO
-- [ ] Fix the import of font to the be at the top of the _styles.css_ (before the reset styles)
+- [x] Fix the import of font to the be at the top of the _styles.css_ (before the reset styles)
 - [ ] Ideally consolidate session work into this repo
 - [ ] Incorporate feedback from curriculum retro in Google Drive
 
