@@ -11,6 +11,10 @@ If you are borrowing a laptop, please ask your mentor to explain the tools.
 ## 
 Follow the instructions on this page to prepare your workspace.
 
+{% hint style='tip' %}
+Open [Slack](http://kcwit.slack.com/) to the **#codingandcocktails** channel. It's a great way to stay in touch with your Coding & Cocktails girlfriends and to ask questions during and after the session. We'll also post updates and tips in Slack if we run in to any stumbling blocks tonight.
+{% endhint %}
+
 
 ## Required tools for this session
 
