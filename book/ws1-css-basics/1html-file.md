@@ -127,6 +127,13 @@ Clicking on the link automatically downloads a zip file.
    {% endhint %} 
 
 1. Unzip the file and move all the images inside the "images" folder to your new "images" folder in "CodingAndCocktails/session2/images".
+
+   {% hint style='tip' %}
+Not sure how to extract the contents of the zip file?
+
+**Mac users**: Double click on the downloaded file with the .zip extension<br/>
+**Windows users**: Right click on the file with the .zip extension and choose "Extract All." Select the destination you would like to extract the files to.
+   {% endhint %}   
 	
 	When you're done, your "images" folder should contain:
 	```
