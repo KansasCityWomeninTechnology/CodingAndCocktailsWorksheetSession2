@@ -28,13 +28,7 @@ Add <code>margin-bottom: 15px;</code> to space.
 
 1. Save your file and view your page in Chrome. ![](../images/emojis/party-popper.png)
 
-1. Share your success by posting a screenshot to Slack or deploy your webpage using Now. To deploy the webpage, open Now from your installed applications. 
-
-1. Click the upload button at the toolbar at the top of the Now application. The upload button looks something like <i class="fa fa-cloud-upload" aria-hidden="true"></i>.
-
-1. Navigate to and select your "CodingAndCocktails/session1/html" folder.
-
-1. Your browser tab will open to the deployed app. Copy and paste the link in Slack to share your cool new app.
+1. Share your success by posting a screenshot to Slack!  
 
 
 ![](https://media.giphy.com/media/3ohhwo4PzDFaz2sADu/giphy.gif)

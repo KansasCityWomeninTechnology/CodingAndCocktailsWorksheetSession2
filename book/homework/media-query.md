@@ -71,7 +71,7 @@ We need 1 column in the media query. Change <code>grid-template-columns</code> t
 </details>
    {% endhint %}
 
-1. Share your mobile ready webpage on Now and post it on Slack for everyone to admire!
+1. Share pics of your mobile ready webpage on Slack for everyone to admire!
 
 ### References and helpful links
 [Mozilla Developer Network Media query documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)

@@ -12,7 +12,7 @@ Borders help define sections and helps the user by grouping like items together.
 {% include "./1borders.md" %}
 
 ## Use the Box Model to add padding and margins  {#padding-margin} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-The Box Model is use to define spacing. You will apply Box Model concepts to add whitespace to LadyDev Bar & Grill.
+The Box Model defines spacing around elements. You will apply Box Model concepts to add whitespace to LadyDev Bar & Grill.
 Refer to the [CSS Cheat Sheet](../references/css_cheat_sheet.md) to help.
 {% include "./2padding-margin.md" %}
 
