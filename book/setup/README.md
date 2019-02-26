@@ -27,8 +27,6 @@ You don't need all the tools for tonight's session. If you haven't installed all
 
 1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
 
-1. [Now](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-now/)
-
 ## Create a folder for tonight's work
 
 Create a folder named "session2" in your "CodingAndCocktails" folder by following the steps below
@@ -58,7 +56,7 @@ Mentors are happy to help!
 {% hint style='working' %}
 Did you know you can collapse the table of contents for worksheets?
 
-Click on the hamburger menu (<i class="fa fa-bars" aria-hidden="true"></i>) at the top of the page to toggle the table of contents.
+Click on the hamburger menu (<i class="fa fa-bars" aria-hidden="true"></i>) at the top of the page to toggle the table of contents. You can also use the keyboard shortcut `s`.
 {% endhint %}
 
 {% hint style='working' %}

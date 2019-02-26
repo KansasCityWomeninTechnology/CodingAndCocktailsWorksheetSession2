@@ -21,6 +21,6 @@ The more you practice, the more comfortable you’ll feel!  Take a look at the f
 1. For a deeper dive into CSS Grid try: [https://cssgrid.io/](https://cssgrid.io/)
 
 ### Check out these tools designed to help web developers
-1. Open your webpage hosted in Now. (If you didn't deploy your page earlier, follow the instructions at the end of the worksheet.)
+1. Deploy your webpage to GitHub as a GitHub page. Reach out on Slack and mentor will be happy to walk you through it. We'll learn about Git next session so you're getting a head start!
 1. Using Chrome DevTools, run [Lighthouse](https://developers.google.com/web/tools/lighthouse/#devtools) audit for "Accessibility" to generate a report. 
 1. View your page in [Google Resizer](https://material.io/resizer/) to visualize what it looks like in different form factors.

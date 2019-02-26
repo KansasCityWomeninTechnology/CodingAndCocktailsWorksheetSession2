@@ -68,4 +68,4 @@ Declare a style for the <code>li</code> tag within <code>footer</code> and add <
 </details>
    {% endhint %}
    
-1. The social icons now extend pass the background color. Give the social icons a little extra space by setting the `footer` height to 75px by adding `height: 75px;` to the existing style for `footer`.
+1. The social icons now extend past the background color. Give the social icons a little extra space by setting the `footer` height to 75px by adding `height: 75px;` to the existing style for `footer`.
