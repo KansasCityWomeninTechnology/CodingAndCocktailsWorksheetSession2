@@ -123,7 +123,9 @@ If you see project folders from last session, remove the project folders by clos
 
 1. In Chrome, open a [new tab to download the contents of our GitHub repository containing the images](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/archive/master.zip).
    {% hint style="info" %}
-Clicking on the link automatically downloads a zip file.
+Clicking on the link automatically downloads a zip file that contains multiple files. The worksheet will walk you through file organization.
+
+GitHub is a tool we use to store code. You'll learn all about GitHub and Git next session!
    {% endhint %} 
 
 1. Unzip the file and move all the images inside the "images" folder to your new "images" folder in "CodingAndCocktails/session2/images".
