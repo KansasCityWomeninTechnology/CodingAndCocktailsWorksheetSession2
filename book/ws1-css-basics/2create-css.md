@@ -8,7 +8,7 @@ In Atom, right click on the "session2" project folder. Select <b>New Folder</b>.
 </details>
    {% endhint %}
 
-1. In Atom, open _index.html_. In the HTML `<head>` section (between the opening `<head>` and closing `</head>`), find the HTML tags for `title` and `script`. Place your cursor after the closing`title` tag, press `Enter`, and link your stylesheet by adding 
+1. In Atom, open _index.html_. In the HTML `<head>` section (between the opening `<head>` and closing `</head>`), find the HTML tags for `title` and `script`. Place your cursor after the closing `title` tag, press `Enter`, and link your stylesheet by adding 
 
    `<link rel="stylesheet" href="css/styles.css">`.
    
