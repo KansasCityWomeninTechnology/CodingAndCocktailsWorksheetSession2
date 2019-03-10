@@ -7,7 +7,7 @@ If you don't have a "CodingAndCocktails/session2" directory, take a moment to [s
    {% endhint %}  
 
 1. In the **Project** pane in Atom, right click on the "session2" project folder and select **New file**.
-   {% hint style="tip" %}
+   {% hint style="danger" %}
 If you see project folders from last session, remove the project folders by closing all the tabs for your code. Then right click on the folder to remove and select **Remove Project Folder**.
 
    ![](images/atom-remove-project-folder.png)
