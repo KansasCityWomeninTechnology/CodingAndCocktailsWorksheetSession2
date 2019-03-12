@@ -39,8 +39,12 @@ If the tab opens in another browser, copy the URL and paste it into a new tab in
 
 If you get an access warning, click "Allow" to let **atom-live-server** serve the application.
 
-If you are borrowing a laptop and get an access warning, please contact a member of the Coding & Cockails leadership team for access.
+If you are borrowing a laptop and get an access warning, please contact a member of the Coding & Cocktails leadership team for access.
    {% endhint %}   
+
+   {% hint style='danger' %}
+If you have more than 1 project folder open in Atom, atom-live-server will serve the _index.html_ from the first project. Remove all projects from Atom except for this session.
+   {% endhint %}  
 
 1. Take a look at your app in Google Chrome and notice the current styling. The page doesn't look good yet but we've got our initial setup for our project done. Now let's get to the fun part - styling!
 
