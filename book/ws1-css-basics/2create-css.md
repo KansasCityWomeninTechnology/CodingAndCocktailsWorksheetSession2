@@ -18,6 +18,7 @@ In Atom, right click on the "session2" project folder. Select <b>New Folder</b>.
     ```html
     <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>LadyDev Bar &amp; Grill</title>
       <link rel="stylesheet" href="css/styles.css">
       <script src="https://use.fontawesome.com/81b69a015b.js"></script>
