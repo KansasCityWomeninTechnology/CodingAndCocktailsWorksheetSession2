@@ -8,7 +8,8 @@
         "custom-favicon",
         "hints",
         "codeblock-label",
-        "anchors"
+        "anchors",
+        "sectionx"
     ],
     "pluginsConfig": {
         "favicon": "book/images/favicon.ico",

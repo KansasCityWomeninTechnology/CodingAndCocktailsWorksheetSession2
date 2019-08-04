@@ -11,6 +11,12 @@ Before starting the worksheet, please take a moment to review the [Setup instruc
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
+{% hint style='danger' %}
+If you are using CodeSandbox, please skip to [CloudSandbox instructions](#cloud-ide) below.
+{% endhint %}
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 
 This section will help guide you through the following steps:
 
@@ -52,3 +58,11 @@ Compare your _styles.css_ against the answer key for your work so far. It might 
 
 ## References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 [Mozilla Developer Network CSS reference documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+
+## Cloud IDE instructions {#cloud-ide}
+<!-- sec data-title="CodeSandbox instructions" data-id="section0" data-show=true data-collapse=true ces -->
+{% include "./cloud-ide.md" %}
+<!--endsec-->
