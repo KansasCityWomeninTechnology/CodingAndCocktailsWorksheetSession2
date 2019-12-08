@@ -389,21 +389,16 @@
 
 
 <h2 id="html-file"><a name="html-file" class="plugin-anchor" href="#html-file"><i class="fa fa-link" aria-hidden="true"></i></a>Prepare the HTML file </h2>
-<p>First we need the HTML file. We&apos;ll create the file, download the images, and set up Atom.</p>
+<p>First we need the HTML file. We&apos;ll create the file, download the images, and set up the development environment.</p>
 <ol>
-<li><p>Open Atom from your installed applications. In Atom, select <strong>File</strong> <i class="fa fa-long-arrow-right"></i> <strong>Add project folder</strong>.</p>
+<li><p>Open Visual Studio Code (VS Code) from your installed applications. In VS Code, select <strong>File</strong> <img src="../images/arrow-right.svg" alt=""> <strong>Open Folder...</strong>.</p>
 </li>
 <li><p>Navigate to and select the &quot;CodingAndCocktails/session2&quot; folder.
 <div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t have a &quot;CodingAndCocktails/session2&quot; directory, take a moment to <a href="../setup">set up your workspace</a>.</p>
 </div></div>  </p>
 </li>
-<li><p>In the <strong>Project</strong> pane in Atom, right click on the &quot;session2&quot; project folder and select <strong>New file</strong>.
-<div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you see project folders from last session, remove the project folders by closing all the tabs for your code. Then right click on the folder to remove and select <strong>Remove Project Folder</strong>.</p>
-<p>   <img src="images/atom-remove-project-folder.png" alt=""></p>
-</div></div></p>
+<li><p>Create a file called <em>index.html</em>. In VS Code&apos;s <strong>EXPLORER</strong> pane, hover over <strong>CSS</strong> to display action buttons. Click the <strong>New File</strong> icon.</p>
 </li>
-</ol>
-<ol>
 <li><p>Name the file <em>index.html</em> and press <code>Enter</code> to save it in your &quot;CodingAndCocktails/session2&quot; folder.</p>
 </li>
 <li><p>Copy and paste the following HTML code into your <em>index.html</em> file.</p>
@@ -442,37 +437,37 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/martini.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Martinis<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Made with our own homemade gin and dry vermouth.  Choose from The Classic, Lemondrop, or Chocolate.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Made with our own homemade gin and dry vermouth. Choose from The Classic, Lemondrop, or Chocolate.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/wine.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Wine<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>There are just too many to list.  Ask your server for a recommendation.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>There are just too many to list. Ask your server for a recommendation.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/whiskey-cocktails.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Whiskey cocktails<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Whiskey.  Some might consider it their spirit animal.  Thank goodness it&apos;s not just for men anymore.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Whiskey. Known as the water of life and a drink worthy of deep contemplation. Thank goodness it&apos;s not just for men anymore.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/margarita.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Margaritas<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Slushy frozen delicousness, in Peach, Strawberry, or Mango.  Served with a rock-salted rim and lime.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Slushy frozen delicousness, in Peach, Strawberry, or Mango. Served with a rock-salted rim and lime.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/hot-cocktail.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Hot &amp;amp; Creamy<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Just what you need to kick off a night of coding.  We offer concoctions with coffee, Kahlua, Bailey&apos;s, and more.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Just what you need to kick off a night of coding. We offer concoctions with coffee, Kahlua, Bailey&apos;s, and more.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/beer.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Beer<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We serve the finest microbrews from around the world.  How about a Saison, IPA, or Stout?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We serve the finest microbrews from around the world. How about a Saison, IPA, or Stout?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/milk.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;head&quot;</span>&gt;</span>Non alcoholic<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We have plenty of NA options available to quench your thirst, like lemonade, milk or soda.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We have plenty of NA options available to quench your thirst, like lemonade, milk, or soda.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
               <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -491,7 +486,7 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
      <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;contact&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&amp;copy; 2019 LadyDev Bar &amp;amp; Grill<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&amp;copy; 2020 LadyDev Bar &amp;amp; Grill<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://facebook.com/ladydevbargrill&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-facebook-official fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://twitter.com/ladydevbargrill&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-twitter fa-lg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -503,10 +498,10 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 </li>
-<li><p>Save the file by selecting <strong>File</strong> <i class="fa fa-long-arrow-right"></i> <strong>Save</strong>. You can also use the keyboard shortcut <code>ctrl + s</code> on Windows or <code>cmd + s</code> on Mac. Unsaved files in Atom have a little blue dot on the tab.</p>
-<p><img src="images/atom.png" alt=""></p>
+<li><p>Save the file by selecting <strong>File</strong> <img src="../images/arrow-right.svg" alt=""> <strong>Save</strong>. You can also use the keyboard shortcut <code>ctrl + s</code> on Windows or <code>cmd + s</code> on Mac. Unsaved files in VS Code have a little dot on the tab.</p>
+<p><img src="images/vs-code-save.png" alt=""></p>
 </li>
-<li><p>Now we&apos;ll prepare the images. First we need a folder for the images. In Atom, right click on the &quot;session2&quot; folder in the <strong>Project</strong> pane and select <strong>New Folder</strong>. Name the folder &quot;images&quot;.</p>
+<li><p>Now we&apos;ll prepare the images. First we need a folder for the images. In VS Code, click on <strong>SESSION2</strong> expander panel and click on the <strong>New Folder</strong> icon. Name the folder &quot;images&quot;.</p>
 </li>
 <li><p>In Chrome, open a <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/archive/master.zip" target="_blank">new tab to download the contents of our GitHub repository containing the images</a>.
 <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Clicking on the link automatically downloads a zip file that contains multiple files. The worksheet will walk you through file organization.</p>
@@ -534,16 +529,16 @@
 <p>Congratulate your neighbors for getting all the HTML setup done. Break the ice by asking your neighbor &quot;What&apos;s the most embarrassing fashion trend you used to rock&quot;?</p>
 <h2 id="link-stylesheet"><a name="link-stylesheet" class="plugin-anchor" href="#link-stylesheet"><i class="fa fa-link" aria-hidden="true"></i></a>Create and link the stylesheet to the HTML  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <ol>
-<li><p>We need a folder for the stylesheet we&apos;ll be creating tonight. In Atom, create the &quot;css&quot; folder for the project and create the <em>styles.css</em> file inside the &quot;css&quot; folder.
+<li><p>We need a folder for the stylesheet we&apos;ll be creating tonight. In VS Code, create the &quot;css&quot; folder for the project and create the <em>styles.css</em> file inside the &quot;css&quot; folder.
 <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-In Atom, right click on the &quot;session2&quot; project folder. Select <b>New Folder</b>. Name your folder &quot;css&quot;. Right click on the &quot;css&quot; folder. Select <b>New File</b> to create your stylesheet file. Name the file <i>styles.css</i>.
+In VS Code, click on <b>SESSION2</b> expander and click on the <b>New Folder</b> icon. Name your folder &quot;css&quot;. Right click on the &quot;css&quot; folder. Select <b>New File</b> to create your stylesheet file. Name the file <i>styles.css</i>.
 </details>
 </div></div></p>
 </li>
-<li><p>In Atom, open <em>index.html</em>. In the HTML <code>&lt;head&gt;</code> section (between the opening <code>&lt;head&gt;</code> and closing <code>&lt;/head&gt;</code>), find the HTML tags for <code>title</code> and <code>script</code>. Place your cursor after the closing <code>title</code> tag, press <code>Enter</code>, and link your stylesheet by adding </p>
+<li><p>In VS Code, open <em>index.html</em>. In the HTML <code>&lt;head&gt;</code> section (between the opening <code>&lt;head&gt;</code> and closing <code>&lt;/head&gt;</code>), find the HTML tags for <code>title</code> and <code>script</code>. Place your cursor after the closing <code>title</code> tag, press <code>Enter</code>, and link your stylesheet by adding </p>
 <p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;</code>.</p>
 <p>The <code>&lt;head&gt;</code> section of your HTML should look like this:</p>
 <p>   </p><p class="code-label">index.html</p><p></p>
@@ -560,15 +555,13 @@ In Atom, right click on the &quot;session2&quot; project folder. Select <b>New F
 </li>
 <li><p>Save your file.</p>
 </li>
-<li><p>Now we want to preview the <em>index.html</em> file in Chrome. Instead of saving and reloading the page manually, we&apos;ll use the atom plugin <strong>atom-live-server</strong>. This package opens up the web page in your default web browser and reloads the page whenever you save files. In Atom, start the live server by selecting <strong>Packages</strong> <i class="fa fa-long-arrow-right"></i> <strong>atom-live-server</strong>. Select <strong>Start server</strong>. A browser tab will open.
-<div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t have the <strong>atom-live-server</strong> package, take a moment to <a href="../setup">set up your workspace</a>.</p>
+<li><p>Now we want to preview the <em>index.html</em> file in Chrome. Instead of saving and reloading the page manually, we&apos;ll use the VS Code extension <strong>Live Server</strong>. This extension opens up the web page in your default web browser and reloads the page whenever you save files. In VS Code, start the live server by right clicking on <em>index.html</em> in the <strong>EXPLORER</strong> pane and select <strong>Open with Live Server</strong>. A browser tab will open.
+<div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t have the <strong>Live Server</strong> package, take a moment to <a href="../setup">set up your workspace</a>.</p>
 </div></div>   </p>
 <p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If the tab opens in another browser, copy the URL and paste it into a new tab in Chrome. The reload will automatically happen in Chrome.</p>
-<p>If you get an access warning, click &quot;Allow&quot; to let <strong>atom-live-server</strong> serve the application.</p>
+<p>If you get an access warning, click &quot;Allow&quot; to let <strong>Live Server</strong> serve the application.</p>
 <p>If you are borrowing a laptop and get an access warning, please contact a member of the Coding &amp; Cocktails leadership team for access.</p>
 </div></div>   </p>
-<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you have more than 1 project folder open in Atom, atom-live-server will serve the <em>index.html</em> from the first project. Remove all projects from Atom except for this session.</p>
-</div></div>  </p>
 </li>
 <li><p>Take a look at your app in Google Chrome and notice the current styling. The page doesn&apos;t look good yet but we&apos;ve got our initial setup for our project done. Now let&apos;s get to the fun part - styling!</p>
 </li>
@@ -576,7 +569,7 @@ In Atom, right click on the &quot;session2&quot; project folder. Select <b>New F
 <h2 id="sizes"><a name="sizes" class="plugin-anchor" href="#sizes"><i class="fa fa-link" aria-hidden="true"></i></a>Resize images using relative and absolute sizes  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>Images are a big part of any website and what most people see first because your eyes are drawn to visuals. Let&#x2019;s learn about absolute and relative sizing and apply it to the images in the menu.</p>
 <ol>
-<li><p>In Atom, open <em>index.html</em>. Find the HTML tag <code>div</code> for drinks with the title text &quot;Menu&quot;. It contains an unordered list with <code>class=&quot;drinks&quot;</code> and has an image using the HTML <code>img</code> tag. We will need to apply a style to the HTML <code>img</code> selector within <code>class=&quot;drinks&quot;</code>.
+<li><p>In VS Code, open <em>index.html</em>. Find the HTML tag <code>div</code> for drinks with the title text &quot;Menu&quot;. It contains an unordered list with <code>class=&quot;drinks&quot;</code> and has an image using the HTML <code>img</code> tag. We will need to apply a style to the HTML <code>img</code> selector within <code>class=&quot;drinks&quot;</code>.
 <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>The syntax for a CSS rule looks like this:</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">selector</span> {
     <span class="hljs-attribute">property</span>: value;
@@ -593,7 +586,7 @@ In Atom, right click on the &quot;session2&quot; project folder. Select <b>New F
  }
 </code></pre>
 <p> Save your file and view your app in Chrome. The width of all the images within <code>class=&quot;drinks&quot;</code> resized to 25% of the view. 
- <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Atom can help you out! IDEs can help auto-complete code for you, including CSS properties. When you start typing a property, Atom will suggest properties matching the name.</p>
+ <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>VS Code can help you out! IDEs can help auto-complete code for you, including CSS properties. When you start typing a property, VS Code will suggest properties matching the name.</p>
 </div></div></p>
 </li>
 <li><p>Now let&apos;s try absolute sizes. Change your style to use <code>width: 120px;</code>. Save your file and view your app in Chrome. The width of all the images resized to 120 pixels.
@@ -613,7 +606,7 @@ In Atom, right click on the &quot;session2&quot; project folder. Select <b>New F
 <p>Google&apos;s <a href="https://material.io/color/" target="_blank">Color Tool</a> makes this a little easier by pre-defining color palettes with accessible contrast.</p>
 </div></div></p>
 </li>
-<li><p>In Atom, find the <code>div</code> containing the HTML header tag with the text &quot;LadyDev&quot; in <em>index.html</em>. Note the <code>div</code> has <code>class=&quot;hero-text&quot;</code> and you have <code>h1</code>, <code>h2</code>, and <code>p</code> tags to style.</p>
+<li><p>In VS Code, find the <code>div</code> containing the HTML header tag with the text &quot;LadyDev&quot; in <em>index.html</em>. Note the <code>div</code> has <code>class=&quot;hero-text&quot;</code> and you have <code>h1</code>, <code>h2</code>, and <code>p</code> tags to style.</p>
 </li>
 <li><p>In <em>styles.css</em>, declare a style for the <code>h1</code> tag above the existing style for <code>.drinks img</code> and add the color you selected for the title using the <code>color</code> property like this</p>
 <p> </p><p class="code-label">styles.css</p><p></p>
@@ -645,7 +638,7 @@ In Atom, right click on the &quot;session2&quot; project folder. Select <b>New F
 </div></div></p>
 </li>
 <li><p>Select a background color for the Small plates menu. Notice in <em>index.html</em> the Small plates menu <code>div</code> has a <code>class=&quot;sidebar&quot;</code>. Create a style for this class after the style you already created for drinks and set the background color. 
-<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>You can search for and find &quot;Small plates&quot; in the <em>index.html</em> in Atom. In the toolbar, select <strong>Find</strong> <i class="fa fa-long-arrow-right"></i> <strong>Find in Buffer</strong>. You can also use a <a href="../references">keyboard shortcut</a>.</p>
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>You can search for and find &quot;Small plates&quot; in the <em>index.html</em> in VS Code. In the toolbar, select <strong>Edit</strong> <img src="../images/arrow-right.svg" alt=""> <strong>Find in Files</strong> or click on the magnifying glass on the left toolbar (where you installed Extensions). You can also use a <a href="../references">keyboard shortcut</a>.</p>
 </div></div></p>
 </li>
 <li>To help make the navigation and footer area pop, select a background color to use. Look at the <em>index.html</em> file to identify the selectors for the navigation and footer sections. Be sure to declare the style for the navigation bar near the top of <em>styles.css</em> file and footer style at the bottom of the file.
@@ -692,7 +685,7 @@ Declare a style for <code>nav</code> after the style for <code>body</code> and a
 <h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
 <h2 id="cloud-ide"><a name="cloud-ide" class="plugin-anchor" href="#cloud-ide"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud IDE instructions </h2>
 <sec data-title="CodeSandbox instructions" data-id="section0" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="codesandbox-instructions">CodeSandbox instructions<a class="pull-right section atTitle btn btn-default" target="section0"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section0"><div class="panel-body">
-<p>You will use <strong>CodeSandbox</strong> tonight as your <strong>I</strong>ntegrated <strong>D</strong>evelopment <strong>E</strong>nvironment. Any time the worksheet references Atom, use CodeSandbox instead.</p>
+<p>You will use <strong>CodeSandbox</strong> tonight as your <strong>I</strong>ntegrated <strong>D</strong>evelopment <strong>E</strong>nvironment. Any time the worksheet references Visual Studio Code, use CodeSandbox instead.</p>
 <p>Follow the instructions below to get your environment going.</p>
 <ol>
 <li><p>Navigate to <a href="https://codesandbox.io/" target="_blank">CodeSandbox</a>.</p>
@@ -704,11 +697,11 @@ Declare a style for <code>nav</code> after the style for <code>body</code> and a
 <li><p>Use your GitHub credentials to sign in.</p>
 </li>
 <li><p>In the <strong>New Sandbox</strong> page, select <strong>Import</strong> tab and paste the following URL into the input box labeled <strong>GitHub Repository URL...</strong>: 
-<code>https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/ad/add-codesandbox</code></p>
+<code>https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/tree/codesandbox</code></p>
 </li>
 <li><p>Click <strong>Open Sandbox</strong> to create your project.</p>
 </li>
-<li><p>Once the project loads, CodeSandbox displays 3 panes. On the far left you will see your project files. In the middle you&apos;ll see your code in the <em>index.html</em> tab. On the right you will see your application. CodeSandbox automatically displays your application and updates after you save your file, just like Atom&apos;s atom-live-server package.</p>
+<li><p>Once the project loads, CodeSandbox displays 3 panes. On the far left you will see your project files. In the middle you&apos;ll see your code in the <em>index.html</em> tab. On the right you will see your application. CodeSandbox automatically displays your application and updates after you save your file, just like Visual Studio Code&apos;s Live Server extension.</p>
 </li>
 <li><p>Before you start following the worksheet, click the <strong><span class="octicon octicon-repo-forked"></span> Fork</strong> button in the toolbar. You&apos;ll see it at the top right of your screen. This makes your own copy of the project so you can save your changes.</p>
 </li>
@@ -758,7 +751,7 @@ Declare a style for <code>nav</code> after the style for <code>body</code> and a
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS Basics","level":"2.1","depth":1,"next":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"path":"ws2-grouping-selectors/README.md","ref":"ws2-grouping-selectors/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-css-basics/README.md","mtime":"2019-08-04T17:39:47.387Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-04T17:46:25.617Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CSS Basics","level":"2.1","depth":1,"next":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"path":"ws2-grouping-selectors/README.md","ref":"ws2-grouping-selectors/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-css-basics/README.md","mtime":"2019-12-08T21:43:32.773Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-08T22:30:25.029Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
