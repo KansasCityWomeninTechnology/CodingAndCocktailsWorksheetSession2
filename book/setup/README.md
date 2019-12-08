@@ -3,6 +3,14 @@ Tonight we will learn the basics of applying styles to a website using **C**asca
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
+Follow the instructions on this page to prepare your workspace.
+
+{% hint style='tip' %}
+Open [Slack](http://kcwit.slack.com/) to the **#codingandcocktails** channel. It's a great way to stay in touch with your Coding & Cocktails girlfriends and to ask questions during and after the session. We'll also post updates and tips in Slack if we run in to any stumbling blocks tonight.
+{% endhint %}
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 {% hint style='danger' %}
 If you are borrowing a laptop, please ask your mentor to explain the tools.
 {% endhint %}
@@ -29,9 +37,9 @@ Open [Slack](http://kcwit.slack.com/) to the **#codingandcocktails** channel. It
 You don't need all the tools for tonight's session. If you haven't installed all the tools listed in [The Tools](https://bit.ly/CnCTheTools) guide already, use the following list to install the required tools for the worksheet:
 1. [Chrome browser](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-browser/)
 
-1. [Atom IDE](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/)
+1. [Visual Studio Code IDE](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-vscode/)
 
-1. [Install atom-live-server package](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/#required-packages)
+1. [Install Live Server extension](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-vscode/#required-extensions)
 
 1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
 

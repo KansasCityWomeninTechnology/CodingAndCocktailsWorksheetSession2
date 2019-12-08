@@ -5,7 +5,7 @@ Ensure your colors are a11y friendly by using the WebAIM [Color Contrast Checker
 Google's [Color Tool](https://material.io/color/) makes this a little easier by pre-defining color palettes with accessible contrast.
     {% endhint %}
 
-1. In Atom, find the `div` containing the HTML header tag with the text "LadyDev" in _index.html_. Note the `div` has `class="hero-text"` and you have `h1`, `h2`, and `p` tags to style.
+1. In VS Code, find the `div` containing the HTML header tag with the text "LadyDev" in _index.html_. Note the `div` has `class="hero-text"` and you have `h1`, `h2`, and `p` tags to style.
 
 1. In _styles.css_, declare a style for the `h1` tag above the existing style for `.drinks img` and add the color you selected for the title using the `color` property like this
     

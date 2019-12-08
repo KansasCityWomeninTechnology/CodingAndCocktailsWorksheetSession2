@@ -1,18 +1,12 @@
 
-1. Open Atom from your installed applications. In Atom, select **File** <i class="fa fa-long-arrow-right"></i> **Add project folder**.
+1. Open Visual Studio Code (VS Code) from your installed applications. In VS Code, select **File** ![](../images/arrow-right.svg) **Open Folder...**.
 
 1. Navigate to and select the "CodingAndCocktails/session2" folder.
    {% hint style='danger' %}
 If you don't have a "CodingAndCocktails/session2" directory, take a moment to [set up your workspace](/setup).
    {% endhint %}  
 
-1. In the **Project** pane in Atom, right click on the "session2" project folder and select **New file**.
-   {% hint style="danger" %}
-If you see project folders from last session, remove the project folders by closing all the tabs for your code. Then right click on the folder to remove and select **Remove Project Folder**.
-
-   ![](images/atom-remove-project-folder.png)
-   {% endhint %}
-
+1. Create a file called _index.html_. In VS Code's **EXPLORER** pane, hover over **CSS** to display action buttons. Click the **New File** icon.
 
 1. Name the file _index.html_ and press `Enter` to save it in your "CodingAndCocktails/session2" folder.
 
@@ -54,37 +48,37 @@ If you see project folders from last session, remove the project folders by clos
                    <li class="item">
                       <a href="#"><img src="images/martini.jpg" alt=""></a>
                       <h3 class="head">Martinis</h3>
-                      <p>Made with our own homemade gin and dry vermouth.  Choose from The Classic, Lemondrop, or Chocolate.</p>
+                      <p>Made with our own homemade gin and dry vermouth. Choose from The Classic, Lemondrop, or Chocolate.</p>
                    </li>
                    <li class="item">
                       <a href="#"><img src="images/wine.jpg" alt=""></a>
                       <h3 class="head">Wine</h3>
-                      <p>There are just too many to list.  Ask your server for a recommendation.</p>
+                      <p>There are just too many to list. Ask your server for a recommendation.</p>
                    </li>
                    <li class="item">
                       <a href="#"><img src="images/whiskey-cocktails.jpg" alt=""></a>
                       <h3 class="head">Whiskey cocktails</h3>
-                      <p>Whiskey.  Some might consider it their spirit animal.  Thank goodness it's not just for men anymore.</p>
+                      <p>Whiskey. Known as the water of life and a drink worthy of deep contemplation. Thank goodness it's not just for men anymore.</p>
                     </li>
                     <li class="item">
                        <a href="#"><img src="images/margarita.jpg" alt=""></a>
                        <h3 class="head">Margaritas</h3>
-                       <p>Slushy frozen delicousness, in Peach, Strawberry, or Mango.  Served with a rock-salted rim and lime.</p>
+                       <p>Slushy frozen delicousness, in Peach, Strawberry, or Mango. Served with a rock-salted rim and lime.</p>
                     </li>
                     <li class="item">
                        <a href="#"><img src="images/hot-cocktail.jpg" alt=""></a>
                        <h3 class="head">Hot &amp; Creamy</h3>
-                       <p>Just what you need to kick off a night of coding.  We offer concoctions with coffee, Kahlua, Bailey's, and more.</p>
+                       <p>Just what you need to kick off a night of coding. We offer concoctions with coffee, Kahlua, Bailey's, and more.</p>
                     </li>
                     <li class="item">
                        <a href="#"><img src="images/beer.jpg" alt=""></a>
                        <h3 class="head">Beer</h3>
-                       <p>We serve the finest microbrews from around the world.  How about a Saison, IPA, or Stout?</p>
+                       <p>We serve the finest microbrews from around the world. How about a Saison, IPA, or Stout?</p>
                     </li>
                     <li class="item">
                        <a href="#"><img src="images/milk.jpg" alt=""></a>
                        <h3 class="head">Non alcoholic</h3>
-                       <p>We have plenty of NA options available to quench your thirst, like lemonade, milk or soda.</p>
+                       <p>We have plenty of NA options available to quench your thirst, like lemonade, milk, or soda.</p>
                     </li>
                  </ul>
               </div>
@@ -103,7 +97,7 @@ If you see project folders from last session, remove the project folders by clos
            </div>
         </div>
         <footer id="contact">
-           <p>&copy; 2019 LadyDev Bar &amp; Grill</p>
+           <p>&copy; 2020 LadyDev Bar &amp; Grill</p>
            <ul>
               <li><a href="http://facebook.com/ladydevbargrill"><i class="fa fa-facebook-official fa-lg"></i></a></li>
               <li><a href="http://twitter.com/ladydevbargrill"><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -115,11 +109,11 @@ If you see project folders from last session, remove the project folders by clos
    </html>
    ```
 
-1. Save the file by selecting **File** <i class="fa fa-long-arrow-right"></i> **Save**. You can also use the keyboard shortcut `ctrl + s` on Windows or `cmd + s` on Mac. Unsaved files in Atom have a little blue dot on the tab.
+1. Save the file by selecting **File** ![](../images/arrow-right.svg) **Save**. You can also use the keyboard shortcut `ctrl + s` on Windows or `cmd + s` on Mac. Unsaved files in VS Code have a little dot on the tab.
 
-   ![](images/atom.png)
+   ![](images/vs-code-save.png)
 
-1. Now we'll prepare the images. First we need a folder for the images. In Atom, right click on the "session2" folder in the **Project** pane and select **New Folder**. Name the folder "images".
+1. Now we'll prepare the images. First we need a folder for the images. In VS Code, click on **SESSION2** expander panel and click on the **New Folder** icon. Name the folder "images".
 
 1. In Chrome, open a [new tab to download the contents of our GitHub repository containing the images](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/archive/master.zip).
    {% hint style="info" %}

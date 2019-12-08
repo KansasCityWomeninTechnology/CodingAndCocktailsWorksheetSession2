@@ -17,7 +17,7 @@ Google provides breakpoints for different form factors-- dimension and resolutio
 
 ## Define grid template areas
 
-1. Open your project in Atom and start atom-live-server. 
+1. Open your project in VS Code and start Live Server. 
 
 1. In _style.css_, declare a grid area for the drinks menu by adding `grid-area: drinks;` to the styles for the `div` with `class="drinks"`. 
 1. Declare a grid area for the Small plates menu sidebar. Name it "sidebar".  

@@ -12,7 +12,7 @@ The `body` is the parent element for the website so setting a style here applies
 
 1. Select a background color for the Small plates menu. Notice in _index.html_ the Small plates menu `div` has a `class="sidebar"`. Create a style for this class after the style you already created for drinks and set the background color. 
    {% hint style='tip' %}
-You can search for and find "Small plates" in the _index.html_ in Atom. In the toolbar, select **Find** <i class="fa fa-long-arrow-right"></i> **Find in Buffer**. You can also use a [keyboard shortcut](../references/).
+You can search for and find "Small plates" in the _index.html_ in VS Code. In the toolbar, select **Edit** ![](../images/arrow-right.svg) **Find in Files** or click on the magnifying glass on the left toolbar (where you installed Extensions). You can also use a [keyboard shortcut](../references/).
     {% endhint %}
 1. To help make the navigation and footer area pop, select a background color to use. Look at the _index.html_ file to identify the selectors for the navigation and footer sections. Be sure to declare the style for the navigation bar near the top of _styles.css_ file and footer style at the bottom of the file.
    {% hint style='working' %}
