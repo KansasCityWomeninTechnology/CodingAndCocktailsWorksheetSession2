@@ -1,29 +1,25 @@
 1. Select a color that displays when your mouse hovers over the hyperlink tags in your navigation bar and footer.
-1. Create a style targeting the hover Pseudo Class on the `a` tag within `nav` and define the `background-color` property. Your code should look similar to this.
-    
-    {% filename %}styles.css{% endfilename %}
-    ```css
-    nav a:hover {
-        background-color: #d88731;
-    }
-    ```
-    {% hint style='tip' %}
-Group styles for the same parent element together to make it easier for yourself. Group all the `nav` style together, but order by specificity.
-    {% endhint %}
-    Save your file and view in Chrome. What happens when you hover over the links in the navigation bar?
+
+1. Between the styles for the `img` and `.small-plates`, create a style for `a` elements. Add the `background-color` property. The background color for all `a` elements changed. Hrm....
+
+1. We want the background to show on hover, so we can use the **Pseudo Class** `:hover`. Change the selector to `a:hover`.
+
+1. Save your file and view in Chrome. What happens when you hover over the links in the navigation bar?
 
     ![](https://media.giphy.com/media/B0vFTrb0ZGDf2/giphy.gif)
 
-1. We don't want the bullets to show in the navigation menu. Remove the bullets by setting the `list-style-type` property to "none" on the `ul` tag in `nav`. Your code should look like this.
+1. But we don't want all the `a` tags to hover. Just the ones in the navigation. We could add a `class` or we can target only the `a` elements in `nav` by changing the selector to `nav a:hover`.
 
-    {% filename %}styles.css{% endfilename %}
-    ```css
-    nav ul {
-        list-style-type: none;
-    }
-    ```
-    Save your file and view in Chrome. The navigation bar is starting to look better.
-    {% hint sty="info" %}
-Learn more about styling lists using [MDN list styling reference](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists). 
+    {% hint style='info' %}
+You are using the **Descendant combinator**. A combinator is a special selector. The descendant combinator contains 2 or more selectors with a space between each selector. The first selector is an ancestor of the second in the HTML. Selectors can be HTML elements or classes. So in this case, you are saying 
+
+> For all HTML `nav` elements that has a descendant `a`, add a color when hovering.
+
+Read more about the [Descendant combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator). 
     {% endhint %}
-1. Repeat the steps in the section by adding the hover color and removing the bullets in the `footer`. Be sure to put these styles towards the bottom of the page with your footer background color.
+
+    {% hint style='tip' %}
+Group styles for the same parent element together to make it easier for yourself. Group all the `nav` style together, but order by specificity.
+    {% endhint %}
+
+

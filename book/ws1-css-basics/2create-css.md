@@ -4,7 +4,7 @@
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-In VS Code, click on <b>SESSION2</b> expander and click on the <b>New Folder</b> icon. Name your folder "css". Right click on the "css" folder. Select <b>New File</b> to create your stylesheet file. Name the file <i>styles.css</i>.
+In VS Code, hover over <b>SESSION2</b> and click on the <b>New Folder</b> icon. Name your folder "css". Right click on the "css" folder. Select <b>New File</b> to create your stylesheet file. Name the file <i>styles.css</i>.
 </details>
    {% endhint %}
 
@@ -30,7 +30,7 @@ Didn't have a chance to attend the HTML session or do you need a refresher? Grab
 
 1. Save your file.
 
-1. Now we want to preview the _index.html_ file in Chrome. Instead of saving and reloading the page manually, we'll use the VS Code extension **Live Server**. This extension opens up the web page in your default web browser and reloads the page whenever you save files. In VS Code, start the live server by right clicking on _index.html_ in the **EXPLORER** pane and select **Open with Live Server**. A browser tab will open.
+1. Now we want to preview the _index.html_ file in Chrome. Instead of saving and reloading the web page manually, we'll use the VS Code extension **Live Server**. This extension opens up the web page in your default web browser and reloads the page whenever you save files. In VS Code, start the live server by right clicking on _index.html_ in the **EXPLORER** pane and select **Open with Live Server**. A browser tab will open.
    {% hint style='danger' %}
 If you don't have the **Live Server** package, take a moment to [set up your workspace](/setup).
    {% endhint %}   

@@ -34,7 +34,7 @@ Images are a big part of any website and what most people see first because your
 {% include "./3resize-images.md" %}
 
 ## Change the color of the title {#text-color} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Color helps differentiate sections within a website and helps convey importance. In this section we'll change the color of the "LadyDev Bar & Grill" title.
+Color helps differentiate sections within a website and helps convey importance. In this section we'll change the color of the headers.
 {% include "./4title-color.md" %}
 
 ## Cascade background color changes {#cascade} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>

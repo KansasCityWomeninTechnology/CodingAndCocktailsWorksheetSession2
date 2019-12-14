@@ -12,3 +12,5 @@
             font: inherit;
     }
     ```
+
+    The webpage now uses 100% of the width of the browser tab. But our drink menu doesn't look quite right! This is because there's not enough height in the element to fix the images. We'll fix it up soon.
