@@ -377,17 +377,27 @@
 <ol>
 <li><p>Select a border color to use between the navigation bar and menu. We&apos;ll use the same border color between the menu and the footer.</p>
 </li>
-<li><p>In the style definition for <code>nav</code>, add a property for the bottom border and set your selected color as the background. The property will look like <code>border-bottom: 5px solid #f1a250;</code>.</p>
+<li><p>Create a style definition for <code>nav</code>, add a property for the bottom border and set your selected color as the background. The property will look like <code>border-bottom: 5px solid #f1a250;</code>. </p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We already have a style that applies <code>nav, footer</code>, but in this case, we have different styles to apply to both <code>nav</code> and <code>footer</code>. By following best practices for cascading styles, define the <code>nav</code> style after the style for <code>nav, footer</code>. </p>
+<p>To define styles for the same element, we set it up like a pyramid. We define the foundation of style rules that target a larger selector (like <code>nav, footer</code>) then add rules for a smaller selector (like <code>nav</code>).</p>
+</div></div></p>
 </li>
 <li><p>Repeat for the <code>footer</code> except use a top border.
 <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>The top border property is <code>border-top</code>.</p>
 </div></div></p>
 </li>
-<li><p>Turn your attention towards the drink menu. Create a style for <code>class=&quot;drinks&quot;</code> and remove the bullets.</p>
+<li><p>Turn your attention towards the drink menu by creating a style for <code>class=&quot;item&quot;</code>. Follow best practices for where to create the style based on selectivity rules.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We want to declare a style for the selector <code>.item</code> after the global styles for selectors based on HTML elements, but before <code>.small-plates</code>.
+</details>
+</div></div></p>
 </li>
-<li><p>Define borders between each drink in the drink menu by adding a top border to each item in the list. Target both the <code>.drinks</code> and <code>.item</code> classes in your style and set a thin dotted line. The style will look like</p>
+<li><p>Define borders between each drink in the drink menu by adding a dotted top border to each item in the list. In the style for <code>class=&quot;item&quot;</code>, apply a thin dotted top border. The style will look like</p>
 <p> </p><p class="code-label">styles.css</p><p></p>
-<pre><code class="lang-css"> <span class="hljs-selector-class">.drinks</span> <span class="hljs-selector-class">.item</span> {
+<pre><code class="lang-css"> <span class="hljs-selector-class">.item</span> {
      <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> dotted <span class="hljs-number">#637056</span>;
  }
 </code></pre>
@@ -397,7 +407,7 @@
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-We already have a style declared for <code>.drinks img</code>. Add <code>border-radius: 50%;</code> to it. 
+We already have a style declared for <code>img</code>. Add <code>border-radius: 50%;</code> to it. 
 </details>
 </div></div></p>
 </li>
@@ -407,7 +417,12 @@ We already have a style declared for <code>.drinks img</code>. Add <code>border-
 <h2 id="padding-margin"><a name="padding-margin" class="plugin-anchor" href="#padding-margin"><i class="fa fa-link" aria-hidden="true"></i></a>Use the Box Model to add padding and margins   <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>The Box Model defines spacing around elements. You will apply Box Model concepts to add whitespace to LadyDev Bar &amp; Grill.
 Refer to the <a href="../references/css_cheat_sheet.html">CSS Cheat Sheet</a> to help.</p>
-<h3 id="navigation-bar"><a name="navigation-bar" class="plugin-anchor" href="#navigation-bar"><i class="fa fa-link" aria-hidden="true"></i></a>Navigation bar</h3>
+<ol>
+<li>Let&apos;s take care of a global setting. Remove all space around unordered lists by setting <code>margin</code> and <code>padding</code> properties to &quot;0&quot;.
+ <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>This is the <code>ul</code> style.</p>
+</div></div></li>
+</ol>
+<h3 id="navigation-and-footer"><a name="navigation-and-footer" class="plugin-anchor" href="#navigation-and-footer"><i class="fa fa-link" aria-hidden="true"></i></a>Navigation and Footer</h3>
 <ol>
 <li><p>Add padding between the list items in the navigation bar by declaring a new style and adding the <code>padding</code> property to look something like</p>
 <p> </p><p class="code-label">styles.css</p><p></p>
@@ -423,9 +438,20 @@ Refer to the <a href="../references/css_cheat_sheet.html">CSS Cheat Sheet</a> to
 </code></pre>
 </div></div></p>
 </li>
-<li><p>To make the navigation list items display horizontally, add <code>display: inline;</code> to <code>nav li</code> style.</p>
+<li><p>That looks nice. We can use the same style but for the footer by adding it as part of a selector list. Apply the same style to the footer.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We can reuse the style for <code>nav li</code> by adding the <code>footer li</code> selector. The selector the style becomes <code>nav li, footer li</code>.
+</details>
+</div></div></p>
+</li>
+<li><p>To make the navigation list items display horizontally, add <code>display: inline;</code> to <code>nav li, footer li</code> style.</p>
 </li>
 <li><p>Add padding between the hyperlinks in the navigation bar. Declare a style for <code>nav a</code> and add the padding property there. We want 6px on the top and bottom, but 20px on the right and left. </p>
+<p> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Group your selectors by global to more specific. Declare the style for <code>nav a</code> before the style for <code>nav a:hover</code>.</p>
+</div></div></p>
 <p> <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We can use shorthand properties to help by defining all 4 sides on the same property like this <code>padding: 6px 20px;</code>.</p>
 <p>A commonly used mnemonic to remember the order of the values is &quot;TROUBLE&quot;. Learn about it at <a href="https://css-tricks.com/remember-the-order-of-marginpadding-shorthand-with-trouble/" target="_blank">CSS-Tricks</a>. </p>
 <p>Refer to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties" target="_blank">MDN documentation for shorthand properties</a>.</p>
@@ -433,8 +459,24 @@ Refer to the <a href="../references/css_cheat_sheet.html">CSS Cheat Sheet</a> to
 </li>
 <li><p>Add <code>display: inline-block;</code> to <code>nav a</code> to align the hyperlinks on the same horizontal line. </p>
 </li>
-<li><p>Remove all space around the navigation bar unordered list group by setting <code>margin</code> and <code>padding</code> properties to &quot;0&quot;.
- <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>This is the <code>nav ul</code> style.</p>
+<li><p>The <code>nav a</code> styles look mighty nice. Let&apos;s also apply it to the footer&apos;s <code>a</code> tags.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We can reuse the style for <code>nav a</code> by adding the <code>footer a</code> selector. The selector the style becomes <code>nav a, footer a</code>.
+</details>
+</div></div></p>
+</li>
+<li><p>The social icons in the footer now extend past the background color. Give the social icons a little extra space by setting the height to 75px. Add <code>height: 75px;</code> to the existing style for <code>footer</code>.</p>
+</li>
+<li><p>One last update for the footer! The hover color for the navigation bar might look nice applied to the footer. Go ahead and apply the same style for the hover to the footer.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We can reuse the style for <code>nav a:hover</code> by adding the <code>footer a:hover</code> selector. The selector the style becomes <code>nav a:hover, footer a:hover</code>.
+</details>
 </div></div></p>
 </li>
 <li><p>Save your file and view your page in Chrome.</p>
@@ -442,76 +484,97 @@ Refer to the <a href="../references/css_cheat_sheet.html">CSS Cheat Sheet</a> to
 </ol>
 <h3 id="drink-menu"><a name="drink-menu" class="plugin-anchor" href="#drink-menu"><i class="fa fa-link" aria-hidden="true"></i></a>Drink menu</h3>
 <ol>
-<li><p>Remove the margin and padding by setting <code>margin</code> and <code>padding</code> properties to &quot;0&quot; in the existing style for <code>class=&quot;drinks&quot;</code>.</p>
-</li>
-<li><p>We want each menu item to display like a block element. To the existing style <code>.drinks .item</code> add <code>display: block;</code>.</p>
-</li>
-<li><p>The dotted top border line between the drinks menu list items is too close to the image. Add a 10px top padding to the style for <code>.drinks .item</code>.</p>
-</li>
-<li><p>The drink list items need a little breathing room. Add a 60px bottom margin between each drink list item.
- <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Why use margin instead of padding? Refer to the box model image in the CSS Cheat Sheet. Notice the difference where space gets added. You can see for yourself by opening Chrome DevTools, adding a bottom border and bottom padding in the <strong>Styles</strong> tab, and watching where space gets added. The styles you add in DevTools won&apos;t save. Mentors are here to help.<br><img src="images/padding-vs-margin.png"></p>
-</div></div></p>
-</li>
-<li><p>The images in the drinks menu needs horizontal spacing by setting <code>margin: 0 20px;</code> to the existing style <code>.drinks img</code>.</p>
-</li>
-</ol>
-<h3 id="footer"><a name="footer" class="plugin-anchor" href="#footer"><i class="fa fa-link" aria-hidden="true"></i></a>Footer</h3>
-<ol>
-<li><p>Remove all space around the footer unordered list group by setting margin and padding to 0. </p>
-</li>
-<li><p>The social icons in the footer should display horizontally like it does in the navigation. Add <code>display: block;</code> to the style for the unordered list in footer. </p>
-</li>
-<li><p>Add a style to each list item in the footer to ensure everything stays on the same horizontal line.
- <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>The heading for the drink menu, labeled &quot;Menu&quot;, needs to be aligned above the drink list a little better. Looking in <em>index.html</em> we see &quot;Menu&quot; is in a <code>h2</code> tag inside a <code>section</code> with <code>class=&quot;drinks&quot;</code>. Create a selector that only changes the &quot;Menu&quot; text to have a 5px margin all around.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-Declare a style for the <code>li</code> tag within <code>footer</code> and add <code>display: inline-block;</code>. 
+We have to specify the <code>h2</code> inside the <code>class=&quot;drinks&quot;</code> so that we don&apos;t apply the style to all <code>h2</code> elements. Target the &quot;Menu&quot; text only by defining styles using the selector for <code>.drinks h2</code>.
 </details>
 </div></div></p>
 </li>
-<li><p>The social icons now extend past the background color. Give the social icons a little extra space by setting the <code>footer</code> height to 75px by adding <code>height: 75px;</code> to the existing style for <code>footer</code>.</p>
+<li><p>The images in the drink menu are far too close the dotted top border line. Let&apos;s give it a little space by adding a 10px top padding to each drink item.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+Define styles for each drink item using the selector for <code>.item</code>.
+</details>
+</div></div></p>
+</li>
+<li><p>The drink list items need a little breathing room. Add a 60px bottom margin between each drink item.</p>
+<p> <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Why use margin instead of padding? Refer to the box model image in the CSS Cheat Sheet. Notice the difference where space gets added. You can see for yourself by opening Chrome DevTools, adding a bottom border and bottom padding in the <strong>Styles</strong> tab, and watching where space gets added. The styles you add in DevTools won&apos;t save. Mentors are here to help.<br><img src="images/padding-vs-margin.png"></p>
+</div></div></p>
+</li>
+<li><p>We want to display the text to the right of each image. To do so, we want the image in each drink item to float to the left. Add a style to the <code>img</code> selector to <code>float: left</code>;</p>
+</li>
+<li><p>The text for the drink items are a little too close to the image. Create a little breathing room by adding a 20px margin to the right and left of the image.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We can use the shortcut to add a 20px right and left margin and 0px top and bottom margin. To the style for <code>img</code>, add the <code>margin</code> property and set value to <code>0 20px</code>.
+</details>
+</div></div></p>
 </li>
 </ol>
 <h2 id="hero"><a name="hero" class="plugin-anchor" href="#hero"><i class="fa fa-link" aria-hidden="true"></i></a>Define a background image to use for the hero image  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>Most eye-catching websites have a hero image. Let&#x2019;s learn about background properties and use what we learned about absolute and relative sizing and apply it to the hero image.</p>
 <ol>
-<li><p>Open <em>index.html</em> and find the <code>div</code> containing the text for title of the web page. Because we want our hero image to fill the entire title area, declare a style for <code>class=&quot;hero&quot;</code> and set <code>height: 600px;</code> in <em>styles.css</em> like this</p>
-<p></p><p class="code-label">styles.css</p><p></p>
-<pre><code class="lang-css"><span class="hljs-selector-class">.hero</span> {
-   <span class="hljs-attribute">height</span>: <span class="hljs-number">600px</span>;
-}
-</code></pre>
+<li><p>Open <em>index.html</em> and find the <code>section</code> containing the text containing title of the web page, &quot;LadyDev Bar &amp; Grill&quot;. Because we want our hero image to fill the entire title area, declare a style for <code>class=&quot;hero&quot;</code> and set the height to 600px.</p>
 </li>
-<li><p>Add a background image to the style you created in the previous step by adding </p>
+<li><p>Add a background image to hero section by adding </p>
 <pre><code class="lang-css">   background: url(&quot;../images/hero.jpg&quot;) no-repeat center top;
 </code></pre>
+<p>Your title text might not stand out so well any more. We&apos;ll fix that up in a bit.</p>
 </li>
 <li><p>Save your file and view your page in Chrome. Nice job, smarty pants!</p>
 <p><img src="https://media.giphy.com/media/3o7TKBbkeuhqszIhuE/giphy.gif" alt=""></p>
-<p>But we want it to expand across the entire width of the page. Let&apos;s resize it.
- <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Why did we have to add <code>no-repeat center top</code> to the image? We used shorthand properties to specify the image shouldn&apos;t repeat, center the image, and display image from top.</p>
+<p> <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Why did we have to add <code>no-repeat center top</code> to the image? We used shorthand properties to specify the image shouldn&apos;t repeat, center the image, and display image from top.</p>
 <p>Refer to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background" target="_blank">MDN documentation for background property</a>.</p>
 </div></div></p>
 </li>
-<li><p>In the same style for <code>class=&quot;hero&quot;</code>, add <code>background-size: cover;</code> after the <code>background</code> property.
+<li><p>But we want it to expand across the entire width of the page. Let&apos;s resize it. In the same style for <code>class=&quot;hero&quot;</code>, add <code>background-size: cover;</code> after the <code>background</code> property.
 <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Refer to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" target="_blank">MDN documentation for background-size property</a>.</p>
 </div></div></p>
 </li>
-<li><p>Add some space after the <code>h2</code> element in <code>class=&quot;hero&quot;</code> by setting bottom margin to 20px to the existing style.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
-<summary>
-Need a little help? Expand this section for guidance. 
-</summary>
-Add <code>margin-bottom: 20px;</code> to the existing style <code>.hero h2</code>. 
-</details>
-</div></div></p>
+<li><p>The text on the hero image is squished against the top of the image. Open <em>index.html</em> to find a <code>div</code> with <code>class=&quot;hero-text&quot;</code>. Create a selector targeting the class <code>.hero-text</code> and set a top padding to <code>125px</code>.</p>
+</li>
+<li><p>We want the text to only display on half of the image, and not take up the entire width of the image. Add the style <code>width: 50%;</code> to allow the text only 50% of the width of the browser tab.</p>
 </li>
 </ol>
 <h2 id="grid-layout"><a name="grid-layout" class="plugin-anchor" href="#grid-layout"><i class="fa fa-link" aria-hidden="true"></i></a>Use CSS grid for layout  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
-<p>We want the drink menu and small plates menu as two columns next to each other. We will use CSS Grid to make this easy.</p>
+<p>We want the drink menu and small plates menu as two columns next to each other. We will use the power of CSS Grid to help us out.</p>
 <ol>
-<li><p>In <em>index.html</em>, notice the drinks menu and small plates menu are both children of a parent <code>div</code> with <code>class=&quot;grid-container&quot;</code>. We will target this class for grid layout. </p>
+<li><p>Let&apos;s first clean up some spacing in the small plates section. Like the &quot;Menu&quot; section, we want the heading labeled &quot;Small plates&quot; to have a little space. To the &quot;Small plates&quot; header, add a margin with 5px on top and bottom, and 0px on the left and right.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We have to specify the <code>h2</code> inside the <code>class=&quot;small-plates&quot;</code>. We can use the shortcut notation to specify 5px top and bottom margin and 0px left and right margin. To the selector for <code>.small-plates h2</code> set the style <code>margin: 5px 0;</code>.
+</details>
+</div></div></p>
+</li>
+<li><p>Take advantage of the shorthand notation we learned to clean up the styles for <code>margin-top</code>, <code>margin-left</code>, and <code>margin-right</code> defined for the small plates list items. </p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+<p>
+    Remember the mnenomic &quot;TROUBLE&quot;? We can apply it here. We want 50px top, 15px right, 15px left, and 0px bottom margin. The approach is different depending on whether you used the <code>:first-child</code> pseudo class or <code>+</code> adjacent sibling combinator.
+</p>
+
+<p>
+    For the pseudo class, apply the short hand <code>50px 15px 0 15px</code> to <code>margin</code>. The pseudo class will override <code>margin-top</code> from the <code>.small-plates li</code>. This is why we define the styles for the pseudo class after the style for all the elements in the list.
+</p>
+
+<p>
+    For the adjacent sibling combinator, apply the short hand <code>0 15px</code> to <code>margin</code>. The style for the adjacent sibiling combinator will override <code>margin-top</code> from the <code>.small-plates li</code>. As with the psuedo class, this is why we define the style specifically for adjacent siblings after the style for all the elements in the list.
+</p>
+</details>
+</div></div></p>
+</li>
+<li><p>Now let&apos;s use CSS Grid to align the drinks and small plates menus. In <em>index.html</em>, notice the drinks menu and small plates menu are both children of a parent <code>main</code> with <code>class=&quot;grid-container&quot;</code>. We will target this class for grid layout. </p>
 <p>Declare a style for <code>class=&quot;grid-container&quot;</code> in <em>styles.css</em> below your styles for <code>class=&quot;hero&quot;</code>. Add style <code>display: grid;</code>.</p>
 </li>
 <li><p>We want the drinks menu on the left with 75% width allocated to it. Drinks are, of course, most important. We want the small plates menu on the right with the remaining width allocation to it. </p>
@@ -543,7 +606,7 @@ Add <code>margin-bottom: 20px;</code> to the existing style <code>.hero h2</code
             </summary>
             <img src="images/checkpoint3.png">
             <p>
-             You can also compare your <i>styles.css</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/blob/2018-checkpoint-3-box-model-layout/css/styles.css" target="_blank">answer key</a> if the image is too difficult to read.
+             You can also compare your <i>styles.css</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/blob/checkpoint-3-box-model-layout/css/styles.css" target="_blank">answer key</a> if the image is too difficult to read.
             </p>
         </details>
     </div>
@@ -601,7 +664,7 @@ Add <code>margin-bottom: 20px;</code> to the existing style <code>.hero h2</code
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Box Model & Layout","level":"2.3","depth":1,"next":{"title":"Text","level":"2.4","depth":1,"path":"ws4-text/README.md","ref":"ws4-text/README.md","articles":[]},"previous":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"path":"ws2-grouping-selectors/README.md","ref":"ws2-grouping-selectors/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws3-box-model-layout/README.md","mtime":"2019-02-26T02:01:35.303Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-08T22:30:25.029Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Box Model & Layout","level":"2.3","depth":1,"next":{"title":"Text","level":"2.4","depth":1,"path":"ws4-text/README.md","ref":"ws4-text/README.md","articles":[]},"previous":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"path":"ws2-grouping-selectors/README.md","ref":"ws2-grouping-selectors/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws3-box-model-layout/README.md","mtime":"2019-12-14T20:02:22.055Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-14T20:56:04.764Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
