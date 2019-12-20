@@ -21,7 +21,7 @@ Most eye-catching websites have a hero image. Let’s learn about background pro
 {% include "./3hero.md" %}
 
 ## Use CSS grid for layout {#grid-layout} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-We want the drink menu and small plates menu as two columns next to each other. We will use CSS Grid to make this easy.
+We want the drink menu and small plates menu as two columns next to each other. We will use the power of CSS Grid to help us out.
 {% include "./4grid-layout.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->

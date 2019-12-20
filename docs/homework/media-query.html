@@ -339,21 +339,23 @@
 <p>Remember, we&apos;re here to help.
 Join the KCWiT #codingandcocktails Slack Channel: <a href="http://kcwit.slack.com" target="_blank">kcwit.slack.com</a></p>
 </div></div></p>
-<p>Before starting this assignment, view the completed LadyDev Bar &amp; Grill in Chrome. Resize the browser to decrease the width. Notice regardless of the width the drinks menu and small plates menu display side to side. Let&apos;s use a media query to have the small plates menu display after the drinks menu when the width is 600px or less.</p>
+<p>Before starting this assignment, view the completed LadyDev Bar &amp; Grill in Chrome. Resize the browser or use Chrome DevTools responsive mode to decrease the width. Notice regardless of the width the drinks menu and small plates menu display side to side. Let&apos;s use a media query to have the small plates menu display after the drinks menu when the width is 600px or less.</p>
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Google provides breakpoints for different form factors-- dimension and resolution of the screen across different devices. 600px is a breakpoint for small devices such as small tablet or a cell phone. Learn more about <a href="https://material.io/guidelines/layout/responsive-ui.html" target="_blank">Google&apos;s responsive ui layout</a>.  </p>
 </div></div></p>
 <h2 id="define-grid-template-areas"><a name="define-grid-template-areas" class="plugin-anchor" href="#define-grid-template-areas"><i class="fa fa-link" aria-hidden="true"></i></a>Define grid template areas</h2>
 <ol>
-<li><p>Open your project in Atom and start atom-live-server. </p>
+<li><p>Open your project in VS Code and start Live Server. </p>
 </li>
-<li><p>In <em>style.css</em>, declare a grid area for the drinks menu by adding <code>grid-area: drinks;</code> to the styles for the <code>div</code> with <code>class=&quot;drinks&quot;</code>. </p>
+<li><p>In <em>styles.css</em>, create a style for the <code>class=&quot;drinks&quot;</code> and declare a grid area for the drinks menu by adding <code>grid-area: drinks;</code>.</p>
 </li>
-<li>Declare a grid area for the Small plates menu sidebar. Name it &quot;sidebar&quot;.  </li>
-<li>Save the file and view the page in Chrome. <img src="../images/emojis/confused-face.png" alt="">
+<li><p>Declare a grid area for the Small plates menu sidebar. Name it &quot;small-plates&quot;. </p>
+</li>
+<li><p>Save the file and view the page in Chrome. <img src="../images/emojis/confused-face.png" alt="">
 <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Where did the drinks menu go?<br>CSS Grid doesn&apos;t know how to lay out the two template areas you defined, so it placed both in the same column. Add <code>display:none;</code> to the Small plates sidebar <code>div</code> in Chrome DevTools to see the drinks menu.</p>
-</div></div></li>
+</div></div></p>
+</li>
 <li>Define the layout order of the two grid template areas you declared in the <code>.grid-container</code> style by adding <pre><code class="lang-css"> <span class="hljs-selector-tag">grid-template-areas</span>:
- &quot;<span class="hljs-selector-tag">drinks</span> <span class="hljs-selector-tag">sidebar</span>&quot;;
+ &quot;<span class="hljs-selector-tag">drinks</span> <span class="hljs-selector-tag">small-plates</span>&quot;;
 </code></pre>
 </li>
 <li>Save the file and view the page in Chrome to see everything return to normal.
@@ -373,7 +375,7 @@ Join the KCWiT #codingandcocktails Slack Channel: <a href="http://kcwit.slack.co
 <li>Copy the entire <code>.grid-container</code> style (including classname and curly braces) and paste it inside the media query. Save your file and view the page in Chrome. Resize the browser to decrease width. You won&apos;t see any changes yet because you have the same styles applied both screen widths.</li>
 <li>To define 2 rows, split the <code>grid-areas</code> to separate entries. Edit the <code>grid-template-areas</code> in the media query to<pre><code class="lang-css"> <span class="hljs-selector-tag">grid-template-areas</span>:
  &quot;<span class="hljs-selector-tag">drinks</span>&quot; 
- &quot;<span class="hljs-selector-tag">sidebar</span>&quot;;
+ &quot;<span class="hljs-selector-tag">small-plates</span>&quot;;
 </code></pre>
 </li>
 <li><p>Save the file, view in Chrome, and resize the browser. Almost there!
@@ -440,7 +442,7 @@ We need 1 column in the media query. Change <code>grid-template-columns</code> t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Media Queries","level":"3.1","depth":1,"next":{"title":"Homework","level":"3.2","depth":1,"path":"homework/homework.md","ref":"homework/homework.md","articles":[]},"previous":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"homework/media-query.md","mtime":"2019-02-26T02:01:35.293Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-04T17:46:25.617Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Media Queries","level":"3.1","depth":1,"next":{"title":"Homework","level":"3.2","depth":1,"path":"homework/homework.md","ref":"homework/homework.md","articles":[]},"previous":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"homework/media-query.md","mtime":"2019-12-14T18:38:33.261Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-14T20:56:04.764Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

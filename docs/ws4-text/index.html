@@ -362,9 +362,9 @@
             </a>
         </li>
         <li>
-            <a href="#icon-fonts">
+            <a href="#nav-footer">
                 <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
-                <span class="text">Style icon fonts</span>
+                <span class="text">Style navigation and footer</span>
                 <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
             </a>
         </li>
@@ -387,6 +387,7 @@
          <span class="hljs-attribute">font</span>: inherit;
  }
 </code></pre>
+<p> The webpage now uses 100% of the width of the browser tab. But our drink menu doesn&apos;t look quite right! This is because there&apos;s not enough height in the element to fix the images. We&apos;ll fix it up soon.</p>
 </li>
 </ol>
 <h2 id="select-fonts"><a name="select-fonts" class="plugin-anchor" href="#select-fonts"><i class="fa fa-link" aria-hidden="true"></i></a>Select header and body fonts and define fallback fonts   <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
@@ -408,115 +409,142 @@
 </li>
 <li><p>Paste the <code>@import</code> statement at the top of your <em>styles.css</em> file, before the normalizing styles.</p>
 </li>
-<li><p>In the style declared for the <code>body</code>, add font for body text using the CSS rules specified by Google. In the example above, Google specified <code>font-family: &apos;Neuton&apos;, serif;</code>.
- <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>If you select a font with 2 word in the name you&apos;ll need to wrap the font name in quotation marks.</p>
+<li><p>In the style declared for the <code>body</code>, add font for body text using the CSS rules specified by Google. In the example above, Google specified <code>font-family: &apos;Neuton&apos;, serif;</code>.</p>
+<p> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>If you select a font with 2 word in the name you&apos;ll need to wrap the font name in quotation marks.</p>
 </div></div></p>
 </li>
-<li><p>Add the font family for header text to the style you declared for all headers using Google&apos;s supplied CSS rule. Add the font to other styles if you want to override any other text, such as the text in the <code>nav</code> and <code>footer</code>. 
- <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Often you&apos;ll want to provide backup fonts for the page to fall back on in case it can&apos;t load the chosen font. A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif. For serif fonts it might include &quot;Times New Roman&quot;, Times, serif as backups. You can add multiple fallbacks like this <code>font-family: Neuton, &quot;Times New Roman&quot;, Times, serif;</code></p>
+<li><p>Add the font family for header text to the style you declared for all headers using Google&apos;s supplied CSS rule. Add the font to other styles if you want to override any other text, such as the text in the <code>nav</code> and <code>footer</code>. </p>
+<p> <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Often you&apos;ll want to provide backup fonts for the page to fall back on in case it can&apos;t load the chosen font. A common fallback for sans-serif fonts might include Arial, Helvetica, sans-serif. For serif fonts it might include &quot;Times New Roman&quot;, Times, serif as backups. You can add multiple fallbacks like this <code>font-family: Neuton, &quot;Times New Roman&quot;, Times, serif;</code></p>
 <p>You can see the fallback fonts in action if you remove the &quot;@import&quot; statement for the fonts in your <em>styles.css</em> file, save your file, and view the page. Notice how the font changes.</p>
-</div></div>
- <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Learn more by reading <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">MDN documentation on font family</a>.</p>
+</div></div></p>
+<p> <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Learn more by reading <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">MDN documentation on font family</a>.</p>
 </div></div></p>
 </li>
 </ol>
 <h2 id="fonts"><a name="fonts" class="plugin-anchor" href="#fonts"><i class="fa fa-link" aria-hidden="true"></i></a>Define font styles  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>Beautiful text adds final polish to websites. Let&apos;s resize and decorate text to polish LadyDev Bar &amp; Grill website.</p>
-<h3 id="navigation-text"><a name="navigation-text" class="plugin-anchor" href="#navigation-text"><i class="fa fa-link" aria-hidden="true"></i></a>Navigation text</h3>
 <ol>
-<li><p>The navigation text should be right aligned. In the <code>nav</code> style, add <code>text-align: right;</code>.</p>
-</li>
-<li><p>The navigation text in the hyperlink doesn&apos;t stand out enough. Let&apos;s make the following changes to the existing style for navigation hyperlinks using the existing style created for <code>nav a</code>:</p>
-<ol>
-<li>Change the color using an a11y friendly contrasting color by setting <code>color</code> property.</li>
-<li>Make the text bold using <code>font-weight: bold;</code>.</li>
-<li>Remove the hyperlink underline using <code>text-decoration: none;</code>.</li>
-<li>Increase text size using <code>font-size: 1.5em;</code>.
-<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Why use <code>em</code> instead of <code>px</code> for font size? <code>em</code> is a calculated font size based off of the parent&apos;s font value. Read more about the different ways to set font size in &quot;Possible approaches&quot; section of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">MDN documentation on font size</a>.</p>
-</div></div></li>
-</ol>
+<li><p>We always want to start with defining styles for global elements. In this case, we&apos;ll target <code>p</code> elements. Set the <code>font-size</code> to <code>1.25em</code>.</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Why use <code>em</code> instead of <code>px</code> for font size? <code>em</code> is a calculated font size based off of the parent&apos;s font value. Read more about the different ways to set font size in &quot;Possible approaches&quot; section of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">MDN documentation on font size</a>.</p>
+</div></div></p>
 </li>
 </ol>
 <h3 id="hero-text"><a name="hero-text" class="plugin-anchor" href="#hero-text"><i class="fa fa-link" aria-hidden="true"></i></a>Hero text</h3>
 <ol>
-<li><p>The header and paragraph text are too small. Let&apos;s increase text for each header and paragraph selectively using styles you already have for <code>class=&quot;hero&quot;</code>. </p>
-<ol>
-<li>Set <code>font-size</code> to 5em for <code>h1</code>.</li>
-<li>Set <code>font-size</code> to 1.5em for <code>h2</code>.</li>
-<li>Set <code>font-size</code> to 1.25em for <code>p</code>.</li>
-</ol>
+<li><p>Let&apos;s increase the size of the text for the header on top of the hero image starting with the <code>h1</code> tag. We want to only target the <code>h1</code> element. Set the font size of <code>h1</code> to &quot;5em&quot; by adding <code>font-size: 5em;</code>. </p>
 </li>
-<li><p>We need to apply a style to all the hero text. In <em>index.html</em>, notice a <code>div</code> with <code>class=&quot;hero-text&quot;</code> wraps all tags for the hero text. We will target this class. </p>
-<ol>
-<li>Create a style for this class and add top padding of 125px.</li>
-<li>Allocate 50% of the width of the background image by adding <code>width: 50%;</code>. </li>
-<li>Align text to center of the <code>div</code> by adding <code>text-align: center;</code>.</li>
-</ol>
+<li><p>Center align the hero text by using the <code>text-align</code> property. Set <code>text-align: center;</code> to the styles for <code>class=&quot;hero-text&quot;</code>.</p>
 </li>
-</ol>
-<h3 id="drink-menu"><a name="drink-menu" class="plugin-anchor" href="#drink-menu"><i class="fa fa-link" aria-hidden="true"></i></a>Drink menu</h3>
-<ol>
-<li><p>The &quot;Menu&quot; text in the header tag needs to be larger. Create a style targeting the <code>h2</code> header in <code>class=&quot;drinks&quot;</code> and set font size to 3em. Add a 5px margin to give it a little space.</p>
+<li><p>The <code>h1</code> text and the <code>p</code> text on the hero image look good, but the <code>h2</code> text looks small. Set the font size of the <code>h2</code> text only in the hero title to 1.5em.</p>
 </li>
-<li><p>Each menu item needs to be a little larger. The header for each menu item has <code>class=&quot;head&quot;</code>. Create a style targeting this class within drinks menu and set font size to 2em.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Create a style for <code>.drinks .head</code> to set the font size.</p>
+<li><p>The text color for the header and paragraph are different, and depending on the color you selected earlier, might not stand out enough. Pick out a color for the text on the hero image and apply it to <code>class=&quot;hero-text&quot;</code>. <img src="../images/emojis/confused-face.png" alt=""></p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Why did the color apply to only paragraph text? This is because of cascading effects and CSS ordering rules. Class selectors have higher priority than element selectors, but we targeted the class <code>.hero-text</code> on the parent <code>div</code> element. </p>
+<p>The color defined in <code>.hero-text</code> styles applies to all text inside the <code>div</code>, except the style for headers overrode the color. Since we didn&apos;t define a color for paragraph text, the color for the parent element (<code>div</code>) applies. </p>
+<p>We need to increase specificity to apply colors to both paragraph and header text.</p>
 </div></div></p>
 </li>
-<li><p>Increase the size of each menu item description. Create a style for <code>.drinks p</code> and set font size to 1.3em.   </p>
+<li><p>We&apos;ll create a style with more specifity. Create a new style for <code>class=&quot;hero-text&quot;</code> after the existing one and move the color to the new style rules. You&apos;ll have two style rules for <code>.hero-text</code>, the last one with only color in it. You won&apos;t see any changes on your webpage yet.</p>
 </li>
-<li><p>We want the image for the drinks to display on the same row as the text but along its left side. Add <code>float: left;</code> to the styles you already have for drink menu images. 
-<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Prior to systems like Flexbox or CSS Grid, layout relied on float. Within a small container, the overhead for a layout system isn&apos;t always necessary. Read more at <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank">MDN documentation on float</a>.</p>
+<li><p>We can use <strong>Child</strong> combinator to target child elements with greater specificity. To the style rules for <code>.hero-text</code> with color, change the selector to <code>.hero-text &gt; *</code>.</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>The <code>&gt;</code> operator signifies child elements. This applies to direct child elements of the HTML element with <code>class=&quot;hero-text&quot;</code>. The character <code>*</code> is the universal selector and means any HTML element instead of a specific one. This means</p>
+<blockquote>
+<p>For elements with <code>class=&quot;hero-text&quot;</code>, apply the style to all its direct children.</p>
+</blockquote>
+<p>Using the descendant combinator, you could have also used a specific element, such as <code>.hero-text &gt; h1</code>. This means</p>
+<blockquote>
+<p>For elements with <code>class=&quot;hero-text&quot;</code>, apply the style to its direct child <code>h1</code> elements </p>
+</blockquote>
+<p>Read more about <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator" target="_blank">Child combinator</a>.</p>
+</div></div></p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>There&apos;s more than one way to solve the problem of applying color to both paragraph and header text. Using what you know about CSS specificity and the <strong>Descendant</strong> combinator, think of some other ways you can apply the color. Feel free to talk it out with your mentor!</p>
+</div></div></p>
+</li>
+</ol>
+<h3 id="drink-menu"><a name="drink-menu" class="plugin-anchor" href="#drink-menu"><i class="fa fa-link" aria-hidden="true"></i></a>Drink Menu</h3>
+<ol>
+<li><p>Increase the size of the <code>h2</code> elements in the drinks menu to 3em.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+Apply the style to the existing selector for <code>.drinks h2</code>.
+</details>
+</div></div></p>
+</li>
+<li><p>Each drink title needs to be a little larger. In <em>index.html</em>, we see the drink titles are <code>h3</code> elements. They also have a <code>class=&quot;beverage&quot;</code> assigned to it. We can create a style for <code>h3</code> with the <code>class=&quot;beverage&quot;</code> by using the selector <code>h3.beverage</code>. Set the font size to 2em.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Notice there&apos;s no space between the element <code>h3</code> and the class <code>.beverage</code> in the selector.</p>
+<p>There more than one way to target the drink titles styles. What are some other ways using what you&apos;ve learned about <strong>Descendant</strong> and <strong>Child</strong> combinators? Feel free to talk it through with your mentor!</p>
 </div></div></p>
 </li>
 </ol>
 <h3 id="small-plates-menu"><a name="small-plates-menu" class="plugin-anchor" href="#small-plates-menu"><i class="fa fa-link" aria-hidden="true"></i></a>Small plates menu</h3>
 <ol>
-<li><p>Set font size to the existing style for <code>class=&quot;sidebar&quot;</code> to 1.5em.</p>
+<li><p>Set font size to the existing style for <code>class=&quot;small-plates&quot;</code> to 1.5em.</p>
 </li>
-<li><p>The &quot;Small plates&quot; text in the <code>h2</code> tag needs to be 2em, centered, and spaced with 5px margin on the top and bottom, but no margin on the sides. Based on what we learned tonight, can you apply these styles? 
+<li><p>The &quot;Small plates&quot; header title needs to be 2em and centered. Based on what we learned tonight, can you apply these styles? 
 <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-Declare a style for <code>.sidebar h2</code>.
+Declare a style for <code>.small-plates h2</code>.
 
 Add <code>font-size: 2em;</code> to set size.
 
 Add <code>text-align: center;</code> to center.
-
-Add <code>margin: 5px 0;</code> to space.
 </details>
 </div></div></p>
 </li>
 </ol>
-<h2 id="icon-fonts"><a name="icon-fonts" class="plugin-anchor" href="#icon-fonts"><i class="fa fa-link" aria-hidden="true"></i></a>Style icon fonts  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
-<p>Social icons are a must for any website. Let&apos;s style them so they match our website&apos;s theme.</p>
+<h2 id="nav-footer"><a name="nav-footer" class="plugin-anchor" href="#nav-footer"><i class="fa fa-link" aria-hidden="true"></i></a>Style the navigation and footer  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Navigation and footer information helps frame the main body of the site. </p>
 <ol>
-<li><p>In the footer, the copyright text in the <code>p</code> needs to be a contrasting color, centered, and have a bottom margin of 15px.
+<li><p>The following two styles apply to both the navigation and footer anchor text. Find the selector to apply the styles from your already created styles.</p>
+</li>
+<li><p>Pick out an a11y friendly contrasting color for the navigation and footer anchor tag text and set the color property. </p>
+</li>
+<li><p>Remove the hyperlink underline using <code>text-decoration: none;</code>.</p>
+</li>
+</ol>
+<h3 id="navigation-text"><a name="navigation-text" class="plugin-anchor" href="#navigation-text"><i class="fa fa-link" aria-hidden="true"></i></a>Navigation text</h3>
+<ol>
+<li><p>The navigation text should be right aligned. In the <code>nav</code> style, add <code>text-align: right;</code>.</p>
+</li>
+<li><p>The navigation text in the hyperlink doesn&apos;t stand out enough. Make the text bold by adding <code>font-weight: bold;</code>.</p>
+</li>
+<li><p>Let&apos;s also make the navigation text larger by adding <code>font-size: 1.5em;</code>.</p>
+</li>
+</ol>
+<h3 id="footer-text"><a name="footer-text" class="plugin-anchor" href="#footer-text"><i class="fa fa-link" aria-hidden="true"></i></a>Footer text</h3>
+<ol>
+<li><p>In the footer, the copyright text needs to be a contrasting color and both the copyright text and social icons centered. Using the style rules we already created and what we learned tonight, apply the styles to do so.
 <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-Declare a style for the <code>footer p</code> selector.
+In the existing <code>footer p</code> selector:
 
-Add <code>color: white;</code> to set color. You may have a different color in mind.
+Add <code>color</code> to set color and add the same color you used for the anchor elements.
 
 Add <code>text-align: center;</code> to center.
-
-Add <code>margin-bottom: 15px;</code> to space.
 </details>
 </div></div></p>
 </li>
-<li><p>The social icons are icon fonts. We can style these like they are text. Set the icons using the same contrasting color as the copyright. </p>
-<p></p><p class="code-label">styles.css</p><p></p>
-<pre><code class="lang-css"> <span class="hljs-selector-tag">footer</span> <span class="hljs-selector-tag">i</span> {
-     <span class="hljs-attribute">color</span>: white;
- }
-</code></pre>
-</li>
-<li><p>Give the icons space by setting top and bottom padding to 2px and left and right padding to 10px.</p>
-</li>
-<li><p>Center the list of icons by setting the <code>text-align</code> property in the <code>ul</code> styles.</p>
+<li><p>Add a little bit of space between the copyright text and social icons by adding a 15px margin between the two elements. Use what we learned tonight to do so.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+There&apos;s multiple ways to target the copyright text in the footer.
+
+One way is to use Descendent combinator to target <code>footer p</code> selector and add a 15px bottom margin.
+
+Another way is to target <code>footer ul</code> and add a 15px top margin.
+
+Another way is to use the Child combinator to target <code>footer &gt; p</code> selector.
+
+Can you think of other ways?
+</details>
+</div></div></p>
 </li>
 <li><p>Save your file and view your page in Chrome. <img src="../images/emojis/party-popper.png" alt=""></p>
 </li>
@@ -542,7 +570,7 @@ Add <code>margin-bottom: 15px;</code> to space.
             </summary>
             <img src="images/checkpoint4.png">
             <p>
-             You can also compare your <i>styles.css</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/blob/2018-checkpoint-4-text/css/styles.css" target="_blank">answer key</a> if the image is too difficult to read.
+             You can also compare your <i>styles.css</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/blob/checkpoint-4-text/css/styles.css" target="_blank">answer key</a> if the image is too difficult to read.
             </p>
         </details>
     </div>
@@ -597,7 +625,7 @@ Add <code>margin-bottom: 15px;</code> to space.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Text","level":"2.4","depth":1,"next":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"previous":{"title":"Box Model & Layout","level":"2.3","depth":1,"path":"ws3-box-model-layout/README.md","ref":"ws3-box-model-layout/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws4-text/README.md","mtime":"2019-01-01T18:05:59.449Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-04T17:46:25.617Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Text","level":"2.4","depth":1,"next":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"previous":{"title":"Box Model & Layout","level":"2.3","depth":1,"path":"ws3-box-model-layout/README.md","ref":"ws3-box-model-layout/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws4-text/README.md","mtime":"2019-12-14T18:27:59.472Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-14T20:56:04.764Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

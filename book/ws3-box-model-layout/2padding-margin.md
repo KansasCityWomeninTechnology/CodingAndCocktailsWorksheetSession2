@@ -1,4 +1,10 @@
-### Navigation bar
+
+1. Let's take care of a global setting. Remove all space around unordered lists by setting `margin` and `padding` properties to "0".
+    {% hint style='tip' %}
+This is the `ul` style.
+    {% endhint %}
+
+### Navigation and Footer
 1. Add padding between the list items in the navigation bar by declaring a new style and adding the `padding` property to look something like
     
     {% filename %}styles.css{% endfilename %}
@@ -17,9 +23,24 @@ padding-left: 2px;
 ```
     {% endhint %}
 
-1. To make the navigation list items display horizontally, add `display: inline;` to `nav li` style.
+1. That looks nice. We can use the same style but for the footer by adding it as part of a selector list. Apply the same style to the footer.
+
+   {% hint style='working' %}
+<details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We can reuse the style for <code>nav li</code> by adding the <code>footer li</code> selector. The selector the style becomes <code>nav li, footer li</code>.
+</details>
+   {% endhint %}
+
+1. To make the navigation list items display horizontally, add `display: inline;` to `nav li, footer li` style.
 
 1. Add padding between the hyperlinks in the navigation bar. Declare a style for `nav a` and add the padding property there. We want 6px on the top and bottom, but 20px on the right and left. 
+
+    {% hint style='tip' %}
+Group your selectors by global to more specific. Declare the style for `nav a` before the style for `nav a:hover`.
+    {% endhint %}
 
     {% hint style='info' %}
 We can use shorthand properties to help by defining all 4 sides on the same property like this `padding: 6px 20px;`.
@@ -31,41 +52,72 @@ Refer to [MDN documentation for shorthand properties](https://developer.mozilla.
 
 1. Add `display: inline-block;` to `nav a` to align the hyperlinks on the same horizontal line. 
 
-1. Remove all space around the navigation bar unordered list group by setting `margin` and `padding` properties to "0".
-    {% hint style='tip' %}
-This is the `nav ul` style.
-    {% endhint %}
+1. The `nav a` styles look mighty nice. Let's also apply it to the footer's `a` tags.
+
+   {% hint style='working' %}
+<details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We can reuse the style for <code>nav a</code> by adding the <code>footer a</code> selector. The selector the style becomes <code>nav a, footer a</code>.
+</details>
+   {% endhint %}
+
+1. The social icons in the footer now extend past the background color. Give the social icons a little extra space by setting the height to 75px. Add `height: 75px;` to the existing style for `footer`.
+
+1. One last update for the footer! The hover color for the navigation bar might look nice applied to the footer. Go ahead and apply the same style for the hover to the footer.
+
+   {% hint style='working' %}
+<details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We can reuse the style for <code>nav a:hover</code> by adding the <code>footer a:hover</code> selector. The selector the style becomes <code>nav a:hover, footer a:hover</code>.
+</details>
+   {% endhint %}
 
 1. Save your file and view your page in Chrome.
 
 ### Drink menu
-1. Remove the margin and padding by setting `margin` and `padding` properties to "0" in the existing style for `class="drinks"`.
+1. The heading for the drink menu, labeled "Menu", needs to be aligned above the drink list a little better. Looking in _index.html_ we see "Menu" is in a `h2` tag inside a `section` with `class="drinks"`. Create a selector that only changes the "Menu" text to have a 5px margin all around.
 
-1. We want each menu item to display like a block element. To the existing style `.drinks .item` add `display: block;`.
+   {% hint style='working' %}
+<details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We have to specify the <code>h2</code> inside the <code>class="drinks"</code> so that we don't apply the style to all <code>h2</code> elements. Target the "Menu" text only by defining styles using the selector for <code>.drinks h2</code>.
+</details>
+   {% endhint %}
 
-1. The dotted top border line between the drinks menu list items is too close to the image. Add a 10px top padding to the style for `.drinks .item`.
+1. The images in the drink menu are far too close the dotted top border line. Let's give it a little space by adding a 10px top padding to each drink item.
 
-1. The drink list items need a little breathing room. Add a 60px bottom margin between each drink list item.
+   {% hint style='working' %}
+<details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+Define styles for each drink item using the selector for <code>.item</code>.
+</details>
+   {% endhint %}
+
+1. The drink list items need a little breathing room. Add a 60px bottom margin between each drink item.
+
     {% hint style='working' %}
 Why use margin instead of padding? Refer to the box model image in the CSS Cheat Sheet. Notice the difference where space gets added. You can see for yourself by opening Chrome DevTools, adding a bottom border and bottom padding in the **Styles** tab, and watching where space gets added. The styles you add in DevTools won't save. Mentors are here to help.  
 <img src="./images/padding-vs-margin.png">
     {% endhint %}
 
-1. The images in the drinks menu needs horizontal spacing by setting `margin: 0 20px;` to the existing style `.drinks img`.
+1. We want to display the text to the right of each image. To do so, we want the image in each drink item to float to the left. Add a style to the `img` selector to `float: left`;
 
-### Footer
-1. Remove all space around the footer unordered list group by setting margin and padding to 0. 
+1. The text for the drink items are a little too close to the image. Create a little breathing room by adding a 20px margin to the right and left of the image.
 
-1. The social icons in the footer should display horizontally like it does in the navigation. Add `display: block;` to the style for the unordered list in footer. 
-
-1. Add a style to each list item in the footer to ensure everything stays on the same horizontal line.
-    {% hint style='working' %}
+   {% hint style='working' %}
 <details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-Declare a style for the <code>li</code> tag within <code>footer</code> and add <code>display: inline-block;</code>. 
+We can use the shortcut to add a 20px right and left margin and 0px top and bottom margin. To the style for <code>img</code>, add the <code>margin</code> property and set value to <code>0 20px</code>.
 </details>
    {% endhint %}
    
-1. The social icons now extend past the background color. Give the social icons a little extra space by setting the `footer` height to 75px by adding `height: 75px;` to the existing style for `footer`.

@@ -368,78 +368,99 @@
 <h2 id="header-colors"><a name="header-colors" class="plugin-anchor" href="#header-colors"><i class="fa fa-link" aria-hidden="true"></i></a>Set default color for all header text  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>Setting a style on multiple selectors at once makes CSS succinct. In this section you&apos;ll set a default color for all header text.</p>
 <ol>
-<li><p>Select a default color for the headers. Create a style for all headers (<code>h1</code> - <code>h6</code>) and define the <code>color</code> property in <em>styles.css</em>. Since this is a default style, define it near the top of the page, after the style for <code>body</code> like this</p>
+<li><p>We have the same color defined for 2 header selectors, <code>h1</code> and <code>h2</code>. We can combine the selectors into a selector list. Delete the style for <code>h2</code>. </p>
+</li>
+<li><p>Combine the <code>h1</code> and <code>h2</code> selectors by separating them with a comma like this</p>
 <p></p><p class="code-label">styles.css</p><p></p>
-<pre><code class="lang-css"> <span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span> {
+<pre><code class="lang-css"> <span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span> {
      <span class="hljs-attribute">color</span>: <span class="hljs-number">#637056</span>;
  }
 </code></pre>
 <p> <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Define a style for more than 1 selector by comma separating the selector list. </p>
-</div></div>
- Save and refresh your page. Do you see your default color applied?</p>
+</div></div></p>
+<p> Save and refresh your page. Do you see your default color applied?</p>
+</li>
+<li><p>Let&apos;s go ahead and set the text color for all headers. Add <code>h3</code>, <code>h4</code>, <code>h5</code>, and <code>h6</code> to the style. Save and refresh your page to see the color applied to all the headers on the page.</p>
+</li>
+<li><p>There&apos;s one other place where we have the same style defined for 2 different selectors- <code>nav</code> and <code>footer</code>. Let&apos;s combine the styles.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+Delete the style for <code>footer</code> and change the selector for <code>nav</code> style to <code>nav, footer</code>.
+</details>
+</div></div></p>
 </li>
 </ol>
 <h2 id="hover"><a name="hover" class="plugin-anchor" href="#hover"><i class="fa fa-link" aria-hidden="true"></i></a>Change hover color of hyperlinks using pseudo classes  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>Providing user feedback on clickable elements such as hyperlinks is thoughtful user interaction. You&apos;ll set a hover color, style lists, and practice CSS organization.</p>
 <ol>
-<li>Select a color that displays when your mouse hovers over the hyperlink tags in your navigation bar and footer.</li>
-<li><p>Create a style targeting the hover Pseudo Class on the <code>a</code> tag within <code>nav</code> and define the <code>background-color</code> property. Your code should look similar to this.</p>
-<p> </p><p class="code-label">styles.css</p><p></p>
-<pre><code class="lang-css"> <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
-     <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#d88731</span>;
- }
-</code></pre>
-<p> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Group styles for the same parent element together to make it easier for yourself. Group all the <code>nav</code> style together, but order by specificity.</p>
-</div></div>
- Save your file and view in Chrome. What happens when you hover over the links in the navigation bar?</p>
+<li><p>Select a color that displays when your mouse hovers over the hyperlink tags in your navigation bar and footer.</p>
+</li>
+<li><p>Between the styles for the <code>img</code> and <code>.small-plates</code>, create a style for <code>a</code> elements. Add the <code>background-color</code> property. The background color for all <code>a</code> elements changed. Hrm....</p>
+</li>
+<li><p>We want the background to show on hover, so we can use the <strong>Pseudo Class</strong> <code>:hover</code>. Change the selector to <code>a:hover</code>.</p>
+</li>
+<li><p>Save your file and view in Chrome. What happens when you hover over the links in the navigation bar?</p>
 <p> <img src="https://media.giphy.com/media/B0vFTrb0ZGDf2/giphy.gif" alt=""></p>
 </li>
-<li><p>We don&apos;t want the bullets to show in the navigation menu. Remove the bullets by setting the <code>list-style-type</code> property to &quot;none&quot; on the <code>ul</code> tag in <code>nav</code>. Your code should look like this.</p>
-<p> </p><p class="code-label">styles.css</p><p></p>
-<pre><code class="lang-css"> <span class="hljs-selector-tag">nav</span> <span class="hljs-selector-tag">ul</span> {
-     <span class="hljs-attribute">list-style-type</span>: none;
- }
-</code></pre>
-<p> Save your file and view in Chrome. The navigation bar is starting to look better.
- <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Learn more about styling lists using <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists" target="_blank">MDN list styling reference</a>. </p>
+<li><p>But we don&apos;t want all the <code>a</code> tags to hover. Just the ones in the navigation. We could add a <code>class</code> or we can target only the <code>a</code> elements in <code>nav</code> by changing the selector to <code>nav a:hover</code>.</p>
+<p> <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>You are using the <strong>Descendant combinator</strong>. A combinator is a special selector. The descendant combinator contains 2 or more selectors with a space between each selector. The first selector is an ancestor of the second in the HTML. Selectors can be HTML elements or classes. So in this case, you are saying </p>
+<blockquote>
+<p>For all HTML <code>nav</code> elements that has a descendant <code>a</code>, add a color when hovering.</p>
+</blockquote>
+<p>Read more about the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator" target="_blank">Descendant combinator</a>. </p>
+</div></div></p>
+<p> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Group styles for the same parent element together to make it easier for yourself. Group all the <code>nav</code> style together, but order by specificity.</p>
 </div></div></p>
 </li>
-<li>Repeat the steps in the section by adding the hover color and removing the bullets in the <code>footer</code>. Be sure to put these styles towards the bottom of the page with your footer background color.</li>
 </ol>
 <h2 id="lists"><a name="lists" class="plugin-anchor" href="#lists"><i class="fa fa-link" aria-hidden="true"></i></a>Using list pseudo classes and combinators to style lists  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>We&apos;ll work some more with list styling and add spacing between list elements.</p>
 <ol>
-<li><p>Open <em>index.html</em> and find &quot;Small plates&quot; so that you know how to target styles for this list. Notice this section has <code>class=&quot;sidebar&quot;</code>. We will target this class for styling. </p>
-</li>
-<li><p>Remove the bullet points in the <code>ul</code> in <code>class=&quot;sidebar&quot;</code>.<br> <div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Remember, styles for <code>class</code> has <code>.</code> prepended. Take a look at your fine work resizing the drink menu images. </p>
-</div></div></p>
-</li>
-<li><p>We want to add extra space between each list item on the &quot;Small plates&quot; menu by setting the <code>margin-top</code> property to &quot;50px&quot; on the list items. Create a style targeting <code>li</code> within the <code>ul</code> with <code>class=&quot;sidebar&quot;</code> like this</p>
-<p></p><p class="code-label">styles.css</p><p></p>
-<pre><code class="lang-css"> <span class="hljs-selector-class">.sidebar</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
-    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">50px</span>;
+<li><p>We don&apos;t want the bullets for any lists. Remove the bullets for all <code>ul</code> by creating a global style and setting the <code>list-style-type</code> property to &quot;none&quot;. Your code should look like this.</p>
+<p> </p><p class="code-label">styles.css</p><p></p>
+<pre><code class="lang-css"> <span class="hljs-selector-tag">ul</span> {
+     <span class="hljs-attribute">list-style-type</span>: none;
  }
 </code></pre>
-<p>  <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>You are using the &quot;Descendant combinator&quot;. A combinator is a special selector. The descendant combinator contains 2 or more selectors with a space between each selector. The first selector is an ancestor of the second in the HTML. So in this case, you are saying </p>
-<p><em>For all HTML elements with the class <code>.sidebar</code> that has a descendant <code>ul</code> that has a descendant <code>li</code>, add a top margin.</em></p>
+<p> Save your file and view in Chrome. The webpage is starting to look better.</p>
+<p> <div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Learn more about styling lists using <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists" target="_blank">MDN list styling reference</a>. </p>
 </div></div></p>
+</li>
+<li><p>We want to add extra space between each list item in the &quot;Small plates&quot; menu by setting the <code>margin-top</code> property to &quot;50px&quot; on the list items. Create a style targeting <code>li</code> with parent <code>class=&quot;small-plates&quot;</code>. </p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary>
+We want to declare a style for the selector <code>li</code> with parent selector <code>.sidebar</code>. We can use the Descendant combinator.
+
+Declare a style for <code>.small-plates li</code> at the bottom of the file and add <code>margin-top: 50px;</code>. 
+</details>
+</div></div></p>
+</li>
+<li><p>Let&apos;s also add a right and left margin to each list item in the &quot;Small plates&quot; menu. Set the values to 15px; Can you guess the property names of the right and left margins?</p>
 </li>
 <li><p>Save your file and view in Chrome. You now have plenty of spacing between each food menu item but the <code>margin-top</code> property also added space between the &quot;Small plates&quot; header and list. Let&apos;s take care of that extra space next.</p>
 </li>
-<li><p>Create another style targeting the <code>li</code> elements in the &quot;Small plates&quot; menu after the one you created in the previous step. Add the Pseudo Class <code>first-child</code> and define the <code>margin-top</code> property using the value &quot;0&quot;. We are overriding the previous style selectively for the first child. Your code should look like this</p>
+<li><p>After the <code>.small-plates li</code> style, create another style with the same selector. Since we are overriding the previous style we define it after the original style. We&apos;ll add a qualifier to the selector next.</p>
+</li>
+<li><p>In the second definition of the style, add the <strong>Pseudo Class</strong> <code>first-child</code> and define the <code>margin-top</code> property using the value &quot;0&quot;. We are overriding the previous style selectively for the first child, or the first element of the list. Your code should look like this</p>
 <p></p><p class="code-label">styles.css</p><p></p>
-<pre><code class="lang-css"> <span class="hljs-selector-class">.sidebar</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first-child</span> {
+<pre><code class="lang-css"> <span class="hljs-selector-class">.small-plates</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first-child</span> {
      <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
  }
 </code></pre>
-<p> Save your file and refresh the page. The spacing looks better now. 
-<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>You can also use combinators to declare a property on all <code>li</code> except the first in one fell swoop. Instead of having a style for all list items and overriding the first child, you could have written </p>
-<pre><code class="lang-css"><span class="hljs-selector-class">.sidebar</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> + <span class="hljs-selector-tag">li</span> {
+<p> Save your file and refresh the page. The spacing looks better now. </p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>You can also use combinators to declare a property on all <code>li</code> except the first in one fell swoop. Instead of having a style for all list items and overriding the first child, you could have written </p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.small-plates</span> <span class="hljs-selector-tag">li</span>+<span class="hljs-selector-tag">li</span> {
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">50px</span>;
 }
 </code></pre>
-<p>The <code>+</code> is the &quot;Adjacent Sibiling&quot; combinator and selects <code>li</code> elements directly after the first one. So in this case, you are saying</p>
-<p><em>For all HTML elements with the class <code>.sidebar</code> with a descendant <code>ul</code>-- apply a top margin to <code>li</code> tags that have a preceding <code>li</code> tag.</em></p>
+<p>The <code>+</code> is the <strong>Adjacent Sibiling</strong> combinator and selects <code>li</code> elements directly after the first one. So in this case, you are saying</p>
+<blockquote>
+<p>For all HTML elements with the class <code>.small-plates</code>, apply a top margin to <code>li</code> tags that have a preceding <code>li</code> tag.</p>
+</blockquote>
 <p>Read more about the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors" target="_blank">Adjacent sibling combinator</a>. </p>
 </div></div></p>
 </li>
@@ -462,7 +483,7 @@
             </summary>
             <img src="images/checkpoint2.png">
             <p>
-             You can also compare your <i>styles.css</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/blob/2018-checkpoint-2-grouping-special-selectors/css/styles.css" target="_blank">answer key</a> if the image is too difficult to read.
+             You can also compare your <i>styles.css</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/blob/checkpoint-2-grouping-special-selectors/css/styles.css" target="_blank">answer key</a> if the image is too difficult to read.
             </p>
         </details>
     </div>
@@ -516,7 +537,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"next":{"title":"Box Model & Layout","level":"2.3","depth":1,"path":"ws3-box-model-layout/README.md","ref":"ws3-box-model-layout/README.md","articles":[]},"previous":{"title":"CSS Basics","level":"2.1","depth":1,"path":"ws1-css-basics/README.md","ref":"ws1-css-basics/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws2-grouping-selectors/README.md","mtime":"2019-01-01T18:05:59.436Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-04T17:46:25.617Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"next":{"title":"Box Model & Layout","level":"2.3","depth":1,"path":"ws3-box-model-layout/README.md","ref":"ws3-box-model-layout/README.md","articles":[]},"previous":{"title":"CSS Basics","level":"2.1","depth":1,"path":"ws1-css-basics/README.md","ref":"ws1-css-basics/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws2-grouping-selectors/README.md","mtime":"2019-01-01T18:05:59.436Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-14T20:56:04.764Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

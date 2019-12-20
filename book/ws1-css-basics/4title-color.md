@@ -5,22 +5,23 @@ Ensure your colors are a11y friendly by using the WebAIM [Color Contrast Checker
 Google's [Color Tool](https://material.io/color/) makes this a little easier by pre-defining color palettes with accessible contrast.
     {% endhint %}
 
-1. In Atom, find the `div` containing the HTML header tag with the text "LadyDev" in _index.html_. Note the `div` has `class="hero-text"` and you have `h1`, `h2`, and `p` tags to style.
-
-1. In _styles.css_, declare a style for the `h1` tag above the existing style for `.drinks img` and add the color you selected for the title using the `color` property like this
+1. We'll start applying colors to the main `h1` header first. In _styles.css_ in VS Code, declare a style for `h1` tag above the selector for `img`. Use the `color` property and substitute the hex color you selected for the title like this
     
     {% filename %}styles.css{% endfilename %}
     ```css
-    .hero h1 {
-        color: #cb6f10;
+    h1 {
+        color: #637056;
     }
     ```
 
-1. Repeat to create styles targeting `h2` and `p` right after your `.hero h1` style and apply the same color.
-    {% hint style='working' %}
-What happens if you don't specify class when styling the `p` element? 
+1. Save your file and view in Chrome. Do you see the color of your header change? 
 
-The color changes applies to all `p` elements on the page, not just the title. Try it yourself to see CSS specificity.
+1. Repeat to create styles targeting `h2` right after your `h1` style and apply the same color. 
+
+    {% hint style='working' %}
+Notice the color applies to all `h2` elements, including the "Menu" and "Small plates" text. This is an example of how styles **cascade**. 
+
+We might need to override the style for a specific element later, but we want to build a strong foundation to build upon.
     {% endhint %}
 
 1. Save your file and view your page in Chrome.

@@ -19,9 +19,9 @@ Different fonts help define areas. But you have to have a backup plan. Let's sel
 Beautiful text adds final polish to websites. Let's resize and decorate text to polish LadyDev Bar & Grill website.
 {% include "./3fonts.md" %}
 
-## Style icon fonts {#icon-fonts} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Social icons are a must for any website. Let's style them so they match our website's theme.
-{% include "./4icon-fonts.md" %}
+## Style the navigation and footer {#nav-footer} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+Navigation and footer information helps frame the main body of the site. 
+{% include "./4navigation-footer.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
