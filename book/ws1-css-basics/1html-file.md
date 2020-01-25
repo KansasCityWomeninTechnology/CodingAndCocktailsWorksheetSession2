@@ -115,6 +115,10 @@ If you don't have a "CodingAndCocktails/session2" directory, take a moment to [s
 
    ![](images/vs-code-save.png)
 
+   {% hint style='tip' %}
+You may run into an error saving _index.html_ if your VS Code needs elevated permissions on Windows. Select **Retry as Admin** to finish saving.
+   {% endhint %}
+
 1. Now we'll prepare the images. First we need a folder for the images. In VS Code, hover over **SESSION2** and click on the **New Folder** icon. Name the folder "images".
 
 1. In Chrome, open a [new tab to download the contents of our GitHub repository containing the images](https://github.com/KansasCityWomeninTechnology/CSSCompilerPractice/archive/master.zip).

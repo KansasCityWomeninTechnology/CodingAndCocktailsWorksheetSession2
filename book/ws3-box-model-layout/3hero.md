@@ -1,7 +1,8 @@
-1. Open _index.html_ and find the `section` containing the text containing title of the web page, "LadyDev Bar &amp; Grill". Because we want our hero image to fill the entire title area, declare a style for `class="hero"` and set the height to 600px.
+1. Open _index.html_ and find the `section` containing the text containing title of the web page, "LadyDev Bar &amp; Grill". Because we want our hero image to fill the entire title area, in _styles.css_ declare a style for `class="hero"` and set the height to 600px.
 
 1. Add a background image to hero section by adding 
-
+    
+   {% filename %}styles.css{% endfilename %}
    ```css   
       background: url("../images/hero.jpg") no-repeat center top;
    ```

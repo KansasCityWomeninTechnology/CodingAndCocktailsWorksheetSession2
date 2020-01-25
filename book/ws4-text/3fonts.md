@@ -57,6 +57,10 @@ Apply the style to the existing selector for <code>.drinks h2</code>.
    {% hint style='working' %}
 Notice there's no space between the element `h3` and the class `.beverage` in the selector.
 
+When there are no spaces between individual elements of selector, it means both individual elements apply. In this case, we're saying
+
+> For `h3` elements that also have the class attribute `beverage`, apply the style.
+
 There more than one way to target the drink titles styles. What are some other ways using what you've learned about **Descendant** and **Child** combinators? Feel free to talk it through with your mentor!
    {% endhint %}
 

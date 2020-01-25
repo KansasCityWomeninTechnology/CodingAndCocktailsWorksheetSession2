@@ -12,7 +12,7 @@ Before starting the worksheet, please take a moment to review the [Setup instruc
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
 {% hint style='danger' %}
-If you are using CodeSandbox, please skip to [CloudSandbox instructions](#cloud-ide) below.
+If you are using CodeSandbox, please skip to [CodeSandbox instructions](#cloud-ide) below.
 {% endhint %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
