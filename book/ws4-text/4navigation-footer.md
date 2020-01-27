@@ -20,7 +20,7 @@
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-In the existing <code>footer p</code> selector:
+In the existing <code>footer</code> selector:
 
 Add <code>color</code> to set color and add the same color you used for the anchor elements.
 

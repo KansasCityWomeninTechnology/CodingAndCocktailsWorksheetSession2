@@ -1,4 +1,8 @@
 1. We need a folder for the stylesheet we'll be creating tonight. In VS Code, create the "css" folder for the project and create the _styles.css_ file inside the "css" folder.
+   {% hint style="danger" %}
+Make sure you create the "css" folder inside the project folder, and not inside "images" folder.
+   {% endhint %}
+   
    {% hint style="working" %}
 <details>
 <summary>

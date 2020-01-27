@@ -1,4 +1,4 @@
-1. In VS Code, open _index.html_. Inside the `body` HTML tag, notice we have a variety of different HTML tags, including `img` for images. Let's try applying a style to the `img` element.
+1. In VS Code, open _index.html_. Inside the `body` HTML tag, notice we have a variety of different HTML tags, including `img` for images. In the next step, we'll apply a style to the `img` element. Take a moment to review the syntax for CSS rules, then review the _index.html_ HTML elements and `class` attributes. 
 
    {% hint style='tip' %}
 The syntax for a CSS rule looks like this:

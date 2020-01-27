@@ -20,18 +20,10 @@ If you are borrowing a laptop, please ask your mentor to explain the tools.
 {% hint style='danger' %}
 If you are using a Chromebook, having trouble installing tools, or otherwise need to use a Cloud IDE option, we will use a cloud development environment called [**CodeSandbox**](https://codesandbox.io). In order to use CodeSandbox, you will need to create a GitHub account. 
 
-Follow the instructions in the [Tools Installation to create a GitHub account](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-git/#create-a-github-account) and return here. You won't install any tools listed on this page, but please read through them so you have context for tonight's worksheet.
+Navigate to GitHub to create a personal account or log in. Feel free to ask your mentor for help! When complete and logged in to GitHub, return here to continue the instructions. You won't install any tools listed on this page, but please read through them so you have context for tonight's worksheet.
 {% endhint %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
-## 
-Follow the instructions on this page to prepare your workspace.
-
-{% hint style='tip' %}
-Open [Slack](http://kcwit.slack.com/) to the **#codingandcocktails** channel. It's a great way to stay in touch with your Coding & Cocktails girlfriends and to ask questions during and after the session. We'll also post updates and tips in Slack if we run in to any stumbling blocks tonight.
-{% endhint %}
-
-
 ## Required tools for this session
 
 You don't need all the tools for tonight's session. If you haven't installed all the tools listed in [The Tools](https://bit.ly/CnCTheTools) guide already, use the following list to install the required tools for the worksheet:
@@ -49,7 +41,7 @@ Create a folder named "session2" in your "CodingAndCocktails" folder by followin
 
 1. Open a file explorer and navigate to your home directory.
    {% hint style="tip" %}
-Your home directory is typically `/users/<your user name>` on a Mac or `C:/Users/<your user name>` on a Windows machine.
+Your home directory is typically `/users/<your user name>` on a Mac or `C:\Users\<your user name>` on a Windows machine.
 
 **Windows users**- You can navigate to your home directory by typing `%USERPROFILE%` in the file location bar and pressing `Enter`. 
    {% endhint %}

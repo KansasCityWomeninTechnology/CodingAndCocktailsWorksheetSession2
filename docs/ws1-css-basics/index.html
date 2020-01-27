@@ -342,7 +342,7 @@
 </div></div></p>
 <!-- trick markdown to give me a little space between these two sections of text -->
 <h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
-<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you are using CodeSandbox, please skip to <a href="#cloud-ide">CloudSandbox instructions</a> below.</p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you are using CodeSandbox, please skip to <a href="#cloud-ide">CodeSandbox instructions</a> below.</p>
 </div></div></p>
 <!-- trick markdown to give me a little space between these two sections of text -->
 <h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
@@ -502,6 +502,8 @@
 </li>
 <li><p>Save the file by selecting <strong>File</strong> <img src="../images/arrow-right.svg" alt=""> <strong>Save</strong>. You can also use the keyboard shortcut <code>ctrl + s</code> on Windows or <code>cmd + s</code> on Mac. Unsaved files in VS Code have a little dot on the tab.</p>
 <p><img src="images/vs-code-save.png" alt=""></p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>You may run into an error saving <em>index.html</em> if your VS Code needs elevated permissions on Windows. Select <strong>Retry as Admin</strong> to finish saving.</p>
+</div></div></p>
 </li>
 <li><p>Now we&apos;ll prepare the images. First we need a folder for the images. In VS Code, hover over <strong>SESSION2</strong> and click on the <strong>New Folder</strong> icon. Name the folder &quot;images&quot;.</p>
 </li>
@@ -532,7 +534,9 @@
 <h2 id="link-stylesheet"><a name="link-stylesheet" class="plugin-anchor" href="#link-stylesheet"><i class="fa fa-link" aria-hidden="true"></i></a>Create and link the stylesheet to the HTML  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <ol>
 <li><p>We need a folder for the stylesheet we&apos;ll be creating tonight. In VS Code, create the &quot;css&quot; folder for the project and create the <em>styles.css</em> file inside the &quot;css&quot; folder.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>Make sure you create the &quot;css&quot; folder inside the project folder, and not inside &quot;images&quot; folder.</p>
+</div></div></p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -571,7 +575,7 @@ In VS Code, hover over <b>SESSION2</b> and click on the <b>New Folder</b> icon. 
 <h2 id="sizes"><a name="sizes" class="plugin-anchor" href="#sizes"><i class="fa fa-link" aria-hidden="true"></i></a>Resize images using relative and absolute sizes  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>Images are a big part of any website and what most people see first because your eyes are drawn to visuals. Let&#x2019;s learn about absolute and relative sizing and apply it to the images in the menu.</p>
 <ol>
-<li><p>In VS Code, open <em>index.html</em>. Inside the <code>body</code> HTML tag, notice we have a variety of different HTML tags, including <code>img</code> for images. Let&apos;s try applying a style to the <code>img</code> element.</p>
+<li><p>In VS Code, open <em>index.html</em>. Inside the <code>body</code> HTML tag, notice we have a variety of different HTML tags, including <code>img</code> for images. In the next step, we&apos;ll apply a style to the <code>img</code> element. Take a moment to review the syntax for CSS rules, then review the <em>index.html</em> HTML elements and <code>class</code> attributes. </p>
 <p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>The syntax for a CSS rule looks like this:</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">selector</span> {
     <span class="hljs-attribute">property</span>: value;
@@ -773,7 +777,7 @@ Declare a style for <code>footer</code> and add <code>background-color: #cb6f10;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS Basics","level":"2.1","depth":1,"next":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"path":"ws2-grouping-selectors/README.md","ref":"ws2-grouping-selectors/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-css-basics/README.md","mtime":"2019-12-09T18:19:38.769Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-14T20:56:04.764Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CSS Basics","level":"2.1","depth":1,"next":{"title":"Grouping & Special Selectors","level":"2.2","depth":1,"path":"ws2-grouping-selectors/README.md","ref":"ws2-grouping-selectors/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-css-basics/README.md","mtime":"2020-01-25T17:28:08.004Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-25T19:59:00.117Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

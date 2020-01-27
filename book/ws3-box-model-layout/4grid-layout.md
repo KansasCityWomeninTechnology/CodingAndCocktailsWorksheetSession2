@@ -32,7 +32,7 @@ Need a little help? Expand this section for guidance.
 
 1. Now let's use CSS Grid to align the drinks and small plates menus. In _index.html_, notice the drinks menu and small plates menu are both children of a parent `main` with `class="grid-container"`. We will target this class for grid layout. 
 
-   Declare a style for `class="grid-container"` in _styles.css_ below your styles for `class="hero"`. Add style `display: grid;`.
+   In _styles.css_, declare a style for `class="grid-container"` in _styles.css_ below your styles for `class="hero"`. Add style `display: grid;`.
 
 1. We want the drinks menu on the left with 75% width allocated to it. Drinks are, of course, most important. We want the small plates menu on the right with the remaining width allocation to it. 
 

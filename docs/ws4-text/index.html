@@ -473,6 +473,10 @@ Apply the style to the existing selector for <code>.drinks h2</code>.
 </li>
 <li><p>Each drink title needs to be a little larger. In <em>index.html</em>, we see the drink titles are <code>h3</code> elements. They also have a <code>class=&quot;beverage&quot;</code> assigned to it. We can create a style for <code>h3</code> with the <code>class=&quot;beverage&quot;</code> by using the selector <code>h3.beverage</code>. Set the font size to 2em.</p>
 <p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Notice there&apos;s no space between the element <code>h3</code> and the class <code>.beverage</code> in the selector.</p>
+<p>When there are no spaces between individual elements of selector, it means both individual elements apply. In this case, we&apos;re saying</p>
+<blockquote>
+<p>For <code>h3</code> elements that also have the class attribute <code>beverage</code>, apply the style.</p>
+</blockquote>
 <p>There more than one way to target the drink titles styles. What are some other ways using what you&apos;ve learned about <strong>Descendant</strong> and <strong>Child</strong> combinators? Feel free to talk it through with your mentor!</p>
 </div></div></p>
 </li>
@@ -521,7 +525,7 @@ Add <code>text-align: center;</code> to center.
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-In the existing <code>footer p</code> selector:
+In the existing <code>footer</code> selector:
 
 Add <code>color</code> to set color and add the same color you used for the anchor elements.
 
@@ -625,7 +629,7 @@ Can you think of other ways?
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Text","level":"2.4","depth":1,"next":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"previous":{"title":"Box Model & Layout","level":"2.3","depth":1,"path":"ws3-box-model-layout/README.md","ref":"ws3-box-model-layout/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws4-text/README.md","mtime":"2019-12-14T18:27:59.472Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-14T20:56:04.764Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Text","level":"2.4","depth":1,"next":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"previous":{"title":"Box Model & Layout","level":"2.3","depth":1,"path":"ws3-box-model-layout/README.md","ref":"ws3-box-model-layout/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","codeblock-label","anchors","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws4-text/README.md","mtime":"2019-12-20T01:31:18.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-25T19:59:00.117Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
