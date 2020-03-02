@@ -47,3 +47,5 @@ Need a little help? Expand this section for guidance.
     ```
 1. Save your file and view in Chrome. You have two columns! ![](../images/emojis/party-popper.png)
 
+1. Feel free to share a screenshot on Slack so we can all celebrate together!
+

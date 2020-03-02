@@ -73,7 +73,7 @@ There more than one way to target the drink titles styles. What are some other w
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-Declare a style for <code>.small-plates h2</code>.
+Find the style for <code>.small-plates h2</code> to add the following styles:
 
 Add <code>font-size: 2em;</code> to set size.
 
