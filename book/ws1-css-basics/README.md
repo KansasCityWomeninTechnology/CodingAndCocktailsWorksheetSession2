@@ -42,7 +42,7 @@ The ability to cascade styles makes CSS powerful. In this section we will apply 
 {% include "./5background-color.md" %}
 
 ## Nice work!
-Celebrate with a toast with your neighbors.
+Celebrate with a toast with your neighbors. Take a screenshot and share on Slack so we can all admire your color selection.
 ![](https://media.giphy.com/media/8QPSW7nGDN7wY/giphy.gif)
 
 <!-- trick markdown to give me a little space between these two sections of text -->

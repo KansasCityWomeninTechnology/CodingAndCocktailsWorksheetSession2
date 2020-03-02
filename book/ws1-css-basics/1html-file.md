@@ -150,7 +150,7 @@ Not sure how to extract the contents of the zip file?
 	```
 
    {% hint style="tip" %}
-That's all we need from _master.zip_. You can delete all the other files from the download.
+That's all we need from *CSSCompilerPractice_master.zip*. You can delete all the other files from the download.
    {% endhint %}
 
 Congratulate your neighbors for getting all the HTML setup done. Break the ice by asking your neighbor "What's the most embarrassing fashion trend you used to rock"?

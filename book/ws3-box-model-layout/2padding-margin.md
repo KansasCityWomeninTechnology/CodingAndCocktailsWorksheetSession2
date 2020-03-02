@@ -63,7 +63,7 @@ We can reuse the style for <code>nav a</code> by adding the <code>footer a</code
 </details>
    {% endhint %}
 
-1. The social icons in the footer now extend past the background color. Give the social icons a little extra space by setting the height to 75px. Add `height: 75px;` to the existing style for `footer`.
+1. Give the social icons a little extra space by setting the height to 75px. Add `height: 75px;` to the existing style for `footer`.
 
 1. One last update for the footer! The hover color for the navigation bar might look nice applied to the footer. Go ahead and apply the same style for the hover to the footer.
 

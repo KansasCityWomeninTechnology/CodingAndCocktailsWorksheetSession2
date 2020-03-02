@@ -10,7 +10,7 @@ Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit
 
 The more you practice, the more comfortable you’ll feel!  Take a look at the following tutorials:
 
-1. Practice more CSS styling on Codecademy: [https://www.codecademy.com/courses/css-coding-with-style](https://www.codecademy.com/courses/css-coding-with-style)
+1. Practice more CSS styling on Codecademy: [https://www.codecademy.com/learn/learn-css](https://www.codecademy.com/learn/learn-css)
 
 1. Play a game to understand CSS Selectors better: [http://flukeout.github.io/](http://flukeout.github.io/)
 
@@ -21,7 +21,7 @@ The more you practice, the more comfortable you’ll feel!  Take a look at the f
 1. For a deeper dive into CSS Grid try: [https://cssgrid.io/](https://cssgrid.io/)
 
 ### Check out these tools designed to help web developers
-1. Upload your webpage to Code Sandbox so it's publicly accessible. Reach out on Slack and mentor will be happy to walk you through it. 
+1. Upload your webpage to CodeSandbox so it's publicly accessible. Reach out on Slack and mentor will be happy to walk you through it. 
 
 1. Using Chrome DevTools, run [Lighthouse](https://developers.google.com/web/tools/lighthouse/#devtools) audit for "Accessibility" to generate a report. 
 

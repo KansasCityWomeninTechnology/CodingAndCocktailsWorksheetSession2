@@ -19,7 +19,7 @@ Learn more about styling lists using [MDN list styling reference](https://develo
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary>
-We want to declare a style for the selector <code>li</code> with parent selector <code>.sidebar</code>. We can use the Descendant combinator.
+We want to declare a style for the selector <code>li</code> with parent selector <code>.small-plates</code>. We can use the Descendant combinator.
 
 Declare a style for <code>.small-plates li</code> at the bottom of the file and add <code>margin-top: 50px;</code>. 
 </details>
